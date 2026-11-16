@@ -724,23 +724,53 @@ def _draw_records(records, size, height):
 
 
 def _with_detail(records, height, size):
-    """The placed titles with each record's detail fitted into what is left.
+    """The placed titles with the detail shared between them, one line each in turn.
 
-    The detail pool is the height left after *every* title, divided between the
-    records in record order. Charging detail record by record against what the
-    titles before it had left let one fame line push a later title past the cell's
-    height, and the page's final truncate_blocks then cut that title - the exact
-    defect this layout exists to stop.
+    The detail pool is the height left after *every* title. It is shared round
+    robin, in record order: every record takes its first line before any record
+    takes a second. Handing each record as many lines as fitted before moving to
+    the next let the first person in a cell spend the whole pool - at Letter
+    landscape 25 December Windaus drew two fame lines and Herzberg none, so a cell
+    about two people was about one of them. A reader should meet both before
+    hearing more about either.
+
+    A record whose next line does not fit is skipped for that round and has no
+    later round that fits either, because the pool only shrinks; the pass ends
+    when a whole round adds nothing. A cell holding one record allocates exactly
+    as it did before: its lines in order, the last kept one carrying the ellipsis
+    when the pool ran out.
+
+    The pool is still what the titles leave: charging detail record by record
+    against what the titles before it had left let one fame line push a later
+    title past the cell's height, and the page's final truncate_blocks then cut
+    that title - the exact defect this layout exists to stop.
     """
     title_heights = [sum(b[1] * CELL_LEADING for b in tb)
                      for tb, _detail, _is_person in records]
     pool = height - sum(title_heights)
+    kept = [[] for _ in records]
+    cursor = [0] * len(records)
+    progressed = True
+    while progressed:
+        progressed = False
+        for i, (_title, detail, _is_person) in enumerate(records):
+            if cursor[i] >= len(detail):
+                continue
+            line_h = detail[cursor[i]][1] * CELL_LEADING
+            if line_h > pool + LAYOUT_EPS:
+                continue
+            kept[i].append(detail[cursor[i]])
+            cursor[i] += 1
+            pool -= line_h
+            progressed = True
     out = []
-    for (title_blocks, detail, _is_person), title_h in zip(records, title_heights):
+    for (title_blocks, detail, _is_person), lines in zip(records, kept):
         out += title_blocks
-        kept = fit_detail(detail, pool)
-        out += kept
-        pool -= sum(b[1] * CELL_LEADING for b in kept)
+        if len(lines) < len(detail) and lines:
+            s, line_size, ink, indent = lines[-1]
+            if len(s) > 1:
+                lines = lines[:-1] + [(s[:-1].rstrip() + "…", line_size, ink, indent)]
+        out += lines
     return out
 
 

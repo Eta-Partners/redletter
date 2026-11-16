@@ -506,6 +506,63 @@ above. On the page, laureate 02-15 now draws its title `Euler-Chelpin` / `is bor
 at A4 and Letter portrait (9 pt, 13 and 14 characters), and chemistry 05-16 draws
 `Nicolas-Louis` / `Vauquelin is` / `born` at A4 portrait.
 
+## 2026-11-16 · Every person in a cell gets a reason line before anyone gets a second
+
+**Whose choice.** TJ's, at 18:52Z on 2026-11-16, relayed by the operator with two
+constraints. `qitem-20261116185319-f262ff0764ab2ae8`. This is the density question
+answered; the cell's grey text is the reason, and a cell about two people should be
+about two people.
+
+**The rule.** In a cell holding two or more people, every person takes one line of
+their reason before any person takes a second, in record order. A cell holding one
+person is unchanged: they keep the two-line fame they have. A cell holding no
+person is unchanged. The line is one line's worth of the reason, not the whole
+reason: at these cell sizes the complete text cannot fit without the type drop TJ
+forbade, and the rest is what the cell's ellipsis hides.
+
+**What it replaced.** Record order gave each person as many lines as fitted before
+moving to the next. Measured on the shipped books through the drawn blocks, that
+allocation was already ordered — an earlier person never had fewer lines than a
+later one — but it was not fair: at Letter landscape 25 December Windaus drew two
+fame lines and Herzberg none, and at Letter portrait 25 June Nernst drew two and
+Stein none. A cell that names two people said something about one of them.
+
+**After the fix**, those two cells draw one line each: Letter landscape
+25 December `for the service…` / `for his contribution…`, Letter portrait
+25 June `in recognitio…` / `for thei…`. No other multi-person cell changes at any
+shape: A4 landscape's seven (01-23, 01-31, 03-19, 06-25, 08-30, 09-02, 12-25) are
+2/2, 2/2, 1/0, 1/0, 0/0/0, 1/0 and 2/1 before and after, and nobody moves to an
+`and N more` line anywhere. Those cells hold room for one reason line, so the rule
+cannot give a second person a first line that does not fit.
+
+**The constraint that was not spent.** A4 landscape's chosen type per month is
+`[6, 9.5, 8, 9, 7.5, 9, 9.5, 6, 9, 9, 9, 7]` before and after, and all twelve
+dataset-shape arrays are identical. The type chooser measures a cell's need through
+`cell_blocks`, which this change does not touch; sharing detail differently cannot
+move it.
+
+**The audit delta.** At A4 landscape the four columns are unchanged: laureates
+median 17%, whole 3, any 57, zero 7; chemistry 67% / 14 / 43 / 0. The rule is a
+no-op at that shape, and that is the honest report, not a target met. The change
+buys fairness where the cell affords two or more reason lines; where it affords one,
+the first person still has it and the second is counted by nothing, because both
+their names are drawn.
+
+**What this makes deliberate.** The audit has been reporting seven laureate cells
+with a zero-coverage fame line as a defect. Under this rule that is a choice: a
+person whose cell cannot afford a second reason line is named, dated and counted,
+not described. The truncation counts and the zero seven stay as they are; this
+entry is where the decision to leave them is recorded.
+
+**The test.** The assertion is the gap, not the ordering: no earlier person draws
+more than one line more than a later one, checked over the three datasets at the
+four shapes. The ordering alone ("an earlier person has at least as many lines as a
+later one") is satisfied by the old allocation as well, so it would have been a test
+that could not fail; the gap has two violations at `6a96a15` and none here. Two
+literal fixtures pin the ends: six lines of room is one reason line and it goes to
+the first person, with no `and N more`; seven lines is one each, where record order
+drew two and none.
+
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
 **Change.** `render_grid.py` gains a third emitter. `--pdf` lays the same drawing

@@ -1083,6 +1083,106 @@ def test_every_word_of_a_person_name_is_drawn_whole(tmp_path, name, paper, orien
     assert not split, f"{paper} {orientation}: words not drawn whole: {split}"
 
 
+def reason_lines_by_person(blocks, cell, chars, pt, with_blurb):
+    """How many GRAY reason lines follow each person's title, cell order.
+
+    Read from the drawn blocks by position: a person's title is atomic, so its
+    lines are exactly `record_blocks`' title lines, and the grey lines between the
+    end of one title and the start of the next belong to that person. Only valid
+    in a cell of persons; a prose title may be cut, so its line count is not known.
+    """
+    idx, out = 0, []
+    for year, title, blurb in cell:
+        idx += len(rg.record_blocks(year, title, blurb, chars, pt, with_blurb)[0])
+        gray = 0
+        while idx < len(blocks) and blocks[idx][2] == rg.GRAY:
+            gray += 1
+            idx += 1
+        if rg.person_suffix(title) is not None:
+            out.append((title, gray))
+    return out
+
+
+@requires_font
+@pytest.mark.parametrize("name", ["chemistry-laureates.yaml", "chemistry.yaml",
+                                  "spaceflight.yaml"])
+@pytest.mark.parametrize("paper,orientation", SHAPES)
+def test_no_person_takes_a_second_reason_line_while_another_has_none(
+        tmp_path, name, paper, orientation):
+    """TJ's rule: every person gets one line before anyone gets a second.
+
+    The assertion is on the gap, not on the ordering: no earlier person may draw
+    more than one line more than a later one. The ordering alone ("an earlier
+    person has at least as many lines as a later one") is what the old allocation
+    already satisfied at every shape and every cell, because record order charged
+    the first person as much as fitted and the later ones from what was left - the
+    first person's second line and a later person's zero lines both sit inside it.
+    Measured at the tip, that ordering has 0 violations while the gap has 2, both
+    of them the case this rule is about: Letter landscape 25 December drew
+    Windaus two fame lines and Herzberg none, and Letter portrait 25 June drew
+    Nernst two and Stein none. The shipped-book assertion below is therefore the
+    gap; it fails at the tip on exactly those two cells and passes here.
+    """
+    path = shipped_days(name, tmp_path)
+    unfair, inverted = [], []
+    for month, day, geo, pt, chars, wb, cell in cells_for(path, paper, orientation):
+        people = person_records(cell)
+        if len(people) < 2:
+            continue
+        blocks = rg.cell_layout(cell, chars, pt, wb, geo["inner_h"])
+        counts = [n for _title, n in
+                  reason_lines_by_person(blocks, cell, chars, pt, wb)]
+        for i in range(len(counts)):
+            for j in range(i + 1, len(counts)):
+                if counts[i] - counts[j] > 1:
+                    unfair.append(f"{month:02d}-{day:02d} {counts} "
+                                  f"({people[i][1]!r} {counts[i]} vs "
+                                  f"{people[j][1]!r} {counts[j]})")
+                if counts[i] < counts[j]:
+                    inverted.append(f"{month:02d}-{day:02d} {counts}")
+    assert not unfair, f"{paper} {orientation}: a second line before a first: {unfair}"
+    assert not inverted, f"{paper} {orientation}: an earlier person has fewer: {inverted}"
+
+
+def _two_person_cell(lines_of_room, chars=20, size=9.5):
+    """Two person records at a fixed width, a cell `lines_of_room` lines tall.
+
+    The titles take five lines at this width - "1871 Ernest" / "Rutherford is" /
+    "born" and "1900 Frédéric Joliot" / "is born" - so the detail pool is what the
+    height leaves after five. Each fame line is capped at two, which is what makes
+    a two-line pool the interesting case.
+    """
+    cell = [(1871, "Ernest Rutherford is born",
+             "Ernest Rutherford, a New Zealand physicist, discovered the nucleus."),
+            (1900, "Frédéric Joliot is born",
+             "Frédéric Joliot, a French physicist, shared the Nobel Prize.")]
+    height = lines_of_room * size * rg.CELL_LEADING
+    return cell, rg.cell_layout(cell, chars, size, False, height)
+
+
+@requires_font
+def test_a_cell_that_affords_one_reason_line_gives_it_to_the_first_person():
+    """The case the fixture exists for: the second person's first line does not fit.
+
+    Both titles fit, so nobody is counted in an "and N more" line; the cell has
+    room for one fame line, and it goes to the person whose record comes first.
+    """
+    cell, blocks = _two_person_cell(6)
+    assert [n for _t, n in reason_lines_by_person(blocks, cell, 20, 9.5, False)] == [1, 0]
+    assert not any(b[0].startswith("and ") for b in blocks)
+
+
+@requires_font
+def test_a_cell_that_affords_two_reason_lines_gives_one_to_each_person():
+    """The allocation the rule changes: two lines and two people is one each.
+
+    Record order would have given the first person both lines - both fit - and the
+    second none; both people are the subject of the cell, so both get their first.
+    """
+    cell, blocks = _two_person_cell(7)
+    assert [n for _t, n in reason_lines_by_person(blocks, cell, 20, 9.5, False)] == [1, 1]
+
+
 @requires_font
 def test_the_six_laureate_records_the_stream_used_to_lose_are_named_in_their_cells(tmp_path):
     """The three half-named and the three absent, by name, on the shipped page.
