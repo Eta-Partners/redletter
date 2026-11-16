@@ -566,12 +566,15 @@ dataset-shape arrays are identical. The type chooser measures a cell's need thro
 `cell_blocks`, which this change does not touch; sharing detail differently cannot
 move it.
 
-**The audit delta.** At A4 landscape the four columns are unchanged: laureates
-median 17%, whole 3, any 57, zero 7; chemistry 67% / 14 / 43 / 0. The rule is a
-no-op at that shape, and that is the honest report, not a target met. The change
-buys fairness where the cell affords two or more reason lines; where it affords one,
-the first person still has it and the second is counted by nothing, because both
-their names are drawn.
+**The audit delta.** At A4 landscape the five columns are unchanged: laureates
+median 18%, whole 3, at least half 10, any 57, zero 7 of 64; chemistry 67% /
+14 / 35 / 43 / 0. The rule is a no-op at that shape, and that is the honest
+report, not a target met. The change buys fairness where the cell affords two or
+more reason lines; where it affords one, the first person still has it and the
+second is counted by nothing, because both their names are drawn. The audit's
+treatment of a marked token changed on 16 November 2026 — a token ending in the
+marker counts when its stem is a whole word — so figures quoted at an earlier sha
+use the older rule; the 17% at `21b905e` is such a reading.
 
 **Why the no-op is the constraint and not the rule.** At 8 pt in the 19 March cell
 the box has 64.70 pt of height and the five title lines take 52.80 pt, so the detail
