@@ -75,6 +75,29 @@ shadow with the field, and a 0.8 px blur on the mask keeps the cut from aliasing
 **Cost.** It assumes the artwork's sheet is a solid colour on a plain field, which
 is what was asked for. A textured or multi-colour sheet would need a different cut.
 
+## 2026-11-15 · "2 of 2" counts cited sources, not readable ones
+
+**Change.** `agreement` now reads `agreeing of cited`. A separate `readable` field
+carries how many actually loaded.
+
+**Why.** The old string counted readable sources, so a day with one working source
+and one dead link printed `1 of 1` — which reads as "everything agrees" when in
+fact half the evidence never arrived. A test caught it. The status was always right;
+the number was flattering.
+
+## 2026-11-15 · Tests: the network is faked, not avoided
+
+**Choice.** The unit tests replace `fetch` with a mapping from URL to page, so every
+branch of the status ladder is exercised exactly. The integration tests run the
+real scripts against a real HTTP server this repository starts on localhost, and
+only one test — the one that reads the shipped dataset from the live web — is
+opt-in behind `--run-network`.
+
+**Why.** The rules most likely to break are in the status ladder and the date
+matcher, and those can be pinned in milliseconds with no network. The pipeline can
+be proven end to end without the internet by serving it pages. Only the claim "the
+sources still say this" depends on the web, and that claim belongs to the web.
+
 ## 2026-11-15 · No status or verification fields in the dataset
 
 `data/*.yaml` holds what a person wrote: the day, the words, the sources. Status,

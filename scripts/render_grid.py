@@ -37,9 +37,19 @@ FONT_CANDIDATES = {
     "regular": ["JetBrainsMonoNerdFontMono-Regular.ttf", "JetBrainsMonoNerdFont-Regular.ttf"],
     "bold": ["JetBrainsMonoNerdFontMono-Bold.ttf", "JetBrainsMonoNerdFont-Bold.ttf"],
 }
+# Any monospace that is actually installed will do; the sheet is set in whatever
+# of these is found first, so the renderer runs on Linux and in CI as well as here.
 SYSTEM_FALLBACK = {
-    "regular": "/System/Library/Fonts/Menlo.ttc",
-    "bold": "/System/Library/Fonts/Menlo.ttc",
+    "regular": [
+        "/System/Library/Fonts/Menlo.ttc",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf",
+        "/usr/share/fonts/dejavu/DejaVuSansMono.ttf",
+    ],
+    "bold": [
+        "/System/Library/Fonts/Menlo.ttc",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSansMono-Bold.ttf",
+        "/usr/share/fonts/dejavu/DejaVuSansMono-Bold.ttf",
+    ],
 }
 SVG_FAMILY = "JetBrainsMonoNFM, Menlo, monospace"
 SS = 2  # supersample factor for the PNG
@@ -65,12 +75,16 @@ def line(x1, y1, x2, y2, color, w=1):
 # -------------------------------------------------------------------- fonts
 
 
-def font_path(weight: str) -> str:
+def font_path(weight: str):
+    """The first font that exists here, or None when none of them do."""
     for name in FONT_CANDIDATES[weight]:
         p = FONT_DIR / name
         if p.exists():
             return str(p)
-    return SYSTEM_FALLBACK[weight]
+    for p in SYSTEM_FALLBACK[weight]:
+        if pathlib.Path(p).exists():
+            return p
+    return None
 
 
 class Fonts:
@@ -80,7 +94,13 @@ class Fonts:
     def get(self, size: int, weight: str = "regular", ss: int = SS):
         key = (round(size * ss), weight)
         if key not in self._cache:
-            self._cache[key] = ImageFont.truetype(font_path(weight), key[0])
+            path = font_path(weight)
+            if path is None:
+                raise SystemExit(
+                    "no monospace font found: put a JetBrains Mono file in ~/Library/Fonts, "
+                    "or install DejaVu Sans Mono, or render with --svg-only"
+                )
+            self._cache[key] = ImageFont.truetype(path, key[0])
         return self._cache[key]
 
 
@@ -96,7 +116,7 @@ def text_width(s: str, size: float, weight: str = "regular") -> float:
 
 
 def month_days(year: int, month: int):
-    """The weeks of a month, Monday first, as lists of day numbers or None."""
+    """The weeks of a month, Monday first; 0 marks the days before the 1st."""
     cal = calendar.Calendar(firstweekday=0)
     return [week for week in cal.monthdayscalendar(year, month)]
 

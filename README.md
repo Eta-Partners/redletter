@@ -53,10 +53,33 @@ The vertical slice runs, on one topic, end to end. What is true today:
 - **`scripts/build_ics.py`** writes ten all-day, yearly-repeating events and parses
   the file back before it lands: DATE values, a YEARLY rule and a UID on every
   event, CRLF, no line over 75 octets.
+- **`tests/`** — 55 tests: unit tests that pin the status rules with the network
+  faked, and integration tests that run all three scripts against a local web
+  server. The one network test is opt-in. CI runs the offline suite on 3.9 and 3.12.
 - **Not built yet:** the skills that research and verify a *new* topic. The ten
   days were curated by hand, which is the part that does not scale.
 - **Not proven yet:** that the feed imports into Apple Calendar or Google Calendar.
   It parses cleanly; nobody has subscribed to it and looked.
+
+## Tests
+
+```sh
+pip install -r requirements.txt -r requirements-dev.txt
+pytest -q                     # 55 tests, offline, about two seconds
+pytest --run-network -k network   # the shipped dataset against the real sources
+```
+
+The suite is split on purpose. **Unit tests** replace the network with a fake and
+pin the rules that are easy to break by accident: the status ladder
+(`active` needs two *publishers*, not two pages), unread-is-not-disagreement, the
+approval hash, the leap-year rule, and that the `.ics` reads back the way a client
+would parse it. **Integration tests** run all three scripts as a person does,
+against a local web server this repository starts, so real HTTP, real YAML and real
+files are exercised without touching the internet. The one network test is opt-in:
+it fails when a publisher moves a page, which is a fact about the web rather than
+about this code.
+
+CI runs the offline suite on Python 3.9 and 3.12 on every push.
 
 ## Quick start
 
@@ -137,6 +160,7 @@ scripts/
   render_grid.py     the sheet: a year of month grids, PNG and SVG from one geometry
   build_ics.py       the feed: all-day yearly events, parsed back before it is written
 tools/icon.py        turns the supplied artwork into the icon size set
+tests/               unit tests, plus integration tests that run the pipeline
 spec/icon-source/    the artwork as it arrived, so the icons can be rebuilt
 media/icons/         icon-{1024,512,256,192,128} in PNG, and the same in WebP under web/
 media/samples/       the rendered 2027 sheet, its SVG, and the .ics

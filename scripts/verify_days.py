@@ -12,7 +12,7 @@ reported as unread, not as disagreement, and the day's status follows from what
 was actually read.
 
 Usage:
-    verify_days.py data/spaceflight.yaml [--write] [--timeout 20]
+    verify_days.py data/spaceflight.yaml [--write] [--timeout 20] [--out out]
 
 Writes out/verification.json always. With --write, also writes out/days.json:
 the canonical records the renderer and the .ics writer consume, with status,
@@ -111,7 +111,10 @@ def verify_day(day: dict, timeout: int) -> dict:
             entry["read"] = True
             entry["supports"] = supports(page, iso)
             entry["bytes"] = len(page)
-        except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError, ValueError) as exc:
+        except (OSError, ValueError) as exc:
+            # URLError, HTTPError and TimeoutError are all OSError; a connection
+            # dropped mid-read is an OSError too. Any of them means "could not read
+            # this source", which is a fact about the check, not about the day.
             entry["http"] = None
             entry["read"] = False
             entry["supports"] = None
@@ -143,7 +146,11 @@ def verify_day(day: dict, timeout: int) -> dict:
         "year": day["year"],
         "date": day["date"],
         "status": status,
-        "agreement": f"{n_agree} of {n_read}",
+        # Agreeing of *all* cited sources, not of the readable ones: "1 of 1" would
+        # read as agreement when the other source never loaded. How many loaded is
+        # a separate number, so a page that has rotted is visible in the output.
+        "agreement": f"{n_agree} of {len(results)}",
+        "readable": n_read,
         "publishers": agreeing_publishers,
         "checked_on": checked,
         "sources": results,
@@ -156,12 +163,13 @@ def main() -> int:
     ap.add_argument("dataset")
     ap.add_argument("--write", action="store_true", help="also write out/days.json")
     ap.add_argument("--timeout", type=int, default=20)
+    ap.add_argument("--out", default=None, help="directory to write into; defaults to <repo>/out")
     args = ap.parse_args()
 
     root = pathlib.Path(__file__).resolve().parent.parent
     data = yaml.safe_load(pathlib.Path(args.dataset).read_text())
-    out_dir = root / "out"
-    out_dir.mkdir(exist_ok=True)
+    out_dir = pathlib.Path(args.out) if args.out else root / "out"
+    out_dir.mkdir(parents=True, exist_ok=True)
 
     verified = [verify_day(d, args.timeout) for d in data["days"]]
     report = {

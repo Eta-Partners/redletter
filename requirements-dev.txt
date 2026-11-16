@@ -1,0 +1,2 @@
+# The test suite and the tools that only development needs.
+pytest==8.4.2

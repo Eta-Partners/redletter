@@ -1,0 +1,7 @@
+# Only here so pytest has a home: this project is scripts, not a package, and
+# nothing in it needs building or installing.
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "network: fetches the real sources over the internet; run with --run-network",
+]
