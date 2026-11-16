@@ -96,7 +96,8 @@ def test_the_whole_pipeline_runs_on_a_local_web(tmp_path, site):
     assert status["D-HALF"]["status"] == "provisional"
     assert status["D-HALF"]["agreement"] == "1 of 2"
     assert status["D-DEAD"]["status"] == "quarantined"
-    assert report["summary"] == {"active": 1, "provisional": 1, "contested": 0, "quarantined": 1}
+    assert report["summary"] == {"active": 1, "provisional": 1, "contested": 0,
+                                 "quarantined": 1, "refused": 0}
 
     days = out / "days.json"
     assert days.exists()

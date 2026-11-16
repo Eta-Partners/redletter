@@ -217,7 +217,10 @@ def test_approval_hash_ignores_sources_and_status():
 # ---------------------------------------------------------------- authorities
 
 
-ALLOWLIST = {"acs.org": "American Chemical Society", "rsc.org": "Royal Society of Chemistry"}
+ALLOWLIST = {"acs.org": "American Chemical Society",
+             "rsc.org": "Royal Society of Chemistry",
+             # the death rule's one example cites a Nobel page for its date
+             "nobelprize.org": "The Nobel Prize"}
 
 
 def test_one_allowlisted_source_is_enough(monkeypatch):
@@ -313,3 +316,135 @@ def test_the_floor_counts_visible_text_not_markup():
 
 def test_visible_text_drops_script_bodies():
     assert "alert" not in vd.visible_text('<script>alert(1)</script><p>April 12</p>')
+
+
+# ------------------------------------------------------------ the death rule
+#
+# A `kind: loss` record prints only when a source states that the death was
+# caused by the person's work. The record carries a `work_caused` block and the
+# gate checks it; every other death is refused. The strings below are Marie
+# Curie's, because she is the criterion's one real example and a fixture that
+# drifts from the dataset stops proving anything about it.
+
+CURIE_BLURB = ("Marie Curie, discoverer of polonium and radium and twice a Nobel "
+               "laureate, died of aplastic anaemia almost certainly due to her exposure "
+               "to radioactive materials.")
+CURIE_BLOCK = {
+    "statement": "died of aplastic anaemia almost certainly due to her exposure to radioactive materials",
+    "evidence": "almost certainly due to her exposure to radioactive materials",
+    "source_url": "https://periodic-table.rsc.org/element/88/radium",
+}
+CURIE_CAUSE_PAGE = ("Although Marie Curie lived until 1934, her death from aplastic anaemia "
+                    "is almost certainly due to her exposure to radioactive materials, "
+                    "particularly radium.")
+
+
+def death(blurb=CURIE_BLURB, block=CURIE_BLOCK):
+    day = day_with(["https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographical/"],
+                   iso="1934-07-04")
+    day.update(kind="loss", title="Marie Curie dies", blurb=blurb)
+    if block is not None:
+        day["work_caused"] = dict(block)
+    return day
+
+
+def verify_death(monkeypatch, day, cause_page=CURIE_CAUSE_PAGE):
+    pages = {
+        "https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographical/":
+            page("She died on July 4, 1934."),
+        "https://periodic-table.rsc.org/element/88/radium":
+            cause_page if cause_page.startswith("<") else page(cause_page),
+        "https://nowhere.example/x": page(cause_page),
+    }
+    monkeypatch.setattr(vd, "fetch", FakeWeb(pages))
+    return vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+
+
+def test_a_death_whose_source_states_the_cause_survives(monkeypatch):
+    out = verify_death(monkeypatch, death())
+    assert out["status"] == "active"
+    assert out["work_caused"]["refusal"] is None
+    assert out["work_caused"]["source_url"] == CURIE_BLOCK["source_url"]
+
+
+def test_a_death_with_no_work_caused_block_is_refused(monkeypatch):
+    out = verify_death(monkeypatch, death(block=None))
+    assert out["status"] == "refused", "the date is fine; the claim is not"
+    assert "work_caused" in out["basis"]
+    assert out["agreement"] == "1 of 1", "the date the record rests on is still read"
+
+
+def test_a_death_whose_page_does_not_state_the_cause_is_refused(monkeypatch):
+    out = verify_death(monkeypatch, death(),
+                       cause_page="Mme. Curie died in Savoy, France, after a short illness.")
+    assert out["status"] == "refused"
+    assert "not on the cited page" in out["basis"]
+
+
+def test_a_death_whose_cause_page_is_unreadable_is_refused(monkeypatch):
+    out = verify_death(monkeypatch, death(), cause_page="<html><body>not found</body></html>")
+    assert out["status"] == "refused"
+    assert "could not be read" in out["basis"]
+
+
+def test_the_evidence_must_sit_inside_the_statement_and_the_statement_in_the_blurb(monkeypatch):
+    """The nesting is the check: the printed claim and the cited page overlap."""
+    block = dict(CURIE_BLOCK, statement="died of aplastic anaemia")
+    out = verify_death(monkeypatch, death(block=block))
+    assert out["status"] == "refused"
+    assert "evidence is not in" in out["basis"]
+
+    block = dict(CURIE_BLOCK, statement="died in Savoy, France")
+    out = verify_death(monkeypatch, death(block=block))
+    assert out["status"] == "refused"
+    assert "statement is not in the blurb" in out["basis"]
+
+
+def test_the_cause_page_must_be_an_allowlisted_publisher(monkeypatch):
+    block = dict(CURIE_BLOCK, source_url="https://nowhere.example/x")
+    out = verify_death(monkeypatch, death(block=block))
+    assert out["status"] == "refused"
+    assert "not an allowlisted publisher" in out["basis"]
+
+
+def test_a_birth_is_never_asked_for_a_cause(monkeypatch):
+    day = day_with(["https://pubs.acs.org/x"], iso="1867-11-07")
+    day.update(kind="birth", title="Marie Curie is born", blurb="She was born in Warsaw.")
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://pubs.acs.org/x": page("November 7, 1867")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "active"
+    assert "work_caused" not in out
+
+
+def test_a_mission_lost_is_not_a_person_death(monkeypatch):
+    """The rule is about people, not about the word `loss`.
+
+    Spaceflight's "Challenger is lost" is `kind: loss` and carries no `work_caused`;
+    refusing it would delete a mission from a book TJ did not ask about.
+    """
+    day = day_with(["https://a.org/x"], iso="1986-01-28")
+    day.update(kind="loss", title="Challenger is lost",
+               blurb="Seventy-three seconds after launch, seven crew aboard.")
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://a.org/x": page("January 28, 1986")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "provisional", "the date ladder decides; no cause is asked"
+    assert "work_caused" not in out
+
+
+def test_every_surviving_death_in_the_dataset_meets_the_rule():
+    """The data test: offline, and it is what stops an unchecked death shipping.
+
+    It reads the shipped file and the shipped allowlist, so a record that loses
+    its block, or cites a page the list does not vouch for, fails here rather than
+    on the calendar.
+    """
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(vd.__file__).resolve().parent.parent
+    data = yaml.safe_load((root / "data" / "chemistry.yaml").read_text())
+    allowlist = vd.load_allowlist(root / "data" / "sources-allowlist.yaml")
+    losses = [d for d in data["days"] if d["kind"] == "loss"]
+    assert [d["id"] for d in losses] == ["D-CHE-C050"], "the criterion's one example"
+    for d in losses:
+        assert vd.work_caused_gap(d, allowlist) is None, vd.work_caused_gap(d, allowlist)

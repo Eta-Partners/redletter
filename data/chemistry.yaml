@@ -14,6 +14,14 @@
 # The file is the output of a research handoff: the lines arrived in the format
 # scripts/from_lines.py accepts, were parsed by it, and every surviving record is
 # one the gate passed unchanged.
+#
+# A person's death is held to a stronger rule than their birth, because the book
+# claims a cause and not only a day: a `kind: loss` record prints only when it
+# carries a `work_caused` block, and scripts/verify_days.py refuses it unless the
+# statement is in the blurb, the evidence phrase is inside the statement, the
+# source is on data/sources-allowlist.yaml, and the phrase is on that page when
+# it is read. One death meets it — Marie Curie's, on a Royal Society of Chemistry
+# page — and the other 23 records that only said a person died are not here.
 topic:
   id: chemistry
   title: Chemistry
@@ -27,37 +35,6 @@ topic:
   - first
   - loss
 days:
-- id: D-CHE-G001
-  month_day: 01-05
-  year: 1981
-  kind: loss
-  title: Harold Clayton Urey dies
-  blurb: Harold Clayton Urey, winner of the 1934 Nobel Prize in Chemistry for discovering deuterium, died.
-  date:
-    as_recorded: '1981-01-05'
-    calendar: gregorian
-    gregorian: '1981-01-05'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Harold Clayton Urey dies
-    url: https://www.nobelprize.org/prizes/chemistry/1934/urey/facts/
-- id: D-CHE-G002
-  month_day: 01-08
-  year: 1997
-  kind: loss
-  title: Melvin Calvin dies
-  blurb: Melvin Calvin, 1961 Nobel Prize in Chemistry laureate who mapped carbon dioxide assimilation
-    in plants, died in Berkeley, California.
-  date:
-    as_recorded: '1997-01-08'
-    calendar: gregorian
-    gregorian: '1997-01-08'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Melvin Calvin dies
-    url: https://www.nobelprize.org/prizes/chemistry/1961/calvin/facts/
 - id: D-CHE-C001
   month_day: 01-10
   year: 1877
@@ -90,21 +67,6 @@ days:
     citation: Royal Society of Chemistry — Diabetic teenager Leonard Thompson received the first trial
       of insulin treatment
     url: https://edu.rsc.org/resources/on-this-day-jan-11-thompson-trialled-insulin/10111.article
-- id: D-CHE-C003
-  month_day: 01-14
-  year: 1934
-  kind: loss
-  title: French chemist Paul Vieille dies
-  blurb: French chemist Paul Vieille, inventor of nitrocellulose smokeless powder, died.
-  date:
-    as_recorded: '1934-01-14'
-    calendar: gregorian
-    gregorian: '1934-01-14'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — French chemist Paul Vieille dies
-    url: https://edu.rsc.org/resources/on-this-day-jan-14--paul-vieille-died/10114.article
 - id: D-CHE-C004
   month_day: 01-15
   year: 1784
@@ -213,21 +175,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — Moses Gomberg is born
     url: https://edu.rsc.org/resources/on-this-day-feb-08--moses-gomberg-was-born/10208.article
-- id: D-CHE-G005
-  month_day: 02-08
-  year: 1975
-  kind: loss
-  title: Sir Robert Robinson dies
-  blurb: Sir Robert Robinson, winner of the 1947 Nobel Prize in Chemistry, died.
-  date:
-    as_recorded: '1975-02-08'
-    calendar: gregorian
-    gregorian: '1975-02-08'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Sir Robert Robinson dies
-    url: https://www.nobelprize.org/prizes/chemistry/1947/robinson/facts/
 - id: D-CHE-C011
   month_day: 02-12
   year: 1957
@@ -244,21 +191,6 @@ days:
     citation: Royal Society of Chemistry — Robert H. Wentorf announced he had made borazon, a boron nitride
       hard enough to scratch diamond
     url: https://edu.rsc.org/resources/on-this-day-feb-12--wentorf-made-borazon/10212.article
-- id: D-CHE-C012
-  month_day: 02-13
-  year: 1909
-  kind: loss
-  title: Danish thermochemist Julius Thomsen dies
-  blurb: Danish thermochemist Julius Thomsen, who measured the heat of about 3,500 reactions, died.
-  date:
-    as_recorded: '1909-02-13'
-    calendar: gregorian
-    gregorian: '1909-02-13'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — Danish thermochemist Julius Thomsen dies
-    url: https://edu.rsc.org/resources/on-this-day-feb-13--julius-thomsen-died/10213.article
 - id: D-CHE-C013
   month_day: 02-17
   year: 1838
@@ -307,21 +239,6 @@ days:
     citation: Royal Society of Chemistry — The Chemical Society of London, a forerunner of the Royal Society
       of Chemistry, held its first meeting
     url: https://edu.rsc.org/resources/on-this-day-feb-23--chemical-society-first-meet/10223.article
-- id: D-CHE-C016
-  month_day: 02-26
-  year: 1931
-  kind: loss
-  title: Otto Wallach dies
-  blurb: Otto Wallach, who devised systematic structure analysis of terpenes in essential oils, died.
-  date:
-    as_recorded: '1931-02-26'
-    calendar: gregorian
-    gregorian: '1931-02-26'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — Otto Wallach dies
-    url: https://edu.rsc.org/resources/on-this-day-feb-26--otto-wallach-died/10226.article
 - id: D-CHE-C017
   month_day: 03-03
   year: 1826
@@ -398,21 +315,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — William Perkin is born
     url: https://edu.rsc.org/resources/on-this-day-mar-12--william-perkin-was-born/10312.article
-- id: D-CHE-G007
-  month_day: 03-19
-  year: 1950
-  kind: loss
-  title: Walter Norman Haworth dies
-  blurb: Walter Norman Haworth, winner of the 1937 Nobel Prize in Chemistry, died.
-  date:
-    as_recorded: '1950-03-19'
-    calendar: gregorian
-    gregorian: '1950-03-19'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Walter Norman Haworth dies
-    url: https://www.nobelprize.org/prizes/chemistry/1937/haworth/facts/
 - id: D-CHE-C022
   month_day: 03-23
   year: 1962
@@ -460,21 +362,6 @@ days:
     citation: Royal Society of Chemistry — The Three Mile Island nuclear plant in Pennsylvania suffered
       a partial meltdown
     url: https://edu.rsc.org/resources/on-this-day-mar-28--nuclear-plant-meltdown/10328.article
-- id: D-CHE-G008
-  month_day: 03-28
-  year: 1982
-  kind: loss
-  title: William Francis Giauque dies
-  blurb: William Francis Giauque, 1949 Nobel Prize in Chemistry laureate, died in Berkeley, California.
-  date:
-    as_recorded: '1982-03-28'
-    calendar: gregorian
-    gregorian: '1982-03-28'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — William Francis Giauque dies
-    url: https://www.nobelprize.org/prizes/chemistry/1949/giauque/facts/
 - id: D-CHE-C026
   month_day: 04-08
   year: 1911
@@ -553,36 +440,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — Glenn Seaborg is born
     url: https://edu.rsc.org/resources/on-this-day-apr-19--glen-seaborg-was-born/10419.article
-- id: D-CHE-C031
-  month_day: 04-20
-  year: 1821
-  kind: loss
-  title: Franz Achard dies
-  blurb: Franz Achard, inventor of the industrial process for producing sugar from beets, died.
-  date:
-    as_recorded: '1821-04-20'
-    calendar: gregorian
-    gregorian: '1821-04-20'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — Franz Achard dies
-    url: https://edu.rsc.org/resources/on-this-day-apr-20--franz-achard-died/10420.article
-- id: D-CHE-G011
-  month_day: 04-26
-  year: 1940
-  kind: loss
-  title: Carl Bosch dies
-  blurb: Carl Bosch, 1931 Nobel Prize in Chemistry laureate, died in Heidelberg.
-  date:
-    as_recorded: '1940-04-26'
-    calendar: gregorian
-    gregorian: '1940-04-26'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Carl Bosch dies
-    url: https://www.nobelprize.org/prizes/chemistry/1931/bosch/facts/
 - id: D-CHE-C032
   month_day: 04-26
   year: 1986
@@ -707,21 +564,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — John Bardeen is born
     url: https://edu.rsc.org/resources/on-this-day-may-23--john-bardeen-was-born/10523.article
-- id: D-CHE-G015
-  month_day: 05-27
-  year: 1987
-  kind: loss
-  title: John Howard Northrop dies
-  blurb: John Howard Northrop, 1946 Nobel Prize in Chemistry laureate, died.
-  date:
-    as_recorded: '1987-05-27'
-    calendar: gregorian
-    gregorian: '1987-05-27'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — John Howard Northrop dies
-    url: https://www.nobelprize.org/prizes/chemistry/1946/northrop/facts/
 - id: D-CHE-C040
   month_day: 05-30
   year: 1898
@@ -782,52 +624,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — Robert Mulliken is born
     url: https://edu.rsc.org/resources/on-this-day-jun-07--robert-mulliken-was-born/10607.article
-- id: D-CHE-G016
-  month_day: 06-07
-  year: 1978
-  kind: loss
-  title: Ronald George Wreyford Norrish dies
-  blurb: Ronald George Wreyford Norrish, 1967 Nobel Prize in Chemistry laureate, died in Cambridge, United
-    Kingdom.
-  date:
-    as_recorded: '1978-06-07'
-    calendar: gregorian
-    gregorian: '1978-06-07'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Ronald George Wreyford Norrish dies
-    url: https://www.nobelprize.org/prizes/chemistry/1967/norrish/facts/
-- id: D-CHE-G019
-  month_day: 06-17
-  year: 2001
-  kind: loss
-  title: Donald J. Cram dies
-  blurb: Donald J. Cram, 1987 Nobel Prize in Chemistry laureate, died in Palm Desert.
-  date:
-    as_recorded: '2001-06-17'
-    calendar: gregorian
-    gregorian: '2001-06-17'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Donald J. Cram dies
-    url: https://www.nobelprize.org/prizes/chemistry/1987/cram/facts/
-- id: D-CHE-G020
-  month_day: 06-18
-  year: 1971
-  kind: loss
-  title: Paul Karrer dies
-  blurb: Paul Karrer, 1937 Nobel Prize in Chemistry laureate, died in Zurich, Switzerland.
-  date:
-    as_recorded: '1971-06-18'
-    calendar: gregorian
-    gregorian: '1971-06-18'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Paul Karrer dies
-    url: https://www.nobelprize.org/prizes/chemistry/1937/karrer/facts/
 - id: D-CHE-C044
   month_day: 06-20
   year: 1931
@@ -859,21 +655,6 @@ days:
     citation: Royal Society of Chemistry — Joseph Louis Gay-Lussac and Louis Thénard isolated boron, nine
       days ahead of Humphry Davy
     url: https://edu.rsc.org/resources/on-this-day-jun-21--boron-was-isolated/10621.article
-- id: D-CHE-G021
-  month_day: 06-25
-  year: 2023
-  kind: loss
-  title: John B. Goodenough dies
-  blurb: John B. Goodenough, 2019 Nobel Prize in Chemistry laureate, died in Austin, Texas.
-  date:
-    as_recorded: '2023-06-25'
-    calendar: gregorian
-    gregorian: '2023-06-25'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — John B. Goodenough dies
-    url: https://www.nobelprize.org/prizes/chemistry/2019/goodenough/facts/
 - id: D-CHE-C046
   month_day: 06-26
   year: 1886
@@ -941,7 +722,8 @@ days:
   year: 1934
   kind: loss
   title: Marie Curie dies
-  blurb: Marie Curie, discoverer of polonium and radium and twice a Nobel laureate, died in Savoy, France.
+  blurb: Marie Curie, discoverer of polonium and radium and twice a Nobel laureate, died of aplastic anaemia
+    almost certainly due to her exposure to radioactive materials.
   date:
     as_recorded: '1934-07-04'
     calendar: gregorian
@@ -951,6 +733,10 @@ days:
   - type: reference-data
     citation: The Nobel Prize — Marie Curie dies
     url: https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographical/
+  work_caused:
+    statement: died of aplastic anaemia almost certainly due to her exposure to radioactive materials
+    evidence: almost certainly due to her exposure to radioactive materials
+    source_url: https://periodic-table.rsc.org/element/88/radium
 - id: D-CHE-C051
   month_day: 07-12
   year: 1898
@@ -967,21 +753,6 @@ days:
     citation: Royal Society of Chemistry — William Ramsay and Morris Travers discovered xenon by repeatedly
       distilling krypton
     url: https://edu.rsc.org/resources/on-this-day-jul-12-discovery-of-xenon/10712.article
-- id: D-CHE-C052
-  month_day: 07-14
-  year: 1907
-  kind: loss
-  title: Sir William Perkin dies
-  blurb: Sir William Perkin, maker of the first synthetic dye (mauve), died.
-  date:
-    as_recorded: '1907-07-14'
-    calendar: gregorian
-    gregorian: '1907-07-14'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — Sir William Perkin dies
-    url: https://edu.rsc.org/resources/on-this-day-jul-14--sir-william-perkin-died/10714.article
 - id: D-CHE-C053
   month_day: 07-16
   year: 1945
@@ -1028,21 +799,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — Rosalind Franklin is born
     url: https://edu.rsc.org/resources/on-this-day-jul-25--rosalind-franklin-was-born/10725.article
-- id: D-CHE-C056
-  month_day: 07-27
-  year: 1844
-  kind: loss
-  title: John Dalton dies
-  blurb: John Dalton, pioneer of modern atomic theory and the law of partial pressures, died.
-  date:
-    as_recorded: '1844-07-27'
-    calendar: gregorian
-    gregorian: '1844-07-27'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — John Dalton dies
-    url: https://edu.rsc.org/resources/on-this-day-jul-27--john-dalton-died/10727.article
 - id: D-CHE-G023
   month_day: 07-28
   year: 1919
@@ -1061,22 +817,6 @@ days:
     citation: International Union of Pure and Applied Chemistry — The International Union of Pure and
       Applied Chemistry was formally registered, establishing the global chemical union
     url: https://iupac.org/iupac100/
-- id: D-CHE-G024
-  month_day: 07-28
-  year: 2002
-  kind: loss
-  title: Archer John Porter Martin dies
-  blurb: Archer John Porter Martin, 1952 Nobel Prize in Chemistry laureate, died in Llangarron, United
-    Kingdom.
-  date:
-    as_recorded: '2002-07-28'
-    calendar: gregorian
-    gregorian: '2002-07-28'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Archer John Porter Martin dies
-    url: https://www.nobelprize.org/prizes/chemistry/1952/martin/facts/
 - id: D-CHE-C057
   month_day: 08-01
   year: 1774
@@ -1111,21 +851,6 @@ days:
     citation: Royal Society of Chemistry — Johann Döbereiner found that platinum sponge ignites hydrogen
       at room temperature, an early catalysis finding
     url: https://edu.rsc.org/resources/on-this-day-aug-03--platinum-catalysis/10803.article
-- id: D-CHE-G025
-  month_day: 08-05
-  year: 1957
-  kind: loss
-  title: Heinrich Otto Wieland dies
-  blurb: Heinrich Otto Wieland, 1927 Nobel Prize in Chemistry laureate, died in Munich.
-  date:
-    as_recorded: '1957-08-05'
-    calendar: gregorian
-    gregorian: '1957-08-05'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Heinrich Otto Wieland dies
-    url: https://www.nobelprize.org/prizes/chemistry/1927/wieland/facts/
 - id: D-CHE-C059
   month_day: 08-13
   year: 1894
@@ -1189,22 +914,6 @@ days:
     citation: Royal Society of Chemistry — Jules Janssen detected helium as an unknown yellow line in
       the solar spectrum during an eclipse
     url: https://edu.rsc.org/resources/on-this-day-aug-18--the-solar-spectrum/10818.article
-- id: D-CHE-G026
-  month_day: 08-19
-  year: 1994
-  kind: loss
-  title: Linus Carl Pauling dies
-  blurb: Linus Carl Pauling, 1954 Nobel Prize in Chemistry laureate for chemical bond research, died in
-    Big Sur, California.
-  date:
-    as_recorded: '1994-08-19'
-    calendar: gregorian
-    gregorian: '1994-08-19'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Linus Carl Pauling dies
-    url: https://www.nobelprize.org/prizes/chemistry/1954/pauling/facts/
 - id: D-CHE-C063
   month_day: 08-26
   year: 1743
@@ -1280,21 +989,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — August Kekulé is born
     url: https://edu.rsc.org/resources/on-this-day-sep-07--friedrich-kekule-was-born/10907.article
-- id: D-CHE-G028
-  month_day: 09-08
-  year: 1980
-  kind: loss
-  title: Willard Frank Libby dies
-  blurb: Willard Frank Libby, 1960 Nobel Prize in Chemistry laureate known for radiocarbon dating, died.
-  date:
-    as_recorded: '1980-09-08'
-    calendar: gregorian
-    gregorian: '1980-09-08'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Willard Frank Libby dies
-    url: https://www.nobelprize.org/prizes/chemistry/1960/libby/biographical/
 - id: D-CHE-C068
   month_day: 09-09
   year: 1974
@@ -1311,21 +1005,6 @@ days:
     citation: Royal Society of Chemistry — Albert Ghiorso and Glenn Seaborg announced the discovery of
       seaborgium
     url: https://edu.rsc.org/resources/on-this-day-sep-09--seaborgium-discovery/10909.article
-- id: D-CHE-C069
-  month_day: 09-17
-  year: 1936
-  kind: loss
-  title: Henri Le Chatelier dies
-  blurb: Henri Le Chatelier, author of the equilibrium principle that bears his name, died.
-  date:
-    as_recorded: '1936-09-17'
-    calendar: gregorian
-    gregorian: '1936-09-17'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: Royal Society of Chemistry — Henri Le Chatelier dies
-    url: https://edu.rsc.org/resources/on-this-day-sep-17--le-chatelier-died/10917.article
 - id: D-CHE-C070
   month_day: 09-21
   year: 1832
@@ -1549,22 +1228,6 @@ days:
   - type: reference-data
     citation: Royal Society of Chemistry — Sir Ian Heilbron is born
     url: https://edu.rsc.org/resources/on-this-day-nov-06-ian-heilbron-was-born/11106.article
-- id: D-CHE-G035
-  month_day: 11-06
-  year: 1964
-  kind: loss
-  title: Hans von Euler-Chelpin dies
-  blurb: Hans von Euler-Chelpin, 1929 Nobel Prize in Chemistry laureate for enzyme and fermentation research,
-    died in Stockholm, Sweden.
-  date:
-    as_recorded: '1964-11-06'
-    calendar: gregorian
-    gregorian: '1964-11-06'
-    precision: day
-  sources:
-  - type: reference-data
-    citation: The Nobel Foundation — Hans von Euler-Chelpin dies
-    url: https://www.nobelprize.org/prizes/chemistry/1929/euler-chelpin/facts/
 - id: D-CHE-C083
   month_day: 11-07
   year: 1867
