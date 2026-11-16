@@ -15,7 +15,7 @@ repeats them every year on your phone.
     <img src="https://img.shields.io/badge/status-vertical%20slice-orange.svg" alt="Status"/>
     <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python"/>
     <img src="https://img.shields.io/badge/output-print%20%2B%20.svg%20%2B%20.pdf%20%2B%20.ics-informational.svg" alt="Output"/>
-    <img src="https://img.shields.io/badge/days%20in%20chemistry-115-red.svg" alt="Days"/>
+    <img src="https://img.shields.io/badge/days%20in%20chemistry-92-red.svg" alt="Days"/>
 </p>
 
 ![The 2027 crewed spaceflight sheet](media/samples/redletter-crewed-spaceflight-2027.png)
@@ -45,12 +45,15 @@ newspaper. So the thing this repository actually builds is the **gate**:
 
 The vertical slice runs, on three calendars, end to end. What is true today:
 
-- **`data/chemistry.yaml`** — the field's year: **115 days, eight to twelve in
-  every month**, from the Royal Society of Chemistry's "On This Day" archive, the
+- **`data/chemistry.yaml`** — the field's year: **92 days, six to ten in every
+  month**, from the Royal Society of Chemistry's "On This Day" archive, the
   Nobel Foundation and IUPAC. Mendeleev's table, the isolation of fluorine, the
-  first noble-gas compound, Curie's radium, Pauling's death, the naming of
-  elements 118. Every day is a dated event with a body of record behind it, and
-  **115 of 115 verify**.
+  first noble-gas compound, Curie's radium, the naming of elements 118, and one
+  death — Curie's, whose source states it was caused by her exposure to the
+  radioactive materials she worked with. Every day is a dated event with a body of record behind it, and
+  **92 of 92 verify**. The calendar carries births and events: a person's death
+  prints only when a source says the work caused it, and the other 23 deaths the
+  archive once offered are not here.
 - **`data/chemistry-laureates.yaml`** — the people calendar: **72 days, six in
   every month**, built from the Nobel Prize's own API through
   `scripts/from_nobel.py`. Every laureate of the chemistry prize, on the day they
@@ -59,22 +62,25 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 
 - **`scripts/verify_days.py`** fetches every source and derives each day's status.
   Spaceflight reads **10 active, 0 provisional, 0 contested, 0 quarantined** — 20
-  sources across four publishers; chemistry reads **115 active** of 115.
+  sources across four publishers; chemistry reads **92 active** of 92. A person's
+  death is held to one rule more: it is `refused` unless a source that can be read
+  states the death was caused by their work.
 - **`scripts/from_lines.py`** turns a researcher's `MM-DD | YYYY | sentence | URL |
   publisher` file into candidate records, refusing malformed lines and catching a
   date that contradicts its own source URL before any request is made.
 - **`scripts/render_grid.py`** draws the 2027 sheet (a year of month grids) or one
   month, as a PNG to look at, an SVG to print, and — with `--pdf` — a book: a cover
   page, then one page per month with each day's detail printed inside its date
-  cell. All three emitters draw the same list of primitives, so the screen, the
-  print and the book cannot disagree about a page.
+  cell. A person's cell says what they are known for, in the record's own words.
+  All three emitters draw the same list of primitives, so the screen, the print and
+  the book cannot disagree about a page.
 - **`scripts/build_ics.py`** writes all-day, yearly-repeating events and parses the
   file back before it lands: DATE values, a YEARLY rule and a UID on every event,
   CRLF, no line over 75 octets.
-- **`tests/`** — 151 tests: unit tests that pin the status rules, the date matcher
+- **`tests/`** — 172 tests: unit tests that pin the status rules, the date matcher
   and the research format with the network faked, and integration tests that run
   all three scripts against a local web server. One of them reads the live web and
-  is opt-in, so 150 run offline; CI runs the offline suite on 3.9 and 3.12.
+  is opt-in, so 171 run offline; CI runs the offline suite on 3.9 and 3.12.
 - **Not built yet:** the skills that research and verify a *new* topic end to end.
   The intake side exists — a formatted file in, judged candidates out — but
   finding the days is still a person or an assistant doing research.
@@ -85,7 +91,7 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 151 tests: 150 offline, the network one opt-in
+pytest -q                     # 172 tests: 171 offline, the network one opt-in
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 
@@ -167,6 +173,7 @@ verifier writes them into `out/`. A fact with two homes has one home that is wro
 | `provisional` | they agree, but it is one publisher, or only one agreeing source | no |
 | `contested` | sources were read and disagreed about the day | no |
 | `quarantined` | nothing could be read | no |
+| `refused` | a person's death, with no readable source stating that the work caused it | no |
 
 `data/sources-allowlist.yaml` is the visible exception to the two-publisher rule: a
 body of record — the Nobel Foundation, the ACS, the RSC, IUPAC — is enough on its

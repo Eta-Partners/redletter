@@ -3,6 +3,132 @@
 One entry per choice that a reader could reasonably have made differently. The
 date is when the choice was made; the source says who made it or what forced it.
 
+## 2026-11-16 · The fame line, births only, and the death that has a cause
+
+TJ, on Slack at 17:10Z: *"Can we include why people are famous? What they are
+famous (known) for? And is it possible to only have the births and not the
+deaths. (Unless it is significant 'They died due to their experiments/work
+on…')"*. Three decisions, and the ruling on each is the operator's, relayed by
+`orch-lead` on `qitem-20261116171455-bc2ff06b`.
+
+**The fame line is the record's own blurb minus the name the title prints.** A
+person's cell printed `Marie Curie is born` and then a blurb opening `Marie
+Curie, …`: the name twice, and never the reason. `fame_line(title, blurb)` strips
+a leading `<title subject>, ` — the subject is the title without its ` is born` /
+` dies` — and the cell prints the rest, capped at two lines. Every character it
+draws is a substring of the approved sentence, which is the property the tests
+assert over every person record in all three datasets: `fame in blurb`. A title
+that is not a person's day gets None, so `first`, `discovery`, `milestone` and
+`launch` cells are unchanged.
+
+*Which records take each path, parsed rather than assumed.* Chemistry: 43 of 43
+person records open with their subject and take the strip (42 births and Curie's
+death). Laureates: 0 of 72 take it — every laureate blurb opens `Nobel Prize in
+Chemistry <year> in <country>: …`, not with the name — so all 72 print unchanged,
+which is the rule for a blurb that does not open with its subject. The
+expectation was 42 of 42 and 72 of 72 stripped; the laureate figure is the one
+that was wrong. Spaceflight has no person records. The unstripped path is not a
+fallback that happened to fire: it is the whole laureate calendar, and a name
+this code trimmed at a guess would be a word it invented.
+
+**The cap is two lines, and the table says what it costs.** The cell draws the
+fame line in the blurb's grey at 0.86x the title's size, always — the 1.5 pt rule
+below decides whether a *blurb* is worth its cost and does not decide this, which
+is the operator's ruling: TJ asked for the detail. `blurb_is_worth_it` still has a
+caller (non-person cells) and still fires: spaceflight at A4 portrait, January and
+July, is chosen at 9 pt with the blurb. Measured across all twelve books, A4
+landscape (the default book shape, 13 pages, 12 month pages):
+
+| Book | cap | person cells | fame drawn | fame ending in … | pages whose size changed | pages down >1 step |
+| --- | --- | --- | --- | --- | --- | --- |
+| chemistry, 92 records | 2 lines | 43 | 43 | 41 | 0 | 0 |
+| chemistry, 92 records | 1 line | 43 | 43 | 43 | 0 | 0 |
+| laureates, 72 records | 2 lines | 64 | 61 | 61 | 9 | 3 (Jan 9→6.5, May 9.5→8, Aug 9.5→8) |
+| laureates, 72 records | 1 line | 64 | 60 | 60 | 3 (Jan 9→7, May/Aug 9.5→9) | 1 (Jan) |
+| spaceflight, 10 records | either | 0 | 0 | 0 | 0 | 0 |
+
+The other shapes: at A4 portrait the laureate book moves only its January page,
+9.5 to 9 pt at either cap; at Letter portrait January goes 9.5 to 7.5 with two
+lines and 9.5 to 9 with one; at Letter landscape the laureate book loses more
+(two lines: March 8.5→7, May and August 9.5→7; one line: March 8.5→7.5, May and
+August 9.5→8.5, November 9.5→9). Spaceflight is identical at every shape and cap,
+having no person cells. So two lines cost more than a step of type on three of
+twelve pages at the default shape, not on most pages, and the ruling's two lines
+stand.
+What the numbers also say, plainly: on the default chemistry book 41 of 43 fame
+lines end in an ellipsis, because a 48–119 character sentence in a ~20-character
+cell is cut at two lines. The one-line cap cuts all 43. Two lines therefore buys
+roughly twice the sentence for type the chemistry book does not pay at all, and
+the laureate book pays in January, May and August.
+
+**The cell's truncation budget is a height, not a line count.** `truncate_blocks`
+took a count of lines computed at the title's size, so a cell whose fame lines are
+set smaller lost lines it had room for: 7 cells on the laureate book at A4
+landscape and 2 on the spaceflight book at A4 portrait were cut by a budget that
+said they did not fit while the chooser had just found that they did. It now takes
+the cell's room in points and keeps the blocks whose height fits. One mechanism,
+and the fame line is what made the mismatch visible on every person cell.
+
+**Births only, with one exception, and the exception is a criterion the gate
+applies.** The 24 `kind: loss` records in `chemistry.yaml` were 24 deaths with a
+date and no reason; the book keeps a death only when a source states the death was
+caused by the person's work. Such a record carries:
+
+```yaml
+work_caused:
+  statement: "<the causal sentence, which must also appear in the blurb>"
+  evidence: "<a short phrase that must appear in the cited page>"
+  source_url: "<a URL whose host is on data/sources-allowlist.yaml>"
+```
+
+`verify_days.py` refuses every other death: `is_person_death` (a `kind: loss`
+whose title ends ` dies`), `work_caused_gap` (the block is present, `evidence` is
+inside `statement`, `statement` is inside the blurb, the host is allowlisted), and
+`cause_stated` (the evidence phrase is in the visible text of the page when it is
+read). The last two are pure functions over the record, the allowlist and the
+page text, so the offline suite feeds a page that states the cause and one that
+does not. A refused record gets the status `refused`, a fifth rung beside
+`active`/`provisional`/`contested`/`quarantined`: the date may be perfect and the
+claim still not allowed, and a record that vanished from the ladder would be a
+silent deletion. Nothing renders `refused`; the renderer already draws only
+`active` and names what it skips.
+
+The scope is a person's death and not the word `loss`, because crewed spaceflight
+uses `kind: loss` for a mission whose crew were killed (`Challenger is lost`) and
+that calendar is not a people calendar; the rule must not delete its days. The
+gate and the renderer read the same title form, and a test over all three
+datasets asserts they agree on which records are people.
+
+*The one record that passes, and what it costs to be honest about it.* Marie
+Curie survives. Her cited page is
+`periodic-table.rsc.org/element/88/radium` — `rsc.org` on the allowlist, HTTP 200,
+23,966 visible characters — and it says: *"Although Marie Curie lived until 1934,
+her death from aplastic anaemia is almost certainly due to her exposure to
+radioactive materials, particularly radium."* Her blurb now reads *"Marie Curie,
+discoverer of polonium and radium and twice a Nobel laureate, died of aplastic
+anaemia almost certainly due to her exposure to radioactive materials."* Three
+things are deliberate. **The hedge prints**: the page says *almost certainly*, so
+the blurb says it too, rather than flatly stating a cause the source hedges.
+**"died in Savoy, France" leaves the blurb**, and it was sourced — the Nobel
+biography that carries the 4 July 1934 date still states it and is still in
+`sources:`; the place was dropped to print the cause, not because it was
+unsupported. **The block's `source_url` need not state the date**: the date is the
+`sources:` ladder's job, and the operator ruled that the cause page answers only
+for the cause. The 23 other deaths had no such source and are not in the file;
+`chemistry.yaml` goes from 115 records to 92 — 42 birth, 1 loss, 9 first, 20
+discovery, 20 milestone — and six to ten days in every month. `topic.kinds` keeps
+`loss`, because one survives.
+
+**What the criterion proves, and what it does not.** It proves the evidence phrase
+is on the page that was cited, in the words a reader sees. It does not prove the
+phrase is the right fact about that death: choosing the phrase, and judging it the
+cause, is an editorial act made once in one record, the same kind of judgement
+`data/sources-allowlist.yaml` already records. It also extends what that file
+means. It was written to vouch for a *date*; the death rule uses it to vouch for a
+*causal statement about a death*, which is a wider claim than a body of record
+makes when it prints a day. That extension is visible here beside the rule and in
+the one record it reaches.
+
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
 **Change.** `render_grid.py` gains a third emitter. `--pdf` lays the same drawing
