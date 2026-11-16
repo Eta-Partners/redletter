@@ -393,8 +393,10 @@ A4 portrait, 5 at Letter landscape and 6 at Letter portrait.
 
 Across the twelve books (three datasets at four paper shapes) the old path lost 25
 person record-drawings, all of them in the laureate book: 7 at A4 landscape and 6
-at each of the other three shapes. Chemistry drew its 43 person records whole at
-every shape (its cells are sparse) and spaceflight has no person records.
+at each of the other three shapes. Chemistry drew all 43 person records whole at
+every shape under this section's cut criterion (its cells are sparse), and
+spaceflight has no person records; the word criterion the next section installs
+finds one of them split — Vauquelin at A4 portrait.
 
 Of those 25, 21 lost the name itself; the other four are names that stood whole
 while the title text around them was cut — von Baeyer at both landscape shapes, and
