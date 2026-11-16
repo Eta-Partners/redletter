@@ -288,8 +288,9 @@ COTTRELL_BLURB = ("Frederick Gardner Cottrell, inventor of the electrostatic pre
 
 
 def test_the_fame_line_is_the_blurb_minus_the_name_the_title_prints():
+    """The name, and then the birth clause: the title already prints both."""
     assert rg.fame_line(COTTRELL_TITLE, COTTRELL_BLURB) == (
-        "inventor of the electrostatic precipitator for removing smoke particles from air, was born.")
+        "inventor of the electrostatic precipitator for removing smoke particles from air")
 
 
 def test_a_blurb_that_does_not_open_with_the_title_subject_prints_whole():
@@ -422,6 +423,89 @@ def test_a_fame_line_with_no_colon_is_untouched():
         "inventor of the electrostatic precipitator"
 
 
+# --------------------------------------- the birth clause the title already says
+#
+# The chemistry blurbs end "..., was born." and the title already says "X is
+# born", the same repetition the name strip removes. The rule is a trailing
+# clause at the end of the string only, and its tail is bounded: Curie's death
+# sentence begins ", died of aplastic anaemia almost certainly due to ..." and
+# that is the record's content, not a repetition of its title.
+
+CURIE_BIRTH_BLURB = ("Marie Curie, pioneering physicist and chemist and the first "
+                     "person awarded two Nobel Prizes, was born in Warsaw.")
+CURIE_DEATH_BLURB = ("Marie Curie, discoverer of polonium and radium and twice a Nobel "
+                     "laureate, died of aplastic anaemia almost certainly due to her "
+                     "exposure to radioactive materials.")
+
+
+def test_a_trailing_birth_clause_is_dropped_with_its_comma():
+    blurb = ("Frederick Gardner Cottrell, inventor of the electrostatic precipitator "
+             "for removing smoke particles from air, was born.")
+    fame = rg.fame_line("Frederick Gardner Cottrell is born", blurb)
+    assert fame == "inventor of the electrostatic precipitator for removing smoke particles from air"
+    assert not fame.endswith(","), "the comma goes with the clause"
+    assert fame in blurb, "still a substring of the approved sentence"
+
+
+def test_a_birth_clause_that_names_the_place_is_dropped_whole():
+    """Curie's birth ends ", was born in Warsaw." and changes like every other birth."""
+    fame = rg.fame_line("Marie Curie is born", CURIE_BIRTH_BLURB)
+    assert fame == "pioneering physicist and chemist and the first person awarded two Nobel Prizes"
+
+
+def test_the_death_that_states_its_cause_keeps_its_sentence():
+    """Her death record ends with the cause, not a birth clause; it must not change."""
+    fame = rg.fame_line("Marie Curie dies", CURIE_DEATH_BLURB)
+    assert fame == ("discoverer of polonium and radium and twice a Nobel laureate, "
+                    "died of aplastic anaemia almost certainly due to her exposure "
+                    "to radioactive materials.")
+
+
+def test_a_short_clause_that_states_a_cause_is_not_read_as_a_repetition():
+    """The bound on the tail is what saves a cause written as ", died of X.".
+
+    One to three words after the predicate is a place; a longer tail is content,
+    and is left alone rather than risk deleting the reason the record exists.
+    """
+    assert rg.without_birth_clause("He, died of aplastic anaemia.") == \
+        "He, died of aplastic anaemia."
+
+
+def test_a_blurb_that_merely_contains_was_born_is_untouched():
+    assert rg.without_birth_clause("She was born in Warsaw and later moved to Paris.") == \
+        "She was born in Warsaw and later moved to Paris."
+    assert rg.without_birth_clause("Born in Warsaw, she trained in Paris.") == \
+        "Born in Warsaw, she trained in Paris."
+
+
+def test_the_birth_clause_rule_is_a_no_op_on_every_laureate_record():
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    days = yaml.safe_load((root / "data" / "chemistry-laureates.yaml").read_text())["days"]
+    assert len(days) == 72
+    assert not [d["id"] for d in days if rg.without_birth_clause(d["blurb"]) != d["blurb"]]
+    assert not [d["id"] for d in days
+                if "was born" in rg.fame_line(d["title"], d["blurb"])]
+
+
+def test_the_birth_clause_rule_reaches_every_chemistry_birth_and_not_the_death():
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    days = yaml.safe_load((root / "data" / "chemistry.yaml").read_text())["days"]
+    people = [d for d in days if d["title"].endswith((" is born", " dies"))]
+    births = [d for d in people if d["title"].endswith(" is born")]
+    deaths = [d for d in people if d["title"].endswith(" dies")]
+    assert len(births) == 42 and len(deaths) == 1
+    assert all("was born" not in rg.fame_line(d["title"], d["blurb"]) for d in births)
+    assert all(rg.without_birth_clause(d["blurb"]) != d["blurb"] for d in births)
+    assert deaths[0]["id"] == "D-CHE-C050"
+    assert rg.without_birth_clause(deaths[0]["blurb"]) == deaths[0]["blurb"]
+
+
 def test_the_reason_clauses_split_the_way_the_measure_names_them():
     """57 open "for ...", 15 "in recognition of ...": a "for"-keyed rule loses 15.
 
@@ -442,6 +526,48 @@ def test_the_reason_clauses_split_the_way_the_measure_names_them():
     assert sum(1 for r in reasons if r.startswith("in recognition of ")) == 15
     assert len(reasons) == 72
     assert not [r for r in reasons if "Nobel Prize" in r], "a surviving label is not drawn"
+
+
+def test_no_laureate_fame_line_begins_with_the_award_label():
+    """The structural fact the whole change rests on, counted without a matcher.
+
+    Every laureate blurb begins "Nobel Prize in Chemistry ..."; after the rule, no
+    fame line does. It needs no word matcher, so a rewrite of the coverage measure
+    cannot quietly restore the label.
+    """
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    days = yaml.safe_load((root / "data" / "chemistry-laureates.yaml").read_text())["days"]
+    assert sum(1 for d in days if d["blurb"].startswith("Nobel Prize")) == 72
+    assert sum(1 for d in days
+               if rg.fame_line(d["title"], d["blurb"]).startswith("Nobel Prize")) == 0
+
+
+def test_the_populations_the_tables_count_are_the_ones_the_data_has():
+    """Records, cells and person cells, parsed: the figures every column names.
+
+    The laureate book packs 72 records into 64 month-day cells, all of them a
+    person's; chemistry has 92 records in 91 cells, 43 of them a person's. These
+    are the denominators, and a column that says 51 or 64 without saying which is
+    why this test exists.
+    """
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+
+    def counts(name):
+        days = yaml.safe_load((root / "data" / name).read_text())["days"]
+        people = [d for d in days if rg.fame_line(d["title"], d["blurb"]) is not None]
+        return (len(days),
+                len({d["month_day"] for d in days}),
+                len(people),
+                len({d["month_day"] for d in people}))
+
+    assert counts("chemistry-laureates.yaml") == (72, 64, 72, 64)
+    assert counts("chemistry.yaml") == (92, 91, 43, 43)
 
 
 # ------------------------------------------------- reason reached, on the page
@@ -525,11 +651,19 @@ def test_the_laureate_book_reaches_the_reason_clause(tmp_path):
 
 @requires_font
 def test_the_chemistry_book_was_already_at_the_reason(tmp_path):
-    """43 of 43: chemistry blurbs open with the name, so the strip already lands."""
+    """43 of 43 reach; 14 print the whole line, which is now the whole answer.
+
+    The line used to end ", was born.", which the title already says; dropping it
+    makes the fame line and the answer the same string, so whole-line and
+    whole-answer are one number. Before the drop, two lines printed whole *with*
+    the clause and nine printed the whole answer without it; after, 14 do - the
+    ceiling the operator pre-registered (10 + at most 4, their instrument counting
+    one cell more whole than mine at the start).
+    """
     rows, sizes = reason_reach(shipped_days("chemistry.yaml", tmp_path))
     assert len(rows) == 43
     assert sum(r["reached"] for r in rows) == 43
-    assert sum(r["whole"] for r in rows) == 2
+    assert sum(r["whole"] for r in rows) == 14
     assert sum(r["drawn"] for r in rows) == 43
     assert sizes == [7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7]
 

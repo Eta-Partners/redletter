@@ -24,6 +24,7 @@ import datetime as dt
 import json
 import math
 import pathlib
+import re
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -483,6 +484,30 @@ MIN_HANG_CHARS = 8
 FAME_LINES = 2
 
 
+# The clause the title already says: ", was born.", ", was born in Warsaw.",
+# ", died." - the predicate, optionally with a place. The tail is a place and not
+# any words: an unbounded tail reads Curie's death sentence ("died of aplastic
+# anaemia almost certainly due to her exposure to radioactive materials") as a
+# repetition and deletes the cause, which is the one thing that record is for.
+BIRTH_CLAUSE = re.compile(r",\s(?:was born|died)(?:\sin\s\S+(?:\s\S+){0,2})?\.$")
+
+
+def without_birth_clause(text):
+    """The fame line without a trailing ", was born." / ", died." clause.
+
+    The chemistry blurbs end "..., was born." (one ends ", was born in Warsaw.");
+    the title already says "X is born", so the cell says it twice, exactly as it
+    used to say the name twice before `fame_line` stripped that. Dropping the
+    comma with the clause leaves the drawn line on its last word rather than on a
+    dangling comma, and leaves it a substring of the approved blurb.
+
+    The clause is matched only at the end of the string, so a blurb that merely
+    contains the words mid-sentence is untouched. A sentence that states the cause
+    of a death - Curie's - does not end in one of these clauses and is untouched.
+    """
+    return BIRTH_CLAUSE.sub("", text)
+
+
 def after_label(text):
     """The reason clause when `text` opens with a citation label, else `text`.
 
@@ -519,14 +544,22 @@ def fame_line(title, blurb):
     does not open with the title's subject, it is returned whole rather than
     trimmed at a guess: a name this code trimmed off would be a word it invented,
     and the record would print a sentence with its subject missing. The label
-    rule then applies to whatever remains (`after_label`).
+    rule then applies to whatever remains (`after_label`), and the birth clause
+    the title already says comes off last (`without_birth_clause`).
     """
     suffix = person_suffix(title)
     if suffix is None:
         return None
     prefix = title[: -len(suffix)] + ", "
-    fame = blurb[len(prefix):] if blurb.startswith(prefix) else blurb
-    return after_label(fame)
+    if not blurb.startswith(prefix):
+        return after_label(blurb)
+    # The clause comes off only on the sentence that leads with the person and
+    # whose subject is the title. On a sentence that does not - "That inventor of
+    # the electrostatic precipitator, Cottrell, was born in Ohio." - the same
+    # words are the sentence's own predicate, and dropping them would leave a
+    # subject with nothing said about it, which is the failure the no-silent-
+    # stripping rule above exists to prevent.
+    return without_birth_clause(after_label(blurb[len(prefix):]))
 
 
 def cell_blocks(events, chars, size, with_blurb):

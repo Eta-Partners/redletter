@@ -270,6 +270,60 @@ either keeps them or has to delete a named expectation. The shipped data has
 `Challenger is lost` as its only `kind: loss` that is not a person, and Curie's
 title is the bare `Marie Curie dies`.
 
+## 2026-11-16 · The fame line drops the birth clause the title already says
+
+The operator's coverage work, relayed as the third amendment to
+`qitem-20261116173409-5fc50da5dcfd761e`. The chemistry blurbs end "..., was born."
+on 41 of 43 records and ", was born in Warsaw." on one; the title already says "X is
+born", so the cell said it twice, exactly as it used to say the name twice.
+
+**The rule, and its two guards.** A trailing ", was born." / ", died." clause comes
+off, with its comma, so the drawn line ends on its last word rather than on a
+dangling comma, and stays a substring of the approved blurb. The place goes with
+the clause: Curie's birth ends ", was born in Warsaw." and lands on "the first
+person awarded two Nobel Prizes". Two guards, both of them the same reasoning the
+name strip already uses:
+
+- It applies only to the sentence that leads with the person — the one the name
+  strip produced. On a sentence that does not ("That inventor of the electrostatic
+  precipitator, Cottrell, was born in Ohio.") the same words are the sentence's own
+  predicate, and dropping them would leave a subject with nothing said about it,
+  which is the failure the no-silent-stripping rule exists to prevent.
+- The tail after the predicate is a place (`in`, then at most three words), not
+  any words. An unbounded tail reads Curie's death sentence — "died of aplastic
+  anaemia almost certainly due to her exposure to radioactive materials" — as a
+  repetition and deletes the cause, which is the one thing that record is for. She
+  is the guard's real case: her death is unchanged, her birth changes normally.
+
+It is a no-op on all 72 laureate records and on any blurb that merely contains
+"was born" mid-sentence; all three are pinned by tests.
+
+**What it buys, measured.** Positional, per record, A4 landscape, twelve month
+pages, with each record rendered alone in a cell of the page's geometry (the
+criterion is the table's above, not the audit's cell columns):
+
+| chemistry | answer median | cells missing answer text | whole answer | drawn median |
+| --- | --- | --- | --- | --- |
+| before this commit | 70.0% | 34 of 43 | 9 | 55.6% |
+| with the clause dropped | 70.0% | 29 of 43 | 14 | 70.0% |
+
+The whole-answer count moved and the median did not. Five records gained their
+whole answer, each by exactly one word — Beilstein 6 of 7 to 7 of 7, Brønsted 7 of
+8 to 8 of 8, Lecoq de Boisbaudran 5 of 6 to 6 of 6, Smalley 6 of 7 to 7 of 7,
+Mulliken 5 of 6 to 6 of 6 — which is what eleven characters do at 6 pt: one small
+word. The drawn median rises because the clause left the denominator, not because
+text arrived where there was none. The laureate book does not move in any column.
+
+The operator pre-registered the bound at "whole 10 to at most 14, median 67% to a
+modest rise", with 33 cells missing answer text at `4f0143b`. My instrument reads
+one cell differently at the start (9 whole, 34 missing) and lands on the same
+ceiling: 14. So: the change completes five answers and does not raise the median at
+all. It is kept for legibility — the cell stops repeating the title's own clause —
+and because it costs no page a step of type; it is not kept for room it did not buy.
+The audit's chemistry columns quoted above (50% drawn, 67% answer, 10 whole of 43
+cells) were measured at `1097ed8`, before this drop; the numbers here are mine and
+the audit should be re-run at the new sha rather than assumed.
+
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
 **Change.** `render_grid.py` gains a third emitter. `--pdf` lays the same drawing
