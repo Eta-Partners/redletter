@@ -573,10 +573,28 @@ buys fairness where the cell affords two or more reason lines; where it affords 
 the first person still has it and the second is counted by nothing, because both
 their names are drawn.
 
+**Why the no-op is the constraint and not the rule.** At 8 pt in the 19 March cell
+the box has 64.70 pt of height and the five title lines take 52.80 pt, so the detail
+pool is 11.90 pt — 1.127 lines of 10.56 pt. A second reason line needs the pool to
+reach 21.12 pt (2.0 lines), which is 9.22 pt more than the cell has. The round robin
+hands the one line it can afford to the record that comes first, and Joliot is
+named and dated instead. Reaching 2.0 lines would mean either more height
+than A4 landscape gives that cell or a smaller type than TJ allowed, so nothing
+moves there and nothing can.
+
+**The criterion, in the form this rule can meet.** Not "every person draws a reason
+line or is named on the count line" — at A4 landscape six of the fifteen
+multi-person records draw no reason line and appear on no count line: the second
+person at 03-19, 06-25 and 09-02, and all three at 08-30. They are visible because
+their titles are drawn whole. The checkable form is **no person is invisible: every
+person's title is drawn whole, and no person takes a second detail line before every
+person has had a first.** The commit passes that at all four shapes; the first
+wording it could never pass.
+
 **What this makes deliberate.** The audit has been reporting seven laureate cells
 with a zero-coverage fame line as a defect. Under this rule that is a choice: a
-person whose cell cannot afford a second reason line is named, dated and counted,
-not described. The truncation counts and the zero seven stay as they are; this
+person whose cell cannot afford a second reason line is named and dated, not
+described. The truncation counts and the zero seven stay as they are; this
 entry is where the decision to leave them is recorded.
 
 **The test.** The assertion is the gap, not the ordering: no earlier person draws
