@@ -10,6 +10,7 @@ from __future__ import annotations
 
 import calendar
 import json
+import math
 
 import pytest
 
@@ -417,6 +418,69 @@ def test_a_blurb_that_costs_exactly_one_and_a_half_points_is_not_preferred():
     assert rg.blurb_is_worth_it(8, 9.0) is True
     assert rg.blurb_is_worth_it(7.5, 8.5) is True, "BLURB_MIN_PT itself is allowed"
     assert rg.blurb_is_worth_it(7, 9.5) is False, "below BLURB_MIN_PT, however cheap"
+
+
+def _pre_split_cell_blocks(events, chars, size, with_blurb):
+    """The cell before the blurb left the hang: the blurb wrapped at `chars - hang`.
+
+    Kept here rather than in `render_grid`, because it is the shape the split is
+    measured against — a counterfactual, not a mode anyone can select.
+    """
+    blocks, height = [], 0.0
+    for year, title, blurb in events:
+        hang = len(str(year)) + 2
+        if chars - hang < rg.MIN_HANG_CHARS:
+            hang = 0
+        wrapped = rg.wrap_to(f"{year}  {title}", chars)
+        lines = rg.fit_to_width([wrapped[0]], chars, 0)
+        rest = " ".join(wrapped[1:])
+        if rest:
+            lines += rg.fit_to_width(rg.wrap_to(rest, chars - hang), chars, hang)
+        for ln, indent in lines:
+            blocks.append((ln, size, rg.INK, indent))
+            height += size * rg.CELL_LEADING
+        if with_blurb and blurb:
+            bsize = size * rg.BLURB_SCALE
+            for ln, indent in rg.fit_to_width(rg.wrap_to(blurb, chars - hang), chars, hang):
+                blocks.append((ln, bsize, rg.GRAY, indent))
+                height += bsize * rg.CELL_LEADING
+    return blocks, height
+
+
+def _choose_with(cell_blocks, cells, w_pt, h_pt):
+    """`choose_cell_type`'s decision, over a given cell builder."""
+    nonempty = [c for c in cells if c]
+
+    def best(with_blurb):
+        allowed = math.ceil(len(nonempty) / 10)
+        need = max(1, len(nonempty) - allowed)
+        for size in rg.CELL_PT:
+            fits = sum(1 for ev in nonempty
+                       if cell_blocks(ev, rg.cell_chars(w_pt, size), size, with_blurb)[1] <= h_pt)
+            if fits >= need:
+                return size
+        return rg.CELL_PT[-1]
+
+    title_size, blurb_size = best(False), best(True)
+    if rg.blurb_is_worth_it(blurb_size, title_size):
+        return blurb_size, True
+    return title_size, False
+
+
+def test_the_blurb_costs_one_step_of_type_in_a_narrow_cell():
+    """The example the split is justified with, as an assertion anyone can re-run.
+
+    A 70 by 45 pt cell — A4 portrait's inner width is about 69 pt — holding one
+    event with these two strings. Sharing the hang keeps 9.5 pt and drops the
+    blurb; at the cell's edge the blurb costs one step, less than 1.5, so it is
+    chosen at 9 pt. No shipped page produces the case: the shortest shipped blurb
+    is 34 characters. If these numbers move, the `cell_blocks` docstring is making
+    a claim this test no longer supports.
+    """
+    entry = [(1961, "A short title", "Xenon and platinum react")]
+    assert _choose_with(_pre_split_cell_blocks, [entry], 70, 45) == (9.5, False)
+    assert _choose_with(rg.cell_blocks, [entry], 70, 45) == (9.0, True)
+    assert rg.choose_cell_type([entry], 70, 45) == (9.0, True), "the stand-in agrees"
 
 
 @requires_font

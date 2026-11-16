@@ -71,10 +71,10 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 - **`scripts/build_ics.py`** writes all-day, yearly-repeating events and parses the
   file back before it lands: DATE values, a YEARLY rule and a UID on every event,
   CRLF, no line over 75 octets.
-- **`tests/`** — 150 tests: unit tests that pin the status rules, the date matcher
+- **`tests/`** — 151 tests: unit tests that pin the status rules, the date matcher
   and the research format with the network faked, and integration tests that run
   all three scripts against a local web server. One of them reads the live web and
-  is opt-in, so 149 run offline; CI runs the offline suite on 3.9 and 3.12.
+  is opt-in, so 150 run offline; CI runs the offline suite on 3.9 and 3.12.
 - **Not built yet:** the skills that research and verify a *new* topic end to end.
   The intake side exists — a formatted file in, judged candidates out — but
   finding the days is still a person or an assistant doing research.
@@ -85,7 +85,7 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 150 tests: 149 offline, the network one opt-in
+pytest -q                     # 151 tests: 150 offline, the network one opt-in
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 

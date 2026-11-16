@@ -490,10 +490,11 @@ def cell_blocks(events, chars, size, with_blurb):
     The blurb prints at the cell's left edge. It is already distinguished from the
     title by grey and 0.86x type, and sharing the hang costs a step of type on the
     path that decides whether a blurb appears at all: in a 70 by 45 pt cell with
-    one event and a 22-character blurb, the hung page keeps 9.5 pt and no blurb,
-    while the blurb at the cell's edge is chosen at 9 pt with it. The hang was
-    suppressing the detail it was meant to organise. That case is a probe, not a
-    page: the shipped blurbs run 34 to 150 characters, and the split changes no
+    one event and a 24-character blurb, the hung page keeps 9.5 pt and no blurb,
+    while the blurb at the cell's edge is chosen at 9 pt with it (the exact strings
+    are pinned in test_the_blurb_costs_one_step_of_type_in_a_narrow_cell). The hang
+    was suppressing the detail it was meant to organise. That case is a probe, not
+    a page: the shipped blurbs run 34 to 150 characters, and the split changes no
     month page's choice in any of the twelve books — the blurb is drawn on two,
     spaceflight at A4 portrait January and July, and on those it is the blurb's
     own placement that moves, not the type. At A4 landscape no blurb is drawn at

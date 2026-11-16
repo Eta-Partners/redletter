@@ -81,7 +81,8 @@ the hung page keeps 9.5 pt and drops the blurb, while the blurb at the cell's
 edge is chosen at 9 pt. It was suppressing the detail it was meant to organise.
 The probe is not a page: the shipped blurbs run 34 to 150 characters (chemistry
 34 to 133, laureates 73 to 150, spaceflight 92 to 143), so no shipped blurb is
-short enough for that trade. Checked page by page over all three datasets at all
+short enough for that trade. Its inputs are pinned in `tests/test_render_grid.py`,
+so the justification is a test that fails if the numbers stop holding. Checked page by page over all three datasets at all
 four paper shapes, the split changes no month page's choice: the same type size
 and the same blurb-or-not on every one of the 144 month pages. The blurb is drawn
 only at A4 portrait, spaceflight January and July, and on those two the change is
