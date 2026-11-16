@@ -27,6 +27,12 @@ import pathlib
 
 from PIL import Image, ImageDraw, ImageFont
 
+# The one definition of "this record is about a person", shared with the gate so
+# the death rule and the fame line cannot drift. It lives in verify_days because
+# that module has no drawing dependency (Pillow is right here); importing it this
+# way round is also what keeps the gate runnable without a font or an image lib.
+from verify_days import person_suffix
+
 # Ink and paper. Mono except for the rubric: the red is information, not decoration.
 PAPER = "#FBF3E2"
 INK = "#221E1C"
@@ -477,8 +483,29 @@ MIN_HANG_CHARS = 8
 FAME_LINES = 2
 
 
+def after_label(text):
+    """The reason clause when `text` opens with a citation label, else `text`.
+
+    The laureate calendar's sentences open "Nobel Prize in Chemistry 1945 in Russian
+    Empire: for his research ...". What comes before the colon is the award, which
+    says what the day was; the clause after it says what the person is known for,
+    and that is what the cell exists to print. Without this, two lines of grey in a
+    laureate cell are spent on the label and the reason is never reached.
+
+    A label is recognised without knowing who wrote it: it carries no sentence
+    ending, and something non-empty follows the colon. A colon that arrives after a
+    full stop is inside a sentence, not a label, so that text is returned whole.
+    This chooses only where the substring starts; it never adds a word, so the fame
+    line stays a suffix of the approved blurb.
+    """
+    head, sep, rest = text.partition(": ")
+    if sep and rest.strip() and not any(ch in head for ch in ".!?"):
+        return rest
+    return text
+
+
 def fame_line(title, blurb):
-    """What a person is known for: the blurb, minus the name the title already prints.
+    """What a person is known for: the blurb, minus the name, then minus the label.
 
     A person's cell prints `Marie Curie is born` and then a blurb that opens
     `Marie Curie, ...`, so the name is said twice before anything is said about
@@ -487,19 +514,19 @@ def fame_line(title, blurb):
     the blurb, which is what makes it safe to print as fact.
 
     A title that is not a person's birthday or death day returns None, so a
-    discovery, a milestone or a mission never grows one. When the blurb does not
-    open with the title's subject, it is returned whole rather than trimmed at a
-    guess: a name this code trimmed off would be a word it invented, and the
-    record would print a sentence with its subject missing.
+    discovery, a milestone or a mission never grows one; the test is
+    `verify_days.person_suffix`, the same function the gate uses. When the blurb
+    does not open with the title's subject, it is returned whole rather than
+    trimmed at a guess: a name this code trimmed off would be a word it invented,
+    and the record would print a sentence with its subject missing. The label
+    rule then applies to whatever remains (`after_label`).
     """
-    for suffix in (" is born", " dies"):
-        if title.endswith(suffix):
-            subject = title[: -len(suffix)]
-            prefix = subject + ", "
-            if blurb.startswith(prefix):
-                return blurb[len(prefix):]
-            return blurb
-    return None
+    suffix = person_suffix(title)
+    if suffix is None:
+        return None
+    prefix = title[: -len(suffix)] + ", "
+    fame = blurb[len(prefix):] if blurb.startswith(prefix) else blurb
+    return after_label(fame)
 
 
 def cell_blocks(events, chars, size, with_blurb):
@@ -516,7 +543,8 @@ def cell_blocks(events, chars, size, with_blurb):
     drops it in portrait, where the cell is narrower than the year's indent.
 
     The blurb prints at the cell's left edge. It is already distinguished from the
-    title by grey and 0.86x type, and sharing the hang costs a step of type on the
+    title by grey and 0.86x type (the fame line is grey at the cell's own size, so
+    it shares only the grey), and sharing the hang costs a step of type on the
     path that decides whether a blurb appears at all: in a 70 by 45 pt cell with
     one event and a 24-character blurb, the hung page keeps 9.5 pt and no blurb,
     while the blurb at the cell's edge is chosen at 9 pt with it (the exact strings
@@ -546,9 +574,12 @@ def cell_blocks(events, chars, size, with_blurb):
         if fame:
             # Always drawn on a person's cell, whatever `with_blurb` says: the
             # question there is whether a page can afford detail, and a fame line
-            # capped at FAME_LINES is the detail that fits. The cap uses the same
+            # capped at FAME_LINES is the detail that fits. It prints at the cell's
+            # own size, not at the blurb's 0.86x: at 0.86 the laureate book set it
+            # at 5.59 pt under a 6.5 pt title, which is a footnote to the thing it
+            # explains rather than the content TJ asked for. The cap uses the same
             # ellipsis as the cell's own truncation, so a cut line says so.
-            fsize = size * BLURB_SCALE
+            fsize = size
             fblocks = [(ln, fsize, GRAY, 0)
                        for ln, _ in fit_to_width(wrap_to(fame, chars), chars, 0)]
             cap = FAME_LINES * fsize * CELL_LEADING
@@ -567,11 +598,12 @@ def truncate_blocks(blocks, height):
     """Keep a cell inside its box, and say so with an ellipsis.
 
     `height` is the room the box has, in points. It is a height and not a count of
-    lines because a cell's lines are not all one size: the fame line is set at
-    0.86x the title's, so counting lines at the title's size threw away fame lines
-    the cell had room for — seven on the laureate book at A4 landscape, two on the
-    spaceflight book at A4 portrait, all of them cells the chooser had just found
-    fitted. One 132-character entry — a Nobel citation quoted whole — would
+    lines because a cell's lines are not all one size: a blurb is set at 0.86x the
+    title's, as the fame line was until it moved to the cell's own size, so
+    counting lines at the title's size threw away detail the cell had room for —
+    seven fame lines on the laureate book at A4 landscape and two on the
+    spaceflight book at A4 portrait, every one of them a cell the chooser had just
+    found fitted. One 132-character entry — a Nobel citation quoted whole — would
     otherwise set the type size for every cell on the page. The sheet already
     truncates its key the same way; a line that ends in … is honest about being
     cut.
@@ -666,10 +698,30 @@ def build_cover(topic, marks, year, size, verified="", tagline=""):
     return prims
 
 
+def month_geometry(size, year, month):
+    """The month page's box, in points: the numbers every cell is laid out in.
+
+    `build_month_page` draws from these, and the tests that measure a cell's
+    content measure with them too, so a test cannot pass against geometry the page
+    does not use.
+    """
+    W, H = size
+    M = W * 0.045
+    weeks = month_days(year, month)
+    grid_top = M + 78 + 8
+    grid_bottom = H - M - 30
+    cell_w = (W - 2 * M) / 7
+    row_h = (grid_bottom - grid_top) / len(weeks)
+    return {"margin": M, "weeks": weeks, "cell_w": cell_w, "row_h": row_h,
+            "grid_top": grid_top, "grid_bottom": grid_bottom,
+            "inner_w": cell_w - 8, "inner_h": row_h - 16}
+
+
 def build_month_page(topic, marks, year, month, size, verified=""):
     """One month, with the day's detail inside its own cell."""
     W, H = size
-    M = W * 0.045
+    geo = month_geometry(size, year, month)
+    M = geo["margin"]
     cell_title = 15
     prims = [rect(0, 0, W, H, PAPER)]
 
@@ -679,23 +731,23 @@ def build_month_page(topic, marks, year, month, size, verified=""):
     prims.append(text(W - M, M + 40, topic["title"], 10, GRAY, anchor="end"))
     prims.append(line(M, M + 58, W - M, M + 58, INK, 1))
 
-    weeks = month_days(year, month)
+    weeks = geo["weeks"]
     head_y = M + 78
-    cell_w = (W - 2 * M) / 7
+    cell_w = geo["cell_w"]
     prims.append(line(M, head_y, W - M, head_y, INK, 0.75))
     for i, wd in enumerate("MTWTFSS"):
         prims.append(text(M + cell_w * (i + 0.5), head_y - 5, wd, 8, GRAY, anchor="middle"))
 
-    grid_top = head_y + 8
-    grid_bottom = H - M - 30
+    grid_top = geo["grid_top"]
+    grid_bottom = geo["grid_bottom"]
     # The rows a month actually uses, not a fixed six: February 2027 needs four,
     # and spending two empty rows on it would set the whole page's type smaller.
     rows = len(weeks)
-    row_h = (grid_bottom - grid_top) / rows
+    row_h = geo["row_h"]
     by_month = marks.get(month, {})
 
-    inner_w = cell_w - 8
-    inner_h = row_h - 16
+    inner_w = geo["inner_w"]
+    inner_h = geo["inner_h"]
     cells = [by_month.get(day, []) for week in weeks for day in week]
     cell_pt, with_blurb = choose_cell_type(cells, inner_w, inner_h)
     budget = inner_h

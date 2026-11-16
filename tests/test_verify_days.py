@@ -416,6 +416,40 @@ def test_a_birth_is_never_asked_for_a_cause(monkeypatch):
     assert "work_caused" not in out
 
 
+@pytest.mark.parametrize("title,suffix", [
+    ("Marie Curie is born", " is born"),
+    ("Marie Curie dies", " dies"),
+    ("Challenger is lost", None),
+    ("Zarya opens the International Space Station", None),
+    ("", None),
+    (None, None),
+])
+def test_person_suffix_names_the_two_person_day_forms(title, suffix):
+    """The one predicate both the gate and the renderer call."""
+    assert vd.person_suffix(title) == suffix
+
+
+def test_a_spaceflight_record_naming_a_person_is_read_as_a_person_death():
+    """Known over-reach, written down rather than papered over.
+
+    The rule's unit is the title, not the dataset: a spaceflight record for
+    Komarov — who died when Soyuz 1's parachute failed — would be matched and
+    refused for want of a work_caused block. No such record ships today; the one
+    the book carries is "Challenger is lost". See DECISIONS.md.
+    """
+    assert vd.is_person_death({"kind": "loss", "title": "Vladimir Komarov dies"}) is True
+
+
+def test_a_title_that_states_its_cause_escapes_the_rule():
+    """Known under-reach, the other direction: the rule reads a suffix, not a claim.
+
+    "Marie Curie dies of aplastic anaemia" does not end " dies", so it would print
+    as an ordinary day with no causal gate at all. The shipped record keeps the
+    bare title; a future dataset must not lean on a title to satisfy the rule.
+    """
+    assert vd.is_person_death({"kind": "loss", "title": "Marie Curie dies of aplastic anaemia"}) is False
+
+
 def test_a_mission_lost_is_not_a_person_death(monkeypatch):
     """The rule is about people, not about the word `loss`.
 

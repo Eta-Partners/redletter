@@ -118,6 +118,30 @@ def authority_for(url: str, allowlist: dict[str, str]):
 
 
 WORK_CAUSED_FIELDS = ("statement", "evidence", "source_url")
+PERSON_SUFFIXES = (" is born", " dies")
+
+
+def person_suffix(title) -> str | None:
+    """The person-day suffix a record's title ends with, or None.
+
+    This is the one definition of "this record is about a person", and both the
+    gate (`is_person_death`) and the renderer (`render_grid.fame_line`) call it, so
+    the death rule and the fame line cannot come to disagree about which records
+    they are talking about. It lives here because this module has no drawing
+    dependency; the renderer imports it rather than keeping a second copy.
+
+    The unit of the rule is the title, and that is its known limit. Two breaks were
+    found in review and neither is live (see DECISIONS.md): a spaceflight record
+    titled "Vladimir Komarov dies" would be read as a person's death even though
+    that book is not a people calendar, and "Marie Curie dies of aplastic anaemia"
+    would not be read as one at all, so a title that carries its cause would escape
+    the gate.
+    """
+    text = str(title or "")
+    for suffix in PERSON_SUFFIXES:
+        if text.endswith(suffix):
+            return suffix
+    return None
 
 
 def is_person_death(day: dict) -> bool:
@@ -125,12 +149,10 @@ def is_person_death(day: dict) -> bool:
 
     `kind: loss` alone is not enough: crewed spaceflight uses it for a mission whose
     crew were killed — "Challenger is lost" — and that book is not a people
-    calendar, so the rule must not delete its days. The test is the title form the
-    renderer already reads to decide a cell is a person's day (`render_grid.fame_line`),
-    and a test over the shipped datasets asserts the two agree, so the rule and the
-    fame line cannot drift into talking about different records.
+    calendar, so the rule must not delete its days. The test is `person_suffix`, the
+    same function the renderer reads to decide a cell is a person's day.
     """
-    return day.get("kind") == "loss" and str(day.get("title", "")).endswith(" dies")
+    return day.get("kind") == "loss" and person_suffix(day.get("title")) == " dies"
 
 
 def work_caused_gap(day: dict, allowlist: dict[str, str]):

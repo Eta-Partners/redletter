@@ -383,6 +383,178 @@ def test_the_fame_line_is_drawn_whatever_the_blurb_rule_says():
     assert grey and "inventor" in " ".join(grey)
 
 
+# ------------------------------------------------------------- the label rule
+#
+# A laureate's blurb opens with the award — "Nobel Prize in Chemistry 1945 in
+# Russian Empire: for his research ..." — and a cell that draws the award never
+# says what the person is known for. The label is dropped when it carries no
+# sentence ending and something non-empty follows the colon.
+
+LAUREATE_TITLE = "Artturi Ilmari Virtanen is born"
+LAUREATE_BLURB = ("Nobel Prize in Chemistry 1945 in Russian Empire: for his research and "
+                  "inventions in agricultural and nutrition chemistry, especially for his "
+                  "fodder preservation method.")
+
+
+def test_a_leading_label_is_dropped_from_the_fame_line():
+    assert rg.fame_line(LAUREATE_TITLE, LAUREATE_BLURB).startswith("for his research")
+
+
+def test_the_label_rule_moves_the_start_and_never_the_words():
+    """A suffix, not merely a substring: the rule may cut the front, not reorder."""
+    fame = rg.fame_line(LAUREATE_TITLE, LAUREATE_BLURB)
+    assert LAUREATE_BLURB.endswith(fame)
+
+
+def test_a_colon_after_a_full_stop_is_not_a_label():
+    blurb = "Marie Curie, she was born in Warsaw. Her family: teachers and patriots."
+    assert rg.fame_line("Marie Curie is born", blurb) == \
+        "she was born in Warsaw. Her family: teachers and patriots."
+
+
+def test_a_colon_with_nothing_after_it_is_not_a_label():
+    text = "Nobel Prize in Chemistry 1945 in Russian Empire: "
+    assert rg.after_label(text) == text
+
+
+def test_a_fame_line_with_no_colon_is_untouched():
+    assert rg.after_label("inventor of the electrostatic precipitator") == \
+        "inventor of the electrostatic precipitator"
+
+
+def test_the_reason_clauses_split_the_way_the_measure_names_them():
+    """57 open "for ...", 15 "in recognition of ...": a "for"-keyed rule loses 15.
+
+    The two counts sum to all 72, which is the strip proved directly: a fame line
+    that still began with the label would start "Nobel Prize in Chemistry ..." and
+    fall in neither count. It is also the token trap written down — the label's
+    word "Chemistry" sits inside most reasons too, so a matcher that credits a
+    drawn cell for tokens the label supplied would score cells that never reached
+    the reason. After this rule no label is drawn, so nothing needs subtracting.
+    """
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    days = yaml.safe_load((root / "data" / "chemistry-laureates.yaml").read_text())["days"]
+    reasons = [rg.fame_line(d["title"], d["blurb"]) for d in days]
+    assert sum(1 for r in reasons if r.startswith("for ")) == 57
+    assert sum(1 for r in reasons if r.startswith("in recognition of ")) == 15
+    assert len(reasons) == 72
+    assert not [r for r in reasons if "Nobel Prize" in r], "a surviving label is not drawn"
+
+
+# ------------------------------------------------- reason reached, on the page
+#
+# "Fame drawn" and "the reason reached" are different populations and the last
+# table in DECISIONS.md named neither: a line can be present and still be the
+# award. These measure the second, at the numbers build_month_page lays out.
+
+
+def shipped_days(name, tmp_path):
+    """A days.json the renderer reads, built from a shipped dataset, all active."""
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    data = yaml.safe_load((root / "data" / name).read_text())
+    days = []
+    for record in data["days"]:
+        rec = json.loads(json.dumps(record, default=str))   # YAML dates to strings
+        rec.update(status="active", agreement="2 of 2",
+                   publishers=["example.org"], checked_on="2026-11-16")
+        days.append(rec)
+    return write_days_file(tmp_path / (name.replace(".yaml", "") + ".json"), days,
+                           topic={**data["topic"], "print_year": 2027})
+
+
+def reason_reach(days_path):
+    """Per person record at A4 landscape: is the reason reached, whole, or cut?
+
+    The cell draws a prefix of the fame line, words in order, so the number of
+    leading words that match is how far into the line the cell got. `reached`
+    asks for one complete word of the reason; `whole` for all of them; `undrawn`
+    is a cell whose title alone filled it.
+    """
+    _, marks, _ = rg.load_marks(days_path, 2027, with_blurb=True)
+    size = rg.page_size_pt("a4", "landscape")
+    rows, sizes = [], []
+    for month in range(1, 13):
+        geo = rg.month_geometry(size, 2027, month)
+        cells = [marks.get(month, {}).get(d, []) for week in geo["weeks"] for d in week]
+        pt, _ = rg.choose_cell_type(cells, geo["inner_w"], geo["inner_h"])
+        sizes.append(pt)
+        chars = rg.cell_chars(geo["inner_w"], pt)
+        for cell in cells:
+            for year, title, blurb in cell:
+                fame = rg.fame_line(title, blurb)
+                if fame is None:
+                    continue
+                blocks, _ = rg.cell_blocks([(year, title, blurb)], chars, pt, False)
+                grey = " ".join(b[0] for b in rg.truncate_blocks(blocks, geo["inner_h"])
+                                if b[2] == rg.GRAY)
+                fame_words = fame.replace("…", " ").split()
+                drawn_words = grey.replace("…", " ").split()
+                matched = 0
+                for a, b in zip(fame_words, drawn_words):
+                    if a != b:
+                        break
+                    matched += 1
+                rows.append({"title": title, "drawn": bool(grey),
+                             "reached": matched > 0,
+                             "whole": matched == len(fame_words)})
+    return rows, sizes
+
+
+@requires_font
+def test_the_laureate_book_reaches_the_reason_clause(tmp_path):
+    """71 of 72 records reach a complete reason word; 2 show the clause whole.
+
+    One record draws no fame line at all: its title alone fills the cell. Before
+    the label rule the same measurement was 2 of 72 reached and 0 whole — the
+    other 70 drew "Nobel Prize in Chemistry <year> in <country>…".
+    """
+    rows, sizes = reason_reach(shipped_days("chemistry-laureates.yaml", tmp_path))
+    assert len(rows) == 72, "every laureate record carries a fame line"
+    assert sum(r["drawn"] for r in rows) == 71
+    assert sum(r["reached"] for r in rows) == 71
+    assert sum(r["whole"] for r in rows) == 2
+    # The chosen type per month at A4 landscape, so a height regression shows up.
+    assert sizes == [6, 9.5, 8, 9, 7.5, 9, 9.5, 7.5, 9, 9, 9, 9.5]
+
+
+@requires_font
+def test_the_chemistry_book_was_already_at_the_reason(tmp_path):
+    """43 of 43: chemistry blurbs open with the name, so the strip already lands."""
+    rows, sizes = reason_reach(shipped_days("chemistry.yaml", tmp_path))
+    assert len(rows) == 43
+    assert sum(r["reached"] for r in rows) == 43
+    assert sum(r["whole"] for r in rows) == 2
+    assert sum(r["drawn"] for r in rows) == 43
+    assert sizes == [7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7]
+
+
+def test_the_fame_line_prints_at_the_cells_own_size():
+    """Not at the blurb's 0.86x: 5.59 pt under a 6.5 pt title is a footnote."""
+    blocks, _ = rg.cell_blocks([(1877, COTTRELL_TITLE, COTTRELL_BLURB)], 22, 7, False)
+    grey = [b for b in blocks if b[2] == rg.GRAY]
+    assert grey and {b[1] for b in grey} == {7}
+
+
+def test_a_blurb_still_prints_at_the_blurb_scale():
+    """The 0.86 belongs to the blurb, which competes with the title for the cell."""
+    blocks, _ = rg.cell_blocks([(1961, "A title", "a short line about it")], 22, 8, True)
+    grey = [b for b in blocks if b[2] == rg.GRAY]
+    assert grey and {b[1] for b in grey} == {8 * rg.BLURB_SCALE}
+
+
+def test_the_gate_and_the_renderer_share_one_person_predicate():
+    """One function, so the death rule and the fame line cannot drift apart."""
+    import verify_days as vd
+
+    assert rg.person_suffix is vd.person_suffix
+
+
 def test_a_discovery_cell_does_not_grow_a_fame_line():
     """The other kinds keep the old rule; the detail TJ asked for is a person's."""
     entry = [(1898, "Marie and Pierre Curie discovered radium",

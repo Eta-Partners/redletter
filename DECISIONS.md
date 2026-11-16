@@ -129,6 +129,147 @@ means. It was written to vouch for a *date*; the death rule uses it to vouch for
 makes when it prints a day. That extension is visible here beside the rule and in
 the one record it reaches.
 
+## 2026-11-16 · The fame line drops its citation label and prints at the cell's size
+
+The entry above set the fame line in the blurb's grey at 0.86x the title and let it
+carry whatever the record's own sentence opened with. Reviewing the render,
+`orch-lead` amended `qitem-20261116173409-5fc50da5dcfd761e` on three measured
+points, and the measurements below are mine; where they differ from the row's or
+from `dev-qa`'s, this says so and uses mine.
+
+**The label goes.** A laureate blurb opens `Nobel Prize in Chemistry 1945 in Russian
+Empire: for his research and inventions in agricultural and nutrition chemistry,
+…`. The label alone is 45–60 characters in a ~20-character line, so the cell spent
+its two lines naming a prize, a year and a country and never reached the reason.
+`after_label(text)` drops the text from the start up to and including the first
+`": "` when that text contains no sentence-ending punctuation and something
+non-empty follows. It is not keyed on the word `for`: of the 72 laureate records, 57
+open `for …` and 15 open `in recognition of …`, and a rule keyed on `for` would
+leave the 15 untouched. It is not a cap change: a third line buys one more word of
+the same label, at a type cost on every dense laureate page, which the review
+measured as worse than the strip on both counts. A colon that arrives after a full
+stop is inside a sentence and is not a label; a colon with nothing after it is
+punctuation, not a citation. The rule only chooses where the substring starts, so
+the property asserted over every person record in all three datasets — every drawn
+line is a substring of the approved blurb, `fame in blurb` — is still true and its
+test unchanged.
+
+*The token trap.* "Nobel Prize in Chemistry" contains `chemistry`, and most
+laureate reasons contain it too, so a matcher that credits a cell for any drawn
+word in common with the reason scores cells that never reached it; the operator's
+first matcher did exactly that, 11 cells on the label's own word. The 57/15 split
+is the answer as a test: the two counts sum to all 72, and no fame line contains
+`Nobel Prize`, so after the strip there is no label drawn and a matcher has
+nothing to subtract. If a matcher ever has to subtract label words again, the
+strip has failed.
+
+**The fame line prints at the cell's own size, not at 0.86x it.** The entry above
+applied `BLURB_SCALE` to the detail the person cell exists to show: 5.59 pt on the
+laureate book under a 6.5 pt title, 5.16–6.88 pt across chemistry. A footnote to a
+thing is not the thing. The fame line now uses the page's cell size, and
+`BLURB_SCALE` stays where it was written, on `with_blurb` cells, where a blurb is
+optional detail beside a title and is still worth less type than the title. There
+is no floor constant either: the rule is "drawn at the size the cell was chosen
+at", written as one assignment, because a `max(0.86x, something)` needs the
+something named and 0.86 of the smallest cell is worse than the size it started
+from. Measured minimum chosen cell size after the change, over the three shipped
+books and the four shapes: A4 landscape 6.0 chemistry, 6.0 laureates, 9.0
+spaceflight; A4 portrait 6.5 / 8.5 / 9.0; Letter landscape 5.5 / 6.5 / 8.0;
+Letter portrait 6.0 / 7.0 / 9.5. The laureate figures are one step below the
+pre-change book's on each shape (6.5 / 9.0 / 7.0 / 7.5), which is where the label
+strip and the cell size are paid for; chemistry and spaceflight minima do not move.
+
+**`BLURB_MIN_PT` (7.5) is not applied to the fame line.** The floor exists so an
+optional blurb cannot push a title below readable; a fame line is not optional, it
+is what the cell is for. Measured: all twelve chemistry pages sit below 7.5 pt
+(sizes 6 to 8), so the floor would delete the fame line from the one book that ships
+by default. That is not a trade the floor was written to make. The 1.5 pt rule still
+decides whether a *blurb* is chosen, as it always did.
+
+**The table, with the population named in every column.** Two right numbers about
+different things read as a disagreement in review, so: *person records* is records
+whose title is a person-day form; *person cells* is cells holding at least one of
+them (the laureate book packs 72 records into 64 cells); *cells drawing a fame line*
+is cells whose drawn page still shows a grey line after the page's own height
+budget; *positional reach* is records, counted positionally (below), each rendered
+alone in a cell of the page's geometry. A4 landscape, twelve month pages:
+
+| Book / version | person records | person cells | cells drawing a fame line | positional reach (records) | page sizes |
+| --- | --- | --- | --- | --- | --- |
+| laureates, before `4f0143b` | 72 | 64 | 61 of 64 | 2 of 72 | 6.5, 9.5, 8.5, 9, 8, 9, 9.5, 8, 9, 9, 9, 9.5 |
+| laureates, this change | 72 | 64 | 63 of 64 | 71 of 72 | 6, 9.5, 8, 9, 7.5, 9, 9.5, 7.5, 9, 9, 9, 9.5 |
+| chemistry, before | 43 | 43 | 43 of 43 | 43 of 43 | 7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7 |
+| chemistry, this change | 43 | 43 | 43 of 43 | 43 of 43 | unchanged |
+
+The operator's audit of the same sha, at A4 landscape only — no other shape has
+been measured — counts qualifying complete words on the cell as printed: of the 64
+laureate cells, 58 show at least one answer word and 1 prints the answer whole
+(Urey), and 6 show none, against 3 with none at `4f0143b`; chemistry is unchanged
+at 50% drawn, 67% answer, and 10 whole of 43 cells. The two criteria are allowed to
+disagree: positional reach renders one record alone in a cell, and the seven days
+that carry two or more laureates can lose one or both lines when the cell is
+packed, so 71 of 72 records reach in isolation while 58 of 64 cells show a complete
+answer word on the page. The cells column is the one that describes the printed
+book, and the audit is the instrument that measures it.
+
+Six cells draw no complete answer word at all at this sha against three at
+`4f0143b`: the fame line now prints at the cell's size, and on the densest pages
+that costs whole cells their grey text. A change the printed book will show is
+stated rather than footnoted; whether the trade is right is the density question,
+which is separate from this one.
+
+Chemistry is unchanged because no chemistry blurb opens with a label. Svedberg's
+clause (`for his work on disperse systems`) reaches its last word positionally; the
+one cell the audit counts whole is Urey's (`for his discovery of heavy hydrogen`).
+The one record that still draws no fame line in the positional measure is von
+Baeyer's, whose label and reason together exceed two lines at 9 pt.
+
+*Why "fame drawn" is 64 in one report and 61 in another.* `dev-qa`'s 64 of 64
+counts whether the two-line cap leaves at least one line, measured before the
+page's height budget; the 61 of 64 above counts cells on the drawn page, after it.
+Both are right about their own population: three cells had a fame line the cap
+allowed and the page could not fit. This change gives two of those three back.
+
+**Positional reach, defined.** The cell draws a prefix of the fame text in word
+order — the wrapper keeps the order, the cap cuts the tail — so matching the drawn
+words against the fame words from the start measures how far in the cell got. The
+reason begins where the label ends, and `reached` is at least one complete word of
+the reason clause. Any-word matching would be fooled by
+the `in` that appears in both `Nobel Prize in Chemistry` and most reasons, which is
+why the first measurement reported 69 of 72 before the fix: it was reading the
+label as part of the reason.
+
+*Where my before-numbers differ from the row's.* The row said 4 of 72 reached
+before; `dev-qa` measured 0. Mine is 2, and the two are Prigogine and Langmuir,
+whose labels are short enough that the connective prints whole — `Nobel Prize in
+Chemistry 1977 in Russia: for hi…`. So the most generous reading of "any complete
+word of the reason" still finds only the word `for`, and no cell showed a content
+word of the reason before this change, which is the fact all three numbers are
+reaching for. After it, 71 of 72 records reach positionally; the cell-level count
+is the audit's column quoted above.
+
+*The type cost, against the right baseline.* Relative to `4f0143b` four laureate
+pages move, each by half a step: January 6.5 to 6, March 8.5 to 8, May 8 to 7.5,
+August 8 to 7.5. Chemistry moves no page. The row's "the same 9 pages move" is true
+against the pre-fame book (`ebb3b01`), where nine pages moved to make room for the
+fame line at all; it is not the cost of this change.
+
+**One predicate, two callers, and its known limit.** `verify_days.person_suffix` is
+now the only definition of "this record is about a person". The gate
+(`is_person_death`) and the renderer (`fame_line`) both call it, and a test asserts
+the renderer's name is the gate's function, not a copy. It lives in `verify_days`
+because that module has no drawing dependency, and the renderer imports it rather
+than the other way round so the gate stays runnable without Pillow. Its limit is
+that the unit is the title, and review found one break in each direction, neither
+live: a spaceflight record titled `Vladimir Komarov dies` would be read as a
+person's death and refused for want of a `work_caused` block, though that book is
+not a people calendar; and `Marie Curie dies of aplastic anaemia` would not be read
+as a person's death at all, so a title that carried its own cause would escape the
+gate. Both are pinned by tests in `tests/test_verify_days.py` so a future change
+either keeps them or has to delete a named expectation. The shipped data has
+`Challenger is lost` as its only `kind: loss` that is not a person, and Curie's
+title is the bare `Marie Curie dies`.
+
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
 **Change.** `render_grid.py` gains a third emitter. `--pdf` lays the same drawing
