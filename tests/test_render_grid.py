@@ -1052,6 +1052,22 @@ def test_every_word_of_a_person_name_is_drawn_whole(tmp_path, name, paper, orien
     "Euler-Chelpin" and chemistry at A4 portrait on "Nicolas-Louis", all at 9.5 pt
     and 11 characters; the page's type chooser now refuses a size at which any word
     of a person's title cannot sit on one line.
+
+    The words asked about are the record's own name — the title before its suffix —
+    and the year. The whole title would add "is born", and at `b703983` A4 portrait
+    03-19 the cell draws Haworth and Joliot and cuts Joliot at `Joliot i…`: the old
+    list, which asked for "is" and "born", was answered by Haworth's line in the
+    same cell. That cut lands after the surname, so the name test passes on it and
+    should; what the change removes is a question the cell cannot attribute. Name
+    words are what a neighbouring record has no reason to share, and the suffix is
+    exactly the part a neighbour does draw.
+
+    At `1424186` the count is the same three records under either scoping —
+    Euler-Chelpin at both portrait shapes, Vauquelin at A4 portrait — because that
+    commit's titles are atomic and only a split word can break a run. The scoping is
+    not about the count today but about what the assertion means tomorrow: a name
+    word is unique to its person, so a neighbour can never answer for it, and the
+    test is per-record by construction rather than by the luck of contiguous runs.
     """
     path = shipped_days(name, tmp_path)
     split = []
@@ -1060,7 +1076,8 @@ def test_every_word_of_a_person_name_is_drawn_whole(tmp_path, name, paper, orien
         tokens = {word for text, _size, ink, _indent in blocks if ink == rg.INK
                   for word in text.split()}
         for year, title, _ in person_records(cell):
-            for word in f"{year} {title}".split():
+            suffix = rg.person_suffix(title)
+            for word in f"{year} {title[: -len(suffix)]}".split():
                 if word not in tokens:
                     split.append(f"{month:02d}-{day:02d} {word!r} of {title!r}")
     assert not split, f"{paper} {orientation}: words not drawn whole: {split}"
