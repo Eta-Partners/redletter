@@ -1,5 +1,9 @@
 # Redletter
 
+<div align="center">
+    <img src="media/icons/icon-1024.png" width="128" height="128" alt="Redletter icon"/>
+</div>
+
 **Calendars of the days a field marks in red.**
 
 You name a topic. The days a field keeps are researched, each one sourced, each
@@ -64,6 +68,9 @@ python scripts/verify_days.py data/spaceflight.yaml --write   # fetch, judge, wr
 python scripts/render_grid.py out/days.json --year 2027        # out/…-2027.png and .svg
 python scripts/render_grid.py out/days.json --month 7          # one month, bigger
 python scripts/build_ics.py out/days.json                      # out/…-2027.ics, validated
+
+# rebuild the icon set from the artwork as it arrived
+python tools/icon.py spec/icon-source/icon-source.png
 ```
 
 `--write` is what makes `out/days.json`; the renderer and the feed writer both read
@@ -129,6 +136,9 @@ scripts/
   verify_days.py     the gate: fetch, judge, derive status, write out/days.json
   render_grid.py     the sheet: a year of month grids, PNG and SVG from one geometry
   build_ics.py       the feed: all-day yearly events, parsed back before it is written
+tools/icon.py        turns the supplied artwork into the icon size set
+spec/icon-source/    the artwork as it arrived, so the icons can be rebuilt
+media/icons/         icon-{1024,512,256,192,128} in PNG, and the same in WebP under web/
 media/samples/       the rendered 2027 sheet, its SVG, and the .ics
 out/                 generated, gitignored
 SPEC.md              what the slice claims and what it deliberately does not

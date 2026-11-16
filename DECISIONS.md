@@ -61,6 +61,20 @@ feed writer both skip it with a printed reason in a non-leap year rather than
 silently moving it to 28 February or 1 March. No day in the seed dataset is on 29
 February, so this rule is written and untested against real data.
 
+## 2026-11-15 · The icon is cut on the paper, not on the white
+
+**Choice.** `tools/icon.py` finds the sheet by flooding its own cream colour from
+the middle, fills the holes the printed grid leaves, and uses that silhouette as
+the alpha channel. It does not key "near white" out.
+
+**Why.** A white key leaves the thin shadow the artwork draws along the sheet's
+edge. At 1024 px that reads as a soft edge; at 128 px it reads as dirt, and the
+smallest size is the one that ships in a tab. Cutting on the paper removes the
+shadow with the field, and a 0.8 px blur on the mask keeps the cut from aliasing.
+
+**Cost.** It assumes the artwork's sheet is a solid colour on a plain field, which
+is what was asked for. A textured or multi-colour sheet would need a different cut.
+
 ## 2026-11-15 · No status or verification fields in the dataset
 
 `data/*.yaml` holds what a person wrote: the day, the words, the sources. Status,
