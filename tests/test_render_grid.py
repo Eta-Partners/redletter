@@ -476,6 +476,11 @@ def test_the_blurb_costs_one_step_of_type_in_a_narrow_cell():
     chosen at 9 pt. No shipped page produces the case: the shortest shipped blurb
     is 34 characters. If these numbers move, the `cell_blocks` docstring is making
     a claim this test no longer supports.
+
+    To falsify it, restore the pre-split *wrap* — `wrap_to(blurb, chars - hang)` —
+    and not the drawn indent alone. The choice comes from the wrapped height, and
+    the indent does not change the height, so moving only the indent leaves this
+    test green while the page looks wrong; that patch is not a falsification.
     """
     entry = [(1961, "A short title", "Xenon and platinum react")]
     assert _choose_with(_pre_split_cell_blocks, [entry], 70, 45) == (9.5, False)
