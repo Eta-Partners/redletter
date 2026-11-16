@@ -201,16 +201,18 @@ alone in a cell of the page's geometry. A4 landscape, twelve month pages:
 | chemistry, before | 43 | 43 | 43 of 43 | 43 of 43 | 7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7 |
 | chemistry, this change | 43 | 43 | 43 of 43 | 43 of 43 | unchanged |
 
-The operator's audit of the same sha, at A4 landscape only — no other shape has
-been measured — counts qualifying complete words on the cell as printed: of the 64
-laureate cells, 58 show at least one answer word and 1 prints the answer whole
-(Urey), and 6 show none, against 3 with none at `4f0143b`; chemistry is unchanged
-at 50% drawn, 67% answer, and 10 whole of 43 cells. The two criteria are allowed to
-disagree: positional reach renders one record alone in a cell, and the seven days
-that carry two or more laureates can lose one or both lines when the cell is
-packed, so 71 of 72 records reach in isolation while 58 of 64 cells show a complete
-answer word on the page. The cells column is the one that describes the printed
-book, and the audit is the instrument that measures it.
+The operator's audit — `tools/redletter-fame-audit.py`, A4 landscape only, no
+other shape has been measured; it freezes the sha into a scratch dir before
+measuring and asserts its per-month pairing — counts qualifying complete words on
+the cell as printed: of the 64 laureate cells, 58 show at least one answer word and
+1 prints the answer whole (Urey), and 6 show none, against 3 with none at
+`4f0143b`; chemistry is unchanged at that sha at 50% drawn, 67% answer, and 10
+whole of 43 cells (the re-run at the tip of this work is in the next entry). The
+two criteria are allowed to disagree: positional reach renders one record alone in
+a cell, and the seven days that carry two or more laureates can lose one or both
+lines when the cell is packed, so 71 of 72 records reach in isolation while 58 of
+64 cells show a complete answer word on the page. The cells column is the one that
+describes the printed book, and the audit is the instrument that measures it.
 
 Six cells draw no complete answer word at all at this sha against three at
 `4f0143b`: the fame line now prints at the cell's size, and on the densest pages
@@ -320,9 +322,22 @@ one cell differently at the start (9 whole, 34 missing) and lands on the same
 ceiling: 14. So: the change completes five answers and does not raise the median at
 all. It is kept for legibility — the cell stops repeating the title's own clause —
 and because it costs no page a step of type; it is not kept for room it did not buy.
-The audit's chemistry columns quoted above (50% drawn, 67% answer, 10 whole of 43
-cells) were measured at `1097ed8`, before this drop; the numbers here are mine and
-the audit should be re-run at the new sha rather than assumed.
+
+**The audit's re-run at the tip, and the invariant it closes on.** At `21b905e` the
+audit reads: laureates drawn median 17%, whole 1, any 58, zero 6 of 64 cells;
+chemistry drawn median 67%, whole 14, any 43, zero 0 of 43 cells; both books 0
+labelled, pairing OK. Chemistry moved from 50/67/10 at `1097ed8` to 67/67/14 here,
+and its 14 is my 14 on the same population: chemistry holds 43 person cells and 43
+person records, the only shared day (10-07) carrying two events and neither of
+them a person's.
+
+The fact worth keeping is not either coverage number but this: **the drawn column
+and the answer column are now identical in both books.** After the label rule and
+the birth-clause rule, the drawn fame line *is* the answer — there is no chrome
+left in the text to draw, so "how much of the line is drawn" and "how much of the
+answer is drawn" are one measurement. The audit reproduces the identity in both
+books at this sha, and that is the closing statement of the pair of rules: the
+cell's grey text is the reason, all of it, however much of it fits.
 
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
