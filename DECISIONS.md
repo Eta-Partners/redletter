@@ -74,13 +74,19 @@ it would leave fewer than `MIN_HANG_CHARS` (8) for the continuation; the text
 keeps the width instead of the alignment.
 
 Title continuation still hangs under its title. The blurb no longer does: it
-prints at the cell's left edge, already distinguished by grey and 0.86x type.
-Measured, the shared hang was costing roughly one step of type size on the path
-that decides whether a blurb appears — a 30-character blurb with one event to a
-month is chosen at 8.5 pt unindented and only fits at 7 pt with the hang, below
-`BLURB_MIN_PT`. It was suppressing the detail it was meant to organise. On the
-shipped data at A4 landscape this changes no page: all thirteen pages rasterise
-pixel-identical before and after the change.
+prints at the cell's left edge, already distinguished by grey and 0.86x type. The
+hang costs a step of type on the path that decides whether a blurb appears at
+all — measured on a 70 by 45 pt cell holding one event and a 22-character blurb,
+the hung page keeps 9.5 pt and drops the blurb, while the blurb at the cell's
+edge is chosen at 9 pt. It was suppressing the detail it was meant to organise.
+The probe is not a page: the shipped blurbs run 34 to 150 characters (chemistry
+34 to 133, laureates 73 to 150, spaceflight 92 to 143), so no shipped blurb is
+short enough for that trade. Checked page by page over all three datasets at all
+four paper shapes, the split changes no month page's choice: the same type size
+and the same blurb-or-not on every one of the 144 month pages. The blurb is drawn
+only at A4 portrait, spaceflight January and July, and on those two the change is
+the blurb's placement, not the type; at A4 landscape no blurb is drawn, so nothing
+there moves.
 
 **Cost.** The book is raster at 300 dpi, not vector: a chemistry book is about
 5.5 MB and scales without banding only up to its raster resolution. Pillow also
