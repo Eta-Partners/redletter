@@ -309,11 +309,18 @@ def test_a_wrapped_line_never_leaves_the_cell_it_was_wrapped_for():
 
 
 def test_the_hang_is_dropped_when_the_cell_cannot_afford_it():
+    """The threshold is eight characters of room: 8 hangs, 7 keeps the width.
+
+    The widths are literals on purpose. A year of 1961 hangs six characters, so a
+    14-character cell leaves 8 and a 13-character cell leaves 7. Written as
+    `6 + MIN_HANG_CHARS ...` the test would pass with the constant at 0 too: it
+    would show the branch is wired, not that 8 is the number.
+    """
     entry = (1961, "A fairly long title that will need to wrap around the cell", "")
-    wide, _ = rg.cell_blocks([entry], 6 + rg.MIN_HANG_CHARS + 5, 8, False)
-    assert any(indent == 6 for _, _, _, indent in wide), "room to hang: it hangs"
-    narrow, _ = rg.cell_blocks([entry], 6 + rg.MIN_HANG_CHARS - 1, 8, False)
-    assert all(indent == 0 for _, _, _, indent in narrow), "no room: it keeps the width"
+    wide, _ = rg.cell_blocks([entry], 14, 8, False)
+    assert any(indent == 6 for _, _, _, indent in wide), "8 characters of room: it hangs"
+    narrow, _ = rg.cell_blocks([entry], 13, 8, False)
+    assert all(indent == 0 for _, _, _, indent in narrow), "7 characters: it keeps the width"
 
 
 @requires_font
