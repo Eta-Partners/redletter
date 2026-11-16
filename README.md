@@ -14,7 +14,7 @@ repeats them every year on your phone.
 <p>
     <img src="https://img.shields.io/badge/status-vertical%20slice-orange.svg" alt="Status"/>
     <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python"/>
-    <img src="https://img.shields.io/badge/output-print%20%2B%20.svg%20%2B%20.ics-informational.svg" alt="Output"/>
+    <img src="https://img.shields.io/badge/output-print%20%2B%20.svg%20%2B%20.pdf%20%2B%20.ics-informational.svg" alt="Output"/>
     <img src="https://img.shields.io/badge/days%20in%20chemistry-115-red.svg" alt="Days"/>
 </p>
 
@@ -64,11 +64,14 @@ The vertical slice runs, on three calendars, end to end. What is true today:
   publisher` file into candidate records, refusing malformed lines and catching a
   date that contradicts its own source URL before any request is made.
 - **`scripts/render_grid.py`** draws the 2027 sheet (a year of month grids) or one
-  month, as a PNG to look at and an SVG to print, from the same geometry.
+  month, as a PNG to look at, an SVG to print, and — with `--pdf` — a book: a cover
+  page, then one page per month with each day's detail printed inside its date
+  cell. All three emitters draw the same list of primitives, so the screen, the
+  print and the book cannot disagree about a page.
 - **`scripts/build_ics.py`** writes all-day, yearly-repeating events and parses the
   file back before it lands: DATE values, a YEARLY rule and a UID on every event,
   CRLF, no line over 75 octets.
-- **`tests/`** — 131 tests: unit tests that pin the status rules, the date matcher
+- **`tests/`** — 144 tests: unit tests that pin the status rules, the date matcher
   and the research format with the network faked, and integration tests that run
   all three scripts against a local web server. The one network test is opt-in. CI
   runs the offline suite on 3.9 and 3.12.
@@ -82,7 +85,7 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 131 tests, offline, about four seconds
+pytest -q                     # 144 tests, offline, about seven seconds
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 
@@ -107,6 +110,8 @@ pip install -r requirements.txt
 python scripts/verify_days.py data/spaceflight.yaml --write   # fetch, judge, write out/days.json
 python scripts/render_grid.py out/days.json --year 2027        # out/…-2027.png and .svg
 python scripts/render_grid.py out/days.json --month 7          # one month, bigger
+python scripts/render_grid.py out/days.json --pdf              # book: 13 pages, A4 landscape
+python scripts/render_grid.py out/days.json --pdf --paper letter --orientation portrait
 python scripts/build_ics.py out/days.json                      # out/…-2027.ics, validated
 python scripts/coverage.py out/days.json --target 6            # how dense the year is
 
@@ -190,7 +195,7 @@ scripts/
   from_lines.py      turns a researcher's lines into candidates for the gate
   from_nobel.py      proposes day records from the Nobel Prize API
   coverage.py        active days per month against a target
-  render_grid.py     the sheet: a year of month grids, PNG and SVG from one geometry
+  render_grid.py     the sheet: a year of month grids, PNG and SVG, and the 13-page book
   build_ics.py       the feed: all-day yearly events, parsed back before it is written
 tools/icon.py        turns the supplied artwork into the icon size set
 tests/               unit tests, plus integration tests that run the pipeline

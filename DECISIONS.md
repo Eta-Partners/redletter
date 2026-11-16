@@ -3,6 +3,62 @@
 One entry per choice that a reader could reasonably have made differently. The
 date is when the choice was made; the source says who made it or what forced it.
 
+## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
+
+**Change.** `render_grid.py` gains a third emitter. `--pdf` lays the same drawing
+out in PostScript points and writes thirteen pages — a cover, then one page per
+month with each day's year and title inside its date cell — through the same
+`draw()` the PNG uses, at 300 dpi. The wall sheet is unchanged and is still what
+`--year` and `--month` produce.
+
+**The two provisional defaults, decided.**
+- *A4 landscape.* A week is wider than it is tall, and landscape is where the
+  shipped datasets were measured. `--paper letter` and `--orientation portrait`
+  reach the other three combinations; portrait is legible (the July page was read
+  at 120 dpi) but its cells are narrow, and that is where the wrap guard earns
+  its keep.
+- *The blurb is preferred only while it costs less than 1.5 pt of type.* Kept.
+  Measured on the three shipped datasets at A4 landscape, the blurb is never
+  chosen: 115 chemistry days, 64 laureate days and 10 spaceflight days all choose
+  year-and-title, because a 130-character blurb in a 20-character cell needs the
+  type two or more points smaller. It fires only where a page is sparse enough to
+  afford it (in A4 portrait, one month of the ten-day dataset). That is the rule
+  working as written, not a bug.
+
+**Why a page sizes on nine cells in ten.** Sizing on the worst cell lets one
+132-character Nobel citation set a whole month to 5 pt. So a page is accepted when
+at most one cell in ten may truncate. The allowance is rounded *up* to whole
+cells: nine in ten rounded down would leave a page of nine cells with no allowance
+at all, and the page would shrink to fit the one rare entry the rule exists to
+forgive (July would go from 7 pt to 5 pt for a single long line). Truncation
+drops the lines past the cell's budget and ends the last kept line with an
+ellipsis; it is deterministic, and the test builds the same cell twice.
+
+**The wrap edge, and the shared hang.** `wrap_to` clamps inside to
+`max(4, int(chars))`, so a cell too narrow for the continuation hang did not
+raise — it wrapped at four characters and the indent pushed the line past the cell
+edge. At the size each page actually chooses, chemistry's tightest `chars - hang`
+is 14 at A4 landscape, 17 at Letter landscape, 8 at Letter portrait and 5 at A4
+portrait, so the default was never broken and portrait is where it would have
+been. (The operator measured 12 at Letter landscape; I did not reproduce their
+basis, and either reading leaves the default safe.) The hang is now dropped when
+it would leave fewer than `MIN_HANG_CHARS` (8) for the continuation; the text
+keeps the width instead of the alignment.
+
+Title continuation still hangs under its title. The blurb no longer does: it
+prints at the cell's left edge, already distinguished by grey and 0.86x type.
+Measured, the shared hang was costing roughly one step of type size on the path
+that decides whether a blurb appears — a 30-character blurb with one event to a
+month is chosen at 8.5 pt unindented and only fits at 7 pt with the hang, below
+`BLURB_MIN_PT`. It was suppressing the detail it was meant to organise. On the
+shipped data at A4 landscape this changes no page: all thirteen pages rasterise
+pixel-identical before and after the change.
+
+**Cost.** The book is raster at 300 dpi, not vector: a chemistry book is about
+5.5 MB and scales without banding only up to its raster resolution. Pillow also
+stamps `CreationDate` into the PDF, so the file digest changes every run — the
+pages, not the bytes, are what a change is verified against.
+
 ## 2026-11-15 · The four answers from the owner
 
 Recorded from the answered decision row `qitem-20261116011417-70116e8fb82bff4b`:

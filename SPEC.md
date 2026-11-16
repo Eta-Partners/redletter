@@ -31,6 +31,12 @@ The vertical slice proves these, on three calendars:
 4. **A print sheet**: a dated year, mono except for a single rubric red, twelve
    month grids, and a key at the foot naming every marked day with the year it
    happened. Only `active` days are drawn.
+4b. **A book form** beside the sheet, not instead of it: thirteen pages — a cover
+   carrying the topic, the year and the count, then one page per month with each
+   day's year and title printed inside its date cell. A4 landscape by default;
+   `--paper` and `--orientation` reach the other three combinations. A page too
+   small for all its text truncates the rare cell that does not fit, marked with
+   an ellipsis, rather than shrinking the whole page.
 5. **A feed**: one all-day event per active day, repeating yearly, carrying the
    original date and the sources in the event body.
 6. **A print/feed split that is honoured.** The printed sheet is a *dated* year —
@@ -46,6 +52,8 @@ What counts as done, and how each is checked by effect rather than by assertion:
 | The sources support the day | `verify_days.py` fetches each URL and looks for the date in the page text; the status follows from what came back |
 | Agreement is real | the agreeing sources are grouped by publisher; one publisher cannot agree with itself |
 | The sheet shows only verified days | the renderer reads `out/days.json` and skips anything not `active`, printing what it skipped and why |
+| The book is thirteen pages | `build_book` returns a cover plus twelve month pages, and the page size in points is checked against the paper's own dimensions |
+| Text stays in its cell | every wrapped line is checked against the character budget of its cell in both orientations, and a page is accepted when at most one cell in ten must truncate |
 | The feed imports | the `.ics` is parsed back with `icalendar` before it is written: dates are DATE values, every event carries a YEARLY rule and a UID, and the month-day matches the record |
 | The feed is portable | CRLF line endings, no line over 75 octets, UTF-8 |
 
@@ -58,6 +66,7 @@ What counts as done, and how each is checked by effect rather than by assertion:
   its own URL, and the unchanged gate behind it (see `DECISIONS.md`).
 - **Contested days.** The owner chose to leave them out entirely rather than draw
   them differently. The status still exists; nothing renders it yet.
-- **Colour paths, sizes other than the two sheets.**
+- **Colour paths, and paper sizes other than A4 and Letter.** The book reaches
+  either paper in either orientation; nothing else is drawn.
 - **A real client import.** The feed parses cleanly; nobody has yet subscribed to
   it from Apple Calendar or Google Calendar and looked at the result.
