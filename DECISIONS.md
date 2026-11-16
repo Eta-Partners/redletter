@@ -576,6 +576,8 @@ treatment of a marked token changed on 16 November 2026 — a token ending in th
 marker counts when its stem is a whole word — so figures quoted at an earlier sha
 use the older rule; the 17% at `21b905e` is such a reading.
 
+**At the tip, 16 November 2026**: read at `e44fd56`, laureates median 25%, whole 3, at least half 11, any 58, zero 6 of 64, and chemistry 67% / 14 / 40 / 43 / 0 — the same five columns as `dadbef0`, which is where they moved and where the cut-line hang fix left them. None of that movement is the round robin's, since the corrected marker convention is already inside the 18 / 3 / 10 / 57 / 7 and 67 / 14 / 35 / 43 / 0 above; C-prime — the cut word kept whole when the line has a character of room (`dadbef0`) — supplies the rest by crediting the appended words the amputation had been discounting, with 02-14 the one rescued zero and chemistry's at-least-half the one column there that moves, 35 -> 40.
+
 **Why the no-op is the constraint and not the rule.** At 8 pt in the 19 March cell
 the box has 64.70 pt of height and the five title lines take 52.80 pt, so the detail
 pool is 11.90 pt — 1.127 lines of 10.56 pt. A second reason line needs the pool to
