@@ -1282,6 +1282,8 @@ def test_a_cut_line_ends_on_a_whole_token():
     assert rg.cut_line("of the use of boron-", 20) == "of the use of…"
     assert rg.cut_line("pioneering work,", 16) == "pioneering work…"
     assert rg.cut_line("crystallography", 13) == "crystallograph…", "the C' clause"
+    assert rg.cut_line("use of a", 14, 6) == "use of…", "a hung line has chars - indent"
+    assert rg.cut_line("use of a", 14) == "use of a…", "flush left, the same line fits"
     assert rg.cut_line("inventions i…", 22) == "inventions i…", "never marks twice"
     assert rg.cut_line("for their research") == "for their…", "no measure: no slack"
     assert rg.cut_line("x") == "x"
@@ -1296,3 +1298,74 @@ def test_a_capped_fame_line_ends_between_words():
     text = grey[-1][0][:-1].rstrip()
     i = long_fame.index(text)
     assert long_fame[i + len(text):i + len(text) + 1] in (" ", ""), grey[-1][0]
+
+
+def overmeasure(days_path, paper, orientation):
+    """Every line the page would draw at a shape: (count, breaches of the measure).
+
+    The walk is `build_month_page`'s own: the page picks the type, and each event
+    day's cell is then asked what it draws. That matters because the drawn path is
+    `cell_layout`; `cell_blocks` plus the page-level `truncate_blocks` guard is a
+    different population - it never reaches the cuts made inside `fit_detail` and
+    `_with_detail`, and on the cell that matters it ends the line a word earlier.
+    Measured at dadbef0, chemistry Letter portrait 12-24: through the guard the last
+    grey line is 'use of…', 6 + 8 = 14 of 14, no breach; `cell_layout` draws
+    'use of a…', 6 + 9 = 15. A probe wired to the guard reports 0 breaches on the
+    build that has one, so the invariant is asserted only through this walk.
+
+    Populations, measured at dadbef0 over all four shapes: three datasets 3723
+    drawn lines (laureates 1400, chemistry 2150, spaceflight 173); the two person
+    books alone 3550. The durable probe this walk comes from, measured at the same
+    tree, prints 3723 drawn and 1 breaching at dadbef0, 0 at 0c63caf; the "3688
+    lines" in its docstring does not reproduce at either tree, so the argument here
+    rests on the cell above rather than on a line count.
+
+    A line breaches when its indent plus its text is longer than the cell's measure:
+    `cell_chars(inner_w, pt)` characters. The indent is in characters - the
+    renderer draws it as `indent * text_width("M", size)` - so this is arithmetic on
+    the block the page would draw, not a re-measure of the PDF.
+    """
+    topic, marks, _ = rg.load_marks(days_path, 2027, with_blurb=True)
+    size = rg.page_size_pt(paper, orientation)
+    total, over = 0, []
+    for month in range(1, 13):
+        cap = {}
+        orig = rg.choose_cell_type
+
+        def spy(cells, w, h, sizes=rg.CELL_PT, _o=orig):
+            got = _o(cells, w, h, sizes)
+            cap.update(w=w, h=h, out=got)
+            return got
+        rg.choose_cell_type = spy
+        try:
+            rg.build_month_page(topic, marks, 2027, month, size)
+        finally:
+            rg.choose_cell_type = orig
+        pt, with_blurb = cap["out"]
+        chars = rg.cell_chars(cap["w"], pt)
+        for day, events in sorted(marks.get(month, {}).items()):
+            for text, _line_size, _ink, indent in rg.cell_layout(
+                    events, chars, pt, with_blurb, cap["h"]):
+                total += 1
+                if indent + len(text) > chars:
+                    over.append((month, day, indent, len(text), chars, text))
+    return total, over
+
+
+@requires_font
+@pytest.mark.parametrize("name", ["chemistry-laureates.yaml", "chemistry.yaml",
+                                  "spaceflight.yaml"])
+@pytest.mark.parametrize("paper,orientation", SHAPES)
+def test_no_drawn_line_is_wider_than_its_cell(tmp_path, name, paper, orientation):
+    """The invariant: indent + text <= chars, at the cell's own measure.
+
+    A cut line keeps or shortens the line it cuts, so every line but a marker line
+    that kept its word satisfies this trivially; what the append rule adds is
+    exactly one character, and a hung line has only chars - indent to spend. At
+    dadbef0 this failed in one place and nowhere else: chemistry 12-24 at Letter
+    portrait, 'use of a…' hung six characters into a fourteen-character cell, 15
+    against 14. cut_line reads the hang now, so that line drops the word instead.
+    """
+    total, over = overmeasure(shipped_days(name, tmp_path), paper, orientation)
+    assert total, "the walk drew nothing: the fixture is wrong, not the page"
+    assert not over, f"{name} {paper} {orientation}: over-measure {over}"

@@ -682,7 +682,7 @@ def cell_min_height(events, chars, size):
 CUT_CLOSERS = ",.!?;:)]\"'"
 
 
-def cut_line(s, chars=None):
+def cut_line(s, chars=None, indent=0):
     """`s`, cut: end on a whole token, the ellipsis saying the line went on.
 
     The marker may take the place of punctuation that closes the last token - a
@@ -694,12 +694,17 @@ def cut_line(s, chars=None):
     line keeps its old shape, because a bare ellipsis tells the reader nothing
     about what was lost.
 
-    `chars` is the cell's measure in characters. A caller that does not have it -
-    a test cutting a block list, the audit's spy on the page's final guard - gets
-    the no-slack reading, which can only ever run short of the measure. Measured
-    at 0c63caf, that guard never cut a line on either book at any of the four
-    shapes (2920 calls, none changed), so the reading is not reached on a drawn
-    page.
+    `chars` is the cell's measure in characters and `indent` the hang the line is
+    drawn at, in the same units, so the text has chars - indent to fill: a line
+    hung six characters into a fourteen-character cell can hold eight, not
+    fourteen. Reading the measure without the hang put one drawn line past its
+    cell at dadbef0 - chemistry 12-24 at Letter portrait, 'use of a…' at indent 6
+    against a measure of 14 - which is why both facts are arguments here.
+
+    A caller that has no measure - a test cutting a block list, the audit's spy on
+    the page's final guard - gets the no-slack reading, which can only ever run
+    short of the cell. Measured, that guard never cuts: 2920 calls, no line
+    changed, both books, all four shapes.
     """
     if len(s) <= 1:
         return s
@@ -710,7 +715,7 @@ def cut_line(s, chars=None):
         return body                    # already marked; appending would double it
     if body[-1] in CUT_CLOSERS:
         return body[:-1].rstrip() + "…"
-    if chars is not None and len(body) + 1 <= chars:
+    if chars is not None and len(body) + 1 + indent <= chars:
         return body + "…"
     prefix = body[:len(body) - len(body.split()[-1])].rstrip()
     if prefix:
@@ -729,7 +734,7 @@ def fit_detail(blocks, height, chars=None):
         used += line_h
     if kept and len(kept) < len(blocks):
         s, size, ink, indent = kept[-1]
-        kept[-1] = (cut_line(s, chars), size, ink, indent)
+        kept[-1] = (cut_line(s, chars, indent), size, ink, indent)
     return kept
 
 
@@ -806,7 +811,7 @@ def _with_detail(records, height, size, chars=None):
         out += title_blocks
         if len(lines) < len(detail) and lines:
             s, line_size, ink, indent = lines[-1]
-            lines = lines[:-1] + [(cut_line(s, chars), line_size, ink, indent)]
+            lines = lines[:-1] + [(cut_line(s, chars, indent), line_size, ink, indent)]
         out += lines
     return out
 
@@ -893,7 +898,7 @@ def _cut_blocks(blocks, height, chars=None):
     if len(kept) == len(blocks):
         return blocks
     s, size, ink, indent = kept[-1]
-    kept[-1] = (cut_line(s, chars), size, ink, indent)
+    kept[-1] = (cut_line(s, chars, indent), size, ink, indent)
     return kept
 
 
