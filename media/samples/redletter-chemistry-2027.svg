@@ -3,7 +3,7 @@
 <text x="120.00" y="154.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="22" fill="#C0392B" text-anchor="start" font-weight="700" letter-spacing="4">REDLETTER</text>
 <text x="120.00" y="228.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="58" fill="#221E1C" text-anchor="start" font-weight="700">Chemistry</text>
 <text x="120.00" y="272.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start">2027</text>
-<text x="1680.00" y="228.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="22" fill="#221E1C" text-anchor="end">72 days</text>
+<text x="1680.00" y="228.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="22" fill="#221E1C" text-anchor="end">115 days</text>
 <text x="1680.00" y="260.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#B9AE99" text-anchor="end">verified 2026-11-15</text>
 <line x1="120.00" y1="320.00" x2="1680.00" y2="320.00" stroke="#221E1C" stroke-width="2"/>
 <text x="129.81" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JANUARY</text>
@@ -31,28 +31,35 @@
 <text x="499.92" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
 <text x="567.21" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
 <text x="163.46" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<text x="230.75" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<rect x="202.49" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="230.75" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
 <text x="298.04" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
 <text x="365.33" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<text x="432.62" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<rect x="404.36" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="432.62" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
 <text x="499.92" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
-<text x="567.21" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
-<text x="163.46" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<rect x="538.95" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="567.21" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">10</text>
+<rect x="135.20" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">11</text>
 <text x="230.75" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
 <text x="298.04" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
-<text x="365.33" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<rect x="337.07" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="365.33" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">14</text>
 <rect x="404.36" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="432.62" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
 <text x="499.92" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
 <text x="567.21" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
-<text x="163.46" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<rect x="135.20" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
 <text x="230.75" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
 <text x="298.04" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
-<text x="365.33" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<rect x="337.07" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="365.33" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">21</text>
 <text x="432.62" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
-<rect x="471.65" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="499.92" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">23</text>
-<text x="567.21" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="499.92" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<rect x="538.95" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="567.21" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">24</text>
 <rect x="135.20" y="580.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="163.46" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">25</text>
 <text x="230.75" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
@@ -60,8 +67,7 @@
 <text x="365.33" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="432.62" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
 <text x="499.92" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
-<rect x="538.95" y="580.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="567.21" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">31</text>
+<text x="567.21" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <text x="664.48" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">FEBRUARY</text>
 <line x1="664.48" y1="428.90" x2="1135.52" y2="428.90" stroke="#221E1C" stroke-width="1"/>
 <text x="698.13" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -88,35 +94,37 @@
 <text x="832.71" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
 <text x="900.00" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
 <text x="967.29" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
-<text x="1034.58" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<rect x="1006.32" y="440.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1034.58" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
 <text x="1101.87" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<text x="698.13" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<rect x="669.86" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="698.13" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
 <text x="765.42" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
 <text x="832.71" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="900.00" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<text x="967.29" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
-<text x="1034.58" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
-<rect x="1073.61" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1101.87" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">14</text>
-<rect x="669.86" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="698.13" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
+<rect x="939.03" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="967.29" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
+<rect x="1006.32" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1034.58" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
+<text x="1101.87" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="698.13" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
 <text x="765.42" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
-<text x="832.71" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<rect x="804.45" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="832.71" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
 <text x="900.00" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
-<rect x="939.03" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="967.29" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
-<rect x="1006.32" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1034.58" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<text x="967.29" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1034.58" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
 <text x="1101.87" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
-<text x="698.13" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
-<text x="765.42" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<rect x="669.86" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="698.13" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">22</text>
+<rect x="737.15" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="765.42" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">23</text>
 <text x="832.71" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="900.00" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
 <rect x="939.03" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="967.29" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">26</text>
 <text x="1034.58" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
-<rect x="1073.61" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1101.87" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">28</text>
+<text x="1101.87" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="1199.15" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">MARCH</text>
 <line x1="1199.15" y1="428.90" x2="1670.19" y2="428.90" stroke="#221E1C" stroke-width="1"/>
 <text x="1232.79" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -140,17 +148,21 @@
 <line x1="1199.15" y1="612.02" x2="1670.19" y2="612.02" stroke="#E6DDC8" stroke-width="1"/>
 <text x="1232.79" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="1300.08" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
-<text x="1367.38" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
-<text x="1434.67" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<rect x="1339.11" y="440.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
+<rect x="1406.40" y="440.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
 <text x="1501.96" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
-<text x="1569.25" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<rect x="1540.99" y="440.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1569.25" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
 <text x="1636.54" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<rect x="1204.53" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1232.79" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
-<text x="1300.08" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="1232.79" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<rect x="1271.82" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1300.08" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">9</text>
 <text x="1367.38" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="1434.67" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<text x="1501.96" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<rect x="1473.70" y="475.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1501.96" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
 <text x="1569.25" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <text x="1636.54" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="1232.79" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
@@ -168,9 +180,9 @@
 <text x="1367.38" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">24</text>
 <text x="1434.67" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
 <text x="1501.96" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
-<rect x="1540.99" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1569.25" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
-<text x="1636.54" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1569.25" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="1608.28" y="545.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1636.54" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">28</text>
 <text x="1232.79" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
 <text x="1300.08" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
 <text x="1367.38" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
@@ -195,11 +207,9 @@
 <line x1="129.81" y1="873.08" x2="600.85" y2="873.08" stroke="#E6DDC8" stroke-width="1"/>
 <line x1="129.81" y1="908.05" x2="600.85" y2="908.05" stroke="#E6DDC8" stroke-width="1"/>
 <line x1="129.81" y1="943.02" x2="600.85" y2="943.02" stroke="#E6DDC8" stroke-width="1"/>
-<rect x="337.07" y="771.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="365.33" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">1</text>
+<text x="365.33" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="432.62" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
-<rect x="471.65" y="771.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="499.92" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
+<text x="499.92" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
 <text x="567.21" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
 <text x="163.46" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
 <text x="230.75" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
@@ -210,26 +220,29 @@
 <text x="499.92" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="567.21" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
 <text x="163.46" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
-<text x="230.75" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<rect x="202.49" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="230.75" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
 <text x="298.04" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="365.33" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
 <text x="432.62" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
-<text x="499.92" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
-<text x="567.21" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<rect x="471.65" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="499.92" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
+<rect x="538.95" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="567.21" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
 <rect x="135.20" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="163.46" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
-<text x="230.75" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
-<rect x="269.78" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="298.04" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">21</text>
+<rect x="202.49" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="230.75" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<text x="298.04" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
 <text x="365.33" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
 <text x="432.62" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
 <text x="499.92" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="567.21" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
-<text x="163.46" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<rect x="135.20" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">26</text>
 <text x="230.75" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
 <text x="298.04" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
-<rect x="337.07" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="365.33" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">29</text>
+<text x="365.33" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
 <text x="432.62" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
 <text x="664.48" y="717.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">MAY</text>
 <line x1="664.48" y1="759.90" x2="1135.52" y2="759.90" stroke="#221E1C" stroke-width="1"/>
@@ -256,38 +269,41 @@
 <text x="1101.87" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
 <text x="698.13" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
 <text x="765.42" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<text x="832.71" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
-<rect x="871.74" y="806.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="900.00" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
-<text x="967.29" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<text x="1034.58" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<rect x="804.45" y="806.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="832.71" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
+<text x="900.00" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<rect x="939.03" y="806.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="967.29" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">7</text>
+<rect x="1006.32" y="806.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1034.58" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
 <text x="1101.87" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
-<text x="698.13" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<rect x="669.86" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="698.13" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">10</text>
 <text x="765.42" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<rect x="804.45" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="832.71" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
-<text x="900.00" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="832.71" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<rect x="871.74" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
 <text x="967.29" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="1034.58" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
-<text x="1101.87" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
-<rect x="669.86" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="698.13" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
-<rect x="737.15" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="765.42" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
-<rect x="804.45" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="832.71" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
-<rect x="871.74" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="900.00" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<rect x="1073.61" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1101.87" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
+<text x="698.13" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="765.42" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="832.71" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="900.00" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
 <text x="967.29" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
 <text x="1034.58" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
-<text x="1101.87" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<rect x="1073.61" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1101.87" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">23</text>
 <text x="698.13" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="765.42" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
 <text x="832.71" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
-<text x="900.00" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="871.74" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="967.29" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="1034.58" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
-<text x="1101.87" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<rect x="1073.61" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1101.87" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
 <text x="698.13" y="967.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <text x="1199.15" y="717.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JUNE</text>
 <line x1="1199.15" y1="759.90" x2="1670.19" y2="759.90" stroke="#221E1C" stroke-width="1"/>
@@ -313,10 +329,11 @@
 <text x="1300.08" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="1367.38" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
 <text x="1434.67" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
-<rect x="1473.70" y="771.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1501.96" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
-<text x="1569.25" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
-<text x="1636.54" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1501.96" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<rect x="1540.99" y="771.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1569.25" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
+<rect x="1608.28" y="771.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1636.54" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
 <rect x="1204.53" y="806.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="1232.79" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">7</text>
 <text x="1300.08" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
@@ -327,23 +344,28 @@
 <text x="1636.54" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <text x="1232.79" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="1300.08" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
-<rect x="1339.11" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1367.38" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
-<text x="1434.67" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
-<text x="1501.96" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
-<rect x="1540.99" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1569.25" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
-<text x="1636.54" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
-<text x="1232.79" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1367.38" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<rect x="1406.40" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
+<rect x="1473.70" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1501.96" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
+<text x="1569.25" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<rect x="1608.28" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1636.54" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<rect x="1204.53" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1232.79" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">21</text>
 <text x="1300.08" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
 <text x="1367.38" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
 <text x="1434.67" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <rect x="1473.70" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="1501.96" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">25</text>
-<text x="1569.25" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
-<text x="1636.54" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="1540.99" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1569.25" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">26</text>
+<rect x="1608.28" y="876.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1636.54" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="1232.79" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
-<text x="1300.08" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<rect x="1271.82" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1300.08" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">29</text>
 <text x="1367.38" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
 <text x="129.81" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JULY</text>
 <line x1="129.81" y1="1090.90" x2="600.85" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
@@ -368,23 +390,25 @@
 <line x1="129.81" y1="1274.03" x2="600.85" y2="1274.03" stroke="#E6DDC8" stroke-width="1"/>
 <text x="365.33" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="432.62" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
-<text x="499.92" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
-<text x="567.21" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<rect x="135.20" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="163.46" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
+<rect x="471.65" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="499.92" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
+<rect x="538.95" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="567.21" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
+<text x="163.46" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
 <text x="230.75" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
 <text x="298.04" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
 <text x="365.33" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
 <text x="432.62" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
-<rect x="471.65" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="499.92" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">10</text>
+<text x="499.92" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="567.21" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<text x="163.46" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<rect x="135.20" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
 <text x="230.75" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <rect x="269.78" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="298.04" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">14</text>
 <text x="365.33" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
-<text x="432.62" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<rect x="404.36" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="432.62" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
 <text x="499.92" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
 <text x="567.21" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
 <text x="163.46" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
@@ -394,15 +418,16 @@
 <rect x="404.36" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="432.62" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">23</text>
 <text x="499.92" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
-<text x="567.21" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<rect x="538.95" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="567.21" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">25</text>
 <text x="163.46" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
 <rect x="202.49" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="230.75" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
-<text x="298.04" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<rect x="269.78" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="298.04" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">28</text>
 <text x="365.33" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
 <text x="432.62" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
-<rect x="471.65" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="499.92" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">31</text>
+<text x="499.92" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <text x="664.48" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">AUGUST</text>
 <line x1="664.48" y1="1090.90" x2="1135.52" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
 <text x="698.13" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -427,9 +452,11 @@
 <rect x="1073.61" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="1101.87" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">1</text>
 <text x="698.13" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
-<text x="765.42" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<rect x="737.15" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="765.42" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
 <text x="832.71" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<text x="900.00" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<rect x="871.74" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
 <text x="967.29" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
 <text x="1034.58" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
 <text x="1101.87" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
@@ -440,24 +467,28 @@
 <rect x="939.03" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="967.29" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
 <text x="1034.58" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
-<text x="1101.87" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<rect x="1073.61" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1101.87" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
 <text x="698.13" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
-<text x="765.42" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
-<text x="832.71" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
-<text x="900.00" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<rect x="737.15" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="765.42" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
+<rect x="804.45" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="832.71" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
+<rect x="871.74" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
 <text x="967.29" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
 <text x="1034.58" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
 <text x="1101.87" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
 <text x="698.13" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
 <text x="765.42" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="832.71" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
-<text x="900.00" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<rect x="871.74" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">26</text>
 <rect x="939.03" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="967.29" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="1034.58" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="1101.87" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
-<rect x="669.86" y="1277.52" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="698.13" y="1298.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
+<text x="698.13" y="1298.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
 <text x="765.42" y="1298.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <text x="1199.15" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">SEPTEMBER</text>
 <line x1="1199.15" y1="1090.90" x2="1670.19" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
@@ -480,41 +511,45 @@
 <line x1="1199.15" y1="1204.08" x2="1670.19" y2="1204.08" stroke="#E6DDC8" stroke-width="1"/>
 <line x1="1199.15" y1="1239.05" x2="1670.19" y2="1239.05" stroke="#E6DDC8" stroke-width="1"/>
 <line x1="1199.15" y1="1274.03" x2="1670.19" y2="1274.03" stroke="#E6DDC8" stroke-width="1"/>
-<rect x="1339.11" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1367.38" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">1</text>
-<rect x="1406.40" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1434.67" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">2</text>
-<rect x="1473.70" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1501.96" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
-<text x="1569.25" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="1367.38" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1434.67" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="1501.96" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<rect x="1540.99" y="1102.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1569.25" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
 <text x="1636.54" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
-<text x="1232.79" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
-<text x="1300.08" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<text x="1367.38" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
-<text x="1434.67" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<rect x="1204.53" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1232.79" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
+<rect x="1271.82" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1300.08" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">7</text>
+<rect x="1339.11" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
+<rect x="1406.40" y="1137.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">9</text>
 <text x="1501.96" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="1569.25" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
 <text x="1636.54" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
-<rect x="1204.53" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1232.79" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
+<text x="1232.79" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <text x="1300.08" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="1367.38" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
 <text x="1434.67" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
-<text x="1501.96" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<rect x="1473.70" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1501.96" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
 <text x="1569.25" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
 <text x="1636.54" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
 <text x="1232.79" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
-<text x="1300.08" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
-<text x="1367.38" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<rect x="1271.82" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1300.08" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">21</text>
+<rect x="1339.11" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">22</text>
 <text x="1434.67" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
 <text x="1501.96" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="1569.25" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
 <text x="1636.54" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
 <text x="1232.79" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
-<rect x="1271.82" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1300.08" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">28</text>
+<text x="1300.08" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="1367.38" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
-<text x="1434.67" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<rect x="1406.40" y="1242.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
 <text x="129.81" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">OCTOBER</text>
 <line x1="129.81" y1="1421.90" x2="600.85" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
 <text x="163.46" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -539,24 +574,26 @@
 <text x="432.62" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <rect x="471.65" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="499.92" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">2</text>
-<rect x="538.95" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="567.21" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
-<text x="163.46" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<text x="230.75" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="567.21" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<rect x="135.20" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
+<rect x="202.49" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="230.75" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
 <text x="298.04" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
-<text x="365.33" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
-<text x="432.62" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
-<rect x="471.65" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="499.92" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">9</text>
+<rect x="337.07" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="365.33" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">7</text>
+<rect x="404.36" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="432.62" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
+<text x="499.92" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
 <text x="567.21" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
-<rect x="135.20" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="163.46" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">11</text>
-<rect x="202.49" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="230.75" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
+<text x="163.46" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="230.75" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
 <text x="298.04" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <text x="365.33" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
-<text x="432.62" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
-<text x="499.92" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<rect x="404.36" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="432.62" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
+<rect x="471.65" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="499.92" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
 <text x="567.21" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
 <text x="163.46" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
 <text x="230.75" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
@@ -567,12 +604,12 @@
 <text x="567.21" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
 <text x="163.46" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
 <text x="230.75" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
-<text x="298.04" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="269.78" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="298.04" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="365.33" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="432.62" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
 <text x="499.92" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
-<rect x="538.95" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="567.21" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">31</text>
+<text x="567.21" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <text x="664.48" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">NOVEMBER</text>
 <line x1="664.48" y1="1421.90" x2="1135.52" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
 <text x="698.13" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -597,26 +634,29 @@
 <text x="698.13" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="765.42" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
 <text x="832.71" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
-<text x="900.00" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
-<rect x="939.03" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="967.29" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">5</text>
-<text x="1034.58" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<rect x="871.74" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="900.00" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">4</text>
+<text x="967.29" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<rect x="1006.32" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1034.58" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">6</text>
 <rect x="1073.61" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
 <text x="1101.87" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">7</text>
-<text x="698.13" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
-<rect x="737.15" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="765.42" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">9</text>
+<rect x="669.86" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="698.13" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">8</text>
+<text x="765.42" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
 <text x="832.71" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="900.00" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<text x="967.29" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<rect x="939.03" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="967.29" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
 <text x="1034.58" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
 <text x="1101.87" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
-<text x="698.13" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
-<text x="765.42" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<rect x="669.86" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="698.13" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
+<rect x="737.15" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="765.42" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
 <text x="832.71" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
 <text x="900.00" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
-<rect x="939.03" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="967.29" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">19</text>
+<text x="967.29" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
 <text x="1034.58" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
 <text x="1101.87" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
 <text x="698.13" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
@@ -629,7 +669,8 @@
 <text x="1034.58" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="1101.87" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
 <text x="698.13" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
-<text x="765.42" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<rect x="737.15" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="765.42" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
 <text x="1199.15" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">DECEMBER</text>
 <line x1="1199.15" y1="1421.90" x2="1670.19" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
 <text x="1232.79" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
@@ -653,8 +694,7 @@
 <line x1="1199.15" y1="1605.03" x2="1670.19" y2="1605.03" stroke="#E6DDC8" stroke-width="1"/>
 <text x="1367.38" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
 <text x="1434.67" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
-<rect x="1473.70" y="1433.65" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1501.96" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">3</text>
+<text x="1501.96" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
 <text x="1569.25" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
 <text x="1636.54" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
 <text x="1232.79" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
@@ -664,166 +704,257 @@
 <text x="1434.67" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">9</text>
 <text x="1501.96" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
 <text x="1569.25" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
-<rect x="1608.28" y="1468.62" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1636.54" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
-<text x="1232.79" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1636.54" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<rect x="1204.53" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1232.79" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">13</text>
 <text x="1300.08" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
 <text x="1367.38" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
 <text x="1434.67" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
 <text x="1501.96" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
 <text x="1569.25" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
 <text x="1636.54" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
-<rect x="1204.53" y="1538.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1232.79" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<text x="1232.79" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
 <text x="1300.08" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
-<text x="1367.38" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<rect x="1339.11" y="1538.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">22</text>
 <text x="1434.67" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
-<text x="1501.96" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
-<rect x="1540.99" y="1538.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
-<text x="1569.25" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">25</text>
-<text x="1636.54" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
-<text x="1232.79" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="1473.70" y="1538.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1501.96" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">24</text>
+<text x="1569.25" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<rect x="1608.28" y="1538.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1636.54" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">26</text>
+<rect x="1204.53" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1232.79" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">27</text>
 <text x="1300.08" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
-<text x="1367.38" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
-<text x="1434.67" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<rect x="1339.11" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">29</text>
+<rect x="1406.40" y="1573.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
 <text x="1501.96" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
 <line x1="120.00" y1="1646.00" x2="1680.00" y2="1646.00" stroke="#221E1C" stroke-width="1"/>
 <text x="120.00" y="1680.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="18" fill="#C0392B" text-anchor="start" font-weight="700" letter-spacing="3">THE DAYS</text>
-<text x="120.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 15</text>
-<text x="212.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1895  Artturi Ilmari Virtanen is born</text>
-<text x="120.00" y="1736.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 23</text>
-<text x="212.00" y="1736.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1876  Otto Paul Hermann Diels is born</text>
-<text x="212.00" y="1753.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1929  John C. Polanyi is born</text>
-<text x="120.00" y="1769.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 25</text>
-<text x="212.00" y="1769.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1917  Ilya Romanovich Prigogine is born</text>
-<text x="120.00" y="1786.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 31</text>
-<text x="212.00" y="1786.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1868  Theodore William Richards is born</text>
-<text x="212.00" y="1802.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1881  Irving Langmuir is born</text>
-<text x="120.00" y="1819.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 14</text>
-<text x="212.00" y="1819.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1917  Herbert A. Hauptman is born</text>
-<text x="120.00" y="1835.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 15</text>
-<text x="212.00" y="1835.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1873  Hans Karl August Simon von Euler-Chelpin is born</text>
-<text x="120.00" y="1852.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 19</text>
-<text x="212.00" y="1852.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1859  Svante August Arrhenius is born</text>
-<text x="120.00" y="1868.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 20</text>
-<text x="212.00" y="1868.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1937  Robert Huber is born</text>
-<text x="120.00" y="1885.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 26</text>
-<text x="212.00" y="1885.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1903  Giulio Natta is born</text>
-<text x="120.00" y="1901.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 28</text>
-<text x="212.00" y="1901.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1901  Linus Carl Pauling is born</text>
-<text x="120.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 08</text>
-<text x="212.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1879  Otto Hahn is born</text>
-<text x="120.00" y="1934.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 19</text>
-<text x="212.00" y="1934.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1883  Walter Norman Haworth is born</text>
-<text x="212.00" y="1951.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1900  Frédéric Joliot is born</text>
-<text x="120.00" y="1967.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 23</text>
-<text x="212.00" y="1967.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1881  Hermann Staudinger is born</text>
-<text x="120.00" y="1984.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 24</text>
-<text x="212.00" y="1984.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1884  Petrus (Peter) Josephus Wilhelmus Debye is born</text>
-<text x="120.00" y="2000.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 27</text>
-<text x="212.00" y="2000.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1847  Otto Wallach is born</text>
-<text x="120.00" y="2017.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 01</text>
-<text x="212.00" y="2017.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1865  Richard Adolf Zsigmondy is born</text>
-<text x="120.00" y="2033.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 03</text>
-<text x="212.00" y="2033.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1896  Nikolay Nikolaevich Semenov is born</text>
-<text x="120.00" y="2050.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 08</text>
-<text x="212.00" y="2050.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1911  Melvin Calvin is born</text>
-<text x="120.00" y="2066.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 19</text>
-<text x="212.00" y="2066.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1912  Glenn Theodore Seaborg is born</text>
-<text x="120.00" y="2083.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 21</text>
-<text x="212.00" y="2083.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1889  Paul Karrer is born</text>
-<text x="120.00" y="2099.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 29</text>
-<text x="212.00" y="2099.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1893  Harold Clayton Urey is born</text>
-<text x="120.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 06</text>
-<text x="212.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1871  Victor Grignard is born</text>
-<text x="120.00" y="2132.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 12</text>
-<text x="212.00" y="2132.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1895  William Francis Giauque is born</text>
-<text x="120.00" y="2149.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 17</text>
-<text x="212.00" y="2149.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1897  Odd Hassel is born</text>
-<text x="120.00" y="2165.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 18</text>
-<text x="212.00" y="2165.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1901  Vincent du Vigneaud is born</text>
-<text x="120.00" y="2182.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 19</text>
-<text x="212.00" y="2182.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1897  Sir Cyril Norman Hinshelwood is born</text>
-<text x="120.00" y="2198.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 20</text>
-<text x="212.00" y="2198.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1860  Eduard Buchner is born</text>
-<text x="120.00" y="2215.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 04</text>
-<text x="212.00" y="2215.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1877  Heinrich Otto Wieland is born</text>
-<text x="120.00" y="2231.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 07</text>
-<text x="212.00" y="2231.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1896  Robert S. Mulliken is born</text>
-<text x="120.00" y="2248.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 16</text>
-<text x="212.00" y="2248.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1897  Georg Wittig is born</text>
-<text x="120.00" y="2264.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 19</text>
-<text x="212.00" y="2264.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1910  Paul J. Flory is born</text>
-<text x="120.00" y="2281.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 25</text>
-<text x="212.00" y="2281.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1864  Walther Hermann Nernst is born</text>
-<text x="212.00" y="2297.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1911  William H. Stein is born</text>
-<text x="900.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 05</text>
-<text x="992.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1891  John Howard Northrop is born</text>
-<text x="900.00" y="1736.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 10</text>
-<text x="992.00" y="1736.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1902  Kurt Alder is born</text>
-<text x="900.00" y="1753.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 14</text>
-<text x="992.00" y="1753.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1921  Geoffrey Wilkinson is born</text>
-<text x="900.00" y="1769.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 23</text>
-<text x="992.00" y="1769.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1906  Vladimir Prelog is born</text>
-<text x="900.00" y="1786.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 27</text>
-<text x="992.00" y="1786.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1881  Hans Fischer is born</text>
-<text x="900.00" y="1802.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 31</text>
-<text x="992.00" y="1802.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1918  Paul D. Boyer is born</text>
-<text x="900.00" y="1819.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 01</text>
-<text x="992.00" y="1819.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1885  George de Hevesy is born</text>
-<text x="900.00" y="1835.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 13</text>
-<text x="992.00" y="1835.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1872  Richard Martin Willstätter is born</text>
-<text x="900.00" y="1852.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 27</text>
-<text x="992.00" y="1852.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1874  Carl Bosch is born</text>
-<text x="900.00" y="1868.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 30</text>
-<text x="992.00" y="1868.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1852  Jacobus Henricus van 't Hoff is born</text>
-<text x="992.00" y="1885.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1871  Ernest Rutherford is born</text>
-<text x="992.00" y="1901.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1884  The (Theodor) Svedberg is born</text>
-<text x="900.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 01</text>
-<text x="992.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1877  Francis William Aston is born</text>
-<text x="900.00" y="1934.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 02</text>
-<text x="992.00" y="1934.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1853  Wilhelm Ostwald is born</text>
-<text x="992.00" y="1951.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1877  Frederick Soddy is born</text>
-<text x="900.00" y="1967.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 03</text>
-<text x="992.00" y="1967.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1869  Fritz Pregl is born</text>
-<text x="900.00" y="1984.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 13</text>
-<text x="992.00" y="1984.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1886  Sir Robert Robinson is born</text>
-<text x="900.00" y="2000.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 28</text>
-<text x="992.00" y="2000.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1852  Henri Moissan is born</text>
-<text x="900.00" y="2017.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 02</text>
-<text x="992.00" y="2017.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1852  Sir William Ramsay is born</text>
-<text x="900.00" y="2033.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 03</text>
-<text x="992.00" y="2033.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1904  Charles J. Pedersen is born</text>
-<text x="900.00" y="2050.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 09</text>
-<text x="992.00" y="2050.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1852  Hermann Emil Fischer is born</text>
-<text x="900.00" y="2066.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 11</text>
-<text x="992.00" y="2066.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1884  Friedrich Bergius is born</text>
-<text x="900.00" y="2083.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 12</text>
-<text x="992.00" y="2083.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1865  Arthur Harden is born</text>
-<text x="900.00" y="2099.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 31</text>
-<text x="992.00" y="2099.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1835  Johann Friedrich Wilhelm Adolf von Baeyer is born</text>
-<text x="900.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 05</text>
-<text x="992.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1854  Paul Sabatier is born</text>
-<text x="900.00" y="2132.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 07</text>
-<text x="992.00" y="2132.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1867  Marie Curie, née Skłodowska is born</text>
-<text x="900.00" y="2149.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 09</text>
-<text x="992.00" y="2149.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1897  Ronald George Wreyford Norrish is born</text>
-<text x="900.00" y="2165.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 19</text>
-<text x="992.00" y="2165.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1887  James Batcheller Sumner is born</text>
-<text x="900.00" y="2182.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 26</text>
-<text x="992.00" y="2182.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1898  Karl Ziegler is born</text>
-<text x="900.00" y="2198.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 27</text>
-<text x="992.00" y="2198.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1903  Lars Onsager is born</text>
-<text x="900.00" y="2215.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 03</text>
-<text x="992.00" y="2215.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1900  Richard Kuhn is born</text>
-<text x="900.00" y="2231.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 09</text>
-<text x="992.00" y="2231.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1868  Fritz Haber is born</text>
-<text x="900.00" y="2248.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 12</text>
-<text x="992.00" y="2248.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1866  Alfred Werner is born</text>
-<text x="900.00" y="2264.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 20</text>
-<text x="992.00" y="2264.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1890  Jaroslav Heyrovsky is born</text>
-<text x="900.00" y="2281.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 25</text>
-<text x="992.00" y="2281.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1876  Adolf Otto Reinhold Windaus is born</text>
-<text x="992.00" y="2297.50" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1904  Gerhard Herzberg is born</text>
+<text x="120.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 05</text>
+<text x="212.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1981  Harold Clayton Urey dies</text>
+<text x="120.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 08</text>
+<text x="212.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1997  Melvin Calvin dies</text>
+<text x="120.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 10</text>
+<text x="212.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1877  Frederick Gardner Cottrell is born</text>
+<text x="120.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 11</text>
+<text x="212.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1922  Diabetic teenager Leonard Thompson received the firs…</text>
+<text x="120.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 14</text>
+<text x="212.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1934  French chemist Paul Vieille dies</text>
+<text x="120.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 15</text>
+<text x="212.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1784  Henry Cavendish announced to the Royal Society that…</text>
+<text x="120.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 18</text>
+<text x="212.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1825  Edward Frankland is born</text>
+<text x="120.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 21</text>
+<text x="212.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1941  Commercial production of magnesium extracted electro…</text>
+<text x="120.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 24</text>
+<text x="212.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1872  Morris Travers is born</text>
+<text x="120.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JAN 25</text>
+<text x="212.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1627  Robert Boyle is born</text>
+<text x="120.00" y="1872.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 06</text>
+<text x="212.00" y="1872.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1886  Clemens Winkler discovered the element germanium</text>
+<text x="120.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 08</text>
+<text x="212.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1866  Moses Gomberg is born</text>
+<text x="212.00" y="1902.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1975  Sir Robert Robinson dies</text>
+<text x="120.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 12</text>
+<text x="212.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1957  Robert H. Wentorf announced he had made borazon, a b…</text>
+<text x="120.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 13</text>
+<text x="212.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1909  Danish thermochemist Julius Thomsen dies</text>
+<text x="120.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 17</text>
+<text x="212.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1838  Friedrich Beilstein is born</text>
+<text x="120.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 22</text>
+<text x="212.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1879  Johannes Nicolaus Brønsted is born</text>
+<text x="120.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 23</text>
+<text x="212.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1841  The Chemical Society of London, a forerunner of the…</text>
+<text x="120.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">FEB 26</text>
+<text x="212.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1931  Otto Wallach dies</text>
+<text x="120.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 03</text>
+<text x="212.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1826  Joseph Wharton is born</text>
+<text x="120.00" y="2024.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 04</text>
+<text x="212.00" y="2024.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1947  Willard Libby performed the first carbon dating expe…</text>
+<text x="120.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 06</text>
+<text x="212.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1869  Dmitri Mendeleev's periodic table was announced to t…</text>
+<text x="120.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 09</text>
+<text x="212.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1912  Stanley G. Thompson is born</text>
+<text x="120.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 12</text>
+<text x="212.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1838  William Perkin is born</text>
+<text x="120.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 19</text>
+<text x="212.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1950  Walter Norman Haworth dies</text>
+<text x="120.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 23</text>
+<text x="212.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1962  Neil Bartlett made xenon hexafluoroplatinate, the fi…</text>
+<text x="120.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 24</text>
+<text x="212.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1733  Joseph Priestley is born</text>
+<text x="120.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAR 28</text>
+<text x="212.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1979  The Three Mile Island nuclear plant in Pennsylvania…</text>
+<text x="212.00" y="2146.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1982  William Francis Giauque dies</text>
+<text x="120.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 08</text>
+<text x="212.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1911  Melvin Calvin is born</text>
+<text x="120.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 13</text>
+<text x="212.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1782  Tellurium was discovered by mineralogist Franz Mülle…</text>
+<text x="120.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 17</text>
+<text x="212.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1787  The Méthode de Nomenclature Chimique, a logical syst…</text>
+<text x="120.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 18</text>
+<text x="212.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1838  Paul Émile Lecoq de Boisbaudran is born</text>
+<text x="120.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 19</text>
+<text x="212.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1912  Glenn Seaborg is born</text>
+<text x="120.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 20</text>
+<text x="212.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1821  Franz Achard dies</text>
+<text x="120.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">APR 26</text>
+<text x="212.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1940  Carl Bosch dies</text>
+<text x="212.00" y="2268.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1986  A steam explosion and fires at the Chernobyl nuclear…</text>
+<text x="120.00" y="2283.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 05</text>
+<text x="212.00" y="2283.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1921  Arthur Schawlow is born</text>
+<text x="120.00" y="2298.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 07</text>
+<text x="212.00" y="2298.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1899  Arda Alden Green is born</text>
+<text x="640.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 08</text>
+<text x="732.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1786  Thomas Hancock is born</text>
+<text x="640.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 10</text>
+<text x="732.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1860  Robert Bunsen and Gustav Kirchhoff discovered caesiu…</text>
+<text x="640.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 13</text>
+<text x="732.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1865  Johannes Thiele is born</text>
+<text x="640.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 16</text>
+<text x="732.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1763  Nicolas-Louis Vauquelin is born</text>
+<text x="640.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 23</text>
+<text x="732.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1908  John Bardeen is born</text>
+<text x="640.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 27</text>
+<text x="732.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1987  John Howard Northrop dies</text>
+<text x="640.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">MAY 30</text>
+<text x="732.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1898  William Ramsay and Morris Travers discovered krypton</text>
+<text x="640.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 05</text>
+<text x="732.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1760  Johan Gadolin is born</text>
+<text x="640.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 06</text>
+<text x="732.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1943  Richard Smalley is born</text>
+<text x="640.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 07</text>
+<text x="732.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1896  Robert Mulliken is born</text>
+<text x="732.00" y="1872.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1978  Ronald George Wreyford Norrish dies</text>
+<text x="640.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 17</text>
+<text x="732.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">2001  Donald J. Cram dies</text>
+<text x="640.00" y="1902.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 18</text>
+<text x="732.00" y="1902.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1971  Paul Karrer dies</text>
+<text x="640.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 20</text>
+<text x="732.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1931  Mary L. Good is born</text>
+<text x="640.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 21</text>
+<text x="732.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1808  Joseph Louis Gay-Lussac and Louis Thénard isolated b…</text>
+<text x="640.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 25</text>
+<text x="732.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">2023  John B. Goodenough dies</text>
+<text x="640.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 26</text>
+<text x="732.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1886  Henri Moissan isolated elemental fluorine</text>
+<text x="640.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 27</text>
+<text x="732.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1954  The world's first nuclear power station, at Obninsk…</text>
+<text x="640.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUN 29</text>
+<text x="732.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1833  Peter Waage is born</text>
+<text x="640.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 03</text>
+<text x="732.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1826  Antoine-Jérôme Balard announced the discovery of bro…</text>
+<text x="640.00" y="2024.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 04</text>
+<text x="732.00" y="2024.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1934  Marie Curie dies</text>
+<text x="640.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 12</text>
+<text x="732.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1898  William Ramsay and Morris Travers discovered xenon b…</text>
+<text x="640.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 14</text>
+<text x="732.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1907  Sir William Perkin dies</text>
+<text x="640.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 16</text>
+<text x="732.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1945  The first nuclear bomb test was detonated at Alamogo…</text>
+<text x="640.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 23</text>
+<text x="732.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1906  Vladimir Prelog is born</text>
+<text x="640.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 25</text>
+<text x="732.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1920  Rosalind Franklin is born</text>
+<text x="640.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 27</text>
+<text x="732.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1844  John Dalton dies</text>
+<text x="640.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">JUL 28</text>
+<text x="732.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1919  The International Union of Pure and Applied Chemistr…</text>
+<text x="732.00" y="2146.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">2002  Archer John Porter Martin dies</text>
+<text x="640.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 01</text>
+<text x="732.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1774  Joseph Priestley first prepared oxygen by heating me…</text>
+<text x="640.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 03</text>
+<text x="732.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1823  Johann Döbereiner found that platinum sponge ignites…</text>
+<text x="640.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 05</text>
+<text x="732.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1957  Heinrich Otto Wieland dies</text>
+<text x="640.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 13</text>
+<text x="732.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1894  William Ramsay and Lord Rayleigh announced argon, th…</text>
+<text x="640.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 15</text>
+<text x="732.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1919  Francis Aston finished building his first mass spect…</text>
+<text x="640.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 17</text>
+<text x="732.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1951  Aldrich Chemical Company was established; it merged…</text>
+<text x="640.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 18</text>
+<text x="732.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1868  Jules Janssen detected helium as an unknown yellow l…</text>
+<text x="640.00" y="2268.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 19</text>
+<text x="732.00" y="2268.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1994  Linus Carl Pauling dies</text>
+<text x="640.00" y="2283.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 26</text>
+<text x="732.00" y="2283.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1743  Antoine Lavoisier is born</text>
+<text x="640.00" y="2298.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">AUG 27</text>
+<text x="732.00" y="2298.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1874  Carl Bosch is born</text>
+<text x="1160.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 04</text>
+<text x="1252.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1913  Stanford Moore is born</text>
+<text x="1160.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 06</text>
+<text x="1252.00" y="1735.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1766  John Dalton is born</text>
+<text x="1160.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 07</text>
+<text x="1252.00" y="1750.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1829  August Kekulé is born</text>
+<text x="1160.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 08</text>
+<text x="1252.00" y="1765.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1980  Willard Frank Libby dies</text>
+<text x="1160.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 09</text>
+<text x="1252.00" y="1780.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1974  Albert Ghiorso and Glenn Seaborg announced the disco…</text>
+<text x="1160.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 17</text>
+<text x="1252.00" y="1796.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1936  Henri Le Chatelier dies</text>
+<text x="1160.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 21</text>
+<text x="1252.00" y="1811.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1832  Louis Cailletet is born</text>
+<text x="1160.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 22</text>
+<text x="1252.00" y="1826.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1791  Michael Faraday is born</text>
+<text x="1160.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">SEP 30</text>
+<text x="1252.00" y="1841.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1774  Carl Wilhelm Scheele wrote to Lavoisier announcing h…</text>
+<text x="1160.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 02</text>
+<text x="1252.00" y="1857.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1956  The first commercial atomic clock, the Atomicron, wa…</text>
+<text x="1160.00" y="1872.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 04</text>
+<text x="1252.00" y="1872.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1918  Kenichi Fukui is born</text>
+<text x="1160.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 05</text>
+<text x="1252.00" y="1887.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1889  Dirk Coster is born</text>
+<text x="1160.00" y="1902.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 07</text>
+<text x="1252.00" y="1902.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1913  Niels Bohr proposed his model of the atom with elect…</text>
+<text x="1252.00" y="1918.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">2026  Henri B. Kagan and Kenso Soai won the 2026 Nobel Pri…</text>
+<text x="1160.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 08</text>
+<text x="1252.00" y="1933.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1850  Henry Le Châtelier is born</text>
+<text x="1160.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 15</text>
+<text x="1252.00" y="1948.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1951  Carl Djerassi's team at Syntex developed norethindro…</text>
+<text x="1160.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 16</text>
+<text x="1252.00" y="1963.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1846  William T. G. Morton demonstrated ether as an anaest…</text>
+<text x="1160.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">OCT 27</text>
+<text x="1252.00" y="1978.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1859  The spectroscope used by Kirchhoff to identify eleme…</text>
+<text x="1160.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 04</text>
+<text x="1252.00" y="1994.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1943  The Oak Ridge reactor went critical; within two mont…</text>
+<text x="1160.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 06</text>
+<text x="1252.00" y="2009.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1886  Sir Ian Heilbron is born</text>
+<text x="1252.00" y="2024.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1964  Hans von Euler-Chelpin dies</text>
+<text x="1160.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 07</text>
+<text x="1252.00" y="2039.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1867  Marie Curie is born</text>
+<text x="1160.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 08</text>
+<text x="1252.00" y="2055.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1895  Wilhelm Röntgen discovered X-rays</text>
+<text x="1160.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 12</text>
+<text x="1252.00" y="2070.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1783  Antoine Lavoisier declared to the French Royal Acade…</text>
+<text x="1160.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 15</text>
+<text x="1252.00" y="2085.54" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1810  Humphry Davy told the Royal Society that chlorine is…</text>
+<text x="1160.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 16</text>
+<text x="1252.00" y="2100.77" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1945  The discovery of americium was announced</text>
+<text x="1160.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 26</text>
+<text x="1252.00" y="2116.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1801  Charles Hatchett announced columbium (now niobium) t…</text>
+<text x="1160.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 27</text>
+<text x="1252.00" y="2131.23" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1895  Alfred Nobel signed his final will establishing the…</text>
+<text x="1160.00" y="2146.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">NOV 30</text>
+<text x="1252.00" y="2146.46" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">2016  IUPAC officially approved the names and symbols niho…</text>
+<text x="1160.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 09</text>
+<text x="1252.00" y="2161.69" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1868  Fritz Haber is born</text>
+<text x="1160.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 13</text>
+<text x="1252.00" y="2176.92" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1910  Charles Coulson is born</text>
+<text x="1160.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 22</text>
+<text x="1252.00" y="2192.15" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1877  Raoul Pictet telegraphed the Paris Academy that he h…</text>
+<text x="1160.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 24</text>
+<text x="1252.00" y="2207.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1936  John Lawrence used phosphorus-32 to treat leukaemia,…</text>
+<text x="1160.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 26</text>
+<text x="1252.00" y="2222.62" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1898  Marie and Pierre Curie discovered radium</text>
+<text x="1160.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 27</text>
+<text x="1252.00" y="2237.85" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1822  Louis Pasteur is born</text>
+<text x="1160.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 29</text>
+<text x="1252.00" y="2253.08" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1931  Harold Urey announced the discovery of heavy water,…</text>
+<text x="1160.00" y="2268.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#C0392B" text-anchor="start" font-weight="700">DEC 30</text>
+<text x="1252.00" y="2268.31" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="12" fill="#221E1C" text-anchor="start">1913  William Coolidge's ductile tungsten for incandescent…</text>
 <text x="120.00" y="2340.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="14" fill="#B9AE99" text-anchor="start">Marked days are those whose sources were read and supported the day: either two publishers agreed, or a body of record says so.</text>
 </svg>

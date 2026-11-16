@@ -13,9 +13,12 @@ import pytest
 
 import verify_days as vd
 
+from conftest import source_page
+
 
 def page(*phrases):
-    return "<html><body><p>" + " ... ".join(phrases) + "</p></body></html>"
+    """A readable page — see `conftest.source_page` for why size matters here."""
+    return source_page(*phrases)
 
 
 class FakeWeb:
@@ -49,11 +52,10 @@ def day_with(urls, iso="1961-04-12"):
 
 
 @pytest.mark.parametrize("value", ["1961-04-12", dt.date(1961, 4, 12)])
-def test_date_variants_accept_a_string_or_a_yaml_date(value):
-    variants = [v.lower() for v in vd.date_variants(value)]
-    assert "april 12, 1961" in variants
-    assert "12 april 1961" in variants
-    assert "1961-04-12" in variants
+def test_a_iso_string_and_a_yaml_date_are_both_accepted(value):
+    # YAML hands an unquoted 1961-04-12 back as a date, so a dataset does not have
+    # to quote every date for the matcher's sake.
+    assert vd.supports("<p>April 12</p>", value)
 
 
 @pytest.mark.parametrize("phrase", [
@@ -62,6 +64,30 @@ def test_date_variants_accept_a_string_or_a_yaml_date(value):
 ])
 def test_supports_finds_every_written_form(phrase):
     assert vd.supports(f"<p>{phrase}</p>", "1961-04-12")
+
+
+@pytest.mark.parametrize("phrase", [
+    # The RSC titles its pages "On This Day - Mar 06": month abbreviated, day
+    # zero-padded, year further down the page. An enumerated list of written
+    # forms missed this one and reported 30 real days as contested.
+    "On This Day – Mar 06 : Mendeleev's Periodic Table",
+    "Mar 06", "06 Mar", "March 06", "6 March", "March 6, 1869",
+])
+def test_supports_reads_the_form_the_rsc_prints(phrase):
+    assert vd.supports(f"<p>{phrase}</p>", "1869-03-06")
+
+
+@pytest.mark.parametrize("phrase", ["Mar 16", "March 2026", "March 60",
+                                    "March 1869", "Apr 06"])
+def test_a_zero_padded_day_does_not_match_its_neighbours(phrase):
+    assert not vd.supports(f"<p>{phrase}</p>", "1869-03-06")
+
+
+@pytest.mark.parametrize("phrase", [
+    "April 13, 1961", "April 1961", "April 120", "March 12, 1961", "12 March",
+])
+def test_supports_does_not_reach_for_a_neighbouring_date(phrase):
+    assert not vd.supports(f"<p>{phrase}</p>", "1961-04-12")
 
 
 def test_supports_collapses_whitespace_and_ignores_case():
@@ -249,3 +275,41 @@ def test_two_publishers_still_win_over_the_allowlist(monkeypatch):
 ])
 def test_authority_matching_is_on_the_host_boundary(host, vouched):
     assert bool(vd.authority_for(f"https://{host}/x", ALLOWLIST)) is vouched
+
+
+# ------------------------------------------------------------ the block floor
+#
+# acs.org answers a non-browser client with HTTP 200 and 212 bytes of challenge
+# script. Before the floor, the gate called that "read, no match" — reporting a
+# blocked door as a source that disagrees about the date. It is a door.
+
+BOT_WALL = ('<html><head><META NAME="robots" CONTENT="noindex,nofollow">'
+            '<script src="/_Incapsula_Resource?SWJIYLWA=1"></script>'
+            '</head><body></body></html>')
+
+
+def test_a_bot_wall_is_unread_rather_than_disagreeing(monkeypatch):
+    out = run_day(monkeypatch, {"https://www.acs.org/x": BOT_WALL})
+    assert out["status"] == "quarantined"
+    assert out["sources"][0]["read"] is False
+    assert "blocked or empty" in out["sources"][0]["error"]
+
+
+def test_a_bot_wall_does_not_turn_a_day_contested(monkeypatch):
+    """One readable source that agrees, one wall: still provisional, not contested."""
+    out = run_day(monkeypatch, {
+        "https://a.org/x": page("April 12, 1961"),
+        "https://www.acs.org/x": BOT_WALL,
+    })
+    assert out["status"] == "provisional"
+    assert out["agreement"] == "1 of 2"
+    assert out["readable"] == 1
+
+
+def test_the_floor_counts_visible_text_not_markup():
+    page_markup = "<div>" + "<span class='x'></span>" * 400 + "April 12, 1961</div>"
+    assert len(vd.visible_text(page_markup)) < vd.MIN_TEXT
+
+
+def test_visible_text_drops_script_bodies():
+    assert "alert" not in vd.visible_text('<script>alert(1)</script><p>April 12</p>')

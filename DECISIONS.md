@@ -88,6 +88,113 @@ and over the footer.
 **Why.** The defect only appears at density, which is exactly the state the product
 is aiming for, so it would have arrived with the first real calendar.
 
+## 2026-11-16 · The date matcher reads shapes, not strings
+
+**Change.** `supports()` now builds a pattern from the record's date instead of
+looking for one of seven pre-written phrases. It covers a full or three-letter
+month name, a plain or zero-padded day, either order, and the ISO form.
+
+**Why.** A research file arrived citing 96 Royal Society of Chemistry pages. Thirty
+of them came back `contested`: the gate had fetched the page, the page stated the
+date, and the gate could not see it, because the RSC titles its pages
+`On This Day – Mar 06` — abbreviated month, zero-padded day — and none of the
+seven phrases (`March 6, 1869`, `6 March 1869`, `Mar 6, 1869`, …) matched `Mar 06`.
+
+**What that cost.** A third of a researched calendar was reported as sources
+disagreeing about a date when the sources agreed and the reader was blind. It is
+the failure mode the status ladder is supposed to prevent, arriving through the
+instrument rather than the material. `contested` is a claim about the sources; it
+is not a safe default for "my pattern did not match".
+
+**Evidence.** After the fix, the same 96 pages, unchanged, on the same day. Tests
+now pin both directions: `Mar 06` and `March 06` match 6 March; `March 2026`,
+`March 60`, `Mar 16` and `March 1869` do not.
+
+## 2026-11-16 · A bot wall is unread, not disagreement
+
+**Change.** A page with fewer than 400 characters of visible text is treated as
+unreadable, with the byte and character counts in its `error`, instead of being
+read and found not to match.
+
+**Why.** acs.org answers a non-browser client with HTTP 200 and 212 bytes of
+Incapsula challenge script. The gate marked that source read and unsupporting,
+which turns "we could not open the door" into "we looked and the date is not
+there". For an allowlisted publisher that difference decides whether a day is
+`contested` or `quarantined`, and it is the difference between a report a person
+can act on and one that sends them to check a date that is fine.
+
+**Cost.** A genuinely tiny page is unread too. That is the safe direction: it
+under-claims, and no real article is under a paragraph.
+
+## 2026-11-16 · Research arrives as lines and is judged, not trusted
+
+**Format.** `MM-DD | YYYY | one sentence | source URL | publisher`, one per line.
+`scripts/from_lines.py` parses it, refuses malformed lines, and cross-checks the
+date against the source's own URL where the URL carries one — the RSC pages do
+(`on-this-day-feb-22--…`), so a line whose date and link disagree is caught before
+any request is made.
+
+**Why this shape.** The owner offered research from other assistants. Their output
+is *candidates*: the same gate judges it, unchanged, and nothing they produce can
+reach a sheet without passing the same test as a hand-curated day. Two assistants
+agreeing is not two publishers; the allowlist decides, not consensus.
+
+**What it changed.** `data/chemistry.yaml` is now built from such a file rather
+than from one API. The 72 laureate births it used to hold moved to
+`data/chemistry-laureates.yaml` unchanged: they are the people calendar, still
+true, still verified, just not the same calendar as the field's days.
+
+## 2026-11-16 · Two research files, two id spaces
+
+**Change.** `from_lines.py` numbers its records `D-CHE-<prefix><nnn>`, and the
+prefix is an argument (`C` for one researcher's file, `G` for another's).
+
+**Why.** The first fold gave both files `E001…`, so the ids collided. The id is the
+join key between a verification result and the words printed beside it, and the
+join silently matched one researcher's `E001` to the other's: a record ended up
+dated 10 January and titled "Harold Clayton Urey dies". The dates and the sentences
+had come out of different files.
+
+**How it was caught.** Not by the gate — the gate judges a URL against a date and
+never reads the id. It was caught by printing the folded file's first five lines
+and looking at them. The fold now asserts its ids are unique before it writes.
+
+**Lesson.** A join on a generated key is only safe if the key is unique across the
+things being joined, and the gate cannot see this class of error at all.
+
+## 2026-11-16 · Which researched days were left out, and why
+
+Two assistants returned 137 candidate lines. The gate passed 131 of them — the
+other six were ACS pages it could not open — and 115 are on the chemistry
+calendar. The difference is editorial, and it is recorded here because nothing in
+the output shows what is missing:
+
+| Left out | Why |
+| --- | --- |
+| 8 NIST institutional anniversaries — a Boulder campus, a proving ring, two buildings burned in a fire test | Anniversaries of an agency, not days chemistry marks as a field. All eight also rested on one index page rather than a page about the event. |
+| 6 ACS pages — the society's founding (proposed twice, by both researchers), its first president, its first paper, helium in natural gas | `acs.org` answers a non-browser client with a bot wall, so the gate could not read them. Excluded by fact, not judgement: no source, no mark. |
+| 3 Nobel announcements and 3 IUPAC notices naming elements 113–118 | The same recurring event told on several dates. One entry per event: 7 October for the chemistry prize, 30 November for the names. |
+| 1 Edison electric-lamp patent | Not chemistry, and the page the line cited does not state the date. |
+
+The 17 laureate death dates were kept: a field's days include the days its people
+die. `data/chemistry-laureates.yaml` keeps the birth calendar unchanged.
+
+## 2026-11-16 · At density the key's column count is the lever
+
+**Change.** When the key cannot fit every line on one row, it no longer defaults
+to four columns. It keeps the largest type that fits the band at all and, at that
+size, takes the column count that shows the most characters of each line.
+
+**Why.** At 115 days and four columns, each line had about 33 characters: enough
+for "The first commercial atomic clock…" and nothing else. Three columns at 12 px
+give about 50, because a third of the width had been sitting unused either side of
+the text. The lines are still trimmed where they land, but the trim now falls past
+the point where a reader knows what the day is.
+
+**Cost.** A three-column key reads down and then across, so the columns no longer
+line up with the month blocks above them. It is a denser page; a two-sheet year is
+the honest answer if the calendar grows much past this.
+
 ## 2026-11-15 · The icon is cut on the paper, not on the white
 
 **Choice.** `tools/icon.py` finds the sheet by flooding its own cream colour from

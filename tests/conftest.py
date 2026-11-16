@@ -38,6 +38,19 @@ def pytest_collection_modifyitems(config, items):
             item.add_marker(skip)
 
 
+def source_page(*phrases: str) -> str:
+    """A page the verifier would accept as read: it states its phrases and has text.
+
+    The gate treats a page with almost no visible text as a door, not a document —
+    acs.org answers a non-browser client with HTTP 200 and a 212-byte challenge —
+    so a fixture has to look like an article, not like a probe.
+    """
+    body = " ... ".join(phrases)
+    filler = (" The rest of this article is about the people involved in the work "
+              "described above and what followed from it. ") * 5
+    return f"<html><body><p>{body}</p><p>{filler}</p></body></html>"
+
+
 def make_day(ident="D-0001", month_day="04-12", year=1961, status="active", sources=None):
     """A day record shaped like the verifier's output, which is what both writers read."""
     return {

@@ -217,8 +217,28 @@ def key_columns(lines, W, M):
     if best:
         return best
 
-    # Nothing fits: four columns, the smallest type that reads, and the text is
-    # trimmed where it lands rather than allowed to run over its neighbour.
+    # Nothing fits on one line. The old answer was "four columns, small type", but
+    # at high density the column count is the real lever on how much of a sentence
+    # survives, and four columns threw away a third of the width. Keep the largest
+    # type that fits the band at all, and at that size take the column count that
+    # shows the most characters per line.
+    for size in (12, 11, 10):
+        best, best_chars = None, -1.0
+        char_w = max(0.1, text_width("M", size))
+        for cols in (2, 3, 4, 5):
+            rows = max(1, -(-len(lines) // cols))
+            line_h = (KEY_BAND - 46) / rows
+            if line_h < size * 1.25:
+                continue
+            label_w = max((text_width(label, size, "bold") for label, _ in lines), default=0)
+            room = (W - 2 * M) / cols - 16 - KEY_INDENT - label_w
+            chars = room / char_w
+            if chars > best_chars:
+                best, best_chars = (cols, line_h, rows), chars
+        if best:
+            cols, line_h, rows = best
+            return cols, size, min(40, line_h), rows
+
     cols = 4
     rows = max(1, -(-len(lines) // cols))
     return cols, 12, max(14, (KEY_BAND - 46) / rows), rows

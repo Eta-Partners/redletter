@@ -6,1166 +6,2057 @@ X-WR-CALDESC:Days a field marks in red. Each day was checked against its s
  ources before it was added\; verified 2026-11-15.
 X-WR-CALNAME:Chemistry — red-letter days
 BEGIN:VEVENT
-SUMMARY:Artturi Ilmari Virtanen is born
+SUMMARY:Harold Clayton Urey dies
+DTSTART;VALUE=DATE:20270105
+DTEND;VALUE=DATE:20270106
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G001@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Harold Clayton Urey\, winner of the 1934 Nobel Prize in Chemis
+ try for discovering deuterium\, died.\n\nHappened: 1981-01-05 (gregorian c
+ alendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting th
+ e day.\n· The Nobel Foundation — Harold Clayton Urey dies — https://w
+ ww.nobelprize.org/prizes/chemistry/1934/urey/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1934/urey/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Melvin Calvin dies
+DTSTART;VALUE=DATE:20270108
+DTEND;VALUE=DATE:20270109
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G002@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Melvin Calvin\, 1961 Nobel Prize in Chemistry laureate who map
+ ped carbon dioxide assimilation in plants\, died in Berkeley\, California.
+ \n\nHappened: 1997-01-08 (gregorian calendar\, day precision)\nChecked aga
+ inst 1 sources\, 1 of 1 supporting the day.\n· The Nobel Foundation — M
+ elvin Calvin dies — https://www.nobelprize.org/prizes/chemistry/1961/cal
+ vin/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1961/calvin/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Frederick Gardner Cottrell is born
+DTSTART;VALUE=DATE:20270110
+DTEND;VALUE=DATE:20270111
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C001@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Frederick Gardner Cottrell\, inventor of the electrostatic pre
+ cipitator for removing smoke particles from air\, was born.\n\nHappened: 1
+ 877-01-10 (gregorian calendar\, day precision)\nChecked against 1 sources\
+ , 1 of 1 supporting the day.\n· Royal Society of Chemistry — Frederick 
+ Gardner Cottrell is born — https://edu.rsc.org/resources/on-this-day-jan
+ -10--cottrell-was-born/10110.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jan-10--cottrell-was-born/10
+ 110.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Diabetic teenager Leonard Thompson received the first trial of ins
+ ulin treatment
+DTSTART;VALUE=DATE:20270111
+DTEND;VALUE=DATE:20270112
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C002@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,first
+DESCRIPTION:Diabetic teenager Leonard Thompson received the first trial of
+  insulin treatment.\n\nHappened: 1922-01-11 (gregorian calendar\, day prec
+ ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal S
+ ociety of Chemistry — Diabetic teenager Leonard Thompson received the fi
+ rst trial of insulin treatment — https://edu.rsc.org/resources/on-this-d
+ ay-jan-11-thompson-trialled-insulin/10111.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jan-11-thompson-trialled-ins
+ ulin/10111.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:French chemist Paul Vieille dies
+DTSTART;VALUE=DATE:20270114
+DTEND;VALUE=DATE:20270115
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C003@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:French chemist Paul Vieille\, inventor of nitrocellulose smoke
+ less powder\, died.\n\nHappened: 1934-01-14 (gregorian calendar\, day prec
+ ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal S
+ ociety of Chemistry — French chemist Paul Vieille dies — https://edu.r
+ sc.org/resources/on-this-day-jan-14--paul-vieille-died/10114.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jan-14--paul-vieille-died/10
+ 114.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Henry Cavendish announced to the Royal Society that water is a com
+ pound of hydrogen and oxygen
 DTSTART;VALUE=DATE:20270115
 DTEND;VALUE=DATE:20270116
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B017@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C004@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1945 in Russian Empire: for his resea
- rch and inventions in agricultural and nutrition chemistry\, especially fo
- r his fodder p…\n\nHappened: 1895-01-15 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Artturi Ilmari Virtanen — https://api.nobelprize.org/2.1/laureate
- /203
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Henry Cavendish announced to the Royal Society that water is a
+  compound of hydrogen and oxygen.\n\nHappened: 1784-01-15 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — Henry Cavendish announced to the Roy
+ al Society that water is a compound of hydrogen and oxygen — https://edu
+ .rsc.org/resources/on-this-day-jan-15--water-composition-announced/10115.a
+ rticle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/203
+URL:https://edu.rsc.org/resources/on-this-day-jan-15--water-composition-an
+ nounced/10115.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Otto Paul Hermann Diels is born
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B126@redletter.local
+SUMMARY:Edward Frankland is born
+DTSTART;VALUE=DATE:20270118
+DTEND;VALUE=DATE:20270119
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C005@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1950 in Germany: for their discovery 
- and development of the diene synthesis\n\nHappened: 1876-01-23 (gregorian 
- calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting t
- he day.\n· Nobel Prize — Otto Paul Hermann Diels — https://api.nobelp
- rize.org/2.1/laureate/210
+DESCRIPTION:Edward Frankland\, who introduced the theory of valence and pi
+ oneered organometallic chemistry\, was born.\n\nHappened: 1825-01-18 (greg
+ orian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 suppor
+ ting the day.\n· Royal Society of Chemistry — Edward Frankland is born 
+ — https://edu.rsc.org/resources/on-this-day-jan-18--edward-frankland-was
+ -born/10118.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/210
+URL:https://edu.rsc.org/resources/on-this-day-jan-18--edward-frankland-was
+ -born/10118.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:John C. Polanyi is born
-DTSTART;VALUE=DATE:20270123
-DTEND;VALUE=DATE:20270124
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B093@redletter.local
+SUMMARY:Commercial production of magnesium extracted electrolytically from
+  seawater began
+DTSTART;VALUE=DATE:20270121
+DTEND;VALUE=DATE:20270122
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C006@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Commercial production of magnesium extracted electrolytically 
+ from seawater began.\n\nHappened: 1941-01-21 (gregorian calendar\, day pre
+ cision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal 
+ Society of Chemistry — Commercial production of magnesium extracted elec
+ trolytically from seawater began — https://edu.rsc.org/resources/on-this
+ -day-jan-21--magnesium-produced/10121.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jan-21--magnesium-produced/1
+ 0121.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Morris Travers is born
+DTSTART;VALUE=DATE:20270124
+DTEND;VALUE=DATE:20270125
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C007@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1986 in Germany: for their contributi
- ons concerning the dynamics of chemical elementary processes\n\nHappened: 
- 1929-01-23 (gregorian calendar\, day precision)\nChecked against 1 sources
- \, 1 of 1 supporting the day.\n· Nobel Prize — John C. Polanyi — http
- s://api.nobelprize.org/2.1/laureate/266
+DESCRIPTION:Morris Travers\, co-discoverer of krypton\, neon and xenon wit
+ h William Ramsay\, was born.\n\nHappened: 1872-01-24 (gregorian calendar\,
+  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Royal Society of Chemistry — Morris Travers is born — https://edu.r
+ sc.org/resources/on-this-day-jan-24--morris-travers-was-born/10124.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/266
+URL:https://edu.rsc.org/resources/on-this-day-jan-24--morris-travers-was-b
+ orn/10124.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ilya Romanovich Prigogine is born
+SUMMARY:Robert Boyle is born
 DTSTART;VALUE=DATE:20270125
 DTEND;VALUE=DATE:20270126
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B075@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C008@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1977 in Russia: for his contributions
-  to non-equilibrium thermodynamics\, particularly the theory of dissipativ
- e structures\n\nHappened: 1917-01-25 (gregorian calendar\, day precision)\
- nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize 
- — Ilya Romanovich Prigogine — https://api.nobelprize.org/2.1/laureate/
- 250
+DESCRIPTION:Robert Boyle\, author of Boyle's law and a founding member of 
+ the Royal Society\, was born.\n\nHappened: 1627-01-25 (gregorian calendar\
+ , day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Royal Society of Chemistry — Robert Boyle is born — https://edu.rsc
+ .org/resources/on-this-day-jan-25--robert-boyle-was-born/10125.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/250
+URL:https://edu.rsc.org/resources/on-this-day-jan-25--robert-boyle-was-bor
+ n/10125.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Theodore William Richards is born
-DTSTART;VALUE=DATE:20270131
-DTEND;VALUE=DATE:20270201
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B174@redletter.local
+SUMMARY:Clemens Winkler discovered the element germanium
+DTSTART;VALUE=DATE:20270206
+DTEND;VALUE=DATE:20270207
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C009@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1914 in USA: in recognition of his ac
- curate determinations of the atomic weight of a large number of chemical e
- lements\n\nHappened: 1868-01-31 (gregorian calendar\, day precision)\nChec
- ked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — The
- odore William Richards — https://api.nobelprize.org/2.1/laureate/175
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Clemens Winkler discovered the element germanium.\n\nHappened:
+  1886-02-06 (gregorian calendar\, day precision)\nChecked against 1 source
+ s\, 1 of 1 supporting the day.\n· Royal Society of Chemistry — Clemens 
+ Winkler discovered the element germanium — https://edu.rsc.org/resources
+ /on-this-day-feb-06-discovery-of-germanium/10206.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/175
+URL:https://edu.rsc.org/resources/on-this-day-feb-06-discovery-of-germaniu
+ m/10206.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Irving Langmuir is born
-DTSTART;VALUE=DATE:20270131
-DTEND;VALUE=DATE:20270201
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B077@redletter.local
+SUMMARY:Moses Gomberg is born
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C010@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1932 in USA: for his discoveries and 
- investigations in surface chemistry\n\nHappened: 1881-01-31 (gregorian cal
+DESCRIPTION:Moses Gomberg\, discoverer of the first stable free radical (t
+ riphenylmethyl)\, was born.\n\nHappened: 1866-02-08 (gregorian calendar\, 
+ day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n·
+  Royal Society of Chemistry — Moses Gomberg is born — https://edu.rsc.
+ org/resources/on-this-day-feb-08--moses-gomberg-was-born/10208.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-feb-08--moses-gomberg-was-bo
+ rn/10208.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir Robert Robinson dies
+DTSTART;VALUE=DATE:20270208
+DTEND;VALUE=DATE:20270209
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G005@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Sir Robert Robinson\, winner of the 1947 Nobel Prize in Chemis
+ try\, died.\n\nHappened: 1975-02-08 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel Found
+ ation — Sir Robert Robinson dies — https://www.nobelprize.org/prizes/c
+ hemistry/1947/robinson/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1947/robinson/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Robert H. Wentorf announced he had made borazon\, a boron nitride 
+ hard enough to scratch diamond
+DTSTART;VALUE=DATE:20270212
+DTEND;VALUE=DATE:20270213
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C011@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Robert H. Wentorf announced he had made borazon\, a boron nitr
+ ide hard enough to scratch diamond.\n\nHappened: 1957-02-12 (gregorian cal
  endar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the 
- day.\n· Nobel Prize — Irving Langmuir — https://api.nobelprize.org/2.
- 1/laureate/191
+ day.\n· Royal Society of Chemistry — Robert H. Wentorf announced he had
+  made borazon\, a boron nitride hard enough to scratch diamond — https:/
+ /edu.rsc.org/resources/on-this-day-feb-12--wentorf-made-borazon/10212.arti
+ cle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/191
+URL:https://edu.rsc.org/resources/on-this-day-feb-12--wentorf-made-borazon
+ /10212.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Herbert A. Hauptman is born
-DTSTART;VALUE=DATE:20270214
-DTEND;VALUE=DATE:20270215
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B071@redletter.local
+SUMMARY:Danish thermochemist Julius Thomsen dies
+DTSTART;VALUE=DATE:20270213
+DTEND;VALUE=DATE:20270214
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C012@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Danish thermochemist Julius Thomsen\, who measured the heat of
+  about 3\,500 reactions\, died.\n\nHappened: 1909-02-13 (gregorian calenda
+ r\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.
+ \n· Royal Society of Chemistry — Danish thermochemist Julius Thomsen di
+ es — https://edu.rsc.org/resources/on-this-day-feb-13--julius-thomsen-di
+ ed/10213.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-feb-13--julius-thomsen-died/
+ 10213.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Friedrich Beilstein is born
+DTSTART;VALUE=DATE:20270217
+DTEND;VALUE=DATE:20270218
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C013@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1985 in USA: for their outstanding ac
- hievements in the development of direct methods for the determination of c
- rystal struct…\n\nHappened: 1917-02-14 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Herbert A. Hauptman — https://api.nobelprize.org/2.1/laureate/262
+DESCRIPTION:Friedrich Beilstein\, author of the Handbuch der organischen C
+ hemie\, was born.\n\nHappened: 1838-02-17 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Soc
+ iety of Chemistry — Friedrich Beilstein is born — https://edu.rsc.org/
+ resources/on-this-day-feb-17--beilstein-was-born/10217.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/262
+URL:https://edu.rsc.org/resources/on-this-day-feb-17--beilstein-was-born/1
+ 0217.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Hans Karl August Simon von Euler-Chelpin is born
-DTSTART;VALUE=DATE:20270215
-DTEND;VALUE=DATE:20270216
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B064@redletter.local
+SUMMARY:Johannes Nicolaus Brønsted is born
+DTSTART;VALUE=DATE:20270222
+DTEND;VALUE=DATE:20270223
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C014@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1929 in Germany: for their investigat
- ions on the fermentation of sugar and fermentative enzymes\n\nHappened: 18
- 73-02-15 (gregorian calendar\, day precision)\nChecked against 1 sources\,
-  1 of 1 supporting the day.\n· Nobel Prize — Hans Karl August Simon von
-  Euler-Chelpin — https://api.nobelprize.org/2.1/laureate/187
+DESCRIPTION:Johannes Nicolaus Brønsted\, who defined acids as proton dono
+ rs in 1923\, was born.\n\nHappened: 1879-02-22 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — Johannes Nicolaus Brønsted is born — https:/
+ /edu.rsc.org/resources/on-this-day-feb-22--johannes-br%C3%B8nsted-was-born
+ /10222.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/187
+URL:https://edu.rsc.org/resources/on-this-day-feb-22--johannes-br%C3%B8nst
+ ed-was-born/10222.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Svante August Arrhenius is born
-DTSTART;VALUE=DATE:20270219
-DTEND;VALUE=DATE:20270220
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B172@redletter.local
+SUMMARY:The Chemical Society of London\, a forerunner of the Royal Society
+  of Chemistry\, held its first meeting
+DTSTART;VALUE=DATE:20270223
+DTEND;VALUE=DATE:20270224
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C015@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1903 in Sweden: in recognition of the
-  extraordinary services he has rendered to the advancement of chemistry by
-  his electrol…\n\nHappened: 1859-02-19 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Svante August Arrhenius — https://api.nobelprize.org/2.1/laureate/
- 162
+CATEGORIES:Redletter,milestone
+DESCRIPTION:The Chemical Society of London\, a forerunner of the Royal Soc
+ iety of Chemistry\, held its first meeting.\n\nHappened: 1841-02-23 (grego
+ rian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 support
+ ing the day.\n· Royal Society of Chemistry — The Chemical Society of Lo
+ ndon\, a forerunner of the Royal Society of Chemistry\, held its first mee
+ ting — https://edu.rsc.org/resources/on-this-day-feb-23--chemical-societ
+ y-first-meet/10223.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/162
+URL:https://edu.rsc.org/resources/on-this-day-feb-23--chemical-society-fir
+ st-meet/10223.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Robert Huber is born
-DTSTART;VALUE=DATE:20270220
-DTEND;VALUE=DATE:20270221
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B153@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1988 in Germany: for the determinatio
- n of the three-dimensional structure of a photosynthetic reaction centre\n
- \nHappened: 1937-02-20 (gregorian calendar\, day precision)\nChecked again
- st 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Robert Huber
-  — https://api.nobelprize.org/2.1/laureate/271
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/271
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Giulio Natta is born
+SUMMARY:Otto Wallach dies
 DTSTART;VALUE=DATE:20270226
 DTEND;VALUE=DATE:20270227
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B061@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C016@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1963 in Italy: for their discoveries 
- in the field of the chemistry and technology of high polymers\n\nHappened:
-  1903-02-26 (gregorian calendar\, day precision)\nChecked against 1 source
- s\, 1 of 1 supporting the day.\n· Nobel Prize — Giulio Natta — https:
- //api.nobelprize.org/2.1/laureate/229
+CATEGORIES:Redletter,loss
+DESCRIPTION:Otto Wallach\, who devised systematic structure analysis of te
+ rpenes in essential oils\, died.\n\nHappened: 1931-02-26 (gregorian calend
+ ar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day
+ .\n· Royal Society of Chemistry — Otto Wallach dies — https://edu.rsc
+ .org/resources/on-this-day-feb-26--otto-wallach-died/10226.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/229
+URL:https://edu.rsc.org/resources/on-this-day-feb-26--otto-wallach-died/10
+ 226.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Linus Carl Pauling is born
-DTSTART;VALUE=DATE:20270228
-DTEND;VALUE=DATE:20270301
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B107@redletter.local
+SUMMARY:Joseph Wharton is born
+DTSTART;VALUE=DATE:20270303
+DTEND;VALUE=DATE:20270304
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C017@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1954 in USA: for his research into th
- e nature of the chemical bond and its application to the elucidation of th
- e structure o…\n\nHappened: 1901-02-28 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Linus Carl Pauling — https://api.nobelprize.org/2.1/laureate/217
+DESCRIPTION:Joseph Wharton\, whose company made the first pure nickel meta
+ l in the United States\, was born.\n\nHappened: 1826-03-03 (gregorian cale
+ ndar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the d
+ ay.\n· Royal Society of Chemistry — Joseph Wharton is born — https://
+ edu.rsc.org/resources/on-this-day-mar-03--joseph-wharton-was-born/10303.ar
+ ticle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/217
+URL:https://edu.rsc.org/resources/on-this-day-mar-03--joseph-wharton-was-b
+ orn/10303.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Otto Hahn is born
-DTSTART;VALUE=DATE:20270308
-DTEND;VALUE=DATE:20270309
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B127@redletter.local
+SUMMARY:Willard Libby performed the first carbon dating experiment
+DTSTART;VALUE=DATE:20270304
+DTEND;VALUE=DATE:20270305
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C018@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,first
+DESCRIPTION:Willard Libby performed the first carbon dating experiment.\n\
+ nHappened: 1947-03-04 (gregorian calendar\, day precision)\nChecked agains
+ t 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry 
+ — Willard Libby performed the first carbon dating experiment — https:/
+ /edu.rsc.org/resources/on-this-day-mar-04--first-carbon-dating-method/1030
+ 4.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-mar-04--first-carbon-dating-
+ method/10304.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Dmitri Mendeleev's periodic table was announced to the Russian Phy
+ sicochemical Society
+DTSTART;VALUE=DATE:20270306
+DTEND;VALUE=DATE:20270307
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C019@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Dmitri Mendeleev's periodic table was announced to the Russian
+  Physicochemical Society.\n\nHappened: 1869-03-06 (gregorian calendar\, da
+ y precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· R
+ oyal Society of Chemistry — Dmitri Mendeleev's periodic table was announ
+ ced to the Russian Physicochemical Society — https://edu.rsc.org/resourc
+ es/on-this-day-mar-06--mendeleevs-periodic-table/10306.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-mar-06--mendeleevs-periodic-
+ table/10306.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Stanley G. Thompson is born
+DTSTART;VALUE=DATE:20270309
+DTEND;VALUE=DATE:20270310
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C020@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1944 in Germany: for his discovery of
-  the fission of heavy nuclei\n\nHappened: 1879-03-08 (gregorian calendar\,
-  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
- · Nobel Prize — Otto Hahn — https://api.nobelprize.org/2.1/laureate/2
- 02
+DESCRIPTION:Stanley G. Thompson\, who led Berkeley work discovering seven 
+ actinide elements\, was born.\n\nHappened: 1912-03-09 (gregorian calendar\
+ , day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Royal Society of Chemistry — Stanley G. Thompson is born — https://
+ edu.rsc.org/resources/on-this-day-mar-09--stanley-thompson-was-born/10309.
+ article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/202
+URL:https://edu.rsc.org/resources/on-this-day-mar-09--stanley-thompson-was
+ -born/10309.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Walter Norman Haworth is born
+SUMMARY:William Perkin is born
+DTSTART;VALUE=DATE:20270312
+DTEND;VALUE=DATE:20270313
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C021@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:William Perkin\, discoverer of mauveine and founder of the syn
+ thetic dye industry\, was born.\n\nHappened: 1838-03-12 (gregorian calenda
+ r\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.
+ \n· Royal Society of Chemistry — William Perkin is born — https://edu
+ .rsc.org/resources/on-this-day-mar-12--william-perkin-was-born/10312.artic
+ le
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-mar-12--william-perkin-was-b
+ orn/10312.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Walter Norman Haworth dies
 DTSTART;VALUE=DATE:20270319
 DTEND;VALUE=DATE:20270320
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B122@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G007@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1937 in United Kingdom: for his inves
- tigations on carbohydrates and vitamin C\n\nHappened: 1883-03-19 (gregoria
- n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
-  the day.\n· Nobel Prize — Walter Norman Haworth — https://api.nobelp
- rize.org/2.1/laureate/196
+CATEGORIES:Redletter,loss
+DESCRIPTION:Walter Norman Haworth\, winner of the 1937 Nobel Prize in Chem
+ istry\, died.\n\nHappened: 1950-03-19 (gregorian calendar\, day precision)
+ \nChecked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel Fou
+ ndation — Walter Norman Haworth dies — https://www.nobelprize.org/priz
+ es/chemistry/1937/haworth/facts/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/196
+URL:https://www.nobelprize.org/prizes/chemistry/1937/haworth/facts/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Frédéric Joliot is born
-DTSTART;VALUE=DATE:20270319
-DTEND;VALUE=DATE:20270320
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B047@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1935 in France: in recognition of the
- ir synthesis of new radioactive elements\n\nHappened: 1900-03-19 (gregoria
- n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
-  the day.\n· Nobel Prize — Frédéric Joliot — https://api.nobelprize
- .org/2.1/laureate/193
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/193
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Hermann Staudinger is born
+SUMMARY:Neil Bartlett made xenon hexafluoroplatinate\, the first noble gas
+  compound
 DTSTART;VALUE=DATE:20270323
 DTEND;VALUE=DATE:20270324
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B073@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C022@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1953 in Germany: for his discoveries 
- in the field of macromolecular chemistry\n\nHappened: 1881-03-23 (gregoria
- n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
-  the day.\n· Nobel Prize — Hermann Staudinger — https://api.nobelpriz
- e.org/2.1/laureate/216
+CATEGORIES:Redletter,first
+DESCRIPTION:Neil Bartlett made xenon hexafluoroplatinate\, the first noble
+  gas compound.\n\nHappened: 1962-03-23 (gregorian calendar\, day precision
+ )\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Societ
+ y of Chemistry — Neil Bartlett made xenon hexafluoroplatinate\, the firs
+ t noble gas compound — https://edu.rsc.org/resources/on-this-day-mar-23-
+ -first-noble-gas-reaction/10323.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/216
+URL:https://edu.rsc.org/resources/on-this-day-mar-23--first-noble-gas-reac
+ tion/10323.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Petrus (Peter) Josephus Wilhelmus Debye is born
+SUMMARY:Joseph Priestley is born
 DTSTART;VALUE=DATE:20270324
 DTEND;VALUE=DATE:20270325
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B137@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C023@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1936 in the Netherlands: for his cont
- ributions to our knowledge of molecular structure through his investigatio
- ns on dipole…\n\nHappened: 1884-03-24 (gregorian calendar\, day precisio
- n)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize
-  — Petrus (Peter) Josephus Wilhelmus Debye — https://api.nobelprize.or
- g/2.1/laureate/195
+DESCRIPTION:Joseph Priestley\, discoverer of oxygen and the first to carbo
+ nate water\, was born.\n\nHappened: 1733-03-24 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — Joseph Priestley is born — https://edu.rsc.or
+ g/resources/on-this-day-mar-24--joseph-priestley-was-born/10324.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/195
+URL:https://edu.rsc.org/resources/on-this-day-mar-24--joseph-priestley-was
+ -born/10324.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Otto Wallach is born
-DTSTART;VALUE=DATE:20270327
-DTEND;VALUE=DATE:20270328
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B128@redletter.local
+SUMMARY:The Three Mile Island nuclear plant in Pennsylvania suffered a par
+ tial meltdown
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C024@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1910 in Germany: in recognition of hi
- s services to organic chemistry and the chemical industry by his pioneer w
- ork in the fi…\n\nHappened: 1847-03-27 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Otto Wallach — https://api.nobelprize.org/2.1/laureate/169
+CATEGORIES:Redletter,milestone
+DESCRIPTION:The Three Mile Island nuclear plant in Pennsylvania suffered a
+  partial meltdown.\n\nHappened: 1979-03-28 (gregorian calendar\, day preci
+ sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal So
+ ciety of Chemistry — The Three Mile Island nuclear plant in Pennsylvania
+  suffered a partial meltdown — https://edu.rsc.org/resources/on-this-day
+ -mar-28--nuclear-plant-meltdown/10328.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/169
+URL:https://edu.rsc.org/resources/on-this-day-mar-28--nuclear-plant-meltdo
+ wn/10328.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Richard Adolf Zsigmondy is born
-DTSTART;VALUE=DATE:20270401
-DTEND;VALUE=DATE:20270402
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B148@redletter.local
+SUMMARY:William Francis Giauque dies
+DTSTART;VALUE=DATE:20270328
+DTEND;VALUE=DATE:20270329
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G008@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1925 in Austrian Empire: for his demo
- nstration of the heterogenous nature of colloid solutions and for the meth
- ods he used\,…\n\nHappened: 1865-04-01 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Richard Adolf Zsigmondy — https://api.nobelprize.org/2.1/laureate/
- 182
+CATEGORIES:Redletter,loss
+DESCRIPTION:William Francis Giauque\, 1949 Nobel Prize in Chemistry laurea
+ te\, died in Berkeley\, California.\n\nHappened: 1982-03-28 (gregorian cal
+ endar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the 
+ day.\n· The Nobel Foundation — William Francis Giauque dies — https:/
+ /www.nobelprize.org/prizes/chemistry/1949/giauque/facts/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/182
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Nikolay Nikolaevich Semenov is born
-DTSTART;VALUE=DATE:20270403
-DTEND;VALUE=DATE:20270404
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B121@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1956 in Russia: for their researches 
- into the mechanism of chemical reactions\n\nHappened: 1896-04-03 (gregoria
- n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
-  the day.\n· Nobel Prize — Nikolay Nikolaevich Semenov — https://api.
- nobelprize.org/2.1/laureate/220
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/220
+URL:https://www.nobelprize.org/prizes/chemistry/1949/giauque/facts/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Melvin Calvin is born
 DTSTART;VALUE=DATE:20270408
 DTEND;VALUE=DATE:20270409
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B117@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C026@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1961 in USA: for his research on the 
- carbon dioxide assimilation in plants\n\nHappened: 1911-04-08 (gregorian c
- alendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting th
- e day.\n· Nobel Prize — Melvin Calvin — https://api.nobelprize.org/2.
- 1/laureate/225
+DESCRIPTION:Melvin Calvin\, who mapped the pathway of CO2 assimilation in 
+ plants (Calvin cycle)\, was born.\n\nHappened: 1911-04-08 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — Melvin Calvin is born — https://ed
+ u.rsc.org/resources/on-this-day-apr-08--melvin-calvin-was-born/10408.artic
+ le
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/225
+URL:https://edu.rsc.org/resources/on-this-day-apr-08--melvin-calvin-was-bo
+ rn/10408.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Glenn Theodore Seaborg is born
+SUMMARY:Tellurium was discovered by mineralogist Franz Müller von Reichen
+ stein
+DTSTART;VALUE=DATE:20270413
+DTEND;VALUE=DATE:20270414
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C027@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Tellurium was discovered by mineralogist Franz Müller von Rei
+ chenstein.\n\nHappened: 1782-04-13 (gregorian calendar\, day precision)\nC
+ hecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of
+  Chemistry — Tellurium was discovered by mineralogist Franz Müller von 
+ Reichenstein — https://edu.rsc.org/resources/on-this-day-apr-13--telluri
+ um-discovered/10413.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-apr-13--tellurium-discovered
+ /10413.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Méthode de Nomenclature Chimique\, a logical system for namin
+ g substances\, was presented to the Paris Academy
+DTSTART;VALUE=DATE:20270417
+DTEND;VALUE=DATE:20270418
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C028@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:The Méthode de Nomenclature Chimique\, a logical system for n
+ aming substances\, was presented to the Paris Academy.\n\nHappened: 1787-0
+ 4-17 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 o
+ f 1 supporting the day.\n· Royal Society of Chemistry — The Méthode de
+  Nomenclature Chimique\, a logical system for naming substances\, was pres
+ ented to the Paris Academy — https://edu.rsc.org/resources/on-this-day-a
+ pr-17--chemical-naming-established/10417.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-apr-17--chemical-naming-esta
+ blished/10417.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul Émile Lecoq de Boisbaudran is born
+DTSTART;VALUE=DATE:20270418
+DTEND;VALUE=DATE:20270419
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C029@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Paul Émile Lecoq de Boisbaudran\, discoverer of samarium\, dy
+ sprosium and europium\, was born.\n\nHappened: 1838-04-18 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — Paul Émile Lecoq de Boisbaudran is 
+ born — https://edu.rsc.org/resources/on-this-day-apr-18--paul-de-boisbau
+ dran-born/10418.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-apr-18--paul-de-boisbaudran-
+ born/10418.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Glenn Seaborg is born
 DTSTART;VALUE=DATE:20270419
 DTEND;VALUE=DATE:20270420
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B062@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C030@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1951 in USA: for their discoveries in
-  the chemistry of the transuranium elements\n\nHappened: 1912-04-19 (grego
- rian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 support
- ing the day.\n· Nobel Prize — Glenn Theodore Seaborg — https://api.no
- belprize.org/2.1/laureate/213
+DESCRIPTION:Glenn Seaborg\, Nobel laureate for transuranium elements and n
+ amesake of seaborgium\, was born.\n\nHappened: 1912-04-19 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — Glenn Seaborg is born — https://ed
+ u.rsc.org/resources/on-this-day-apr-19--glen-seaborg-was-born/10419.articl
+ e
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/213
+URL:https://edu.rsc.org/resources/on-this-day-apr-19--glen-seaborg-was-bor
+ n/10419.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Paul Karrer is born
-DTSTART;VALUE=DATE:20270421
-DTEND;VALUE=DATE:20270422
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B133@redletter.local
+SUMMARY:Franz Achard dies
+DTSTART;VALUE=DATE:20270420
+DTEND;VALUE=DATE:20270421
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C031@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Franz Achard\, inventor of the industrial process for producin
+ g sugar from beets\, died.\n\nHappened: 1821-04-20 (gregorian calendar\, d
+ ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
+ Royal Society of Chemistry — Franz Achard dies — https://edu.rsc.org/r
+ esources/on-this-day-apr-20--franz-achard-died/10420.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-apr-20--franz-achard-died/10
+ 420.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Carl Bosch dies
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G011@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Carl Bosch\, 1931 Nobel Prize in Chemistry laureate\, died in 
+ Heidelberg.\n\nHappened: 1940-04-26 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel Found
+ ation — Carl Bosch dies — https://www.nobelprize.org/prizes/chemistry/
+ 1931/bosch/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1931/bosch/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:A steam explosion and fires at the Chernobyl nuclear plant release
+ d radioactive core material
+DTSTART;VALUE=DATE:20270426
+DTEND;VALUE=DATE:20270427
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C032@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:A steam explosion and fires at the Chernobyl nuclear plant rel
+ eased radioactive core material.\n\nHappened: 1986-04-26 (gregorian calend
+ ar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day
+ .\n· Royal Society of Chemistry — A steam explosion and fires at the Ch
+ ernobyl nuclear plant released radioactive core material — https://edu.r
+ sc.org/resources/on-this-day-apr-26--chernobyl-nuclear-disaster/10426.arti
+ cle
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-apr-26--chernobyl-nuclear-di
+ saster/10426.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Arthur Schawlow is born
+DTSTART;VALUE=DATE:20270505
+DTEND;VALUE=DATE:20270506
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C033@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1937 in Russia: for his investigation
- s on carotenoids\, flavins and vitamins A and B2\n\nHappened: 1889-04-21 (
- gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 su
- pporting the day.\n· Nobel Prize — Paul Karrer — https://api.nobelpri
- ze.org/2.1/laureate/197
+DESCRIPTION:Arthur Schawlow\, Nobel laureate for developing laser spectros
+ copy\, was born.\n\nHappened: 1921-05-05 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Soci
+ ety of Chemistry — Arthur Schawlow is born — https://edu.rsc.org/resou
+ rces/on-this-day-may-05--arthur-schawlow-was-born/10505.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/197
+URL:https://edu.rsc.org/resources/on-this-day-may-05--arthur-schawlow-was-
+ born/10505.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Harold Clayton Urey is born
-DTSTART;VALUE=DATE:20270429
-DTEND;VALUE=DATE:20270430
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B065@redletter.local
+SUMMARY:Arda Alden Green is born
+DTSTART;VALUE=DATE:20270507
+DTEND;VALUE=DATE:20270508
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C034@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1934 in USA: for his discovery of hea
- vy hydrogen\n\nHappened: 1893-04-29 (gregorian calendar\, day precision)\n
- Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
-  Harold Clayton Urey — https://api.nobelprize.org/2.1/laureate/192
+DESCRIPTION:Arda Alden Green\, biochemist known for isolating haemoglobin 
+ and bioluminescence enzymes\, was born.\n\nHappened: 1899-05-07 (gregorian
+  calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting 
+ the day.\n· Royal Society of Chemistry — Arda Alden Green is born — h
+ ttps://edu.rsc.org/resources/on-this-day-may-07--arda-alden-green-was-born
+ /10507.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/192
+URL:https://edu.rsc.org/resources/on-this-day-may-07--arda-alden-green-was
+ -born/10507.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Victor Grignard is born
-DTSTART;VALUE=DATE:20270506
-DTEND;VALUE=DATE:20270507
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B178@redletter.local
+SUMMARY:Thomas Hancock is born
+DTSTART;VALUE=DATE:20270508
+DTEND;VALUE=DATE:20270509
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C035@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1912 in France: for the discovery of 
- the so-called Grignard reagent\, which in recent years has greatly advance
- d the progress…\n\nHappened: 1871-05-06 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Victor Grignard — https://api.nobelprize.org/2.1/laureate/172
+DESCRIPTION:Thomas Hancock\, founder of the rubber industry\, was born.\n\
+ nHappened: 1786-05-08 (gregorian calendar\, day precision)\nChecked agains
+ t 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry 
+ — Thomas Hancock is born — https://edu.rsc.org/resources/on-this-day-m
+ ay-08--thomas-hancock-was-born/10508.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/172
+URL:https://edu.rsc.org/resources/on-this-day-may-08--thomas-hancock-was-b
+ orn/10508.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:William Francis Giauque is born
-DTSTART;VALUE=DATE:20270512
-DTEND;VALUE=DATE:20270513
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B188@redletter.local
+SUMMARY:Robert Bunsen and Gustav Kirchhoff discovered caesium in spring wa
+ ter
+DTSTART;VALUE=DATE:20270510
+DTEND;VALUE=DATE:20270511
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C036@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Robert Bunsen and Gustav Kirchhoff discovered caesium in sprin
+ g water.\n\nHappened: 1860-05-10 (gregorian calendar\, day precision)\nChe
+ cked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of C
+ hemistry — Robert Bunsen and Gustav Kirchhoff discovered caesium in spri
+ ng water — https://edu.rsc.org/resources/on-this-day-may-10--caesium-was
+ -discovered/10510.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-may-10--caesium-was-discover
+ ed/10510.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Johannes Thiele is born
+DTSTART;VALUE=DATE:20270513
+DTEND;VALUE=DATE:20270514
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C037@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1949 in Canada: for his contributions
-  in the field of chemical thermodynamics\, particularly concerning the beh
- aviour of subs…\n\nHappened: 1895-05-12 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — William Francis Giauque — https://api.nobelprize.org/2.1/laureate
- /209
+DESCRIPTION:Johannes Thiele\, known for nitrogen compound chemistry and a 
+ WWI carbon monoxide gas mask\, was born.\n\nHappened: 1865-05-13 (gregoria
+ n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
+  the day.\n· Royal Society of Chemistry — Johannes Thiele is born — h
+ ttps://edu.rsc.org/resources/on-this-day-may-13--johannes-thiele-was-born/
+ 10513.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/209
+URL:https://edu.rsc.org/resources/on-this-day-may-13--johannes-thiele-was-
+ born/10513.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Odd Hassel is born
-DTSTART;VALUE=DATE:20270517
-DTEND;VALUE=DATE:20270518
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B123@redletter.local
+SUMMARY:Nicolas-Louis Vauquelin is born
+DTSTART;VALUE=DATE:20270516
+DTEND;VALUE=DATE:20270517
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C038@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1969 in Norway: for their contributio
- ns to the development of the concept of conformation and its application i
- n chemistry\n\nHappened: 1897-05-17 (gregorian calendar\, day precision)\n
- Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
-  Odd Hassel — https://api.nobelprize.org/2.1/laureate/238
+DESCRIPTION:Nicolas-Louis Vauquelin\, discoverer of chromium and beryllium
+ \, was born.\n\nHappened: 1763-05-16 (gregorian calendar\, day precision)\
+ nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society 
+ of Chemistry — Nicolas-Louis Vauquelin is born — https://edu.rsc.org/r
+ esources/on-this-day-may-16--nicolas-louis-vauquelin-was-born/10516.articl
+ e
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/238
+URL:https://edu.rsc.org/resources/on-this-day-may-16--nicolas-louis-vauque
+ lin-was-born/10516.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Vincent du Vigneaud is born
-DTSTART;VALUE=DATE:20270518
-DTEND;VALUE=DATE:20270519
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B179@redletter.local
+SUMMARY:John Bardeen is born
+DTSTART;VALUE=DATE:20270523
+DTEND;VALUE=DATE:20270524
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C039@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1955 in USA: for his work on biochemi
- cally important sulphur compounds\, especially for the first synthesis of 
- a polypeptide…\n\nHappened: 1901-05-18 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Vincent du Vigneaud — https://api.nobelprize.org/2.1/laureate/218
+DESCRIPTION:John Bardeen\, co-inventor of the transistor\, was born.\n\nHa
+ ppened: 1908-05-23 (gregorian calendar\, day precision)\nChecked against 1
+  sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry — J
+ ohn Bardeen is born — https://edu.rsc.org/resources/on-this-day-may-23--
+ john-bardeen-was-born/10523.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/218
+URL:https://edu.rsc.org/resources/on-this-day-may-23--john-bardeen-was-bor
+ n/10523.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Sir Cyril Norman Hinshelwood is born
-DTSTART;VALUE=DATE:20270519
-DTEND;VALUE=DATE:20270520
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B163@redletter.local
+SUMMARY:John Howard Northrop dies
+DTSTART;VALUE=DATE:20270527
+DTEND;VALUE=DATE:20270528
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G015@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:John Howard Northrop\, 1946 Nobel Prize in Chemistry laureate\
+ , died.\n\nHappened: 1987-05-27 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel Foundatio
+ n — John Howard Northrop dies — https://www.nobelprize.org/prizes/chem
+ istry/1946/northrop/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1946/northrop/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William Ramsay and Morris Travers discovered krypton
+DTSTART;VALUE=DATE:20270530
+DTEND;VALUE=DATE:20270531
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C040@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:William Ramsay and Morris Travers discovered krypton.\n\nHappe
+ ned: 1898-05-30 (gregorian calendar\, day precision)\nChecked against 1 so
+ urces\, 1 of 1 supporting the day.\n· Royal Society of Chemistry — Will
+ iam Ramsay and Morris Travers discovered krypton — https://edu.rsc.org/r
+ esources/on-this-day-may-30--krypton-was-discovered/10530.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-may-30--krypton-was-discover
+ ed/10530.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Johan Gadolin is born
+DTSTART;VALUE=DATE:20270605
+DTEND;VALUE=DATE:20270606
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C041@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1956 in United Kingdom: for their res
- earches into the mechanism of chemical reactions\n\nHappened: 1897-05-19 (
- gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 su
- pporting the day.\n· Nobel Prize — Sir Cyril Norman Hinshelwood — htt
- ps://api.nobelprize.org/2.1/laureate/219
+DESCRIPTION:Johan Gadolin\, who found the first rare earth compounds\, was
+  born.\n\nHappened: 1760-06-05 (gregorian calendar\, day precision)\nCheck
+ ed against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Che
+ mistry — Johan Gadolin is born — https://edu.rsc.org/resources/on-this
+ -day-jun-05--johan-gadolin-was-born/10605.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/219
+URL:https://edu.rsc.org/resources/on-this-day-jun-05--johan-gadolin-was-bo
+ rn/10605.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Eduard Buchner is born
-DTSTART;VALUE=DATE:20270520
-DTEND;VALUE=DATE:20270521
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B035@redletter.local
+SUMMARY:Richard Smalley is born
+DTSTART;VALUE=DATE:20270606
+DTEND;VALUE=DATE:20270607
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C042@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1907 in Bavaria: for his biochemical 
- researches and his discovery of cell-free fermentation\n\nHappened: 1860-0
- 5-20 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 o
- f 1 supporting the day.\n· Nobel Prize — Eduard Buchner — https://api
- .nobelprize.org/2.1/laureate/166
+DESCRIPTION:Richard Smalley\, Nobel laureate for the discovery of fulleren
+ es\, was born.\n\nHappened: 1943-06-06 (gregorian calendar\, day precision
+ )\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Societ
+ y of Chemistry — Richard Smalley is born — https://edu.rsc.org/resourc
+ es/on-this-day-jun-06--richard-smalley-was-born/10606.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/166
+URL:https://edu.rsc.org/resources/on-this-day-jun-06--richard-smalley-was-
+ born/10606.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Heinrich Otto Wieland is born
-DTSTART;VALUE=DATE:20270604
-DTEND;VALUE=DATE:20270605
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B067@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1927 in Germany: for his investigatio
- ns of the constitution of the bile acids and related substances\n\nHappene
- d: 1877-06-04 (gregorian calendar\, day precision)\nChecked against 1 sour
- ces\, 1 of 1 supporting the day.\n· Nobel Prize — Heinrich Otto Wieland
-  — https://api.nobelprize.org/2.1/laureate/184
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/184
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Robert S. Mulliken is born
+SUMMARY:Robert Mulliken is born
 DTSTART;VALUE=DATE:20270607
 DTEND;VALUE=DATE:20270608
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B155@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C043@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1966 in USA: for his fundamental work
-  concerning chemical bonds and the electronic structure of molecules by th
- e molecular o…\n\nHappened: 1896-06-07 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Robert S. Mulliken — https://api.nobelprize.org/2.1/laureate/232
+DESCRIPTION:Robert Mulliken\, Nobel laureate for molecular orbital theory\
+ , was born.\n\nHappened: 1896-06-07 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society o
+ f Chemistry — Robert Mulliken is born — https://edu.rsc.org/resources/
+ on-this-day-jun-07--robert-mulliken-was-born/10607.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/232
+URL:https://edu.rsc.org/resources/on-this-day-jun-07--robert-mulliken-was-
+ born/10607.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Georg Wittig is born
-DTSTART;VALUE=DATE:20270616
-DTEND;VALUE=DATE:20270617
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B054@redletter.local
+SUMMARY:Ronald George Wreyford Norrish dies
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G016@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Ronald George Wreyford Norrish\, 1967 Nobel Prize in Chemistry
+  laureate\, died in Cambridge\, United Kingdom.\n\nHappened: 1978-06-07 (g
+ regorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 sup
+ porting the day.\n· The Nobel Foundation — Ronald George Wreyford Norri
+ sh dies — https://www.nobelprize.org/prizes/chemistry/1967/norrish/facts
+ /
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1967/norrish/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Donald J. Cram dies
+DTSTART;VALUE=DATE:20270617
+DTEND;VALUE=DATE:20270618
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G019@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Donald J. Cram\, 1987 Nobel Prize in Chemistry laureate\, died
+  in Palm Desert.\n\nHappened: 2001-06-17 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel 
+ Foundation — Donald J. Cram dies — https://www.nobelprize.org/prizes/c
+ hemistry/1987/cram/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1987/cram/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul Karrer dies
+DTSTART;VALUE=DATE:20270618
+DTEND;VALUE=DATE:20270619
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G020@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Paul Karrer\, 1937 Nobel Prize in Chemistry laureate\, died in
+  Zurich\, Switzerland.\n\nHappened: 1971-06-18 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· The 
+ Nobel Foundation — Paul Karrer dies — https://www.nobelprize.org/prize
+ s/chemistry/1937/karrer/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1937/karrer/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Mary L. Good is born
+DTSTART;VALUE=DATE:20270620
+DTEND;VALUE=DATE:20270621
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C044@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1979 in Germany: for their developmen
- t of the use of boron- and phosphorus-containing compounds\, respectively\
- , into importan…\n\nHappened: 1897-06-16 (gregorian calendar\, day preci
- sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pr
- ize — Georg Wittig — https://api.nobelprize.org/2.1/laureate/253
+DESCRIPTION:Mary L. Good\, inorganic chemist and 1987 to 1988 ACS presiden
+ t\, was born.\n\nHappened: 1931-06-20 (gregorian calendar\, day precision)
+ \nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society
+  of Chemistry — Mary L. Good is born — https://edu.rsc.org/resources/o
+ n-this-day-jun-20--mary-good-was-born/10620.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/253
+URL:https://edu.rsc.org/resources/on-this-day-jun-20--mary-good-was-born/1
+ 0620.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Paul J. Flory is born
-DTSTART;VALUE=DATE:20270619
-DTEND;VALUE=DATE:20270620
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B132@redletter.local
+SUMMARY:Joseph Louis Gay-Lussac and Louis Thénard isolated boron\, nine d
+ ays ahead of Humphry Davy
+DTSTART;VALUE=DATE:20270621
+DTEND;VALUE=DATE:20270622
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C045@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1974 in USA: for his fundamental achi
- evements\, both theoretical and experimental\, in the physical chemistry o
- f the macromole…\n\nHappened: 1910-06-19 (gregorian calendar\, day preci
- sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pr
- ize — Paul J. Flory — https://api.nobelprize.org/2.1/laureate/246
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Joseph Louis Gay-Lussac and Louis Thénard isolated boron\, ni
+ ne days ahead of Humphry Davy.\n\nHappened: 1808-06-21 (gregorian calendar
+ \, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\
+ n· Royal Society of Chemistry — Joseph Louis Gay-Lussac and Louis Thén
+ ard isolated boron\, nine days ahead of Humphry Davy — https://edu.rsc.o
+ rg/resources/on-this-day-jun-21--boron-was-isolated/10621.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/246
+URL:https://edu.rsc.org/resources/on-this-day-jun-21--boron-was-isolated/1
+ 0621.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Walther Hermann Nernst is born
+SUMMARY:John B. Goodenough dies
 DTSTART;VALUE=DATE:20270625
 DTEND;VALUE=DATE:20270626
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B183@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G021@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1920 in Prussia: in recognition of hi
- s work in thermochemistry\n\nHappened: 1864-06-25 (gregorian calendar\, da
- y precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· N
- obel Prize — Walther Hermann Nernst — https://api.nobelprize.org/2.1/l
- aureate/178
+CATEGORIES:Redletter,loss
+DESCRIPTION:John B. Goodenough\, 2019 Nobel Prize in Chemistry laureate\, 
+ died in Austin\, Texas.\n\nHappened: 2023-06-25 (gregorian calendar\, day 
+ precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· The
+  Nobel Foundation — John B. Goodenough dies — https://www.nobelprize.o
+ rg/prizes/chemistry/2019/goodenough/facts/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/178
+URL:https://www.nobelprize.org/prizes/chemistry/2019/goodenough/facts/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:William H. Stein is born
-DTSTART;VALUE=DATE:20270625
-DTEND;VALUE=DATE:20270626
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B189@redletter.local
+SUMMARY:Henri Moissan isolated elemental fluorine
+DTSTART;VALUE=DATE:20270626
+DTEND;VALUE=DATE:20270627
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C046@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1972 in USA: for their contribution t
- o the understanding of the connection between chemical structure and catal
- ytic activity…\n\nHappened: 1911-06-25 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — William H. Stein — https://api.nobelprize.org/2.1/laureate/243
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Henri Moissan isolated elemental fluorine.\n\nHappened: 1886-0
+ 6-26 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 o
+ f 1 supporting the day.\n· Royal Society of Chemistry — Henri Moissan i
+ solated elemental fluorine — https://edu.rsc.org/resources/on-this-day-j
+ un-26--fluorine-was-isolated/10626.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/243
+URL:https://edu.rsc.org/resources/on-this-day-jun-26--fluorine-was-isolate
+ d/10626.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:John Howard Northrop is born
-DTSTART;VALUE=DATE:20270705
-DTEND;VALUE=DATE:20270706
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B096@redletter.local
+SUMMARY:The world's first nuclear power station\, at Obninsk in the USSR\,
+  began producing electricity
+DTSTART;VALUE=DATE:20270627
+DTEND;VALUE=DATE:20270628
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C047@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1946 in USA: for their preparation of
-  enzymes and virus proteins in a pure form\n\nHappened: 1891-07-05 (gregor
- ian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporti
- ng the day.\n· Nobel Prize — John Howard Northrop — https://api.nobel
- prize.org/2.1/laureate/205
+CATEGORIES:Redletter,first
+DESCRIPTION:The world's first nuclear power station\, at Obninsk in the US
+ SR\, began producing electricity.\n\nHappened: 1954-06-27 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — The world's first nuclear power stat
+ ion\, at Obninsk in the USSR\, began producing electricity — https://edu
+ .rsc.org/resources/on-this-day-jun-27--first-nuclear-power-plant/10627.art
+ icle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/205
+URL:https://edu.rsc.org/resources/on-this-day-jun-27--first-nuclear-power-
+ plant/10627.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Kurt Alder is born
-DTSTART;VALUE=DATE:20270710
-DTEND;VALUE=DATE:20270711
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B103@redletter.local
+SUMMARY:Peter Waage is born
+DTSTART;VALUE=DATE:20270629
+DTEND;VALUE=DATE:20270630
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C048@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1950 in Prussia: for their discovery 
- and development of the diene synthesis\n\nHappened: 1902-07-10 (gregorian 
+DESCRIPTION:Peter Waage\, co-discoverer of the law of mass action with Cat
+ o Guldberg\, was born.\n\nHappened: 1833-06-29 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — Peter Waage is born — https://edu.rsc.org/res
+ ources/on-this-day-jun-29--peter-waage-was-born/10629.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jun-29--peter-waage-was-born
+ /10629.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Antoine-Jérôme Balard announced the discovery of bromine\, found
+  in seawater
+DTSTART;VALUE=DATE:20270703
+DTEND;VALUE=DATE:20270704
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C049@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Antoine-Jérôme Balard announced the discovery of bromine\, f
+ ound in seawater.\n\nHappened: 1826-07-03 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Soc
+ iety of Chemistry — Antoine-Jérôme Balard announced the discovery of b
+ romine\, found in seawater — https://edu.rsc.org/resources/on-this-day-j
+ ul-03--discovery-of-bromine/10703.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jul-03--discovery-of-bromine
+ /10703.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Marie Curie dies
+DTSTART;VALUE=DATE:20270704
+DTEND;VALUE=DATE:20270705
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C050@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Marie Curie\, discoverer of polonium and radium and twice a No
+ bel laureate\, died in Savoy\, France.\n\nHappened: 1934-07-04 (gregorian 
  calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting t
- he day.\n· Nobel Prize — Kurt Alder — https://api.nobelprize.org/2.1/
- laureate/211
+ he day.\n· The Nobel Prize — Marie Curie dies — https://www.nobelpriz
+ e.org/prizes/chemistry/1911/marie-curie/biographical/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/211
+URL:https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographi
+ cal/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Geoffrey Wilkinson is born
+SUMMARY:William Ramsay and Morris Travers discovered xenon by repeatedly d
+ istilling krypton
+DTSTART;VALUE=DATE:20270712
+DTEND;VALUE=DATE:20270713
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C051@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:William Ramsay and Morris Travers discovered xenon by repeated
+ ly distilling krypton.\n\nHappened: 1898-07-12 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — William Ramsay and Morris Travers discovered xe
+ non by repeatedly distilling krypton — https://edu.rsc.org/resources/on-
+ this-day-jul-12-discovery-of-xenon/10712.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jul-12-discovery-of-xenon/10
+ 712.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir William Perkin dies
 DTSTART;VALUE=DATE:20270714
 DTEND;VALUE=DATE:20270715
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B053@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C052@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1973 in United Kingdom: for their pio
- neering work\, performed independently\, on the chemistry of the organomet
- allic\, so calle…\n\nHappened: 1921-07-14 (gregorian calendar\, day prec
- ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel P
- rize — Geoffrey Wilkinson — https://api.nobelprize.org/2.1/laureate/24
- 5
+CATEGORIES:Redletter,loss
+DESCRIPTION:Sir William Perkin\, maker of the first synthetic dye (mauve)\
+ , died.\n\nHappened: 1907-07-14 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Ch
+ emistry — Sir William Perkin dies — https://edu.rsc.org/resources/on-t
+ his-day-jul-14--sir-william-perkin-died/10714.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/245
+URL:https://edu.rsc.org/resources/on-this-day-jul-14--sir-william-perkin-d
+ ied/10714.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The first nuclear bomb test was detonated at Alamogordo\, New Mexi
+ co
+DTSTART;VALUE=DATE:20270716
+DTEND;VALUE=DATE:20270717
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C053@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,first
+DESCRIPTION:The first nuclear bomb test was detonated at Alamogordo\, New 
+ Mexico.\n\nHappened: 1945-07-16 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Ch
+ emistry — The first nuclear bomb test was detonated at Alamogordo\, New 
+ Mexico — https://edu.rsc.org/resources/on-this-day-jul-16--nuclear-bomb-
+ detonated/10716.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jul-16--nuclear-bomb-detonat
+ ed/10716.article
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Vladimir Prelog is born
 DTSTART;VALUE=DATE:20270723
 DTEND;VALUE=DATE:20270724
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B180@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C054@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1975 in Austria-Hungary: for his rese
- arch into the stereochemistry of organic molecules and reactions\n\nHappen
- ed: 1906-07-23 (gregorian calendar\, day precision)\nChecked against 1 sou
- rces\, 1 of 1 supporting the day.\n· Nobel Prize — Vladimir Prelog — 
- https://api.nobelprize.org/2.1/laureate/248
+DESCRIPTION:Vladimir Prelog\, Nobel laureate for stereochemistry of organi
+ c molecules\, was born.\n\nHappened: 1906-07-23 (gregorian calendar\, day 
+ precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roy
+ al Society of Chemistry — Vladimir Prelog is born — https://edu.rsc.or
+ g/resources/on-this-day-jul-23--vladimir-prelog-was-born/10723.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/248
+URL:https://edu.rsc.org/resources/on-this-day-jul-23--vladimir-prelog-was-
+ born/10723.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Hans Fischer is born
+SUMMARY:Rosalind Franklin is born
+DTSTART;VALUE=DATE:20270725
+DTEND;VALUE=DATE:20270726
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C055@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Rosalind Franklin\, whose X-ray crystallography helped reveal 
+ DNA's structure\, was born.\n\nHappened: 1920-07-25 (gregorian calendar\, 
+ day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n·
+  Royal Society of Chemistry — Rosalind Franklin is born — https://edu.
+ rsc.org/resources/on-this-day-jul-25--rosalind-franklin-was-born/10725.art
+ icle
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-jul-25--rosalind-franklin-wa
+ s-born/10725.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:John Dalton dies
 DTSTART;VALUE=DATE:20270727
 DTEND;VALUE=DATE:20270728
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B063@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C056@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1930 in Germany: for his researches i
- nto the constitution of haemin and chlorophyll and especially for his synt
- hesis of haem…\n\nHappened: 1881-07-27 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Hans Fischer — https://api.nobelprize.org/2.1/laureate/188
+CATEGORIES:Redletter,loss
+DESCRIPTION:John Dalton\, pioneer of modern atomic theory and the law of p
+ artial pressures\, died.\n\nHappened: 1844-07-27 (gregorian calendar\, day
+  precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Ro
+ yal Society of Chemistry — John Dalton dies — https://edu.rsc.org/reso
+ urces/on-this-day-jul-27--john-dalton-died/10727.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/188
+URL:https://edu.rsc.org/resources/on-this-day-jul-27--john-dalton-died/107
+ 27.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Paul D. Boyer is born
-DTSTART;VALUE=DATE:20270731
-DTEND;VALUE=DATE:20270801
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B130@redletter.local
+SUMMARY:The International Union of Pure and Applied Chemistry was formally
+  registered\, establishing the global chemical union
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G023@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1997 in USA: for their elucidation of
-  the enzymatic mechanism underlying the synthesis of adenosine triphosphat
- e (ATP)\n\nHappened: 1918-07-31 (gregorian calendar\, day precision)\nChec
- ked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Pau
- l D. Boyer — https://api.nobelprize.org/2.1/laureate/287
+CATEGORIES:Redletter,milestone
+DESCRIPTION:The International Union of Pure and Applied Chemistry was form
+ ally registered\, establishing the global chemical union.\n\nHappened: 191
+ 9-07-28 (gregorian calendar\, day precision)\nChecked against 1 sources\, 
+ 1 of 1 supporting the day.\n· International Union of Pure and Applied Che
+ mistry — The International Union of Pure and Applied Chemistry was forma
+ lly registered\, establishing the global chemical union — https://iupac.
+ org/iupac100/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/287
+URL:https://iupac.org/iupac100/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:George de Hevesy is born
+SUMMARY:Archer John Porter Martin dies
+DTSTART;VALUE=DATE:20270728
+DTEND;VALUE=DATE:20270729
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G024@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Archer John Porter Martin\, 1952 Nobel Prize in Chemistry laur
+ eate\, died in Llangarron\, United Kingdom.\n\nHappened: 2002-07-28 (grego
+ rian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 support
+ ing the day.\n· The Nobel Foundation — Archer John Porter Martin dies 
+ — https://www.nobelprize.org/prizes/chemistry/1952/martin/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1952/martin/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Joseph Priestley first prepared oxygen by heating mercury(II) oxid
+ e with focused sunlight
 DTSTART;VALUE=DATE:20270801
 DTEND;VALUE=DATE:20270802
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B056@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C057@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1943 in Austria-Hungary: for his work
-  on the use of isotopes as tracers in the study of chemical processes\n\nH
- appened: 1885-08-01 (gregorian calendar\, day precision)\nChecked against 
- 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — George de Heves
- y — https://api.nobelprize.org/2.1/laureate/201
+CATEGORIES:Redletter,first
+DESCRIPTION:Joseph Priestley first prepared oxygen by heating mercury(II) 
+ oxide with focused sunlight.\n\nHappened: 1774-08-01 (gregorian calendar\,
+  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Royal Society of Chemistry — Joseph Priestley first prepared oxygen b
+ y heating mercury(II) oxide with focused sunlight — https://edu.rsc.org/
+ resources/on-this-day-aug-01--preparation-of-oxygen/10801.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/201
+URL:https://edu.rsc.org/resources/on-this-day-aug-01--preparation-of-oxyge
+ n/10801.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Richard Martin Willstätter is born
+SUMMARY:Johann Döbereiner found that platinum sponge ignites hydrogen at 
+ room temperature\, an early catalysis finding
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C058@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Johann Döbereiner found that platinum sponge ignites hydrogen
+  at room temperature\, an early catalysis finding.\n\nHappened: 1823-08-03
+  (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 
+ supporting the day.\n· Royal Society of Chemistry — Johann Döbereiner 
+ found that platinum sponge ignites hydrogen at room temperature\, an early
+  catalysis finding — https://edu.rsc.org/resources/on-this-day-aug-03--p
+ latinum-catalysis/10803.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-aug-03--platinum-catalysis/1
+ 0803.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Heinrich Otto Wieland dies
+DTSTART;VALUE=DATE:20270805
+DTEND;VALUE=DATE:20270806
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G025@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Heinrich Otto Wieland\, 1927 Nobel Prize in Chemistry laureate
+ \, died in Munich.\n\nHappened: 1957-08-05 (gregorian calendar\, day preci
+ sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· The Nobe
+ l Foundation — Heinrich Otto Wieland dies — https://www.nobelprize.org
+ /prizes/chemistry/1927/wieland/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1927/wieland/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William Ramsay and Lord Rayleigh announced argon\, the first noble
+  gas to be discovered
 DTSTART;VALUE=DATE:20270813
 DTEND;VALUE=DATE:20270814
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B147@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C059@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,first
+DESCRIPTION:William Ramsay and Lord Rayleigh announced argon\, the first n
+ oble gas to be discovered.\n\nHappened: 1894-08-13 (gregorian calendar\, d
+ ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
+ Royal Society of Chemistry — William Ramsay and Lord Rayleigh announced 
+ argon\, the first noble gas to be discovered — https://edu.rsc.org/resou
+ rces/on-this-day-aug-13--discovery-of-argon/10813.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-aug-13--discovery-of-argon/1
+ 0813.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Francis Aston finished building his first mass spectrometer
+DTSTART;VALUE=DATE:20270815
+DTEND;VALUE=DATE:20270816
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C060@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,first
+DESCRIPTION:Francis Aston finished building his first mass spectrometer.\n
+ \nHappened: 1919-08-15 (gregorian calendar\, day precision)\nChecked again
+ st 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry 
+ — Francis Aston finished building his first mass spectrometer — https:
+ //edu.rsc.org/resources/on-this-day-aug-15--mass-spectrometer-built/10815.
+ article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-aug-15--mass-spectrometer-bu
+ ilt/10815.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Aldrich Chemical Company was established\; it merged with Sigma Ch
+ emical in 1975 to form Sigma-Aldrich
+DTSTART;VALUE=DATE:20270817
+DTEND;VALUE=DATE:20270818
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C061@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Aldrich Chemical Company was established\; it merged with Sigm
+ a Chemical in 1975 to form Sigma-Aldrich.\n\nHappened: 1951-08-17 (gregori
+ an calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supportin
+ g the day.\n· Royal Society of Chemistry — Aldrich Chemical Company was
+  established\; it merged with Sigma Chemical in 1975 to form Sigma-Aldrich
+  — https://edu.rsc.org/resources/on-this-day-aug-17--aldrich-chemical-co
+ mpany/10817.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-aug-17--aldrich-chemical-com
+ pany/10817.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jules Janssen detected helium as an unknown yellow line in the sol
+ ar spectrum during an eclipse
+DTSTART;VALUE=DATE:20270818
+DTEND;VALUE=DATE:20270819
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C062@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Jules Janssen detected helium as an unknown yellow line in the
+  solar spectrum during an eclipse.\n\nHappened: 1868-08-18 (gregorian cale
+ ndar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the d
+ ay.\n· Royal Society of Chemistry — Jules Janssen detected helium as an
+  unknown yellow line in the solar spectrum during an eclipse — https://e
+ du.rsc.org/resources/on-this-day-aug-18--the-solar-spectrum/10818.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-aug-18--the-solar-spectrum/1
+ 0818.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Linus Carl Pauling dies
+DTSTART;VALUE=DATE:20270819
+DTEND;VALUE=DATE:20270820
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G026@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Linus Carl Pauling\, 1954 Nobel Prize in Chemistry laureate fo
+ r chemical bond research\, died in Big Sur\, California.\n\nHappened: 1994
+ -08-19 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1
+  of 1 supporting the day.\n· The Nobel Foundation — Linus Carl Pauling 
+ dies — https://www.nobelprize.org/prizes/chemistry/1954/pauling/facts/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1954/pauling/facts/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Antoine Lavoisier is born
+DTSTART;VALUE=DATE:20270826
+DTEND;VALUE=DATE:20270827
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C063@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1915 in Germany: for his researches o
- n plant pigments\, especially chlorophyll\n\nHappened: 1872-08-13 (gregori
- an calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supportin
- g the day.\n· Nobel Prize — Richard Martin Willstätter — https://api
- .nobelprize.org/2.1/laureate/176
+DESCRIPTION:Antoine Lavoisier\, founder of modern chemistry who named hydr
+ ogen and oxygen\, was born.\n\nHappened: 1743-08-26 (gregorian calendar\, 
+ day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n·
+  Royal Society of Chemistry — Antoine Lavoisier is born — https://edu.
+ rsc.org/resources/on-this-day-aug-26--antoine-lavoisier-born/10826.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/176
+URL:https://edu.rsc.org/resources/on-this-day-aug-26--antoine-lavoisier-bo
+ rn/10826.article
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Carl Bosch is born
 DTSTART;VALUE=DATE:20270827
 DTEND;VALUE=DATE:20270828
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B024@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C064@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1931 in Germany: in recognition of th
- eir contributions to the invention and development of chemical high pressu
- re methods\n\nHappened: 1874-08-27 (gregorian calendar\, day precision)\nC
- hecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — 
- Carl Bosch — https://api.nobelprize.org/2.1/laureate/189
+DESCRIPTION:Carl Bosch\, co-developer of the Haber-Bosch nitrogen fixation
+  process\, was born.\n\nHappened: 1874-08-27 (gregorian calendar\, day pre
+ cision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal 
+ Society of Chemistry — Carl Bosch is born — https://edu.rsc.org/resour
+ ces/on-this-day-aug-27--carl-bosch-was-born/10827.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/189
+URL:https://edu.rsc.org/resources/on-this-day-aug-27--carl-bosch-was-born/
+ 10827.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Jacobus Henricus van 't Hoff is born
-DTSTART;VALUE=DATE:20270830
-DTEND;VALUE=DATE:20270831
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B079@redletter.local
+SUMMARY:Stanford Moore is born
+DTSTART;VALUE=DATE:20270904
+DTEND;VALUE=DATE:20270905
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C065@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1901 in the Netherlands: in recogniti
- on of the extraordinary services he has rendered by the discovery of the l
- aws of chemic…\n\nHappened: 1852-08-30 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Jacobus Henricus van 't Hoff — https://api.nobelprize.org/2.1/laur
- eate/160
+DESCRIPTION:Stanford Moore\, Nobel laureate for work on ribonuclease struc
+ ture\, was born.\n\nHappened: 1913-09-04 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Soci
+ ety of Chemistry — Stanford Moore is born — https://edu.rsc.org/resour
+ ces/on-this-day-sep-04--stanford-moore-was-born/10904.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/160
+URL:https://edu.rsc.org/resources/on-this-day-sep-04--stanford-moore-was-b
+ orn/10904.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ernest Rutherford is born
-DTSTART;VALUE=DATE:20270830
-DTEND;VALUE=DATE:20270831
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B042@redletter.local
+SUMMARY:John Dalton is born
+DTSTART;VALUE=DATE:20270906
+DTEND;VALUE=DATE:20270907
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C066@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1908 in New Zealand: for his investig
- ations into the disintegration of the elements\, and the chemistry of radi
- oactive substa…\n\nHappened: 1871-08-30 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Ernest Rutherford — https://api.nobelprize.org/2.1/laureate/167
+DESCRIPTION:John Dalton\, founder of modern atomic theory\, was born.\n\nH
+ appened: 1766-09-06 (gregorian calendar\, day precision)\nChecked against 
+ 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry — 
+ John Dalton is born — https://edu.rsc.org/resources/on-this-day-sep-06--
+ john-dalton-was-born/10906.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/167
+URL:https://edu.rsc.org/resources/on-this-day-sep-06--john-dalton-was-born
+ /10906.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:The (Theodor) Svedberg is born
-DTSTART;VALUE=DATE:20270830
-DTEND;VALUE=DATE:20270831
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B173@redletter.local
+SUMMARY:August Kekulé is born
+DTSTART;VALUE=DATE:20270907
+DTEND;VALUE=DATE:20270908
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C067@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1926 in Sweden: for his work on dispe
- rse systems\n\nHappened: 1884-08-30 (gregorian calendar\, day precision)\n
- Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
-  The (Theodor) Svedberg — https://api.nobelprize.org/2.1/laureate/183
+DESCRIPTION:August Kekulé\, who founded structural theory and proposed be
+ nzene's ring structure\, was born.\n\nHappened: 1829-09-07 (gregorian cale
+ ndar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the d
+ ay.\n· Royal Society of Chemistry — August Kekulé is born — https://
+ edu.rsc.org/resources/on-this-day-sep-07--friedrich-kekule-was-born/10907.
+ article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/183
+URL:https://edu.rsc.org/resources/on-this-day-sep-07--friedrich-kekule-was
+ -born/10907.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Francis William Aston is born
-DTSTART;VALUE=DATE:20270901
-DTEND;VALUE=DATE:20270902
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B046@redletter.local
+SUMMARY:Willard Frank Libby dies
+DTSTART;VALUE=DATE:20270908
+DTEND;VALUE=DATE:20270909
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G028@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Willard Frank Libby\, 1960 Nobel Prize in Chemistry laureate k
+ nown for radiocarbon dating\, died.\n\nHappened: 1980-09-08 (gregorian cal
+ endar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the 
+ day.\n· The Nobel Foundation — Willard Frank Libby dies — https://www
+ .nobelprize.org/prizes/chemistry/1960/libby/biographical/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/1960/libby/biographical/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Albert Ghiorso and Glenn Seaborg announced the discovery of seabor
+ gium
+DTSTART;VALUE=DATE:20270909
+DTEND;VALUE=DATE:20270910
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C068@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Albert Ghiorso and Glenn Seaborg announced the discovery of se
+ aborgium.\n\nHappened: 1974-09-09 (gregorian calendar\, day precision)\nCh
+ ecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of 
+ Chemistry — Albert Ghiorso and Glenn Seaborg announced the discovery of 
+ seaborgium — https://edu.rsc.org/resources/on-this-day-sep-09--seaborgiu
+ m-discovery/10909.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-sep-09--seaborgium-discovery
+ /10909.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Henri Le Chatelier dies
+DTSTART;VALUE=DATE:20270917
+DTEND;VALUE=DATE:20270918
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C069@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,loss
+DESCRIPTION:Henri Le Chatelier\, author of the equilibrium principle that 
+ bears his name\, died.\n\nHappened: 1936-09-17 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — Henri Le Chatelier dies — https://edu.rsc.org
+ /resources/on-this-day-sep-17--le-chatelier-died/10917.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-sep-17--le-chatelier-died/10
+ 917.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Louis Cailletet is born
+DTSTART;VALUE=DATE:20270921
+DTEND;VALUE=DATE:20270922
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C070@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1922 in United Kingdom: for his disco
- very\, by means of his mass spectrograph\, of isotopes\, in a large number
-  of non-radioact…\n\nHappened: 1877-09-01 (gregorian calendar\, day prec
- ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel P
- rize — Francis William Aston — https://api.nobelprize.org/2.1/laureate
- /180
+DESCRIPTION:Louis Cailletet\, who liquefied oxygen and hydrogen\, was born
+ .\n\nHappened: 1832-09-21 (gregorian calendar\, day precision)\nChecked ag
+ ainst 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistr
+ y — Louis Cailletet is born — https://edu.rsc.org/resources/on-this-da
+ y-sep-21--loius-cailletet-born/10921.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/180
+URL:https://edu.rsc.org/resources/on-this-day-sep-21--loius-cailletet-born
+ /10921.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Wilhelm Ostwald is born
-DTSTART;VALUE=DATE:20270902
-DTEND;VALUE=DATE:20270903
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B185@redletter.local
+SUMMARY:Michael Faraday is born
+DTSTART;VALUE=DATE:20270922
+DTEND;VALUE=DATE:20270923
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C071@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1909 in Russian Empire: in recognitio
- n of his work on catalysis and for his investigations into the fundamental
-  principles g…\n\nHappened: 1853-09-02 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Wilhelm Ostwald — https://api.nobelprize.org/2.1/laureate/168
+DESCRIPTION:Michael Faraday\, after whom the charge on a mole of electrons
+  is named\, was born.\n\nHappened: 1791-09-22 (gregorian calendar\, day pr
+ ecision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal
+  Society of Chemistry — Michael Faraday is born — https://edu.rsc.org/
+ resources/on-this-day-sep-22--michael-faraday-born/10922.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/168
+URL:https://edu.rsc.org/resources/on-this-day-sep-22--michael-faraday-born
+ /10922.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Frederick Soddy is born
-DTSTART;VALUE=DATE:20270902
-DTEND;VALUE=DATE:20270903
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B049@redletter.local
+SUMMARY:Carl Wilhelm Scheele wrote to Lavoisier announcing his discovery o
+ f oxygen
+DTSTART;VALUE=DATE:20270930
+DTEND;VALUE=DATE:20271001
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C072@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1921 in United Kingdom: for his contr
- ibutions to our knowledge of the chemistry of radioactive substances\, and
-  his investiga…\n\nHappened: 1877-09-02 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Frederick Soddy — https://api.nobelprize.org/2.1/laureate/179
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Carl Wilhelm Scheele wrote to Lavoisier announcing his discove
+ ry of oxygen.\n\nHappened: 1774-09-30 (gregorian calendar\, day precision)
+ \nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society
+  of Chemistry — Carl Wilhelm Scheele wrote to Lavoisier announcing his d
+ iscovery of oxygen — https://edu.rsc.org/resources/on-this-day-sep-30--d
+ iscovery-of-oxygen/10930.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/179
+URL:https://edu.rsc.org/resources/on-this-day-sep-30--discovery-of-oxygen/
+ 10930.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Fritz Pregl is born
-DTSTART;VALUE=DATE:20270903
-DTEND;VALUE=DATE:20270904
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B052@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1923 in Austria-Hungary: for his inve
- ntion of the method of micro-analysis of organic substances\n\nHappened: 1
- 869-09-03 (gregorian calendar\, day precision)\nChecked against 1 sources\
- , 1 of 1 supporting the day.\n· Nobel Prize — Fritz Pregl — https://a
- pi.nobelprize.org/2.1/laureate/181
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/181
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Sir Robert Robinson is born
-DTSTART;VALUE=DATE:20270913
-DTEND;VALUE=DATE:20270914
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B167@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1947 in United Kingdom: for his inves
- tigations on plant products of biological importance\, especially the alka
- loids\n\nHappened: 1886-09-13 (gregorian calendar\, day precision)\nChecke
- d against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Sir R
- obert Robinson — https://api.nobelprize.org/2.1/laureate/207
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/207
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Henri Moissan is born
-DTSTART;VALUE=DATE:20270928
-DTEND;VALUE=DATE:20270929
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B069@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1906 in France: in recognition of the
-  great services rendered by him in his investigation and isolation of the 
- element fluor…\n\nHappened: 1852-09-28 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Henri Moissan — https://api.nobelprize.org/2.1/laureate/165
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/165
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Sir William Ramsay is born
+SUMMARY:The first commercial atomic clock\, the Atomicron\, was unveiled\;
+  it kept time from caesium atom oscillations
 DTSTART;VALUE=DATE:20271002
 DTEND;VALUE=DATE:20271003
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B168@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C073@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1904 in Scotland: in recognition of h
- is services in the discovery of the inert gaseous elements in air\, and hi
- s determinatio…\n\nHappened: 1852-10-02 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Sir William Ramsay — https://api.nobelprize.org/2.1/laureate/163
+CATEGORIES:Redletter,first
+DESCRIPTION:The first commercial atomic clock\, the Atomicron\, was unveil
+ ed\; it kept time from caesium atom oscillations.\n\nHappened: 1956-10-02 
+ (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 s
+ upporting the day.\n· Royal Society of Chemistry — The first commercial
+  atomic clock\, the Atomicron\, was unveiled\; it kept time from caesium a
+ tom oscillations — https://edu.rsc.org/resources/on-this-day-oct-02--fir
+ st-atomic-clock/11002.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/163
+URL:https://edu.rsc.org/resources/on-this-day-oct-02--first-atomic-clock/1
+ 1002.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Charles J. Pedersen is born
-DTSTART;VALUE=DATE:20271003
-DTEND;VALUE=DATE:20271004
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B026@redletter.local
+SUMMARY:Kenichi Fukui is born
+DTSTART;VALUE=DATE:20271004
+DTEND;VALUE=DATE:20271005
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C074@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1987 in Korea: for their development 
- and use of molecules with structure-specific interactions of high selectiv
- ity\n\nHappened: 1904-10-03 (gregorian calendar\, day precision)\nChecked 
- against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Charles
-  J. Pedersen — https://api.nobelprize.org/2.1/laureate/269
+DESCRIPTION:Kenichi Fukui\, Nobel laureate for frontier orbital theory of 
+ reactions\, was born.\n\nHappened: 1918-10-04 (gregorian calendar\, day pr
+ ecision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal
+  Society of Chemistry — Kenichi Fukui is born — https://edu.rsc.org/re
+ sources/on-this-day-oct-04--kenichi-fukui-was-born/11004.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/269
+URL:https://edu.rsc.org/resources/on-this-day-oct-04--kenichi-fukui-was-bo
+ rn/11004.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Hermann Emil Fischer is born
-DTSTART;VALUE=DATE:20271009
-DTEND;VALUE=DATE:20271010
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B039@redletter.local
+SUMMARY:Dirk Coster is born
+DTSTART;VALUE=DATE:20271005
+DTEND;VALUE=DATE:20271006
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C075@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1902 in Prussia: in recognition of th
- e extraordinary services he has rendered by his work on sugar and purine s
- yntheses\n\nHappened: 1852-10-09 (gregorian calendar\, day precision)\nChe
- cked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — He
- rmann Emil Fischer — https://api.nobelprize.org/2.1/laureate/161
+DESCRIPTION:Dirk Coster\, co-discoverer of hafnium\, was born.\n\nHappened
+ : 1889-10-05 (gregorian calendar\, day precision)\nChecked against 1 sourc
+ es\, 1 of 1 supporting the day.\n· Royal Society of Chemistry — Dirk Co
+ ster is born — https://edu.rsc.org/resources/on-this-day-oct-05--dirk-co
+ ster-was-born/11005.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/161
+URL:https://edu.rsc.org/resources/on-this-day-oct-05--dirk-coster-was-born
+ /11005.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Friedrich Bergius is born
-DTSTART;VALUE=DATE:20271011
-DTEND;VALUE=DATE:20271012
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B050@redletter.local
+SUMMARY:Niels Bohr proposed his model of the atom with electrons orbiting 
+ a heavy nucleus
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271008
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C076@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Niels Bohr proposed his model of the atom with electrons orbit
+ ing a heavy nucleus.\n\nHappened: 1913-10-07 (gregorian calendar\, day pre
+ cision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal 
+ Society of Chemistry — Niels Bohr proposed his model of the atom with el
+ ectrons orbiting a heavy nucleus — https://edu.rsc.org/resources/on-this
+ -day-oct-07-niels-bohr-atom/11007.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-oct-07-niels-bohr-atom/11007
+ .article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Henri B. Kagan and Kenso Soai won the 2026 Nobel Prize in Chemistr
+ y for non-linear effects and autocatalysis in asymmetric synthesis
+DTSTART;VALUE=DATE:20271007
+DTEND;VALUE=DATE:20271008
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G032@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Henri B. Kagan and Kenso Soai won the 2026 Nobel Prize in Chem
+ istry for non-linear effects and autocatalysis in asymmetric synthesis.\n\
+ nHappened: 2026-10-07 (gregorian calendar\, day precision)\nChecked agains
+ t 1 sources\, 1 of 1 supporting the day.\n· The Nobel Foundation — Henr
+ i B. Kagan and Kenso Soai won the 2026 Nobel Prize in Chemistry for non-li
+ near effects and autocatalysis in asymmetric synthesis — https://www.nob
+ elprize.org/prizes/chemistry/2026/press-release/
+TRANSP:TRANSPARENT
+URL:https://www.nobelprize.org/prizes/chemistry/2026/press-release/
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Henry Le Châtelier is born
+DTSTART;VALUE=DATE:20271008
+DTEND;VALUE=DATE:20271009
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C077@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1931 in Germany: in recognition of th
- eir contributions to the invention and development of chemical high pressu
- re methods\n\nHappened: 1884-10-11 (gregorian calendar\, day precision)\nC
- hecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — 
- Friedrich Bergius — https://api.nobelprize.org/2.1/laureate/190
+DESCRIPTION:Henry Le Châtelier\, who formulated the principle of shifting
+  chemical equilibrium\, was born.\n\nHappened: 1850-10-08 (gregorian calen
+ dar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the da
+ y.\n· Royal Society of Chemistry — Henry Le Châtelier is born — http
+ s://edu.rsc.org/resources/on-this-day-oct-08-le-chatelier-was-born/11008.a
+ rticle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/190
+URL:https://edu.rsc.org/resources/on-this-day-oct-08-le-chatelier-was-born
+ /11008.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Arthur Harden is born
-DTSTART;VALUE=DATE:20271012
-DTEND;VALUE=DATE:20271013
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B016@redletter.local
+SUMMARY:Carl Djerassi's team at Syntex developed norethindrone\, the first
+  contraceptive pill steroid
+DTSTART;VALUE=DATE:20271015
+DTEND;VALUE=DATE:20271016
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C078@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Carl Djerassi's team at Syntex developed norethindrone\, the f
+ irst contraceptive pill steroid.\n\nHappened: 1951-10-15 (gregorian calend
+ ar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day
+ .\n· Royal Society of Chemistry — Carl Djerassi's team at Syntex develo
+ ped norethindrone\, the first contraceptive pill steroid — https://edu.r
+ sc.org/resources/on-this-day-oct-15--first-contraceptive-pill/11015.articl
+ e
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-oct-15--first-contraceptive-
+ pill/11015.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William T. G. Morton demonstrated ether as an anaesthetic
+DTSTART;VALUE=DATE:20271016
+DTEND;VALUE=DATE:20271017
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C079@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:William T. G. Morton demonstrated ether as an anaesthetic.\n\n
+ Happened: 1846-10-16 (gregorian calendar\, day precision)\nChecked against
+  1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemistry —
+  William T. G. Morton demonstrated ether as an anaesthetic — https://edu
+ .rsc.org/resources/on-this-day-oct-16--ether-as-anaesthetic/11016.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-oct-16--ether-as-anaesthetic
+ /11016.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The spectroscope used by Kirchhoff to identify element spectra was
+  invented
+DTSTART;VALUE=DATE:20271027
+DTEND;VALUE=DATE:20271028
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C080@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:The spectroscope used by Kirchhoff to identify element spectra
+  was invented.\n\nHappened: 1859-10-27 (gregorian calendar\, day precision
+ )\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Societ
+ y of Chemistry — The spectroscope used by Kirchhoff to identify element 
+ spectra was invented — https://edu.rsc.org/resources/on-this-day-oct-27-
+ -spectroscope-was-invented/11027.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-oct-27--spectroscope-was-inv
+ ented/11027.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The Oak Ridge reactor went critical\; within two months it produce
+ d the world's first few grams of plutonium
+DTSTART;VALUE=DATE:20271104
+DTEND;VALUE=DATE:20271105
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C081@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:The Oak Ridge reactor went critical\; within two months it pro
+ duced the world's first few grams of plutonium.\n\nHappened: 1943-11-04 (g
+ regorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 sup
+ porting the day.\n· Royal Society of Chemistry — The Oak Ridge reactor 
+ went critical\; within two months it produced the world's first few grams 
+ of plutonium — https://edu.rsc.org/resources/on-this-day-nov-04--oak-rid
+ ge-nuclear-disaster/11104.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-nov-04--oak-ridge-nuclear-di
+ saster/11104.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir Ian Heilbron is born
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271107
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C082@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1929 in United Kingdom: for their inv
- estigations on the fermentation of sugar and fermentative enzymes\n\nHappe
- ned: 1865-10-12 (gregorian calendar\, day precision)\nChecked against 1 so
- urces\, 1 of 1 supporting the day.\n· Nobel Prize — Arthur Harden — h
- ttps://api.nobelprize.org/2.1/laureate/186
+DESCRIPTION:Sir Ian Heilbron\, who studied vitamins A and D and worked on 
+ penicillin\, was born.\n\nHappened: 1886-11-06 (gregorian calendar\, day p
+ recision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Roya
+ l Society of Chemistry — Sir Ian Heilbron is born — https://edu.rsc.or
+ g/resources/on-this-day-nov-06-ian-heilbron-was-born/11106.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/186
+URL:https://edu.rsc.org/resources/on-this-day-nov-06-ian-heilbron-was-born
+ /11106.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Johann Friedrich Wilhelm Adolf von Baeyer is born
-DTSTART;VALUE=DATE:20271031
-DTEND;VALUE=DATE:20271101
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B005@redletter.local
+SUMMARY:Hans von Euler-Chelpin dies
+DTSTART;VALUE=DATE:20271106
+DTEND;VALUE=DATE:20271107
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G035@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1905 in Prussia: in recognition of hi
- s services in the advancement of organic chemistry and the chemical indust
- ry\, through h…\n\nHappened: 1835-10-31 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Johann Friedrich Wilhelm Adolf von Baeyer — https://api.nobelpriz
- e.org/2.1/laureate/164
+CATEGORIES:Redletter,loss
+DESCRIPTION:Hans von Euler-Chelpin\, 1929 Nobel Prize in Chemistry laureat
+ e for enzyme and fermentation research\, died in Stockholm\, Sweden.\n\nHa
+ ppened: 1964-11-06 (gregorian calendar\, day precision)\nChecked against 1
+  sources\, 1 of 1 supporting the day.\n· The Nobel Foundation — Hans vo
+ n Euler-Chelpin dies — https://www.nobelprize.org/prizes/chemistry/1929/
+ euler-chelpin/facts/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/164
+URL:https://www.nobelprize.org/prizes/chemistry/1929/euler-chelpin/facts/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Paul Sabatier is born
-DTSTART;VALUE=DATE:20271105
-DTEND;VALUE=DATE:20271106
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B135@redletter.local
-RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1912 in France: for his method of hyd
- rogenating organic compounds in the presence of finely disintegrated metal
- s whereby the…\n\nHappened: 1854-11-05 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Paul Sabatier — https://api.nobelprize.org/2.1/laureate/173
-TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/173
-END:VEVENT
-BEGIN:VEVENT
-SUMMARY:Marie Curie\, née Skłodowska is born
+SUMMARY:Marie Curie is born
 DTSTART;VALUE=DATE:20271107
 DTEND;VALUE=DATE:20271108
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B112@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C083@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1903 in Russian Empire: in recognitio
- n of the extraordinary services they have rendered by their joint research
- es on the rad…\n\nHappened: 1867-11-07 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Marie Curie\, née Skłodowska — https://api.nobelprize.org/2.1/la
- ureate/6
+DESCRIPTION:Marie Curie\, the first person awarded two Nobel Prizes\, was 
+ born in Warsaw.\n\nHappened: 1867-11-07 (gregorian calendar\, day precisio
+ n)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· The Nobel P
+ rize — Marie Curie is born — https://www.nobelprize.org/prizes/chemist
+ ry/1911/marie-curie/biographical/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/6
+URL:https://www.nobelprize.org/prizes/chemistry/1911/marie-curie/biographi
+ cal/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Ronald George Wreyford Norrish is born
-DTSTART;VALUE=DATE:20271109
-DTEND;VALUE=DATE:20271110
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B159@redletter.local
+SUMMARY:Wilhelm Röntgen discovered X-rays
+DTSTART;VALUE=DATE:20271108
+DTEND;VALUE=DATE:20271109
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C084@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1967 in United Kingdom: for their stu
- dies of extremely fast chemical reactions\, effected by disturbing the equ
- ilibrium by me…\n\nHappened: 1897-11-09 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Ronald George Wreyford Norrish — https://api.nobelprize.org/2.1/l
- aureate/234
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Wilhelm Röntgen discovered X-rays.\n\nHappened: 1895-11-08 (g
+ regorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 sup
+ porting the day.\n· Royal Society of Chemistry — Wilhelm Röntgen disco
+ vered X-rays — https://edu.rsc.org/resources/on-this-day-nov-08--xrays-d
+ iscovered/11108.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/234
+URL:https://edu.rsc.org/resources/on-this-day-nov-08--xrays-discovered/111
+ 08.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:James Batcheller Sumner is born
-DTSTART;VALUE=DATE:20271119
-DTEND;VALUE=DATE:20271120
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B081@redletter.local
+SUMMARY:Antoine Lavoisier declared to the French Royal Academy that water 
+ is a compound\, not an element
+DTSTART;VALUE=DATE:20271112
+DTEND;VALUE=DATE:20271113
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C085@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1946 in USA: for his discovery that e
- nzymes can be crystallized\n\nHappened: 1887-11-19 (gregorian calendar\, d
- ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
- Nobel Prize — James Batcheller Sumner — https://api.nobelprize.org/2.1
- /laureate/204
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Antoine Lavoisier declared to the French Royal Academy that wa
+ ter is a compound\, not an element.\n\nHappened: 1783-11-12 (gregorian cal
+ endar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the 
+ day.\n· Royal Society of Chemistry — Antoine Lavoisier declared to the 
+ French Royal Academy that water is a compound\, not an element — https:/
+ /edu.rsc.org/resources/on-this-day-nov-12--water-declared-a-compound/11112
+ .article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/204
+URL:https://edu.rsc.org/resources/on-this-day-nov-12--water-declared-a-com
+ pound/11112.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Karl Ziegler is born
+SUMMARY:Humphry Davy told the Royal Society that chlorine is an element\, 
+ not oxymuriatic acid
+DTSTART;VALUE=DATE:20271115
+DTEND;VALUE=DATE:20271116
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C086@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Humphry Davy told the Royal Society that chlorine is an elemen
+ t\, not oxymuriatic acid.\n\nHappened: 1810-11-15 (gregorian calendar\, da
+ y precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· R
+ oyal Society of Chemistry — Humphry Davy told the Royal Society that chl
+ orine is an element\, not oxymuriatic acid — https://edu.rsc.org/resourc
+ es/on-this-day-nov-15--chlorine-declared-element/11115.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-nov-15--chlorine-declared-el
+ ement/11115.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The discovery of americium was announced
+DTSTART;VALUE=DATE:20271116
+DTEND;VALUE=DATE:20271117
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C087@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:The discovery of americium was announced.\n\nHappened: 1945-11
+ -16 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of
+  1 supporting the day.\n· Royal Society of Chemistry — The discovery of
+  americium was announced — https://edu.rsc.org/resources/on-this-day-nov
+ -16--americium-discovered/11116.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-nov-16--americium-discovered
+ /11116.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Charles Hatchett announced columbium (now niobium) to the Royal So
+ ciety
 DTSTART;VALUE=DATE:20271126
 DTEND;VALUE=DATE:20271127
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B099@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C088@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1963 in Germany: for their discoverie
- s in the field of the chemistry and technology of high polymers\n\nHappene
- d: 1898-11-26 (gregorian calendar\, day precision)\nChecked against 1 sour
- ces\, 1 of 1 supporting the day.\n· Nobel Prize — Karl Ziegler — http
- s://api.nobelprize.org/2.1/laureate/228
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Charles Hatchett announced columbium (now niobium) to the Roya
+ l Society.\n\nHappened: 1801-11-26 (gregorian calendar\, day precision)\nC
+ hecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of
+  Chemistry — Charles Hatchett announced columbium (now niobium) to the R
+ oyal Society — https://edu.rsc.org/resources/on-this-day-nov-26--discove
+ ry-of-niobium/11126.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/228
+URL:https://edu.rsc.org/resources/on-this-day-nov-26--discovery-of-niobium
+ /11126.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Lars Onsager is born
+SUMMARY:Alfred Nobel signed his final will establishing the Nobel Prizes\,
+  including an award for the top chemical discovery or improvement
 DTSTART;VALUE=DATE:20271127
 DTEND;VALUE=DATE:20271128
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B105@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G036@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1968 in Norway: for the discovery of 
- the reciprocal relations bearing his name\, which are fundamental for the 
- thermodynamics…\n\nHappened: 1903-11-27 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Lars Onsager — https://api.nobelprize.org/2.1/laureate/236
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Alfred Nobel signed his final will establishing the Nobel Priz
+ es\, including an award for the top chemical discovery or improvement.\n\n
+ Happened: 1895-11-27 (gregorian calendar\, day precision)\nChecked against
+  1 sources\, 1 of 1 supporting the day.\n· The Nobel Foundation — Alfre
+ d Nobel signed his final will establishing the Nobel Prizes\, including an
+  award for the top chemical discovery or improvement — https://www.nobel
+ prize.org/categories/facts/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/236
+URL:https://www.nobelprize.org/categories/facts/
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Richard Kuhn is born
-DTSTART;VALUE=DATE:20271203
-DTEND;VALUE=DATE:20271204
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B142@redletter.local
+SUMMARY:IUPAC officially approved the names and symbols nihonium (Nh)\, mo
+ scovium (Mc)\, tennessine (Ts)\, and oganesson (Og)
+DTSTART;VALUE=DATE:20271130
+DTEND;VALUE=DATE:20271201
+DTSTAMP:20261116T041052Z
+UID:D-CHE-G037@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1938 in Austria-Hungary: for his work
-  on carotenoids and vitamins\n\nHappened: 1900-12-03 (gregorian calendar\,
-  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
- · Nobel Prize — Richard Kuhn — https://api.nobelprize.org/2.1/laureat
- e/198
+CATEGORIES:Redletter,milestone
+DESCRIPTION:IUPAC officially approved the names and symbols nihonium (Nh)\
+ , moscovium (Mc)\, tennessine (Ts)\, and oganesson (Og).\n\nHappened: 2016
+ -11-30 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1
+  of 1 supporting the day.\n· International Union of Pure and Applied Chem
+ istry — IUPAC officially approved the names and symbols nihonium (Nh)\, 
+ moscovium (Mc)\, tennessine (Ts)\, and oganesson (Og) — https://iupac.or
+ g/iupac-announces-the-names-of-the-elements-113-115-117-and-118/
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/198
+URL:https://iupac.org/iupac-announces-the-names-of-the-elements-113-115-11
+ 7-and-118/
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:Fritz Haber is born
 DTSTART;VALUE=DATE:20271209
 DTEND;VALUE=DATE:20271210
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B051@redletter.local
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C089@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1918 in Prussia: for the synthesis of
-  ammonia from its elements\n\nHappened: 1868-12-09 (gregorian calendar\, d
- ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
- Nobel Prize — Fritz Haber — https://api.nobelprize.org/2.1/laureate/17
- 7
+DESCRIPTION:Fritz Haber\, Nobel laureate for fixing nitrogen from air\, wa
+ s born.\n\nHappened: 1868-12-09 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Ch
+ emistry — Fritz Haber is born — https://edu.rsc.org/resources/on-this-
+ day-dec-09-fritz-haber-was-born/11209.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/177
+URL:https://edu.rsc.org/resources/on-this-day-dec-09-fritz-haber-was-born/
+ 11209.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Alfred Werner is born
-DTSTART;VALUE=DATE:20271212
-DTEND;VALUE=DATE:20271213
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B012@redletter.local
+SUMMARY:Charles Coulson is born
+DTSTART;VALUE=DATE:20271213
+DTEND;VALUE=DATE:20271214
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C090@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1913 in France: in recognition of his
-  work on the linkage of atoms in molecules by which he has thrown new ligh
- t on earlier…\n\nHappened: 1866-12-12 (gregorian calendar\, day precisio
- n)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize
-  — Alfred Werner — https://api.nobelprize.org/2.1/laureate/174
+DESCRIPTION:Charles Coulson\, pioneer of molecular orbital theory\, was bo
+ rn.\n\nHappened: 1910-12-13 (gregorian calendar\, day precision)\nChecked 
+ against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of Chemis
+ try — Charles Coulson is born — https://edu.rsc.org/resources/on-this-
+ day-dec-13--charles-coulson-was-born/11213.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/174
+URL:https://edu.rsc.org/resources/on-this-day-dec-13--charles-coulson-was-
+ born/11213.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Jaroslav Heyrovsky is born
-DTSTART;VALUE=DATE:20271220
-DTEND;VALUE=DATE:20271221
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B082@redletter.local
+SUMMARY:Raoul Pictet telegraphed the Paris Academy that he had liquefied o
+ xygen
+DTSTART;VALUE=DATE:20271222
+DTEND;VALUE=DATE:20271223
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C091@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1959 in Austria-Hungary: for his disc
- overy and development of the polarographic methods of analysis\n\nHappened
- : 1890-12-20 (gregorian calendar\, day precision)\nChecked against 1 sourc
- es\, 1 of 1 supporting the day.\n· Nobel Prize — Jaroslav Heyrovsky —
-  https://api.nobelprize.org/2.1/laureate/223
+CATEGORIES:Redletter,milestone
+DESCRIPTION:Raoul Pictet telegraphed the Paris Academy that he had liquefi
+ ed oxygen.\n\nHappened: 1877-12-22 (gregorian calendar\, day precision)\nC
+ hecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society of
+  Chemistry — Raoul Pictet telegraphed the Paris Academy that he had liqu
+ efied oxygen — https://edu.rsc.org/resources/on-this-day-dec-22--liquid-
+ oxygen-was-made/11222.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/223
+URL:https://edu.rsc.org/resources/on-this-day-dec-22--liquid-oxygen-was-ma
+ de/11222.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Adolf Otto Reinhold Windaus is born
-DTSTART;VALUE=DATE:20271225
-DTEND;VALUE=DATE:20271226
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B006@redletter.local
+SUMMARY:John Lawrence used phosphorus-32 to treat leukaemia\, the first me
+ dical use of a radioisotope
+DTSTART;VALUE=DATE:20271224
+DTEND;VALUE=DATE:20271225
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C092@redletter.local
 RRULE:FREQ=YEARLY
-CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1928 in Germany: for the services ren
- dered through his research into the constitution of the sterols and their 
- connection wi…\n\nHappened: 1876-12-25 (gregorian calendar\, day precisi
- on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
- e — Adolf Otto Reinhold Windaus — https://api.nobelprize.org/2.1/laure
- ate/185
+CATEGORIES:Redletter,milestone
+DESCRIPTION:John Lawrence used phosphorus-32 to treat leukaemia\, the firs
+ t medical use of a radioisotope.\n\nHappened: 1936-12-24 (gregorian calend
+ ar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the day
+ .\n· Royal Society of Chemistry — John Lawrence used phosphorus-32 to t
+ reat leukaemia\, the first medical use of a radioisotope — https://edu.r
+ sc.org/resources/on-this-day-dec-24--medical-use-of-radioisotope/11224.art
+ icle
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/185
+URL:https://edu.rsc.org/resources/on-this-day-dec-24--medical-use-of-radio
+ isotope/11224.article
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:Gerhard Herzberg is born
-DTSTART;VALUE=DATE:20271225
-DTEND;VALUE=DATE:20271226
-DTSTAMP:20261116T034111Z
-UID:D-CHE-B060@redletter.local
+SUMMARY:Marie and Pierre Curie discovered radium
+DTSTART;VALUE=DATE:20271226
+DTEND;VALUE=DATE:20271227
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C093@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Marie and Pierre Curie discovered radium.\n\nHappened: 1898-12
+ -26 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of
+  1 supporting the day.\n· Royal Society of Chemistry — Marie and Pierre
+  Curie discovered radium — https://edu.rsc.org/resources/on-this-day-dec
+ -26--radium-was-discovered/11226.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-dec-26--radium-was-discovere
+ d/11226.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Louis Pasteur is born
+DTSTART;VALUE=DATE:20271227
+DTEND;VALUE=DATE:20271228
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C094@redletter.local
 RRULE:FREQ=YEARLY
 CATEGORIES:Redletter,birth
-DESCRIPTION:Nobel Prize in Chemistry 1971 in Germany: for his contribution
- s to the knowledge of electronic structure and geometry of molecules\, par
- ticularly free…\n\nHappened: 1904-12-25 (gregorian calendar\, day precis
- ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
- ze — Gerhard Herzberg — https://api.nobelprize.org/2.1/laureate/240
+DESCRIPTION:Louis Pasteur\, who explained fermentation and invented pasteu
+ risation\, was born.\n\nHappened: 1822-12-27 (gregorian calendar\, day pre
+ cision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal 
+ Society of Chemistry — Louis Pasteur is born — https://edu.rsc.org/res
+ ources/on-this-day-dec-27--louis-pasteur-was-born/11227.article
 TRANSP:TRANSPARENT
-URL:https://api.nobelprize.org/2.1/laureate/240
+URL:https://edu.rsc.org/resources/on-this-day-dec-27--louis-pasteur-was-bo
+ rn/11227.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Harold Urey announced the discovery of heavy water\, enriched in d
+ euterium
+DTSTART;VALUE=DATE:20271229
+DTEND;VALUE=DATE:20271230
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C095@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,discovery
+DESCRIPTION:Harold Urey announced the discovery of heavy water\, enriched 
+ in deuterium.\n\nHappened: 1931-12-29 (gregorian calendar\, day precision)
+ \nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal Society
+  of Chemistry — Harold Urey announced the discovery of heavy water\, enr
+ iched in deuterium — https://edu.rsc.org/resources/on-this-day-dec-29--d
+ iscovery-of-heavy-water/11229.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-dec-29--discovery-of-heavy-w
+ ater/11229.article
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William Coolidge's ductile tungsten for incandescent bulb filament
+ s was patented
+DTSTART;VALUE=DATE:20271230
+DTEND;VALUE=DATE:20271231
+DTSTAMP:20261116T041052Z
+UID:D-CHE-C096@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,milestone
+DESCRIPTION:William Coolidge's ductile tungsten for incandescent bulb fila
+ ments was patented.\n\nHappened: 1913-12-30 (gregorian calendar\, day prec
+ ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Royal S
+ ociety of Chemistry — William Coolidge's ductile tungsten for incandesce
+ nt bulb filaments was patented — https://edu.rsc.org/resources/on-this-d
+ ay-dec-30--tungsten-filaments-patent/11230.article
+TRANSP:TRANSPARENT
+URL:https://edu.rsc.org/resources/on-this-day-dec-30--tungsten-filaments-p
+ atent/11230.article
 END:VEVENT
 END:VCALENDAR

@@ -186,9 +186,12 @@ days:
       gregorian: 1998-11-20
       precision: day
     sources:
+      # The general ISS page was swapped for this one: it never stated 20 November
+      # in a form that meant the date, and the old matcher only "found" it inside
+      # the string "November 2026" elsewhere on the page.
       - type: archive
-        citation: NASA — International Space Station
-        url: https://www.nasa.gov/international-space-station/
+        citation: NASA — 20 Years Ago, Space Station Construction Begins
+        url: https://www.nasa.gov/history/20-years-ago-space-station-construction-begins/
       - type: reference-data
         citation: International Space Station — Wikipedia
         url: https://en.wikipedia.org/wiki/International_Space_Station

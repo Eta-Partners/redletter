@@ -18,6 +18,8 @@ import textwrap
 
 import pytest
 
+from conftest import source_page
+
 ROOT = __import__("pathlib").Path(__file__).resolve().parent.parent
 PY = sys.executable
 
@@ -74,9 +76,9 @@ def test_the_whole_pipeline_runs_on_a_local_web(tmp_path, site):
     # one machine here stands in for two independent publishers there.
     other = f"http://localhost:{port}"
 
-    server.pages["/good-a"] = "<p>Launched on April 12, 1961.</p>"
-    server.pages["/good-b"] = "<p>12 April 1961: the first flight.</p>"
-    server.pages["/half"] = "<p>May 30, 2020.</p>"
+    server.pages["/good-a"] = source_page("Launched on April 12, 1961.")
+    server.pages["/good-b"] = source_page("12 April 1961: the first flight.")
+    server.pages["/half"] = source_page("May 30, 2020.")
 
     data = dataset(tmp_path, "".join([
         one_day("D-OK", "04-12", 1961, [f"{base}/good-a", f"{other}/good-b"]),
@@ -113,7 +115,7 @@ def test_the_whole_pipeline_runs_on_a_local_web(tmp_path, site):
 
 def test_a_failed_fetch_does_not_stop_the_run(tmp_path, site):
     server, base = site
-    server.pages["/ok"] = "<p>April 12, 1961.</p>"
+    server.pages["/ok"] = source_page("April 12, 1961.")
     data = dataset(tmp_path, "".join([
         one_day("D-OK", "04-12", 1961, [f"{base}/ok", "http://127.0.0.1:1/refused"]),
     ]))

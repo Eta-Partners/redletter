@@ -14,7 +14,7 @@ prove itself stays out of the picture instead of appearing with an asterisk.
 
 ## Mini-requirements
 
-The vertical slice proved these, on one topic:
+The vertical slice proves these, on three calendars:
 
 1. **A record schema for a day.** Month-day, the year it happened, a title, a
    short blurb, the date as recorded and in Gregorian, precision, sources, and a
@@ -26,7 +26,8 @@ The vertical slice proved these, on one topic:
      publisher, not more than one page.
 3. **Derived status, never hand-written.** `active` (two publishers agree on the
    day), `provisional` (one publisher, or one agreeing page), `contested` (sources
-   read and disagreed), `quarantined` (nothing could be read).
+   read and disagreed), `quarantined` (nothing could be read). A page that returns
+   a bot wall is `quarantined`, not `contested`: unread is not disagreement.
 4. **A print sheet**: a dated year, mono except for a single rubric red, twelve
    month grids, and a key at the foot naming every marked day with the year it
    happened. Only `active` days are drawn.
@@ -50,10 +51,13 @@ What counts as done, and how each is checked by effect rather than by assertion:
 
 ## Out of scope for the slice
 
-- **Research at scale.** Ten days were curated by hand. The skills that find and
-  verify new days for a named topic are the next slice, and they are the hard one.
+- **Finding the days.** The slice curates by hand, or takes a researcher's file and
+  judges it. The skills that *discover* days for a named topic unaided are still
+  the next slice, and they are the hard one. What exists is the intake: a line
+  format, a parser that refuses malformed lines and catches a date contradicting
+  its own URL, and the unchanged gate behind it (see `DECISIONS.md`).
 - **Contested days.** The owner chose to leave them out entirely rather than draw
   them differently. The status still exists; nothing renders it yet.
-- **Multiple topics at once**, colour paths, sizes other than the two sheets.
+- **Colour paths, sizes other than the two sheets.**
 - **A real client import.** The feed parses cleanly; nobody has yet subscribed to
   it from Apple Calendar or Google Calendar and looked at the result.

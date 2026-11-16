@@ -15,7 +15,7 @@ repeats them every year on your phone.
     <img src="https://img.shields.io/badge/status-vertical%20slice-orange.svg" alt="Status"/>
     <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python"/>
     <img src="https://img.shields.io/badge/output-print%20%2B%20.svg%20%2B%20.ics-informational.svg" alt="Output"/>
-    <img src="https://img.shields.io/badge/days%20in%20the%20seed%20topic-10-red.svg" alt="Days"/>
+    <img src="https://img.shields.io/badge/days%20in%20chemistry-115-red.svg" alt="Days"/>
 </p>
 
 ![The 2027 crewed spaceflight sheet](media/samples/redletter-crewed-spaceflight-2027.png)
@@ -43,27 +43,38 @@ newspaper. So the thing this repository actually builds is the **gate**:
 
 ## Status
 
-The vertical slice runs, on two topics, end to end. What is true today:
+The vertical slice runs, on three calendars, end to end. What is true today:
 
-- **`data/chemistry.yaml`** — a full chemistry year: **72 days, six in every month**,
-  built from the Nobel Prize's own API through `scripts/from_nobel.py` and verified
-  against the Nobel Foundation's records. Landmark discoveries are still to come;
-  they need sources the allowlist recognises.
+- **`data/chemistry.yaml`** — the field's year: **115 days, eight to twelve in
+  every month**, from the Royal Society of Chemistry's "On This Day" archive, the
+  Nobel Foundation and IUPAC. Mendeleev's table, the isolation of fluorine, the
+  first noble-gas compound, Curie's radium, Pauling's death, the naming of
+  elements 118. Every day is a dated event with a body of record behind it, and
+  **115 of 115 verify**.
+- **`data/chemistry-laureates.yaml`** — the people calendar: **72 days, six in
+  every month**, built from the Nobel Prize's own API through
+  `scripts/from_nobel.py`. Every laureate of the chemistry prize, on the day they
+  were born, with the prize year and the citation in the line.
 - **`data/spaceflight.yaml`** — ten hand-curated crewed-spaceflight days.
 
-- **`scripts/verify_days.py`** fetches every source for the ten seed days and
-  derives each day's status. The seed topic currently reads **10 active, 0
-  provisional, 0 contested, 0 quarantined** — 20 sources across four publishers.
+- **`scripts/verify_days.py`** fetches every source and derives each day's status.
+  Spaceflight reads **10 active, 0 provisional, 0 contested, 0 quarantined** — 20
+  sources across four publishers; chemistry reads **115 active** of 115.
+- **`scripts/from_lines.py`** turns a researcher's `MM-DD | YYYY | sentence | URL |
+  publisher` file into candidate records, refusing malformed lines and catching a
+  date that contradicts its own source URL before any request is made.
 - **`scripts/render_grid.py`** draws the 2027 sheet (a year of month grids) or one
   month, as a PNG to look at and an SVG to print, from the same geometry.
-- **`scripts/build_ics.py`** writes ten all-day, yearly-repeating events and parses
-  the file back before it lands: DATE values, a YEARLY rule and a UID on every
-  event, CRLF, no line over 75 octets.
-- **`tests/`** — 79 tests: unit tests that pin the status rules with the network
-  faked, and integration tests that run all three scripts against a local web
-  server. The one network test is opt-in. CI runs the offline suite on 3.9 and 3.12.
-- **Not built yet:** the skills that research and verify a *new* topic. The ten
-  days were curated by hand, which is the part that does not scale.
+- **`scripts/build_ics.py`** writes all-day, yearly-repeating events and parses the
+  file back before it lands: DATE values, a YEARLY rule and a UID on every event,
+  CRLF, no line over 75 octets.
+- **`tests/`** — 131 tests: unit tests that pin the status rules, the date matcher
+  and the research format with the network faked, and integration tests that run
+  all three scripts against a local web server. The one network test is opt-in. CI
+  runs the offline suite on 3.9 and 3.12.
+- **Not built yet:** the skills that research and verify a *new* topic end to end.
+  The intake side exists — a formatted file in, judged candidates out — but
+  finding the days is still a person or an assistant doing research.
 - **Not proven yet:** that the feed imports into Apple Calendar or Google Calendar.
   It parses cleanly; nobody has subscribed to it and looked.
 
@@ -71,7 +82,7 @@ The vertical slice runs, on two topics, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 79 tests, offline, about four seconds
+pytest -q                     # 131 tests, offline, about four seconds
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 
@@ -98,6 +109,10 @@ python scripts/render_grid.py out/days.json --year 2027        # out/…-2027.pn
 python scripts/render_grid.py out/days.json --month 7          # one month, bigger
 python scripts/build_ics.py out/days.json                      # out/…-2027.ics, validated
 python scripts/coverage.py out/days.json --target 6            # how dense the year is
+
+# turn a researcher's lines into candidates, then put them through the same gate
+python scripts/from_lines.py research.md --out data/_candidates.yaml --id-prefix R
+python scripts/verify_days.py data/_candidates.yaml --write
 
 # propose records from the Nobel Prize API, then put them through the same gate
 python scripts/from_nobel.py --category che --out data/_candidates.yaml
@@ -169,9 +184,10 @@ imported it.
 ## Repository layout
 
 ```
-data/                the days, one YAML per topic, and the source allowlist
+data/                the days, one YAML per calendar, and the source allowlist
 scripts/
   verify_days.py     the gate: fetch, judge, derive status, write out/days.json
+  from_lines.py      turns a researcher's lines into candidates for the gate
   from_nobel.py      proposes day records from the Nobel Prize API
   coverage.py        active days per month against a target
   render_grid.py     the sheet: a year of month grids, PNG and SVG from one geometry
@@ -189,11 +205,12 @@ DECISIONS.md         every choice a reader could have made differently, and why
 ## What is not done
 
 - The research skills — find candidates for a topic, verify them, propose them for
-  approval. This is the next slice and the one that makes the idea worth a
-  repository.
+  approval. The intake half exists (`from_lines.py` and the gate); the finding is
+  still done by a person or an assistant, and the brief they are given is in
+  `DECISIONS.md` under "Research arrives as lines".
 - Contested days, drawn differently or at all. The status is computed; nothing
   renders it.
-- Any second topic, and any colour beyond the one red.
+- Any colour beyond the one red.
 - A person importing the `.ics` into a real calendar and saying what happened.
 
 ## License

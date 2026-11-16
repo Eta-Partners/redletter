@@ -176,3 +176,12 @@ def test_a_small_key_gets_room_to_breathe():
     lines = [("JAN 01", "1900  Someone is born")] * 10
     cols, size, line_h, _ = rg.key_columns(lines, 1800, 120)
     assert cols == 2 and size >= 15 and line_h >= 30
+
+
+def test_a_dense_key_uses_the_width_it_has():
+    """At 115 entries four columns showed about 33 characters of a line; three shows 50."""
+    lines = [("JAN 01", f"{1800 + i}  A reasonably long chemist's name is born")
+             for i in range(115)]
+    cols, size, line_h, rows = rg.key_columns(lines, 1800, 120)
+    assert cols == 3, "the key's column count is the lever on how much of a line survives"
+    assert 46 + rows * line_h <= rg.KEY_BAND + 1

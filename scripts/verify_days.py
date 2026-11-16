@@ -24,6 +24,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import hashlib
+import html
 import json
 import pathlib
 import re
@@ -40,6 +41,18 @@ MONTHS = [
     "july", "august", "september", "october", "november", "december",
 ]
 
+# A page with less visible text than this is a bot wall or an error stub, not a
+# document. acs.org answers a non-browser client with HTTP 200 and 212 bytes of
+# challenge script; without this floor the gate calls that "read, no match",
+# which reports a blocked door as a source that disagrees.
+MIN_TEXT = 400
+
+
+def visible_text(page: str) -> str:
+    page = re.sub(r"<(script|style)\b.*?</\1>", " ", page, flags=re.S | re.I)
+    text = re.sub(r"<[^>]+>", " ", page)
+    return re.sub(r"\s+", " ", html.unescape(text)).strip()
+
 
 def fetch(url: str, timeout: int) -> tuple[int, str]:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept-Encoding": "identity"})
@@ -49,26 +62,26 @@ def fetch(url: str, timeout: int) -> tuple[int, str]:
         return r.status, raw.decode(charset, "replace")
 
 
-def date_variants(iso: str) -> list[str]:
-    # YAML reads an unquoted 1961-04-12 as a date, not a string; coerce here so a
-    # hand-written dataset does not have to quote every date.
+def date_pattern(iso: str) -> re.Pattern:
+    """One pattern covering the ways a page writes a date.
+
+    The RSC titles its pages "On This Day – Mar 06", with the month abbreviated
+    and the day zero-padded; other pages write "6 March 1869" or "March 6, 1869".
+    An enumerated list of strings missed the first form entirely and reported 30
+    real days as contested, so this matches the shapes rather than the strings.
+    """
     d = dt.date.fromisoformat(str(iso))
     month = MONTHS[d.month - 1]
-    mon3 = month[:3]
-    return [
-        f"{month} {d.day}, {d.year}",          # April 12, 1961
-        f"{d.day} {month} {d.year}",           # 12 April 1961
-        f"{mon3} {d.day}, {d.year}",           # Apr 12, 1961
-        f"{d.day} {mon3} {d.year}",
-        str(iso),                              # 1961-04-12 (str: YAML may hand us a date)
-        f"{d.day} {month}",                    # 12 April
-        f"{month} {d.day}",                    # April 12
-    ]
+    names = rf"(?:{month}|{month[:3]})"
+    day = rf"(?<![0-9])0?{d.day}(?![0-9])"     # "6" and "06" are both printed
+    return re.compile(
+        rf"{names}\s+{day}|{day}\s+{names}|{d.year}-{d.month:02d}-{d.day:02d}",
+        re.IGNORECASE,
+    )
 
 
 def supports(page: str, iso: str) -> bool:
-    hay = re.sub(r"\s+", " ", page).lower()
-    return any(v.lower() in hay for v in date_variants(iso))
+    return date_pattern(iso).search(page) is not None
 
 
 def publisher(url: str) -> str:
@@ -133,9 +146,21 @@ def verify_day(day: dict, timeout: int, allowlist: dict[str, str] | None = None)
         try:
             status, page = fetch(src["url"], timeout)
             entry["http"] = status
-            entry["read"] = True
-            entry["supports"] = supports(page, iso)
+            body = visible_text(page)
             entry["bytes"] = len(page)
+            entry["text"] = len(body)
+            if len(body) < MIN_TEXT:
+                # A challenge page is a door, not a document. Calling it read would
+                # turn "we could not look" into "we looked and it is not there".
+                entry["read"] = False
+                entry["supports"] = None
+                entry["error"] = f"blocked or empty: {len(page)} bytes, {len(body)} chars of text"
+            else:
+                entry["read"] = True
+                # The date is looked for in the raw page, not the visible text: the
+                # RSC writes "On This Day – March 6 … in 1869" inside an HTML comment,
+                # which a tag strip would delete along with the evidence.
+                entry["supports"] = supports(page, iso)
         except (OSError, ValueError) as exc:
             # URLError, HTTPError and TimeoutError are all OSError; a connection
             # dropped mid-read is an OSError too. Any of them means "could not read
