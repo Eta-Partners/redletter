@@ -1,0 +1,236 @@
+# Redletter — crewed spaceflight (v1 probe dataset)
+#
+# Ten days that earned a mark on a crewed-spaceflight calendar. Every entry is a
+# record, not a sentence: the date it was recorded in, the date that reaches the
+# grid, how sure we are of the day, and the sources that carry it.
+#
+# `status` and `verification` are not written here — scripts/verify_days.py derives
+# them from what the sources actually returned, on the day it ran. Two pages that
+# agree but share a publisher count as one source, so a day needs two publishers
+# to print.
+#
+# Rule carried from the design: a day with day-level precision and agreeing
+# sources can print; a contested or single-source day stays in the dataset and
+# off the calendar.
+
+topic:
+  id: crewed-spaceflight
+  title: Crewed Spaceflight
+  scope: >-
+    Human beings leaving Earth and the missions that carried them: firsts,
+    programme milestones, dockings and the days the cost was paid. Robotic
+    missions, uncrewed tests and launches that failed before crew were aboard
+    are out of scope.
+  print_year: 2027
+  kinds: [launch, first, milestone, loss]
+
+days:
+  - id: D-0001
+    month_day: "04-12"
+    year: 1961
+    kind: first
+    title: Yuri Gagarin orbits the Earth
+    blurb: >-
+      Vostok 1, one orbit in 108 minutes. The first human being in space, and
+      the first to return from it.
+    date:
+      as_recorded: 1961-04-12
+      calendar: gregorian
+      gregorian: 1961-04-12
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Vostok 1 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Vostok_1
+      - type: archive
+        citation: NASA history — remembering Yuri Gagarin 50 years later
+        url: https://www.nasa.gov/history/remembering-yuri-gagarin-50-years-later/
+
+  - id: D-0002
+    month_day: "03-18"
+    year: 1965
+    kind: first
+    title: Alexei Leonov walks in space
+    blurb: >-
+      Voskhod 2. Twelve minutes outside the capsule, and a suit that had to be
+      bled of pressure before he could get back through the hatch.
+    date:
+      as_recorded: 1965-03-18
+      calendar: gregorian
+      gregorian: 1965-03-18
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Voskhod 2 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Voskhod_2
+      - type: archive
+        citation: NASA — first spacewalker Alexei Leonov
+        url: https://www.nasa.gov/blogs/spacestation/2019/05/29/russian-spacewalkers-wish-happy-birthday-to-first-spacewalker-alexei-leonov/
+
+  - id: D-0003
+    month_day: "06-16"
+    year: 1963
+    kind: first
+    title: Valentina Tereshkova flies alone
+    blurb: >-
+      Vostok 6, forty-eight orbits, three days in orbit by herself. Still the
+      only woman to have flown a solo spaceflight.
+    date:
+      as_recorded: 1963-06-16
+      calendar: gregorian
+      gregorian: 1963-06-16
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Vostok 6 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Vostok_6
+      - type: archive
+        citation: NASA history — Sally Ride and Valentina Tereshkova
+        url: https://www.nasa.gov/history/sally-ride-and-valentina-tereshkova-changing-the-course-of-human-space-exploration/
+
+  - id: D-0004
+    month_day: "07-20"
+    year: 1969
+    kind: milestone
+    title: Apollo 11 lands on the Moon
+    blurb: >-
+      Tranquility Base. Armstrong and Aldrin walk; Collins keeps the command
+      module in orbit alone.
+    date:
+      as_recorded: 1969-07-20
+      calendar: gregorian
+      gregorian: 1969-07-20
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Apollo 11 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Apollo_11
+      - type: archive
+        citation: NASA — Apollo 11 mission overview
+        url: https://www.nasa.gov/mission/apollo-11/
+
+  - id: D-0005
+    month_day: "07-17"
+    year: 1975
+    kind: milestone
+    title: Apollo and Soyuz dock
+    blurb: >-
+      A handshake in orbit between Stafford, Slayton and Brand and Leonov and
+      Kubasov. The first international crewed docking.
+    date:
+      as_recorded: 1975-07-17
+      calendar: gregorian
+      gregorian: 1975-07-17
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Apollo–Soyuz — Wikipedia
+        url: https://en.wikipedia.org/wiki/Apollo%E2%80%93Soyuz
+      - type: archive
+        citation: NASA — Apollo-Soyuz Test Project
+        url: https://www.nasa.gov/apollo-soyuz-test-project/
+
+  - id: D-0006
+    month_day: "06-18"
+    year: 1983
+    kind: first
+    title: Sally Ride flies on STS-7
+    blurb: >-
+      The first American woman in orbit, on Challenger's second flight. She
+      worked the robotic arm that put two satellites out and brought them back.
+    date:
+      as_recorded: 1983-06-18
+      calendar: gregorian
+      gregorian: 1983-06-18
+      precision: day
+    sources:
+      - type: archive
+        citation: NASA history — Sally Ride, first American woman in space
+        url: https://www.nasa.gov/history/sally-ride-first-american-woman-in-space/
+      - type: reference-data
+        citation: National Women's History Museum — Sally Ride
+        url: https://www.womenshistory.org/education-resources/biographies/sally-ride
+
+  - id: D-0007
+    month_day: "01-28"
+    year: 1986
+    kind: loss
+    title: Challenger is lost
+    blurb: >-
+      Seventy-three seconds after launch, seven crew aboard. Recorded plainly,
+      as the design asks.
+    date:
+      as_recorded: 1986-01-28
+      calendar: gregorian
+      gregorian: 1986-01-28
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Space Shuttle Challenger disaster — Wikipedia
+        url: https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster
+      - type: archive
+        citation: NASA — Challenger (STS-51L) mission page
+        url: https://www.nasa.gov/mission/sts-51l/
+
+  - id: D-0008
+    month_day: "11-20"
+    year: 1998
+    kind: milestone
+    title: Zarya opens the International Space Station
+    blurb: >-
+      The first station module to orbit, uncrewed, while its first crew waited
+      two years for the module after it.
+    date:
+      as_recorded: 1998-11-20
+      calendar: gregorian
+      gregorian: 1998-11-20
+      precision: day
+    sources:
+      - type: archive
+        citation: NASA — International Space Station
+        url: https://www.nasa.gov/international-space-station/
+      - type: reference-data
+        citation: International Space Station — Wikipedia
+        url: https://en.wikipedia.org/wiki/International_Space_Station
+
+  - id: D-0009
+    month_day: "10-15"
+    year: 2003
+    kind: first
+    title: Yang Liwei flies Shenzhou 5
+    blurb: >-
+      Twenty-one hours in orbit and a fourteenth orbit cut to one, on the
+      first crewed flight of China's programme.
+    date:
+      as_recorded: 2003-10-15
+      calendar: gregorian
+      gregorian: 2003-10-15
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Shenzhou 5 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Shenzhou_5
+      - type: archive
+        citation: China Manned Space Agency — Yang Liwei
+        url: https://en.cmse.gov.cn/constitutes/astronautsystem/Taikonauts/201504/t20150417_21579.html
+
+  - id: D-0010
+    month_day: "05-30"
+    year: 2020
+    kind: launch
+    title: Crew Dragon flies astronauts for the first time
+    blurb: >-
+      Two crew to the station in a commercial capsule, from American soil, for
+      the first time since the shuttle stopped flying.
+    date:
+      as_recorded: 2020-05-30
+      calendar: gregorian
+      gregorian: 2020-05-30
+      precision: day
+    sources:
+      - type: reference-data
+        citation: Crew Dragon Demo-2 — Wikipedia
+        url: https://en.wikipedia.org/wiki/Crew_Dragon_Demo-2
+      - type: archive
+        citation: NASA — astronauts launch from America on Demo-2
+        url: https://www.nasa.gov/news-release/nasa-astronauts-launch-from-america-in-historic-test-flight-of-spacex-crew-dragon/

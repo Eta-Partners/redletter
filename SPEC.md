@@ -1,0 +1,59 @@
+# Redletter — specification
+
+## Intent
+
+A Redletter is a calendar of the days a field marks in red. You name a topic; the
+days are researched, each one sourced and checked; you get a printed year where
+those days are the only things in colour, and a calendar feed that repeats them
+every year.
+
+The point is not the list. A list of interesting dates is cheap and worthless. The
+point is that **every red mark earned its place**: its sources were read, they
+agreed on the day, and they were not the same source twice. A day that cannot
+prove itself stays out of the picture instead of appearing with an asterisk.
+
+## Mini-requirements
+
+The vertical slice proved these, on one topic:
+
+1. **A record schema for a day.** Month-day, the year it happened, a title, a
+   short blurb, the date as recorded and in Gregorian, precision, sources, and a
+   derived status. A day is a record, not a sentence.
+2. **Three verification questions** asked of every record by script:
+   - does each source exist and say what the record claims about it;
+   - does each source support the date;
+   - do *independent* sources agree — where independent means more than one
+     publisher, not more than one page.
+3. **Derived status, never hand-written.** `active` (two publishers agree on the
+   day), `provisional` (one publisher, or one agreeing page), `contested` (sources
+   read and disagreed), `quarantined` (nothing could be read).
+4. **A print sheet**: a dated year, mono except for a single rubric red, twelve
+   month grids, and a key at the foot naming every marked day with the year it
+   happened. Only `active` days are drawn.
+5. **A feed**: one all-day event per active day, repeating yearly, carrying the
+   original date and the sources in the event body.
+6. **A print/feed split that is honoured.** The printed sheet is a *dated* year —
+   the mark falls on a real 2027 date. The feed is a *recurrence* — the mark falls
+   on month-day every year, and the year it happened lives in the description.
+
+## Proof contract
+
+What counts as done, and how each is checked by effect rather than by assertion:
+
+| Claim | How it is checked |
+| --- | --- |
+| The sources support the day | `verify_days.py` fetches each URL and looks for the date in the page text; the status follows from what came back |
+| Agreement is real | the agreeing sources are grouped by publisher; one publisher cannot agree with itself |
+| The sheet shows only verified days | the renderer reads `out/days.json` and skips anything not `active`, printing what it skipped and why |
+| The feed imports | the `.ics` is parsed back with `icalendar` before it is written: dates are DATE values, every event carries a YEARLY rule and a UID, and the month-day matches the record |
+| The feed is portable | CRLF line endings, no line over 75 octets, UTF-8 |
+
+## Out of scope for the slice
+
+- **Research at scale.** Ten days were curated by hand. The skills that find and
+  verify new days for a named topic are the next slice, and they are the hard one.
+- **Contested days.** The owner chose to leave them out entirely rather than draw
+  them differently. The status still exists; nothing renders it yet.
+- **Multiple topics at once**, colour paths, sizes other than the two sheets.
+- **A real client import.** The feed parses cleanly; nobody has yet subscribed to
+  it from Apple Calendar or Google Calendar and looked at the result.
