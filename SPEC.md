@@ -53,7 +53,7 @@ What counts as done, and how each is checked by effect rather than by assertion:
 | Agreement is real | the agreeing sources are grouped by publisher; one publisher cannot agree with itself |
 | The sheet shows only verified days | the renderer reads `out/days.json` and skips anything not `active`, printing what it skipped and why |
 | The book is thirteen pages | `build_book` returns a cover plus twelve month pages, and the page size in points is checked against the paper's own dimensions |
-| Text stays in its cell | every drawn line's rendered width is measured against its cell's inner width at every paper shape, one-word lines included, and a page is accepted when at most one cell in ten must truncate |
+| Text stays in its cell | every drawn line's rendered width is measured against its cell's inner width at every paper shape, one-word lines included, and a page is accepted when one cell in ten, rounded up, may truncate (the arithmetic is in `DECISIONS.md`) |
 | The feed imports | the `.ics` is parsed back with `icalendar` before it is written: dates are DATE values, every event carries a YEARLY rule and a UID, and the month-day matches the record |
 | The feed is portable | CRLF line endings, no line over 75 octets, UTF-8 |
 

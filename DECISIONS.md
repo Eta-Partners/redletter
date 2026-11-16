@@ -37,7 +37,7 @@ because a hyphen it inserted would be a word it invented. That is a rule about a
 line, and it said nothing about the *cell*: an unbroken word ran into the next
 column, which silently gives a day's detail to another day. Found at `337331b`
 while checking the blurb boundary, as 104 lines over the twelve books — 101 of
-them printed, the other two dropped by truncation — in 69 cells, six of them
+them printed, the other three dropped by truncation — in 69 cells, six of them
 across the three default A4 landscape books, the worst 12.6 pt past. The fix is
 in `fit_to_width`, applied in `cell_blocks`: a line that fits the cell's full
 width moves to indent 0, and a word wider than the whole cell is broken at the
