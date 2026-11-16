@@ -298,14 +298,101 @@ def test_a_29_february_day_is_skipped_in_the_book(tmp_path):
     assert any("02-29" in s for s in text_of(leap[2]))
 
 
-def test_a_wrapped_line_never_leaves_the_cell_it_was_wrapped_for():
-    """wrap_to clamps at 4, so a cell too narrow for the hang is slivers, not an error."""
-    entry = (1784, "Henry Cavendish announced to the Royal Society that water is a compound", "")
+def test_no_line_is_wider_than_the_cell_it_was_wrapped_for():
+    """Every line fits, one-word lines included: that is the case the old check skipped.
+
+    It read `if " " in s` and let the single-word lines though, which is exactly
+    where a cell's text left the cell: 104 of them across the twelve books at
+    337331b, six at the default A4 landscape.
+    """
+    entries = [
+        (1784, "Henry Cavendish announced to the Royal Society that water is a compound", ""),
+        (1898, "hexafluoroplatinate, the first noble-gas compound, is reported", ""),
+        (1900, "pneumonoultramicroscopicsilicovolcanoconiosis in a date cell", ""),
+    ]
     for chars in range(4, 25):
-        blocks, _ = rg.cell_blocks([entry], chars, 8, False)
-        for s, _, _, indent in blocks:
-            if " " in s:  # a word longer than the line is left whole, by policy
+        for entry in entries:
+            blocks, _ = rg.cell_blocks([entry], chars, 8, False)
+            for s, _, _, indent in blocks:
                 assert indent + len(s) <= chars, (chars, indent, s)
+
+
+def test_a_word_that_fits_the_cell_moves_left_rather_than_breaking():
+    """`International` is 13 characters where the hang leaves 8, and that is 6 short.
+
+    It takes the cell's full 14 at indent 0; breaking it would be inventing a split
+    for a word the cell has room for.
+    """
+    entry = (1998, "Zarya opens the International Space Station", "")
+    blocks, _ = rg.cell_blocks([entry], 14, 8, False)
+    texts = [(s, indent) for s, _, _, indent in blocks]
+    assert ("International", 0) in texts, texts
+    assert ("Space", 6) in texts, "the next line keeps the hang"
+    assert all("-" not in s for s, _ in texts)
+
+
+def test_a_word_wider_than_the_whole_cell_is_broken_with_no_hyphen():
+    """20 characters leaves a 6-character hang and 14 for the word, which is 45.
+
+    So the word is broken at the full width, and nothing is added to it: the pieces
+    join back to the word itself.
+    """
+    word = "pneumonoultramicroscopicsilicovolcanoconiosis"
+    blocks, _ = rg.cell_blocks([(1900, word, "")], 20, 8, False)
+    lines = [s for s, _, _, indent in blocks]
+    assert all(len(s) <= 20 for s in lines), lines
+    assert all(indent == 0 for _, _, _, indent in blocks), blocks
+    assert "".join(lines[1:]) == word, lines
+    assert all("-" not in s for s in lines)
+
+
+@requires_font
+def test_every_line_measures_inside_the_cells_inner_width():
+    """The promise in points, not in characters: the font is monospace, so they agree."""
+    entry = (1898, "hexafluoroplatinate, the first noble-gas compound, is reported", "")
+    for size in (5.0, 7.5, 9.5, 14.0):
+        for chars in (4, 8, 13, 20, 40):
+            inner = chars * rg.text_width("M", size)
+            blocks, _ = rg.cell_blocks([entry], chars, size, False)
+            for s, ssize, _, indent in blocks:
+                drawn = indent * rg.text_width("M", ssize) + rg.text_width(s, ssize)
+                assert drawn <= inner + 0.01, (size, chars, s)
+
+
+@requires_font
+def test_no_line_prints_past_its_cells_right_edge(tmp_path):
+    """On the page itself: a day's text stays in its own cell at every paper shape."""
+    days = [
+        make_day("D-1", "11-20", year=1998),
+        make_day("D-2", "03-06", year=1898),
+        make_day("D-3", "05-08", year=1900),
+    ]
+    days[0]["title"] = "Zarya opens the International Space Station"
+    days[1]["title"] = "hexafluoroplatinate, the first noble-gas compound, is reported"
+    days[2]["title"] = "pneumonoultramicroscopicsilicovolcanoconiosis is reported"
+    path = write_days_file(tmp_path / "days.json", days)
+    for paper in ("a4", "letter"):
+        for orientation in ("landscape", "portrait"):
+            pages, size, _ = book_for(path, paper=paper, orientation=orientation)
+            W, H = size
+            margin = W * 0.045
+            cell_w = (W - 2 * margin) / 7
+            grid_top, grid_bottom = margin + 86, H - margin - 30
+            for page in pages[1:]:
+                for p in page:
+                    if p["kind"] != "text" or not grid_top <= p["y"] <= grid_bottom:
+                        continue
+                    w = rg.text_width(p["s"], p["size"], p["weight"])
+                    if p["anchor"] == "end":
+                        left = p["x"] - w
+                    elif p["anchor"] == "middle":
+                        left = p["x"] - w / 2
+                    else:
+                        left = p["x"]
+                    col = int((left - margin) // cell_w)
+                    assert left >= margin + col * cell_w + 4 - 0.01, (paper, orientation, p["s"])
+                    assert left + w <= margin + cell_w * (col + 1) - 4 + 0.01, \
+                        (paper, orientation, p["s"])
 
 
 def test_the_hang_is_dropped_when_the_cell_cannot_afford_it():

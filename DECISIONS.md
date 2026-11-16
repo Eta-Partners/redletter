@@ -29,8 +29,29 @@ month with each day's year and title inside its date cell — through the same
   chemistry days, 72 laureate days and 10 spaceflight days all choose
   year-and-title, because a 130-character blurb in a 20-character cell needs the
   type two or more points smaller. It fires only where a page is sparse enough to
-  afford it (in A4 portrait, one month of the ten-day dataset). That is the rule
-  working as written, not a bug.
+  afford it (in A4 portrait, two months, January and July, of the ten-day dataset).
+  That is the rule working as written, not a bug.
+
+**A word wider than the cell.** `wrap_to` leaves a word longer than its line whole,
+because a hyphen it inserted would be a word it invented. That is a rule about a
+line, and it said nothing about the *cell*: an unbroken word ran into the next
+column, which silently gives a day's detail to another day. Found at `337331b`
+while checking the blurb boundary, as 104 lines over the twelve books — 101 of
+them printed, the other two dropped by truncation — in 69 cells, six of them
+across the three default A4 landscape books, the worst 12.6 pt past. The fix is
+in `fit_to_width`, applied in `cell_blocks`: a line that fits the cell's full
+width moves to indent 0, and a word wider than the whole cell is broken at the
+character boundary that fits with no hyphen inserted. Flushing first recovers
+almost all of it without inventing anything; the break is the last resort, and a
+visibly broken word is the better error, since a word in the cell beside it
+attributes a day to the wrong day. Flush is per line, so a page that already fit
+keeps its layout. The second-order cost is real and measured: a break adds a line,
+so a page's chosen type can step down — chemistry at A4 portrait, March, goes 9.5
+to 9 pt, and at Letter portrait January and March go 8 to 7 pt, where January then
+stops truncating. Rendered on all three datasets at all four paper shapes, 37 of
+156 pages change and 119 are pixel-identical; the default A4 landscape books change
+only on the pages that had the defect, and no default page's type size or
+truncation moves.
 
 **Why a page sizes on nine cells in ten.** Sizing on the worst cell lets one
 132-character Nobel citation set a whole month to 5 pt. So a page is accepted when

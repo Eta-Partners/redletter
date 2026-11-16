@@ -429,6 +429,8 @@ def wrap_to(s, chars):
 
     A word longer than the line is left whole rather than split: these cells hold
     names and chemical terms, and a hyphen this code inserts is a word it invented.
+    A line can therefore come out wider than `chars`; `fit_to_width` is what makes
+    a cell keep its own width.
     """
     chars = max(4, int(chars))
     lines, cur = [], ""
@@ -440,6 +442,29 @@ def wrap_to(s, chars):
             lines.append(cur)
             cur = word
     return (lines + [cur]) if cur else (lines or [""])
+
+
+def fit_to_width(lines, chars, indent):
+    """Indents that keep every line inside `chars`, breaking what cannot fit.
+
+    `wrap_to` leaves a word longer than its line whole, so a wrapped line can still
+    be wider than the cell. Two rules, in order. First the line takes the full
+    width at indent 0 if the word fits there: on a continuation line that is what
+    keeps `International` in its own date cell instead of the next day's. Only a
+    word wider than the whole cell is broken, at the character boundary that fits,
+    and without a hyphen inserted — a hyphen would be a character this code
+    invented, while a word in the cell beside it silently gives a day's detail to
+    another day, which is worse than a visibly broken word.
+    """
+    out = []
+    for ln in lines:
+        if len(ln) <= chars - indent:
+            out.append((ln, indent))
+        elif indent and len(ln) <= chars:
+            out.append((ln, 0))
+        else:
+            out.extend((ln[i:i + chars], 0) for i in range(0, len(ln), chars))
+    return out
 
 
 def cell_chars(w_pt, size_pt):
@@ -476,14 +501,16 @@ def cell_blocks(events, chars, size, with_blurb):
         if chars - hang < MIN_HANG_CHARS:
             hang = 0
         wrapped = wrap_to(f"{head}  {title}", chars)
-        if len(wrapped) > 1:
-            wrapped = [wrapped[0]] + wrap_to(" ".join(wrapped[1:]), chars - hang)
-        for i, ln in enumerate(wrapped):
-            blocks.append((ln, size, INK, 0 if i == 0 else hang))
+        lines = fit_to_width([wrapped[0]], chars, 0)
+        rest = " ".join(wrapped[1:])
+        if rest:
+            lines += fit_to_width(wrap_to(rest, chars - hang), chars, hang)
+        for ln, indent in lines:
+            blocks.append((ln, size, INK, indent))
             height += size * CELL_LEADING
         if with_blurb and blurb:
             bsize = size * BLURB_SCALE
-            for ln in wrap_to(blurb, chars):
+            for ln, _ in fit_to_width(wrap_to(blurb, chars), chars, 0):
                 blocks.append((ln, bsize, GRAY, 0))
                 height += bsize * CELL_LEADING
     return blocks, height

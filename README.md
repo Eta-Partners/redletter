@@ -71,7 +71,7 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 - **`scripts/build_ics.py`** writes all-day, yearly-repeating events and parses the
   file back before it lands: DATE values, a YEARLY rule and a UID on every event,
   CRLF, no line over 75 octets.
-- **`tests/`** — 145 tests: unit tests that pin the status rules, the date matcher
+- **`tests/`** — 149 tests: unit tests that pin the status rules, the date matcher
   and the research format with the network faked, and integration tests that run
   all three scripts against a local web server. The one network test is opt-in. CI
   runs the offline suite on 3.9 and 3.12.
@@ -85,7 +85,7 @@ The vertical slice runs, on three calendars, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 145 tests, offline, about seven seconds
+pytest -q                     # 149 tests, offline, about seven seconds
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 
@@ -215,13 +215,6 @@ DECISIONS.md         every choice a reader could have made differently, and why
   `DECISIONS.md` under "Research arrives as lines".
 - Contested days, drawn differently or at all. The status is computed; nothing
   renders it.
-- A policy for a word wider than its date cell. `wrap_to` deliberately leaves such
-  a word whole rather than invent a hyphen, so on the book form it can print past
-  the column divider: six cells across the three default A4 landscape books, the
-  worst 12.6 pt past (`International`, spaceflight, 20 November; `Euler-Chelpin`,
-  laureates, February), and 104 across the three datasets at all four paper
-  shapes. Every line the wrapper itself produced does stay inside its cell; this is
-  the single-word exception, and it is not decided how to break such a word.
 - Any colour beyond the one red.
 - A person importing the `.ics` into a real calendar and saying what happened.
 
