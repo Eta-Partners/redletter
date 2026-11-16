@@ -442,6 +442,31 @@ that, and a literal fixture (fixed width, size and block list) pins the fallback
 count. The chosen laureate type per month at A4 landscape is now
 `[6, 9.5, 8, 9, 7.5, 9, 9.5, 6, 9, 9, 9, 7]`.
 
+**What the fix did at each shape, 25 December, read from the drawn blocks.** The
+strings, because they are the measurement. Before is `b703983` through its own
+`cell_blocks` and one `truncate_blocks`; after is `6a96a15` through the cell layout.
+
+| shape | `b703983` | `6a96a15` |
+| --- | --- | --- |
+| A4 landscape | Windaus `1876 Adolf Otto` / `Reinhold` / `Windaus is` / `born`, grey `for the service…`; Herzberg absent | `1876 Adolf Otto Reinhold` / `Windaus is born`, grey `for the services rendered` / `through his research int…`; `1904 Gerhard Herzberg is` / `born`, grey `for his contributions t…` |
+| Letter landscape | Windaus `1876 Adolf Otto` / `Reinhold` / `Windaus` / `is born`, grey `for th…`; Herzberg absent | `1876 Adolf Otto` / `Reinhold Windaus` / `is born`, grey `for the services` / `rendered through hi…`; `1904 Gerhard Herzberg` / `is born`, no grey |
+| A4 portrait | Windaus `1876 Adolf` / `Otto` / `Reinhold` / `Windaus is` / `born`, grey `for the` / `service…`, then Herzberg `1904` / `Gerhar…` | both names in full; no grey at all — the cell's only fame line is spent |
+| Letter portrait | the same Windaus, then Herzberg `190…` | Windaus grey `for th…`, then `1904 Gerhard` / `Herzberg` / `is born` |
+
+At `b703983` Herzberg's title drew `Gerhar…` at A4 portrait and `190…` at Letter
+portrait — at the second the ellipsis falls inside the year, so the cell showed
+neither a year nor a person. At the tip the whole name draws at every shape, at A4
+portrait by spending the cell's only fame line and at Letter portrait by cutting
+Windaus's to `for th…` so Herzberg's three title lines fit. At both landscape shapes
+the whole name and both reason lines are drawn together.
+
+One line of the table is no longer the tip: at Letter landscape the density rule
+("Every person in a cell gets a reason line before anyone gets a second") shares the
+one line the cell can afford, so on the current tip Windaus draws `for the service…`
+and Herzberg `for his contribution…`, one each, where the atomicity fix alone gave
+Windaus two and Herzberg none. The after column is stated at `6a96a15`, the tip that
+fix left, so the two changes can be read apart.
+
 **What moves as a side effect** is the positional reach measurement: the laureate
 book's whole-answer count goes 2 → 4 and drawn/reached stay 71 of 72, because the
 two packed months are laid at smaller type and their fame lines fit whole. Nothing
