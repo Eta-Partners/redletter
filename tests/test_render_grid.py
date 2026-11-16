@@ -616,9 +616,10 @@ def reason_reach(days_path):
                 fame = rg.fame_line(title, blurb)
                 if fame is None:
                     continue
-                blocks, _ = rg.cell_blocks([(year, title, blurb)], chars, pt, False)
-                grey = " ".join(b[0] for b in rg.truncate_blocks(blocks, geo["inner_h"])
-                                if b[2] == rg.GRAY)
+                # The page's own layout, so the model cannot drift from what is drawn.
+                blocks = rg.cell_layout([(year, title, blurb)], chars, pt, False,
+                                        geo["inner_h"])
+                grey = " ".join(b[0] for b in blocks if b[2] == rg.GRAY)
                 fame_words = fame.replace("…", " ").split()
                 drawn_words = grey.replace("…", " ").split()
                 matched = 0
@@ -634,19 +635,25 @@ def reason_reach(days_path):
 
 @requires_font
 def test_the_laureate_book_reaches_the_reason_clause(tmp_path):
-    """71 of 72 records reach a complete reason word; 2 show the clause whole.
+    """71 of 72 records reach a complete reason word; 4 show the clause whole.
 
     One record draws no fame line at all: its title alone fills the cell. Before
     the label rule the same measurement was 2 of 72 reached and 0 whole — the
     other 70 drew "Nobel Prize in Chemistry <year> in <country>…".
+
+    Whole rises from 2 to 4 with the legibility fix, and the type moves on two
+    months with it: August 7.5 -> 6 and December 9.5 -> 7, the pages whose day
+    cells carry two and three person records. Those pages now fit every title
+    whole, and at the smaller type the fame lines under them fit whole too —
+    the same words, drawn rather than cut. Nothing was added to the data.
     """
     rows, sizes = reason_reach(shipped_days("chemistry-laureates.yaml", tmp_path))
     assert len(rows) == 72, "every laureate record carries a fame line"
     assert sum(r["drawn"] for r in rows) == 71
     assert sum(r["reached"] for r in rows) == 71
-    assert sum(r["whole"] for r in rows) == 2
+    assert sum(r["whole"] for r in rows) == 4
     # The chosen type per month at A4 landscape, so a height regression shows up.
-    assert sizes == [6, 9.5, 8, 9, 7.5, 9, 9.5, 7.5, 9, 9, 9, 9.5]
+    assert sizes == [6, 9.5, 8, 9, 7.5, 9, 9.5, 6, 9, 9, 9, 7]
 
 
 @requires_font
@@ -958,3 +965,135 @@ def test_one_long_entry_does_not_set_the_page_type():
     assert mixed == short_only, "one cell in ten may truncate; it may not shrink the page"
     worst, _ = rg.choose_cell_type([long] * 10, 100.0, 60.0)
     assert worst < short_only, "when every cell is long there is nothing to forgive"
+
+
+# ------------------------------------------------- every record in its own cell
+#
+# A cell's person records were drawn as one stream and cut at a line boundary:
+# 1883 Walter Norman Haworth is born became "1883 Walter Norman", a person with no
+# surname, and on three days a record disappeared whole. The cell now treats a
+# person's title as atomic, keeps the page's type at a size where every title fits
+# a cell, and says "and N more" when a cell truly cannot hold them.
+
+
+SHAPES = [("a4", "landscape"), ("a4", "portrait"),
+          ("letter", "landscape"), ("letter", "portrait")]
+
+
+def cells_for(days_path, paper, orientation):
+    """Every drawn cell at a shape, with the layout inputs build_month_page uses."""
+    _, marks, _ = rg.load_marks(days_path, 2027, with_blurb=True)
+    size = rg.page_size_pt(paper, orientation)
+    out = []
+    for month in range(1, 13):
+        geo = rg.month_geometry(size, 2027, month)
+        cells = [marks.get(month, {}).get(d, []) for week in geo["weeks"] for d in week]
+        pt, with_blurb = rg.choose_cell_type(cells, geo["inner_w"], geo["inner_h"])
+        chars = rg.cell_chars(geo["inner_w"], pt)
+        for day, cell in zip((d for week in geo["weeks"] for d in week), cells):
+            if cell:
+                out.append((month, day, geo, pt, chars, with_blurb, cell))
+    return out
+
+
+def person_records(cell):
+    return [ev for ev in cell if rg.person_suffix(ev[1]) is not None]
+
+
+def held_whole(lines, expected):
+    """Is `expected` a contiguous run of the drawn lines?"""
+    return any(lines[i:i + len(expected)] == expected
+               for i in range(len(lines) - len(expected) + 1))
+
+
+@requires_font
+@pytest.mark.parametrize("name", ["chemistry-laureates.yaml", "chemistry.yaml",
+                                  "spaceflight.yaml"])
+@pytest.mark.parametrize("paper,orientation", SHAPES)
+def test_every_person_record_is_drawn_whole_in_its_own_cell(tmp_path, name,
+                                                           paper, orientation):
+    """The acceptance test: surname included, no ellipsis, at all four shapes."""
+    path = shipped_days(name, tmp_path)
+    lost, cut = [], []
+    for month, day, geo, pt, chars, wb, cell in cells_for(path, paper, orientation):
+        blocks = rg.cell_layout(cell, chars, pt, wb, geo["inner_h"])
+        ink_lines = [b[0] for b in blocks if b[2] == rg.INK]
+        people = person_records(cell)
+        for year, title, _ in people:
+            # The title's own lines, from the same wrap the cell uses: a long
+            # surname breaks at its own hyphen ("Euler-Chelpin"), and a word
+            # comparison would call that missing.
+            expected = [b[0] for b in rg.record_blocks(year, title, "", chars, pt, False)[0]]
+            if not held_whole(ink_lines, expected):
+                lost.append((month, day, title))
+        if people and len(people) == len(cell):
+            # A cell of persons cuts nothing: a cut here would be a cut title.
+            for text, _size, ink, _indent in blocks:
+                if ink == rg.INK and text.endswith("…"):
+                    cut.append((month, day, text))
+    assert not lost, f"{paper} {orientation}: records not drawn whole: {lost}"
+    assert not cut, f"{paper} {orientation}: titles cut with an ellipsis: {cut}"
+
+
+@requires_font
+def test_the_six_laureate_records_the_stream_used_to_lose_are_named_in_their_cells(tmp_path):
+    """The three half-named and the three absent, by name, on the shipped page.
+
+    At 4f0143b: Joliot, Stein and Soddy printed a first name and an ellipsis;
+    Rutherford and Svedberg were dropped from 30 August and Herzberg from 25
+    December, each cell drawing fewer records than its day has. This reads the
+    emitted page text, so it fails on the old renderer with a name that is not
+    there rather than with a missing function.
+    """
+    path = shipped_days("chemistry-laureates.yaml", tmp_path)
+    pages, _, _ = book_for(path)
+    named = [(3, "Haworth"), (3, "Joliot"), (6, "Nernst"), (6, "Stein"),
+             (8, "van 't Hoff"), (8, "Rutherford"), (8, "Svedberg"),
+             (9, "Ostwald"), (9, "Soddy"), (12, "Windaus"), (12, "Herzberg")]
+    for month, surname in named:
+        text = " ".join(text_of(pages[month]))
+        assert surname in text, f"{month:02d}: {surname} is not drawn on the page"
+
+
+def test_a_cell_that_cannot_hold_its_records_says_how_many():
+    """The fallback of last resort, at a literal geometry.
+
+    Two person records, 20 characters wide, 9.5 pt, room for four lines: the
+    first record's title (three lines at that width) fits whole, and the cell
+    says how many it is not showing rather than dropping the second without a
+    word.
+    """
+    cell = [(1883, "Walter Norman Haworth is born", ""),
+            (1900, "Frédéric Joliot is born", "")]
+    line_h = 9.5 * rg.CELL_LEADING
+    blocks = rg.cell_layout(cell, 20, 9.5, False, 4 * line_h)
+    text = [b[0] for b in blocks]
+    assert text[-1] == "and 1 more"
+    assert "Joliot" not in " ".join(text), "the second record is counted, not cut"
+    assert not any(t.endswith("…") for t in text), "no title is cut"
+
+
+def test_a_cut_cell_never_ends_its_text_on_a_comma():
+    """A pinned fixture: fixed block list, fixed line sizes, fixed budget.
+
+    These three are the cutting function's only inputs, so this guard does not
+    move when the live page's type or data does. The budget ends on the
+    comma-wrapped line; the ellipsis replaces that comma, which is why a cell's
+    final drawn line cannot end on one.
+    """
+    blocks = [("for her work on the", 7, rg.INK, 0),
+              ("analytical engine,", 7, rg.INK, 0),
+              ("and for the first", 7, rg.INK, 0)]
+    kept = rg.truncate_blocks(blocks, 2 * 7 * rg.CELL_LEADING)
+    assert len(kept) == 2
+    assert kept[-1][0].endswith("…")
+    assert not kept[-1][0].rstrip().endswith(",")
+
+
+def test_a_cell_that_is_not_cut_keeps_its_last_word():
+    """The companion fixture: nothing is cut, so the last word is left alone."""
+    blocks = [("for her work on the", 7, rg.INK, 0),
+              ("analytical engine", 7, rg.INK, 0)]
+    kept = rg.truncate_blocks(blocks, 2 * 7 * rg.CELL_LEADING)
+    assert kept == blocks
+    assert not kept[-1][0].endswith("…")

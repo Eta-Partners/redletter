@@ -402,6 +402,11 @@ PAPER_MM = {"a4": (210.0, 297.0), "letter": (215.9, 279.4)}
 PDF_DPI = 300
 CELL_PT = [9.5, 9, 8.5, 8, 7.5, 7, 6.5, 6, 5.5, 5]
 CELL_LEADING = 1.32
+# A cell's height is a sum of `size * leading` terms, so a budget that is exactly
+# n lines can land a few ULPs under n * size * leading. Comparing without a
+# tolerance turns that into a hidden record: 37.62 - 12.54 is 25.079999999999998,
+# and a two-line title measured at 25.08 stopped fitting the two lines left.
+LAYOUT_EPS = 1e-6
 BLURB_SCALE = 0.86
 BLURB_MIN_PT = 7.5
 
@@ -562,8 +567,25 @@ def fame_line(title, blurb):
     return without_birth_clause(after_label(blurb[len(prefix):]))
 
 
-def cell_blocks(events, chars, size, with_blurb):
-    """One cell's lines and the height they need, as (text, size, ink, indent).
+def record_blocks(year, title, blurb, chars, size, with_blurb):
+    """One record's lines: its title, which is atomic, and its detail, which is not.
+
+    The title block is the year and the name wrapped to the cell, continuation
+    lines hung under it. It is returned as its own list because a title is the one
+    thing in a cell that may not be cut: cut after its first line, "1883 Walter
+    Norman Haworth is born" becomes "1883 Walter Norman", and the reader has a
+    person with no surname. Everything else - a fame line, a blurb - is detail and
+    may be cut. See `_record_blocks_core` for the wrapping and type rules.
+    """
+    return _record_blocks_core(year, title, blurb, chars, size, with_blurb)
+
+
+def _record_blocks_core(year, title, blurb, chars, size, with_blurb):
+    """The measure: `record_blocks` with every detail line kept. It never cuts.
+
+    Cutting is the layout's job and happens once, in `cell_layout`: a detail line
+    cut here and again there would put a second ellipsis on a line that already
+    has one.
 
     Continuation lines hang under the title, so they are wrapped to `chars` minus
     the hang: wrapping them to the full width and then indenting them is what puts
@@ -589,42 +611,174 @@ def cell_blocks(events, chars, size, with_blurb):
     own placement that moves, not the type. At A4 landscape no blurb is drawn at
     all, so nothing there changes.
     """
+    head = str(year)
+    hang = len(head) + 2
+    if chars - hang < MIN_HANG_CHARS:
+        hang = 0
+    wrapped = wrap_to(f"{head}  {title}", chars)
+    lines = fit_to_width([wrapped[0]], chars, 0)
+    rest = " ".join(wrapped[1:])
+    if rest:
+        lines += fit_to_width(wrap_to(rest, chars - hang), chars, hang)
+    title_blocks = [(ln, size, INK, indent) for ln, indent in lines]
+
+    detail = []
+    fame = fame_line(title, blurb)
+    if fame:
+        # Always drawn on a person's cell, whatever `with_blurb` says: the
+        # question there is whether a page can afford detail, and a fame line
+        # capped at FAME_LINES is the detail that fits. It prints at the cell's
+        # own size, not at the blurb's 0.86x: at 0.86 the laureate book set it
+        # at 5.59 pt under a 6.5 pt title, which is a footnote to the thing it
+        # explains rather than the content TJ asked for. The cap uses the same
+        # ellipsis as the cell's own truncation, so a cut line says so.
+        fsize = size
+        fblocks = [(ln, fsize, GRAY, 0)
+                   for ln, _ in fit_to_width(wrap_to(fame, chars), chars, 0)]
+        cap = FAME_LINES * fsize * CELL_LEADING
+        detail = list(_cut_blocks(fblocks, cap))
+    elif with_blurb and blurb:
+        bsize = size * BLURB_SCALE
+        detail = [(ln, bsize, GRAY, 0)
+                  for ln, _ in fit_to_width(wrap_to(blurb, chars), chars, 0)]
+    return title_blocks, detail
+
+
+def cell_blocks(events, chars, size, with_blurb):
+    """One cell's lines and the height they need, as (text, size, ink, indent).
+
+    Titles and their detail, record by record. This is the cell's *need*: what it
+    would draw with room for everything, which is what the page's type choice
+    measures against. What it actually draws is `cell_layout`.
+    """
     blocks, height = [], 0.0
     for year, title, blurb in events:
-        head = str(year)
-        hang = len(head) + 2
-        if chars - hang < MIN_HANG_CHARS:
-            hang = 0
-        wrapped = wrap_to(f"{head}  {title}", chars)
-        lines = fit_to_width([wrapped[0]], chars, 0)
-        rest = " ".join(wrapped[1:])
-        if rest:
-            lines += fit_to_width(wrap_to(rest, chars - hang), chars, hang)
-        for ln, indent in lines:
-            blocks.append((ln, size, INK, indent))
-            height += size * CELL_LEADING
-        fame = fame_line(title, blurb)
-        if fame:
-            # Always drawn on a person's cell, whatever `with_blurb` says: the
-            # question there is whether a page can afford detail, and a fame line
-            # capped at FAME_LINES is the detail that fits. It prints at the cell's
-            # own size, not at the blurb's 0.86x: at 0.86 the laureate book set it
-            # at 5.59 pt under a 6.5 pt title, which is a footnote to the thing it
-            # explains rather than the content TJ asked for. The cap uses the same
-            # ellipsis as the cell's own truncation, so a cut line says so.
-            fsize = size
-            fblocks = [(ln, fsize, GRAY, 0)
-                       for ln, _ in fit_to_width(wrap_to(fame, chars), chars, 0)]
-            cap = FAME_LINES * fsize * CELL_LEADING
-            for ln, fsize, ink, indent in truncate_blocks(fblocks, cap):
-                blocks.append((ln, fsize, ink, indent))
-                height += fsize * CELL_LEADING
-        elif with_blurb and blurb:
-            bsize = size * BLURB_SCALE
-            for ln, _ in fit_to_width(wrap_to(blurb, chars), chars, 0):
-                blocks.append((ln, bsize, GRAY, 0))
-                height += bsize * CELL_LEADING
+        title_blocks, detail = record_blocks(year, title, blurb, chars, size, with_blurb)
+        for block in title_blocks + detail:
+            blocks.append(block)
+            height += block[1] * CELL_LEADING
     return blocks, height
+
+
+def cell_min_height(events, chars, size):
+    """The least height that lets every record in the cell start.
+
+    A person's title is atomic, so it needs all of its lines; any other record's
+    title is ordinary prose and may be cut, so it needs one line to start. This is
+    the chooser's floor: at a size where it holds, no record in the cell has to be
+    counted in an "and N more" line.
+    """
+    line_h = size * CELL_LEADING
+    total = 0.0
+    for year, title, blurb in events:
+        if person_suffix(title) is None:
+            total += line_h
+        else:
+            title_blocks, _ = record_blocks(year, title, blurb, chars, size, False)
+            total += len(title_blocks) * line_h
+    return total
+
+
+def fit_detail(blocks, height):
+    """As much of `blocks` as fits in `height`, the last kept line carrying ..."""
+    kept, used = [], 0.0
+    for block in blocks:
+        line_h = block[1] * CELL_LEADING
+        if used + line_h > height + LAYOUT_EPS:
+            break
+        kept.append(block)
+        used += line_h
+    if kept and len(kept) < len(blocks):
+        s, size, ink, indent = kept[-1]
+        if len(s) > 1:
+            kept[-1] = (s[:-1].rstrip() + "…", size, ink, indent)
+    return kept
+
+
+def _draw_records(records, size, height):
+    """Draw records into `height`; return (blocks, used, hidden_record_count).
+
+    Titles go down first, every one of them, and detail fills the height left
+    over in record order. Titles are what a cell owes its reader: allocating a
+    record's detail before the next record's title is what hid "Frédéric Joliot"
+    on 19 March behind 1.5 lines of Haworth's fame line. A person's title is
+    drawn whole or not at all; a prose record's title may be cut with the ellipsis
+    the cell already uses. The first record that cannot start ends the walk, and
+    the records from there on are the count the cell owes the reader.
+    """
+    line_h = size * CELL_LEADING
+    titles, used = [], 0.0
+    for i, (title_blocks, _detail, is_person) in enumerate(records):
+        if is_person:
+            need = len(title_blocks) * line_h
+            if used + need > height + LAYOUT_EPS:
+                return _with_detail(records[:i], height, size), used, len(records) - i
+            drawn = title_blocks
+        else:
+            drawn = fit_detail(title_blocks, height - used)
+            if not drawn:
+                return _with_detail(records[:i], height, size), used, len(records) - i
+        titles.append(drawn)
+        used += sum(b[1] * CELL_LEADING for b in drawn)
+    return _with_detail(records[:len(titles)], height, size), used, 0
+
+
+def _with_detail(records, height, size):
+    """The placed titles with each record's detail fitted into what is left.
+
+    The detail pool is the height left after *every* title, divided between the
+    records in record order. Charging detail record by record against what the
+    titles before it had left let one fame line push a later title past the cell's
+    height, and the page's final truncate_blocks then cut that title - the exact
+    defect this layout exists to stop.
+    """
+    title_heights = [sum(b[1] * CELL_LEADING for b in tb)
+                     for tb, _detail, _is_person in records]
+    pool = height - sum(title_heights)
+    out = []
+    for (title_blocks, detail, _is_person), title_h in zip(records, title_heights):
+        out += title_blocks
+        kept = fit_detail(detail, pool)
+        out += kept
+        pool -= sum(b[1] * CELL_LEADING for b in kept)
+    return out
+
+
+def cell_layout(events, chars, size, with_blurb, height):
+    """What the cell draws in `height`: person titles whole, detail with what is left.
+
+    The rule the cell obeys is that a person's title is never cut. Cut after its
+    first line, "1883 Walter Norman Haworth is born" reads "1883 Walter Norman",
+    and the reader has a person with no surname. Detail - a fame line, a blurb -
+    may still be cut with the ellipsis the cell already uses. A cell whose person
+    records do not all fit draws the ones that do and a final "and N more" line: a
+    visible count, because a record that vanishes without a word is the defect
+    this fixes. The count line is charged the cell's own type.
+
+    A title that is not a person's is ordinary prose - chemistry's day titles are
+    whole sentences - and keeps the old behaviour: it is cut like detail, and a
+    cell holding none of them keeps exactly the prefix-and-ellipsis it had. Making
+    every title atomic would set chemistry's pages at 5 pt to fit "Niels Bohr
+    proposed his model of the atom..." in a month cell, which is a different book,
+    not a fix.
+    """
+    records = []
+    for year, title, blurb in events:
+        title_blocks, detail = record_blocks(year, title, blurb, chars, size, with_blurb)
+        records.append((title_blocks, detail, person_suffix(title) is not None))
+    if not any(is_person for *_rest, is_person in records):
+        # No person in this cell: the cell is prose and nothing changes for it.
+        stream = [b for title_blocks, detail, _ in records
+                  for b in title_blocks + detail]
+        return _cut_blocks(stream, height)
+    drawn, _, hidden = _draw_records(records, size, height)
+    if not hidden:
+        return drawn
+    # Reserve the count line by laying the same records out one line shorter, so
+    # the cell says what it is not showing instead of running over its box.
+    drawn, _, hidden = _draw_records(records, size, height - size * CELL_LEADING)
+    drawn.append((f"and {hidden} more", size, GRAY, 0))
+    return drawn
 
 
 def truncate_blocks(blocks, height):
@@ -640,13 +794,24 @@ def truncate_blocks(blocks, height):
     otherwise set the type size for every cell on the page. The sheet already
     truncates its key the same way; a line that ends in … is honest about being
     cut.
+
+    The page makes exactly one call to this per drawn day cell, as its final
+    guard: the layout has already fitted the cell, so the call keeps nothing and
+    changes nothing. The operator's audit in `tools/` pairs days to cells by this
+    call, so the cell's own internal cuts go through `_cut_blocks` instead and do
+    not look like a second cell.
     """
+    return _cut_blocks(blocks, height)
+
+
+def _cut_blocks(blocks, height):
+    """The cut itself: a prefix by height, the last kept line carrying the ..."""
     if not blocks:
         return blocks
     used, kept = 0.0, []
     for block in blocks:
         used += block[1] * CELL_LEADING
-        if used > height and kept:
+        if used > height + LAYOUT_EPS and kept:
             break
         kept.append(block)
     if len(kept) == len(blocks):
@@ -669,26 +834,41 @@ def blurb_is_worth_it(blurb_size, title_size):
 
 
 def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
-    """The type size that fits the page, allowing a rare cell to truncate.
+    """The type size that fits the page, allowing a rare cell to lose detail.
 
     Sizing on the *worst* cell lets one long entry shrink a whole month, which is
     the wrong trade: nine cells set too small to teach a whole page to fit one.
     A page is accepted when nine cells in ten hold their text, and the tenth
-    truncates. Detail is preferred over size only while it costs less than a point
-    and a half of type.
+    shows less detail. Detail is preferred over size only while it costs less
+    than a point and a half of type.
+
+    What the ninth cell may lose is detail, never a name. Every record's title
+    block has to fit its cell at the chosen size, in every cell, or the size is
+    refused: a title cut after its first line prints "1883 Walter Norman" and the
+    reader has a person with no surname, which is not a smaller version of the
+    record but a different one. If no size holds every title, the page takes the
+    smallest size and a cell that still cannot hold a record says "and N more" —
+    the count is the fallback, not the allowance, and on the shipped books every
+    title fits at the chosen size.
     """
     nonempty = [c for c in cells if c]
     if not nonempty:
         return CELL_PT[0], False
 
+    def titles_fit(size):
+        chars = cell_chars(w_pt, size)
+        return all(cell_min_height(ev, chars, size) <= h_pt for ev in nonempty)
+
     def best_size(with_blurb):
-        # One cell in ten may truncate, the allowance rounded up to whole cells:
-        # nine in ten rounded down would let a page of nine cells truncate none,
-        # and the page would shrink to fit the one rare long entry this rule
-        # exists to forgive.
+        # One cell in ten may lose detail, the allowance rounded up to whole
+        # cells: nine in ten rounded down would let a page of nine cells lose
+        # detail in none, and the page would shrink to fit the one rare long
+        # entry this rule exists to forgive. That allowance never covers a title.
         allowed = math.ceil(len(nonempty) / 10)
         need = max(1, len(nonempty) - allowed)
         for size in sizes:
+            if not titles_fit(size):
+                continue
             fits = sum(
                 1 for ev in nonempty
                 if cell_blocks(ev, cell_chars(w_pt, size), size, with_blurb)[1] <= h_pt
@@ -784,7 +964,6 @@ def build_month_page(topic, marks, year, month, size, verified=""):
     cells = [by_month.get(day, []) for week in weeks for day in week]
     cell_pt, with_blurb = choose_cell_type(cells, inner_w, inner_h)
     budget = inner_h
-
     for c in range(1, 7):
         gx = M + cell_w * c
         prims.append(line(gx, grid_top, gx, grid_bottom, GRID, 0.75))
@@ -803,10 +982,11 @@ def build_month_page(topic, marks, year, month, size, verified=""):
             prims.append(text(cx + 4, cy + 12, str(day), 10 if marked else 9,
                               RUBRIC if marked else GRAY,
                               weight="bold" if marked else "regular"))
-            blocks, _ = cell_blocks(events, cell_chars(inner_w, cell_pt),
-                                    cell_pt, with_blurb)
+            blocks = truncate_blocks(
+                cell_layout(events, cell_chars(inner_w, cell_pt),
+                            cell_pt, with_blurb, budget), budget)
             y = cy + 16 + cell_pt
-            for s, ssize, ink, indent in truncate_blocks(blocks, budget):
+            for s, ssize, ink, indent in blocks:
                 prims.append(text(cx + 4 + indent * text_width("M", ssize), y, s, ssize, ink))
                 y += ssize * CELL_LEADING
 

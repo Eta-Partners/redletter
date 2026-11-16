@@ -283,7 +283,14 @@ born", so the cell said it twice, exactly as it used to say the name twice.
 off, with its comma, so the drawn line ends on its last word rather than on a
 dangling comma, and stays a substring of the approved blurb. The place goes with
 the clause: Curie's birth ends ", was born in Warsaw." and lands on "the first
-person awarded two Nobel Prizes". Two guards, both of them the same reasoning the
+person awarded two Nobel Prizes". The strip is about the clause, not about
+wrapping: a drawn line may end on a comma where the next line continues the same
+sentence — 63 such lines across the twelve books at four shapes (13 at A4
+landscape), every one continued on the very next line of that cell — and no cell's
+final drawn line ends on one. That last is a narrow claim: most cells are cut by
+the height budget and end on the truncation marker instead, 90 of 165 at A4
+landscape after the legibility fix below, so it is the 75 remaining cells the
+comma test actually covers. Two guards, both of them the same reasoning the
 name strip already uses:
 
 - It applies only to the sentence that leads with the person — the one the name
@@ -338,6 +345,76 @@ left in the text to draw, so "how much of the line is drawn" and "how much of th
 answer is drawn" are one measurement. The audit reproduces the identity in both
 books at this sha, and that is the closing statement of the pair of rules: the
 cell's grey text is the reason, all of it, however much of it fits.
+
+## 2026-11-16 · A person's title is never cut, and a cell that cannot hold its records says so
+
+`qitem-20261116174704-da27cf7c3ad0bf8c`, after the delta re-check of `21b905e`.
+The month page drew a cell's records as one stream and cut it at a line boundary
+when it ran past the cell's height. A cut inside a person's title prints half a
+name; a cut before a later record prints no name for it at all.
+
+**What the old renderer did, measured at `b703983`.** Read through `cell_blocks`
+and the cell's one `truncate_blocks` call — the page's own path at that sha — at A4
+landscape the laureate book drew 7 of its 72 person records incompletely:
+
+- three half-named, surname outside the cell: 03-19 `1900 Frédéric Jolio…`, 06-25
+  `1911 William H…`, 09-02 `1877 Frederick Sodd…`;
+- three absent: 08-30 drew only van 't Hoff's record and lost Rutherford and
+  Svedberg, and 12-25 drew only Windaus and lost Herzberg;
+- one title cut with the surname still visible: 10-31 `1835 … von Baeyer is bor…`.
+
+Across the twelve books (three datasets at four paper shapes) the old path lost 25
+person record-drawings, all of them in the laureate book: 7 at A4 landscape and 6
+at each of the other three shapes. Chemistry drew its 43 person records whole at
+every shape (its cells are sparse) and spaceflight has no person records.
+
+**The rule.** A person's title — the year and the whole name, continuation lines
+included — is atomic. A cell lays every record's title down first and gives each
+record's detail (its fame line, or a blurb) only what height is left, in record
+order. Detail may still be cut with the ellipsis the cell already uses; a title may
+not. A cell whose titles do not all fit draws the ones that do and a final
+`and N more` line, charged the cell's own type and reserved by laying the records
+out one line shorter: a visible count, because a record that vanishes without a
+word is the defect this fixes. The page's type choice now refuses a size at which
+any cell's records cannot all *start* — a person title whole, a prose title one
+line — so the count is the fallback of last resort. A title that is not a person's
+is ordinary prose (chemistry's day titles are whole sentences) and keeps the old
+behaviour: cut like detail, and a cell holding none of them is byte-for-byte the
+stream it had.
+
+**The type cost, measured over the twelve books at the four shapes.** Only the
+laureate book moves; chemistry's and spaceflight's chosen type is unchanged at every
+shape. The months whose page type dropped, old to new:
+
+| shape | months moved | pages |
+| --- | --- | --- |
+| A4 landscape | 2 of 12 | August 7.5 → 6.0, December 9.5 → 7.0 |
+| A4 portrait | 1 of 12 | August 9.5 → 6.5 |
+| Letter landscape | 4 of 12 | June 9.0 → 7.0, August 7.0 → 5.5, October 9.0 → 8.5, December 9.5 → 7.0 |
+| Letter portrait | 3 of 12 | June 9.5 → 9.0, August 9.0 → 6.0, December 9.5 → 9.0 |
+
+Every moved page is one whose day cells carry two or three person records — the
+days this row is about. The alternative was to keep the type and let those cells
+print `and 1 more`, which hides one of the six records this row names, so the type
+went instead. The price is heaviest at Letter landscape August (5.5 pt, four drawn
+cells on that page); the page is still readable and its three records are whole.
+
+**After the fix**, at A4 landscape: all 72 laureate records, all 43 chemistry person
+records and the spaceflight book's zero person records are drawn whole, surname
+included, with no title ending on an ellipsis; the same holds at all four shapes.
+A pinned test iterates the three datasets at the four shapes and asserts exactly
+that, and a literal fixture (fixed width, size and block list) pins the fallback
+count. The chosen laureate type per month at A4 landscape is now
+`[6, 9.5, 8, 9, 7.5, 9, 9.5, 6, 9, 9, 9, 7]`.
+
+**What moves as a side effect** is the positional reach measurement: the laureate
+book's whole-answer count goes 2 → 4 and drawn/reached stay 71 of 72, because the
+two packed months are laid at smaller type and their fame lines fit whole. Nothing
+in the data or the fame-line rules changed.
+
+**Not fixed here.** At A4 landscape 56 of the 64 laureate cells still end on the
+truncation marker — 63 before this change — so most cells are cut mid-sentence by
+the height budget, as they were. That is the density question, not this row.
 
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 
