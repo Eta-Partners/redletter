@@ -1036,6 +1036,37 @@ def test_every_person_record_is_drawn_whole_in_its_own_cell(tmp_path, name,
 
 
 @requires_font
+@pytest.mark.parametrize("name", ["chemistry-laureates.yaml", "chemistry.yaml",
+                                  "spaceflight.yaml"])
+@pytest.mark.parametrize("paper,orientation", SHAPES)
+def test_every_word_of_a_person_name_is_drawn_whole(tmp_path, name, paper, orientation):
+    """The acceptance for a split word: the name's words are tokens, not fragments.
+
+    The whole-title test above cannot see this one. It compares the drawn lines to
+    `record_blocks`, the wrapper that draws them, so "Euler-Chelp" / "in" is drawn
+    text and expected text at once. Here the criterion is what the reader sees: a
+    word broken across two lines is two tokens, neither of which is that word, and
+    "Nicolas-Lou" / "is" turns a name into a sentence that asserts the wrong thing.
+
+    At 1424186 the laureate book fails at A4 portrait and Letter portrait on
+    "Euler-Chelpin" and chemistry at A4 portrait on "Nicolas-Louis", all at 9.5 pt
+    and 11 characters; the page's type chooser now refuses a size at which any word
+    of a person's title cannot sit on one line.
+    """
+    path = shipped_days(name, tmp_path)
+    split = []
+    for month, day, geo, pt, chars, wb, cell in cells_for(path, paper, orientation):
+        blocks = rg.cell_layout(cell, chars, pt, wb, geo["inner_h"])
+        tokens = {word for text, _size, ink, _indent in blocks if ink == rg.INK
+                  for word in text.split()}
+        for year, title, _ in person_records(cell):
+            for word in f"{year} {title}".split():
+                if word not in tokens:
+                    split.append(f"{month:02d}-{day:02d} {word!r} of {title!r}")
+    assert not split, f"{paper} {orientation}: words not drawn whole: {split}"
+
+
+@requires_font
 def test_the_six_laureate_records_the_stream_used_to_lose_are_named_in_their_cells(tmp_path):
     """The three half-named and the three absent, by name, on the shipped page.
 
@@ -1071,6 +1102,24 @@ def test_a_cell_that_cannot_hold_its_records_says_how_many():
     assert text[-1] == "and 1 more"
     assert "Joliot" not in " ".join(text), "the second record is counted, not cut"
     assert not any(t.endswith("…") for t in text), "no title is cut"
+
+
+def test_a_second_person_record_is_counted_rather_than_cut():
+    """Pinned: two person records, 20 characters, 9.5 pt, room for four lines.
+
+    The first title takes three lines at that width and the second needs two, so
+    the cell draws the first whole and counts the second. With the atomic-title
+    branch removed from the cell's layout, the second title is cut into the cell
+    instead — "1900 Frédéric Joliot" / "is born" as a fifth line, over the box — so
+    this test fails with the rule gone. Removing that branch at 1424186 also fails
+    the Haworth fixture above; this pins the same rule at a second data point.
+    """
+    cell = [(1871, "Ernest Rutherford is born", ""),
+            (1900, "Frédéric Joliot is born", "")]
+    line_h = 9.5 * rg.CELL_LEADING
+    blocks = rg.cell_layout(cell, 20, 9.5, False, 4 * line_h)
+    assert [b[0] for b in blocks] == ["1871 Ernest", "Rutherford is", "born",
+                                      "and 1 more"]
 
 
 def test_a_cut_cell_never_ends_its_text_on_a_comma():

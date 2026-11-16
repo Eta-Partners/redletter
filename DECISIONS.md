@@ -194,12 +194,31 @@ is cells whose drawn page still shows a grey line after the page's own height
 budget; *positional reach* is records, counted positionally (below), each rendered
 alone in a cell of the page's geometry. A4 landscape, twelve month pages:
 
-| Book / version | person records | person cells | cells drawing a fame line | positional reach (records) | page sizes |
-| --- | --- | --- | --- | --- | --- |
-| laureates, before `4f0143b` | 72 | 64 | 61 of 64 | 2 of 72 | 6.5, 9.5, 8.5, 9, 8, 9, 9.5, 8, 9, 9, 9, 9.5 |
-| laureates, this change | 72 | 64 | 63 of 64 | 71 of 72 | 6, 9.5, 8, 9, 7.5, 9, 9.5, 7.5, 9, 9, 9, 9.5 |
-| chemistry, before | 43 | 43 | 43 of 43 | 43 of 43 | 7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7 |
-| chemistry, this change | 43 | 43 | 43 of 43 | 43 of 43 | unchanged |
+Two reach measures sit side by side because they answer opposite questions about the
+same sentence, and neither is a summary of the other:
+
+- *positional reach*, the renderer's instrument: with the record drawn alone in a
+  cell of the page's geometry, does the fame text START — is at least one complete
+  word of the reason clause drawn? *whole* means the reason's last word is drawn,
+  positionally.
+- *content reach*, `dev-qa`'s instrument: on the printed page, does the drawn text
+  reach the fame's LAST word — does the reason FINISH? Its population is the same
+  records on the shipped pages, and its number is theirs to state.
+
+| Book / version | person records | person cells | cells drawing a fame line | positional reach (records, renderer) | content reach (records, dev-qa) | page sizes |
+| --- | --- | --- | --- | --- | --- | --- |
+| laureates, before `4f0143b` | 72 | 64 | 61 of 64 | 2 of 72 | not measured | 6.5, 9.5, 8.5, 9, 8, 9, 9.5, 8, 9, 9, 9, 9.5 |
+| laureates, this change | 72 | 64 | 63 of 64 | 71 of 72 | not measured | 6, 9.5, 8, 9, 7.5, 9, 9.5, 7.5, 9, 9, 9, 9.5 |
+| chemistry, before | 43 | 43 | 43 of 43 | 43 of 43 | not measured | 7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7 |
+| chemistry, this change | 43 | 43 | 43 of 43 | 43 of 43 | not measured | unchanged |
+| laureates, at `1424186` | 72 | 64 | 62 of 64 | 71 of 72 (4 whole) | 3 of 72 whole | 6, 9.5, 8, 9, 7.5, 9, 9.5, 6, 9, 9, 9, 7 |
+| chemistry, at `1424186` | 43 | 43 | 43 of 43 | 43 of 43 | not measured | 7, 7, 7, 7, 7.5, 7, 7, 6, 8, 7, 7, 7 |
+
+The two laureate reach numbers at `1424186` — 4 whole positionally and 3 whole on the
+page — are the same 72 records measured at opposite ends of the same sentence: a
+record can start its reason and stop before its last word. They are not merged into
+one figure, and neither is the audit's cell-level count below: that instrument
+counts cells, these count records.
 
 The operator's audit — `tools/redletter-fame-audit.py`, A4 landscape only, no
 other shape has been measured; it freezes the sha into a scratch dir before
@@ -357,16 +376,30 @@ name; a cut before a later record prints no name for it at all.
 and the cell's one `truncate_blocks` call — the page's own path at that sha — at A4
 landscape the laureate book drew 7 of its 72 person records incompletely:
 
-- three half-named, surname outside the cell: 03-19 `1900 Frédéric Jolio…`, 06-25
-  `1911 William H…`, 09-02 `1877 Frederick Sodd…`;
+- three with the surname not legible: two drawn as a fragment (03-19 `1900 Frédéric
+  Jolio…`, 09-02 `1877 Frederick Sodd…`) and one cut before it (06-25 `1911 William H…`);
 - three absent: 08-30 drew only van 't Hoff's record and lost Rutherford and
   Svedberg, and 12-25 drew only Windaus and lost Herzberg;
 - one title cut with the surname still visible: 10-31 `1835 … von Baeyer is bor…`.
+
+The classes move with the shape, so those bullets describe A4 landscape. The 12-25
+cell is the one to read for the pattern, and the fill of its last line is what says
+whose line it is: at A4 landscape and Letter landscape it draws no Herzberg line at
+all and ends on Windaus's grey fame line (`for the service…`, `for th…`); at A4
+portrait Herzberg's own ink title ends `1904` / `Gerhar…`; at Letter portrait it
+ends `190…`, the ellipsis falling inside the year token, so the cell shows neither a
+year nor a person. The name-not-legible counts by shape are 6 at A4 landscape, 4 at
+A4 portrait, 5 at Letter landscape and 6 at Letter portrait.
 
 Across the twelve books (three datasets at four paper shapes) the old path lost 25
 person record-drawings, all of them in the laureate book: 7 at A4 landscape and 6
 at each of the other three shapes. Chemistry drew its 43 person records whole at
 every shape (its cells are sparse) and spaceflight has no person records.
+
+Of those 25, 21 lost the name itself; the other four are names that stood whole
+while the title text around them was cut — von Baeyer at both landscape shapes, and
+Joliot and Soddy at A4 portrait. The two figures are one population under two
+criteria, not a disagreement.
 
 **The rule.** A person's title — the year and the whole name, continuation lines
 included — is atomic. A cell lays every record's title down first and gives each
@@ -415,6 +448,61 @@ in the data or the fame-line rules changed.
 **Not fixed here.** At A4 landscape 56 of the 64 laureate cells still end on the
 truncation marker — 63 before this change — so most cells are cut mid-sentence by
 the height budget, as they were. That is the density question, not this row.
+
+## 2026-11-16 · A name word is never split across a line
+
+**What the page did, measured at `1424186`.** The cell's wrapper leaves a word
+longer than its line whole until nothing else fits, then breaks it at a character
+boundary (`fit_to_width` slices with `ln[i:i + chars]`). At 9.5 pt and 11 characters
+— the portrait shapes' width — that drew two shipped records as a fragment plus a
+stranded word:
+
+- laureate 02-15: `1873 Hans / Karl August / Simon von / Euler-Chelp / in / is born`
+  at A4 portrait and Letter portrait;
+- chemistry 05-16: `1763 / Nicolas-Lou / is / Vauquelin / is born` at A4 portrait.
+
+Nothing was cut, so the atomic-title test above passed at every shape: a split word
+is drawn text and expected text at once when a test compares the cell to the
+wrapper's own output. The measurement that sees it takes the reader's unit — every
+word of the year and the name appears as a whole token on one drawn line.
+
+**The rule.** The page's type choice refuses any size at which a word of a person's
+title — the year included — cannot sit on one line: `len(word) <=
+cell_chars(inner_w, size)` for every such word in every cell. The unit is characters
+and not points because the splitter counts characters, and the width is the cell's
+full width rather than the hung width because `fit_to_width` moves a continuation
+line to indent 0 whenever the word fits there, so a word that fits the full width is
+never broken. A size that cannot give a word its line is not a size for that page —
+the same shape of refusal `cell_min_height` already applies to a title that cannot
+start.
+
+**Why a split is worse than a cut.** A cut announces itself: the cell's last line
+ends `…`, every word still printed is a word the record contains, and the reader
+knows a piece is missing. A split invents a boundary. `Euler-Chelp` / `in` is two
+tokens where the record has one surname, and `1763 Nicolas-Lou is Vauquelin is born`
+is a grammatical sentence asserting that Nicolas-Lou is Vauquelin — a false claim
+drawn from a true record, with nothing on the page to signal it.
+
+**The type cost, this change alone**, measured against `1424186` so it is not
+confused with the title cost in the entry above. Three month-pages move, each by
+half a step, and every one of them is a page that was splitting a word:
+
+| shape | months moved | pages |
+| --- | --- | --- |
+| A4 landscape | 0 of 12 | — |
+| A4 portrait | 2 of 12, one per book | laureates February 9.5 → 9.0, chemistry May 9.5 → 9.0 |
+| Letter landscape | 0 of 12 | — |
+| Letter portrait | 1 of 12 | laureates February 9.5 → 9.0 |
+
+No other month moves at any shape, and the spaceflight book's chosen type is
+unchanged everywhere.
+
+**After the fix**, at all four shapes: zero split words across the three datasets. A
+test iterates them and requires every word of every person's title to be a whole
+token on one drawn line; it fails at `1424186` at exactly the three shape-cells
+above. On the page, laureate 02-15 now draws its title `Euler-Chelpin` / `is born`
+at A4 and Letter portrait (9 pt, 13 and 14 characters), and chemistry 05-16 draws
+`Nicolas-Louis` / `Vauquelin is` / `born` at A4 portrait.
 
 ## 2026-11-16 · The book form: cover, twelve months, the detail inside the cell
 

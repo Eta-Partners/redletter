@@ -850,6 +850,17 @@ def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
     smallest size and a cell that still cannot hold a record says "and N more" —
     the count is the fallback, not the allowance, and on the shipped books every
     title fits at the chosen size.
+
+    A size is also refused when a name word cannot sit on one line. The cell's
+    wrapper leaves a long word whole until nothing else fits and then splits it at
+    a character boundary (`fit_to_width` slices with `ln[i:i + chars]`), so at the
+    portrait shapes "Euler-Chelpin" is drawn "Euler-Chelp" / "in" and "Nicolas-Louis"
+    is drawn "Nicolas-Lou" / "is": two words where the reader had one, and a
+    sentence — "1763 Nicolas-Lou is Vauquelin is born" — that asserts the wrong
+    thing. The width is a character count, not points, because that is the unit the
+    splitter works in, and it is the cell's full width rather than the hung width:
+    `fit_to_width` moves a continuation line to indent 0 whenever it fits there, so
+    a word that fits the full width is never broken.
     """
     nonempty = [c for c in cells if c]
     if not nonempty:
@@ -859,6 +870,13 @@ def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
         chars = cell_chars(w_pt, size)
         return all(cell_min_height(ev, chars, size) <= h_pt for ev in nonempty)
 
+    def names_fit(size):
+        chars = cell_chars(w_pt, size)
+        return all(len(word) <= chars
+                   for ev in nonempty for year, title, _ in ev
+                   if person_suffix(title) is not None
+                   for word in f"{year} {title}".split())
+
     def best_size(with_blurb):
         # One cell in ten may lose detail, the allowance rounded up to whole
         # cells: nine in ten rounded down would let a page of nine cells lose
@@ -867,7 +885,7 @@ def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
         allowed = math.ceil(len(nonempty) / 10)
         need = max(1, len(nonempty) - allowed)
         for size in sizes:
-            if not titles_fit(size):
+            if not (titles_fit(size) and names_fit(size)):
                 continue
             fits = sum(
                 1 for ev in nonempty
