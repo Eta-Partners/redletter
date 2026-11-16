@@ -1,0 +1,453 @@
+{
+  "topic": {
+    "id": "crewed-spaceflight",
+    "title": "Crewed Spaceflight",
+    "scope": "Human beings leaving Earth and the missions that carried them: firsts, programme milestones, dockings and the days the cost was paid. Robotic missions, uncrewed tests and launches that failed before crew were aboard are out of scope.",
+    "print_year": 2027,
+    "kinds": [
+      "launch",
+      "first",
+      "milestone",
+      "loss"
+    ]
+  },
+  "generated_on": "2026-11-15",
+  "days": [
+    {
+      "id": "D-0001",
+      "month_day": "04-12",
+      "title": "Yuri Gagarin orbits the Earth",
+      "kind": "first",
+      "blurb": "Vostok 1, one orbit in 108 minutes. The first human being in space, and the first to return from it.",
+      "year": 1961,
+      "date": {
+        "as_recorded": "1961-04-12",
+        "calendar": "gregorian",
+        "gregorian": "1961-04-12",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Vostok 1 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vostok_1",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 437168
+        },
+        {
+          "citation": "NASA history \u2014 remembering Yuri Gagarin 50 years later",
+          "url": "https://www.nasa.gov/history/remembering-yuri-gagarin-50-years-later/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 293314
+        }
+      ],
+      "approved_hash": "606306d0336d56f6149dc5053036502b75088dee9a2854fbfd2da2b48f1cb9ed"
+    },
+    {
+      "id": "D-0002",
+      "month_day": "03-18",
+      "title": "Alexei Leonov walks in space",
+      "kind": "first",
+      "blurb": "Voskhod 2. Twelve minutes outside the capsule, and a suit that had to be bled of pressure before he could get back through the hatch.",
+      "year": 1965,
+      "date": {
+        "as_recorded": "1965-03-18",
+        "calendar": "gregorian",
+        "gregorian": "1965-03-18",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Voskhod 2 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Voskhod_2",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 274178
+        },
+        {
+          "citation": "NASA \u2014 first spacewalker Alexei Leonov",
+          "url": "https://www.nasa.gov/blogs/spacestation/2019/05/29/russian-spacewalkers-wish-happy-birthday-to-first-spacewalker-alexei-leonov/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 268638
+        }
+      ],
+      "approved_hash": "9b514d2a580f1f48c4208ba8f1c0c5348068fc2cce355e262130e4d14d025987"
+    },
+    {
+      "id": "D-0003",
+      "month_day": "06-16",
+      "title": "Valentina Tereshkova flies alone",
+      "kind": "first",
+      "blurb": "Vostok 6, forty-eight orbits, three days in orbit by herself. Still the only woman to have flown a solo spaceflight.",
+      "year": 1963,
+      "date": {
+        "as_recorded": "1963-06-16",
+        "calendar": "gregorian",
+        "gregorian": "1963-06-16",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Vostok 6 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Vostok_6",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 190947
+        },
+        {
+          "citation": "NASA history \u2014 Sally Ride and Valentina Tereshkova",
+          "url": "https://www.nasa.gov/history/sally-ride-and-valentina-tereshkova-changing-the-course-of-human-space-exploration/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 286066
+        }
+      ],
+      "approved_hash": "99b0cbbcef65fcb998d38d9e3cca5fd72ad57481eb21edea160b7e8faa2f2194"
+    },
+    {
+      "id": "D-0004",
+      "month_day": "07-20",
+      "title": "Apollo 11 lands on the Moon",
+      "kind": "milestone",
+      "blurb": "Tranquility Base. Armstrong and Aldrin walk; Collins keeps the command module in orbit alone.",
+      "year": 1969,
+      "date": {
+        "as_recorded": "1969-07-20",
+        "calendar": "gregorian",
+        "gregorian": "1969-07-20",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Apollo 11 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apollo_11",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 1425209
+        },
+        {
+          "citation": "NASA \u2014 Apollo 11 mission overview",
+          "url": "https://www.nasa.gov/mission/apollo-11/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 398188
+        }
+      ],
+      "approved_hash": "4b195921b79c9dd2f7978e54dbf3642a6409237c0c798ccf0f661600531d29f8"
+    },
+    {
+      "id": "D-0005",
+      "month_day": "07-17",
+      "title": "Apollo and Soyuz dock",
+      "kind": "milestone",
+      "blurb": "A handshake in orbit between Stafford, Slayton and Brand and Leonov and Kubasov. The first international crewed docking.",
+      "year": 1975,
+      "date": {
+        "as_recorded": "1975-07-17",
+        "calendar": "gregorian",
+        "gregorian": "1975-07-17",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Apollo\u2013Soyuz \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Apollo%E2%80%93Soyuz",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 599726
+        },
+        {
+          "citation": "NASA \u2014 Apollo-Soyuz Test Project",
+          "url": "https://www.nasa.gov/apollo-soyuz-test-project/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 380217
+        }
+      ],
+      "approved_hash": "605c5c1f6a00a09e6de68ee5298787fe5bf038e957f09449db4d6aee3e792c1b"
+    },
+    {
+      "id": "D-0006",
+      "month_day": "06-18",
+      "title": "Sally Ride flies on STS-7",
+      "kind": "first",
+      "blurb": "The first American woman in orbit, on Challenger's second flight. She worked the robotic arm that put two satellites out and brought them back.",
+      "year": 1983,
+      "date": {
+        "as_recorded": "1983-06-18",
+        "calendar": "gregorian",
+        "gregorian": "1983-06-18",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "womenshistory.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "NASA history \u2014 Sally Ride, first American woman in space",
+          "url": "https://www.nasa.gov/history/sally-ride-first-american-woman-in-space/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 287167
+        },
+        {
+          "citation": "National Women's History Museum \u2014 Sally Ride",
+          "url": "https://www.womenshistory.org/education-resources/biographies/sally-ride",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 86262
+        }
+      ],
+      "approved_hash": "f0a9f96e6e02e40de20fb37d423ac3a955c10f2372d158c99cea1ddf51c86d58"
+    },
+    {
+      "id": "D-0007",
+      "month_day": "01-28",
+      "title": "Challenger is lost",
+      "kind": "loss",
+      "blurb": "Seventy-three seconds after launch, seven crew aboard. Recorded plainly, as the design asks.",
+      "year": 1986,
+      "date": {
+        "as_recorded": "1986-01-28",
+        "calendar": "gregorian",
+        "gregorian": "1986-01-28",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Space Shuttle Challenger disaster \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Space_Shuttle_Challenger_disaster",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 898009
+        },
+        {
+          "citation": "NASA \u2014 Challenger (STS-51L) mission page",
+          "url": "https://www.nasa.gov/mission/sts-51l/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 324419
+        }
+      ],
+      "approved_hash": "faeccf734282e7ef6f068980636c7a567b882cee6373542e8c2e75ed960c3c54"
+    },
+    {
+      "id": "D-0008",
+      "month_day": "11-20",
+      "title": "Zarya opens the International Space Station",
+      "kind": "milestone",
+      "blurb": "The first station module to orbit, uncrewed, while its first crew waited two years for the module after it.",
+      "year": 1998,
+      "date": {
+        "as_recorded": "1998-11-20",
+        "calendar": "gregorian",
+        "gregorian": "1998-11-20",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "NASA \u2014 International Space Station",
+          "url": "https://www.nasa.gov/international-space-station/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 395979
+        },
+        {
+          "citation": "International Space Station \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/International_Space_Station",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 2661048
+        }
+      ],
+      "approved_hash": "ebd40eae2782865abedf8bab72cd7aa80858db0670b2b4456cf4e4805cb2be18"
+    },
+    {
+      "id": "D-0009",
+      "month_day": "10-15",
+      "title": "Yang Liwei flies Shenzhou 5",
+      "kind": "first",
+      "blurb": "Twenty-one hours in orbit and a fourteenth orbit cut to one, on the first crewed flight of China's programme.",
+      "year": 2003,
+      "date": {
+        "as_recorded": "2003-10-15",
+        "calendar": "gregorian",
+        "gregorian": "2003-10-15",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "gov.cn",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Shenzhou 5 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Shenzhou_5",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 246356
+        },
+        {
+          "citation": "China Manned Space Agency \u2014 Yang Liwei",
+          "url": "https://en.cmse.gov.cn/constitutes/astronautsystem/Taikonauts/201504/t20150417_21579.html",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 10940
+        }
+      ],
+      "approved_hash": "61202bb68714a37de04a24c83324d93313353e71fefb892b9b3182a2d8a5c769"
+    },
+    {
+      "id": "D-0010",
+      "month_day": "05-30",
+      "title": "Crew Dragon flies astronauts for the first time",
+      "kind": "launch",
+      "blurb": "Two crew to the station in a commercial capsule, from American soil, for the first time since the shuttle stopped flying.",
+      "year": 2020,
+      "date": {
+        "as_recorded": "2020-05-30",
+        "calendar": "gregorian",
+        "gregorian": "2020-05-30",
+        "precision": "day"
+      },
+      "status": "active",
+      "agreement": "2 of 2",
+      "readable": 2,
+      "publishers": [
+        "nasa.gov",
+        "wikipedia.org"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Crew Dragon Demo-2 \u2014 Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Crew_Dragon_Demo-2",
+          "type": "reference-data",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 631318
+        },
+        {
+          "citation": "NASA \u2014 astronauts launch from America on Demo-2",
+          "url": "https://www.nasa.gov/news-release/nasa-astronauts-launch-from-america-in-historic-test-flight-of-spacex-crew-dragon/",
+          "type": "archive",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 295007
+        }
+      ],
+      "approved_hash": "cb4769940508e77489ef9f34d8f28a7bd2f61210b1e3527b24eed6f3f60b8f03"
+    }
+  ],
+  "summary": {
+    "active": 10,
+    "provisional": 0,
+    "contested": 0,
+    "quarantined": 0
+  }
+}

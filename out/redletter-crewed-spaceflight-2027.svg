@@ -1,0 +1,659 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2400" viewBox="0 0 1800 2400">
+<rect width="1800" height="2400" fill="#FBF3E2"/>
+<text x="120.00" y="154.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="22" fill="#C0392B" text-anchor="start" font-weight="700" letter-spacing="4">REDLETTER</text>
+<text x="120.00" y="228.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="58" fill="#221E1C" text-anchor="start" font-weight="700">Crewed Spaceflight</text>
+<text x="120.00" y="272.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start">2027</text>
+<text x="1680.00" y="228.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="22" fill="#221E1C" text-anchor="end">10 days</text>
+<text x="1680.00" y="260.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#B9AE99" text-anchor="end">verified 2026-11-15</text>
+<line x1="120.00" y1="320.00" x2="1680.00" y2="320.00" stroke="#221E1C" stroke-width="2"/>
+<text x="129.81" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JANUARY</text>
+<line x1="129.81" y1="428.90" x2="600.85" y2="428.90" stroke="#221E1C" stroke-width="1"/>
+<text x="163.46" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="230.75" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="298.04" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="365.33" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="432.62" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="499.92" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="567.21" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="197.10" y1="442.75" x2="197.10" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="264.40" y1="442.75" x2="264.40" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="331.69" y1="442.75" x2="331.69" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="398.98" y1="442.75" x2="398.98" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="466.27" y1="442.75" x2="466.27" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="533.56" y1="442.75" x2="533.56" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="437.15" x2="600.85" y2="437.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="472.12" x2="600.85" y2="472.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="507.10" x2="600.85" y2="507.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="542.08" x2="600.85" y2="542.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="577.05" x2="600.85" y2="577.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="612.02" x2="600.85" y2="612.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="432.62" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="499.92" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="567.21" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="163.46" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="230.75" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="298.04" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="365.33" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="432.62" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="499.92" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="567.21" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="163.46" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="230.75" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="298.04" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="365.33" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="432.62" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="499.92" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="567.21" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="163.46" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="230.75" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="298.04" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="365.33" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="432.62" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="499.92" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="567.21" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="163.46" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="230.75" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="298.04" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<rect x="337.07" y="580.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="365.33" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">28</text>
+<text x="432.62" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="499.92" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="567.21" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="664.48" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">FEBRUARY</text>
+<line x1="664.48" y1="428.90" x2="1135.52" y2="428.90" stroke="#221E1C" stroke-width="1"/>
+<text x="698.13" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="765.42" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="832.71" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="900.00" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="967.29" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1034.58" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1101.87" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="731.77" y1="442.75" x2="731.77" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="799.06" y1="442.75" x2="799.06" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="866.35" y1="442.75" x2="866.35" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="933.65" y1="442.75" x2="933.65" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1000.94" y1="442.75" x2="1000.94" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1068.23" y1="442.75" x2="1068.23" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="437.15" x2="1135.52" y2="437.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="472.12" x2="1135.52" y2="472.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="507.10" x2="1135.52" y2="507.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="542.08" x2="1135.52" y2="542.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="577.05" x2="1135.52" y2="577.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="612.02" x2="1135.52" y2="612.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="698.13" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="765.42" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="832.71" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="900.00" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="967.29" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1034.58" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1101.87" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="698.13" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="765.42" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="832.71" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="900.00" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="967.29" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1034.58" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1101.87" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="698.13" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="765.42" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="832.71" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="900.00" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="967.29" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1034.58" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1101.87" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="698.13" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="765.42" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="832.71" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="900.00" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="967.29" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1034.58" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1101.87" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1199.15" y="386.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">MARCH</text>
+<line x1="1199.15" y1="428.90" x2="1670.19" y2="428.90" stroke="#221E1C" stroke-width="1"/>
+<text x="1232.79" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="1300.08" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1367.38" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="1434.67" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1501.96" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1569.25" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1636.54" y="420.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="1266.44" y1="442.75" x2="1266.44" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1333.73" y1="442.75" x2="1333.73" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1401.02" y1="442.75" x2="1401.02" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1468.31" y1="442.75" x2="1468.31" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1535.60" y1="442.75" x2="1535.60" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1602.90" y1="442.75" x2="1602.90" y2="643.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="437.15" x2="1670.19" y2="437.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="472.12" x2="1670.19" y2="472.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="507.10" x2="1670.19" y2="507.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="542.08" x2="1670.19" y2="542.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="577.05" x2="1670.19" y2="577.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="612.02" x2="1670.19" y2="612.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1232.79" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1300.08" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="1367.38" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="1434.67" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="1501.96" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1569.25" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1636.54" y="461.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1232.79" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="1300.08" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="1367.38" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="1434.67" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="1501.96" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1569.25" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1636.54" y="496.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1232.79" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="1300.08" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="1367.38" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<rect x="1406.40" y="510.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1434.67" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
+<text x="1501.96" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1569.25" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1636.54" y="531.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1232.79" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="1300.08" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="1367.38" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="1434.67" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="1501.96" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1569.25" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1636.54" y="566.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1232.79" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="1300.08" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="1367.38" y="601.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="129.81" y="717.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">APRIL</text>
+<line x1="129.81" y1="759.90" x2="600.85" y2="759.90" stroke="#221E1C" stroke-width="1"/>
+<text x="163.46" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="230.75" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="298.04" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="365.33" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="432.62" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="499.92" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="567.21" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="197.10" y1="773.75" x2="197.10" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="264.40" y1="773.75" x2="264.40" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="331.69" y1="773.75" x2="331.69" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="398.98" y1="773.75" x2="398.98" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="466.27" y1="773.75" x2="466.27" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="533.56" y1="773.75" x2="533.56" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="768.15" x2="600.85" y2="768.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="803.12" x2="600.85" y2="803.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="838.10" x2="600.85" y2="838.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="873.08" x2="600.85" y2="873.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="908.05" x2="600.85" y2="908.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="943.02" x2="600.85" y2="943.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="365.33" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="432.62" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="499.92" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="567.21" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="163.46" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="230.75" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="298.04" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="365.33" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="432.62" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="499.92" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="567.21" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<rect x="135.20" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="163.46" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">12</text>
+<text x="230.75" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="298.04" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="365.33" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="432.62" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="499.92" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="567.21" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="163.46" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="230.75" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="298.04" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="365.33" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="432.62" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="499.92" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="567.21" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="163.46" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="230.75" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="298.04" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="365.33" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="432.62" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="664.48" y="717.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">MAY</text>
+<line x1="664.48" y1="759.90" x2="1135.52" y2="759.90" stroke="#221E1C" stroke-width="1"/>
+<text x="698.13" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="765.42" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="832.71" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="900.00" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="967.29" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1034.58" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1101.87" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="731.77" y1="773.75" x2="731.77" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="799.06" y1="773.75" x2="799.06" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="866.35" y1="773.75" x2="866.35" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="933.65" y1="773.75" x2="933.65" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1000.94" y1="773.75" x2="1000.94" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1068.23" y1="773.75" x2="1068.23" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="768.15" x2="1135.52" y2="768.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="803.12" x2="1135.52" y2="803.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="838.10" x2="1135.52" y2="838.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="873.08" x2="1135.52" y2="873.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="908.05" x2="1135.52" y2="908.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="943.02" x2="1135.52" y2="943.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1034.58" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1101.87" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="698.13" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="765.42" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="832.71" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="900.00" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="967.29" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1034.58" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="1101.87" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="698.13" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="765.42" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="832.71" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="900.00" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="967.29" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1034.58" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="1101.87" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="698.13" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="765.42" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="832.71" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="900.00" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="967.29" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1034.58" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="1101.87" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="698.13" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="765.42" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="832.71" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="900.00" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="967.29" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1034.58" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<rect x="1073.61" y="911.55" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1101.87" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">30</text>
+<text x="698.13" y="967.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="1199.15" y="717.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JUNE</text>
+<line x1="1199.15" y1="759.90" x2="1670.19" y2="759.90" stroke="#221E1C" stroke-width="1"/>
+<text x="1232.79" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="1300.08" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1367.38" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="1434.67" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1501.96" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1569.25" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1636.54" y="751.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="1266.44" y1="773.75" x2="1266.44" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1333.73" y1="773.75" x2="1333.73" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1401.02" y1="773.75" x2="1401.02" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1468.31" y1="773.75" x2="1468.31" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1535.60" y1="773.75" x2="1535.60" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1602.90" y1="773.75" x2="1602.90" y2="974.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="768.15" x2="1670.19" y2="768.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="803.12" x2="1670.19" y2="803.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="838.10" x2="1670.19" y2="838.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="873.08" x2="1670.19" y2="873.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="908.05" x2="1670.19" y2="908.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="943.02" x2="1670.19" y2="943.02" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1300.08" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1367.38" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="1434.67" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="1501.96" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="1569.25" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1636.54" y="792.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1232.79" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1300.08" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="1367.38" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="1434.67" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="1501.96" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="1569.25" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1636.54" y="827.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1232.79" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1300.08" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<rect x="1339.11" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1367.38" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">16</text>
+<text x="1434.67" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<rect x="1473.70" y="841.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1501.96" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">18</text>
+<text x="1569.25" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1636.54" y="862.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1232.79" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1300.08" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="1367.38" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="1434.67" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="1501.96" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="1569.25" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1636.54" y="897.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1232.79" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1300.08" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="1367.38" y="932.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="129.81" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">JULY</text>
+<line x1="129.81" y1="1090.90" x2="600.85" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
+<text x="163.46" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="230.75" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="298.04" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="365.33" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="432.62" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="499.92" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="567.21" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="197.10" y1="1104.75" x2="197.10" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="264.40" y1="1104.75" x2="264.40" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="331.69" y1="1104.75" x2="331.69" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="398.98" y1="1104.75" x2="398.98" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="466.27" y1="1104.75" x2="466.27" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="533.56" y1="1104.75" x2="533.56" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1099.15" x2="600.85" y2="1099.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1134.12" x2="600.85" y2="1134.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1169.10" x2="600.85" y2="1169.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1204.08" x2="600.85" y2="1204.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1239.05" x2="600.85" y2="1239.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1274.03" x2="600.85" y2="1274.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="365.33" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="432.62" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="499.92" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="567.21" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="163.46" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="230.75" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="298.04" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="365.33" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="432.62" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="499.92" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="567.21" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="163.46" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="230.75" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="298.04" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="365.33" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="432.62" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<rect x="471.65" y="1172.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="499.92" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">17</text>
+<text x="567.21" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="163.46" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<rect x="202.49" y="1207.57" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="230.75" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<text x="298.04" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="365.33" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="432.62" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="499.92" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="567.21" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="163.46" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="230.75" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="298.04" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="365.33" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="432.62" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="499.92" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="664.48" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">AUGUST</text>
+<line x1="664.48" y1="1090.90" x2="1135.52" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
+<text x="698.13" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="765.42" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="832.71" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="900.00" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="967.29" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1034.58" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1101.87" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="731.77" y1="1104.75" x2="731.77" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="799.06" y1="1104.75" x2="799.06" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="866.35" y1="1104.75" x2="866.35" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="933.65" y1="1104.75" x2="933.65" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1000.94" y1="1104.75" x2="1000.94" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1068.23" y1="1104.75" x2="1068.23" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1099.15" x2="1135.52" y2="1099.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1134.12" x2="1135.52" y2="1134.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1169.10" x2="1135.52" y2="1169.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1204.08" x2="1135.52" y2="1204.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1239.05" x2="1135.52" y2="1239.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1274.03" x2="1135.52" y2="1274.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1101.87" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="698.13" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="765.42" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="832.71" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="900.00" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="967.29" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1034.58" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1101.87" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="698.13" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="765.42" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="832.71" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="900.00" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="967.29" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1034.58" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1101.87" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="698.13" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="765.42" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="832.71" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="900.00" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="967.29" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1034.58" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1101.87" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="698.13" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="765.42" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="832.71" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="900.00" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="967.29" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1034.58" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1101.87" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="698.13" y="1298.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="765.42" y="1298.35" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="1199.15" y="1048.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">SEPTEMBER</text>
+<line x1="1199.15" y1="1090.90" x2="1670.19" y2="1090.90" stroke="#221E1C" stroke-width="1"/>
+<text x="1232.79" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="1300.08" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1367.38" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="1434.67" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1501.96" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1569.25" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1636.54" y="1082.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="1266.44" y1="1104.75" x2="1266.44" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1333.73" y1="1104.75" x2="1333.73" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1401.02" y1="1104.75" x2="1401.02" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1468.31" y1="1104.75" x2="1468.31" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1535.60" y1="1104.75" x2="1535.60" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1602.90" y1="1104.75" x2="1602.90" y2="1305.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1099.15" x2="1670.19" y2="1099.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1134.12" x2="1670.19" y2="1134.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1169.10" x2="1670.19" y2="1169.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1204.08" x2="1670.19" y2="1204.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1239.05" x2="1670.19" y2="1239.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1274.03" x2="1670.19" y2="1274.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1367.38" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1434.67" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="1501.96" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="1569.25" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="1636.54" y="1123.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1232.79" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1300.08" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1367.38" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="1434.67" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="1501.96" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="1569.25" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="1636.54" y="1158.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1232.79" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1300.08" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1367.38" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="1434.67" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="1501.96" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="1569.25" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="1636.54" y="1193.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1232.79" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1300.08" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1367.38" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="1434.67" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="1501.96" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="1569.25" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="1636.54" y="1228.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1232.79" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1300.08" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1367.38" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="1434.67" y="1263.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="129.81" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">OCTOBER</text>
+<line x1="129.81" y1="1421.90" x2="600.85" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
+<text x="163.46" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="230.75" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="298.04" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="365.33" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="432.62" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="499.92" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="567.21" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="197.10" y1="1435.75" x2="197.10" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="264.40" y1="1435.75" x2="264.40" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="331.69" y1="1435.75" x2="331.69" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="398.98" y1="1435.75" x2="398.98" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="466.27" y1="1435.75" x2="466.27" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="533.56" y1="1435.75" x2="533.56" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1430.15" x2="600.85" y2="1430.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1465.12" x2="600.85" y2="1465.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1500.10" x2="600.85" y2="1500.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1535.08" x2="600.85" y2="1535.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1570.05" x2="600.85" y2="1570.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="129.81" y1="1605.03" x2="600.85" y2="1605.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="432.62" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="499.92" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="567.21" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="163.46" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="230.75" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="298.04" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="365.33" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="432.62" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="499.92" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="567.21" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="163.46" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="230.75" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="298.04" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="365.33" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<rect x="404.36" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="432.62" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">15</text>
+<text x="499.92" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="567.21" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="163.46" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="230.75" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="298.04" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="365.33" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="432.62" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="499.92" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="567.21" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="163.46" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="230.75" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="298.04" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="365.33" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="432.62" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="499.92" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="567.21" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<text x="664.48" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">NOVEMBER</text>
+<line x1="664.48" y1="1421.90" x2="1135.52" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
+<text x="698.13" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="765.42" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="832.71" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="900.00" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="967.29" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1034.58" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1101.87" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="731.77" y1="1435.75" x2="731.77" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="799.06" y1="1435.75" x2="799.06" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="866.35" y1="1435.75" x2="866.35" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="933.65" y1="1435.75" x2="933.65" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1000.94" y1="1435.75" x2="1000.94" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1068.23" y1="1435.75" x2="1068.23" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1430.15" x2="1135.52" y2="1430.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1465.12" x2="1135.52" y2="1465.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1500.10" x2="1135.52" y2="1500.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1535.08" x2="1135.52" y2="1535.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1570.05" x2="1135.52" y2="1570.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="664.48" y1="1605.03" x2="1135.52" y2="1605.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="698.13" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="765.42" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="832.71" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="900.00" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="967.29" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1034.58" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1101.87" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="698.13" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="765.42" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="832.71" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="900.00" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="967.29" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1034.58" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1101.87" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="698.13" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="765.42" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="832.71" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="900.00" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="967.29" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<rect x="1006.32" y="1503.60" width="56.52" height="27.98" rx="6.7291428571428575" fill="#C0392B"/>
+<text x="1034.58" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#FBF3E2" text-anchor="middle" font-weight="700">20</text>
+<text x="1101.87" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="698.13" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="765.42" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="832.71" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="900.00" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="967.29" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1034.58" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1101.87" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="698.13" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="765.42" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="1199.15" y="1379.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="26" fill="#221E1C" text-anchor="start" font-weight="700" letter-spacing="3.12">DECEMBER</text>
+<line x1="1199.15" y1="1421.90" x2="1670.19" y2="1421.90" stroke="#221E1C" stroke-width="1"/>
+<text x="1232.79" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">M</text>
+<text x="1300.08" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1367.38" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">W</text>
+<text x="1434.67" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">T</text>
+<text x="1501.96" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">F</text>
+<text x="1569.25" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<text x="1636.54" y="1413.65" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="15" fill="#8C8375" text-anchor="middle">S</text>
+<line x1="1266.44" y1="1435.75" x2="1266.44" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1333.73" y1="1435.75" x2="1333.73" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1401.02" y1="1435.75" x2="1401.02" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1468.31" y1="1435.75" x2="1468.31" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1535.60" y1="1435.75" x2="1535.60" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1602.90" y1="1435.75" x2="1602.90" y2="1636.50" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1430.15" x2="1670.19" y2="1430.15" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1465.12" x2="1670.19" y2="1465.12" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1500.10" x2="1670.19" y2="1500.10" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1535.08" x2="1670.19" y2="1535.08" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1570.05" x2="1670.19" y2="1570.05" stroke="#E6DDC8" stroke-width="1"/>
+<line x1="1199.15" y1="1605.03" x2="1670.19" y2="1605.03" stroke="#E6DDC8" stroke-width="1"/>
+<text x="1367.38" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">1</text>
+<text x="1434.67" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">2</text>
+<text x="1501.96" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">3</text>
+<text x="1569.25" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">4</text>
+<text x="1636.54" y="1454.48" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">5</text>
+<text x="1232.79" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">6</text>
+<text x="1300.08" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">7</text>
+<text x="1367.38" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">8</text>
+<text x="1434.67" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">9</text>
+<text x="1501.96" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">10</text>
+<text x="1569.25" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">11</text>
+<text x="1636.54" y="1489.45" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">12</text>
+<text x="1232.79" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">13</text>
+<text x="1300.08" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">14</text>
+<text x="1367.38" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">15</text>
+<text x="1434.67" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">16</text>
+<text x="1501.96" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">17</text>
+<text x="1569.25" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">18</text>
+<text x="1636.54" y="1524.43" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">19</text>
+<text x="1232.79" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">20</text>
+<text x="1300.08" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">21</text>
+<text x="1367.38" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">22</text>
+<text x="1434.67" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">23</text>
+<text x="1501.96" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">24</text>
+<text x="1569.25" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">25</text>
+<text x="1636.54" y="1559.40" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">26</text>
+<text x="1232.79" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">27</text>
+<text x="1300.08" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">28</text>
+<text x="1367.38" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">29</text>
+<text x="1434.67" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">30</text>
+<text x="1501.96" y="1594.38" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="19" fill="#221E1C" text-anchor="middle">31</text>
+<line x1="120.00" y1="1646.00" x2="1680.00" y2="1646.00" stroke="#221E1C" stroke-width="1"/>
+<text x="120.00" y="1680.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="18" fill="#C0392B" text-anchor="start" font-weight="700" letter-spacing="3">THE DAYS</text>
+<text x="120.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">JAN 28</text>
+<text x="212.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1986  Challenger is lost</text>
+<text x="120.00" y="1760.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">MAR 18</text>
+<text x="212.00" y="1760.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1965  Alexei Leonov walks in space</text>
+<text x="120.00" y="1800.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">APR 12</text>
+<text x="212.00" y="1800.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1961  Yuri Gagarin orbits the Earth</text>
+<text x="120.00" y="1840.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">MAY 30</text>
+<text x="212.00" y="1840.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">2020  Crew Dragon flies astronauts for the first time</text>
+<text x="120.00" y="1880.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">JUN 16</text>
+<text x="212.00" y="1880.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1963  Valentina Tereshkova flies alone</text>
+<text x="900.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">JUN 18</text>
+<text x="992.00" y="1720.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1983  Sally Ride flies on STS-7</text>
+<text x="900.00" y="1760.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">JUL 17</text>
+<text x="992.00" y="1760.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1975  Apollo and Soyuz dock</text>
+<text x="900.00" y="1800.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">JUL 20</text>
+<text x="992.00" y="1800.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1969  Apollo 11 lands on the Moon</text>
+<text x="900.00" y="1840.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">OCT 15</text>
+<text x="992.00" y="1840.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">2003  Yang Liwei flies Shenzhou 5</text>
+<text x="900.00" y="1880.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#C0392B" text-anchor="start" font-weight="700">NOV 20</text>
+<text x="992.00" y="1880.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="17" fill="#221E1C" text-anchor="start">1998  Zarya opens the International Space Station</text>
+<text x="120.00" y="2340.00" font-family="JetBrainsMonoNFM, Menlo, monospace" font-size="14" fill="#B9AE99" text-anchor="start">Marked days are those whose sources were read and supported the day: either two publishers agreed, or a body of record says so.</text>
+</svg>
