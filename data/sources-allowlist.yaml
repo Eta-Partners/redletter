@@ -1,0 +1,52 @@
+# Publishers whose word alone carries a date.
+#
+# The default rule is that a day needs two different publishers to agree. That is
+# right for general history, where anything can be repeated from anything. It is
+# the wrong cost for a field with a body of record: if the American Chemical
+# Society says a thing happened on a date, a second website repeating it adds
+# nothing.
+#
+# So a single agreeing source from a publisher listed here is enough. It is an
+# editorial judgement, made once, in one file, and it is visible to anyone reading
+# the dataset. A source outside this list still needs a second publisher.
+#
+# Matching is on the host: `acs.org` covers `pubs.acs.org` and `www.acs.org`.
+# It cannot see a path, so listing `wiley.com` would vouch for every journal on
+# that platform. Only list what you mean.
+
+publishers:
+  - id: acs
+    name: American Chemical Society
+    domains: [acs.org]
+
+  - id: rsc
+    name: Royal Society of Chemistry
+    domains: [rsc.org]
+
+  - id: iupac
+    name: International Union of Pure and Applied Chemistry
+    domains: [iupac.org]
+
+  - id: nobelprize
+    name: The Nobel Prize (Nobel Foundation)
+    domains: [nobelprize.org]
+
+  - id: nature
+    name: Nature Portfolio
+    domains: [nature.com]
+
+  - id: science
+    name: AAAS / Science
+    domains: [science.org]
+
+  - id: angewandte
+    name: Angewandte Chemie
+    domains: [onlinelibrary.wiley.com]
+
+  - id: nist
+    name: National Institute of Standards and Technology
+    domains: [nist.gov]
+
+  - id: royalsociety
+    name: The Royal Society
+    domains: [royalsocietypublishing.org, royalsociety.org]

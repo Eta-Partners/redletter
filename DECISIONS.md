@@ -61,6 +61,33 @@ feed writer both skip it with a printed reason in a non-leap year rather than
 silently moving it to 28 February or 1 March. No day in the seed dataset is on 29
 February, so this rule is written and untested against real data.
 
+## 2026-11-16 · A body of record is enough on its own
+
+**Choice.** One agreeing source from a publisher on `data/sources-allowlist.yaml` is
+enough for `active`. Everything else still needs two publishers.
+
+**Why.** The owner asked for it, for chemistry: "if the source is from a reputable
+source like ACS, Royal Society of Chemistry, Angewandte… you don't need a second."
+He is right that a second website repeating the ACS adds nothing. The two-publisher
+rule exists to stop a claim being copied; it is the wrong cost where the claim comes
+from the body that keeps the record.
+
+**Cost, stated.** The list is an editorial judgement and it can be wrong: a body of
+record can still misprint a date, and the allowlist cannot tell. It is a short
+visible file rather than a flag scattered through records, and every day it vouches
+for carries `basis: authority: <name>`, so a reader can see which days never had a
+second opinion.
+
+## 2026-11-16 · The key is measured, not assumed
+
+**Change.** The sheet's list of days now measures its own text and picks a column
+count, type size and line height that fit the band it has. Before this it assumed
+about ten entries; at seventy-two the list ran off the page and printed over itself
+and over the footer.
+
+**Why.** The defect only appears at density, which is exactly the state the product
+is aiming for, so it would have arrived with the first real calendar.
+
 ## 2026-11-15 · The icon is cut on the paper, not on the white
 
 **Choice.** `tools/icon.py` finds the sheet by flooding its own cream colour from

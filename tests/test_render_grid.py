@@ -145,3 +145,34 @@ def test_svg_escapes_markup_in_a_title(tmp_path):
     text = svg.read_text()
     assert "Apollo &amp; Soyuz &lt;dock&gt;" in text
     assert "<dock>" not in text
+
+
+# ------------------------------------------------------------- the key's layout
+
+
+def test_key_lines_puts_the_date_only_on_the_first_of_two():
+    marks = {1: {23: [(1876, "Otto Diels is born"), (1929, "John Polanyi is born")]}}
+    lines = rg.key_lines(marks)
+    assert lines[0] == ("JAN 23", "1876  Otto Diels is born")
+    assert lines[1] == ("", "1929  John Polanyi is born")
+
+
+def test_the_key_fits_the_page_when_it_is_crowded():
+    """Eighty days must not overlap; that is why the layout is measured."""
+    lines = [("JAN 01", f"{1800 + i}  A reasonably long chemist's name is born")
+             for i in range(80)]
+    cols, size, line_h, rows = rg.key_columns(lines, 1800, 120)
+    assert rows * cols >= 80, "every line gets a slot"
+    assert 46 + rows * line_h <= rg.KEY_BAND + 1, "and the slots fit the band"
+    if size >= 13:
+        # A chosen (non-fallback) layout must fit its text; the fallback truncates.
+        col_w = (1800 - 2 * 120) / cols
+        widest = max(rg.text_width(label, size, "bold") + rg.KEY_INDENT
+                     + rg.text_width(entry, size) for label, entry in lines)
+        assert widest <= col_w
+
+
+def test_a_small_key_gets_room_to_breathe():
+    lines = [("JAN 01", "1900  Someone is born")] * 10
+    cols, size, line_h, _ = rg.key_columns(lines, 1800, 120)
+    assert cols == 2 and size >= 15 and line_h >= 30

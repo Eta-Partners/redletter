@@ -1,0 +1,1171 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Redletter//EN
+CALSCALE:GREGORIAN
+X-WR-CALDESC:Days a field marks in red. Each day was checked against its s
+ ources before it was added\; verified 2026-11-15.
+X-WR-CALNAME:Chemistry — red-letter days
+BEGIN:VEVENT
+SUMMARY:Artturi Ilmari Virtanen is born
+DTSTART;VALUE=DATE:20270115
+DTEND;VALUE=DATE:20270116
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B017@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1945 in Russian Empire: for his resea
+ rch and inventions in agricultural and nutrition chemistry\, especially fo
+ r his fodder p…\n\nHappened: 1895-01-15 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Artturi Ilmari Virtanen — https://api.nobelprize.org/2.1/laureate
+ /203
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/203
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Otto Paul Hermann Diels is born
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B126@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1950 in Germany: for their discovery 
+ and development of the diene synthesis\n\nHappened: 1876-01-23 (gregorian 
+ calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting t
+ he day.\n· Nobel Prize — Otto Paul Hermann Diels — https://api.nobelp
+ rize.org/2.1/laureate/210
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/210
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:John C. Polanyi is born
+DTSTART;VALUE=DATE:20270123
+DTEND;VALUE=DATE:20270124
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B093@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1986 in Germany: for their contributi
+ ons concerning the dynamics of chemical elementary processes\n\nHappened: 
+ 1929-01-23 (gregorian calendar\, day precision)\nChecked against 1 sources
+ \, 1 of 1 supporting the day.\n· Nobel Prize — John C. Polanyi — http
+ s://api.nobelprize.org/2.1/laureate/266
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/266
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ilya Romanovich Prigogine is born
+DTSTART;VALUE=DATE:20270125
+DTEND;VALUE=DATE:20270126
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B075@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1977 in Russia: for his contributions
+  to non-equilibrium thermodynamics\, particularly the theory of dissipativ
+ e structures\n\nHappened: 1917-01-25 (gregorian calendar\, day precision)\
+ nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize 
+ — Ilya Romanovich Prigogine — https://api.nobelprize.org/2.1/laureate/
+ 250
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/250
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Theodore William Richards is born
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B174@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1914 in USA: in recognition of his ac
+ curate determinations of the atomic weight of a large number of chemical e
+ lements\n\nHappened: 1868-01-31 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — The
+ odore William Richards — https://api.nobelprize.org/2.1/laureate/175
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/175
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Irving Langmuir is born
+DTSTART;VALUE=DATE:20270131
+DTEND;VALUE=DATE:20270201
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B077@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1932 in USA: for his discoveries and 
+ investigations in surface chemistry\n\nHappened: 1881-01-31 (gregorian cal
+ endar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting the 
+ day.\n· Nobel Prize — Irving Langmuir — https://api.nobelprize.org/2.
+ 1/laureate/191
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/191
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Herbert A. Hauptman is born
+DTSTART;VALUE=DATE:20270214
+DTEND;VALUE=DATE:20270215
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B071@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1985 in USA: for their outstanding ac
+ hievements in the development of direct methods for the determination of c
+ rystal struct…\n\nHappened: 1917-02-14 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Herbert A. Hauptman — https://api.nobelprize.org/2.1/laureate/262
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/262
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hans Karl August Simon von Euler-Chelpin is born
+DTSTART;VALUE=DATE:20270215
+DTEND;VALUE=DATE:20270216
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B064@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1929 in Germany: for their investigat
+ ions on the fermentation of sugar and fermentative enzymes\n\nHappened: 18
+ 73-02-15 (gregorian calendar\, day precision)\nChecked against 1 sources\,
+  1 of 1 supporting the day.\n· Nobel Prize — Hans Karl August Simon von
+  Euler-Chelpin — https://api.nobelprize.org/2.1/laureate/187
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/187
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Svante August Arrhenius is born
+DTSTART;VALUE=DATE:20270219
+DTEND;VALUE=DATE:20270220
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B172@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1903 in Sweden: in recognition of the
+  extraordinary services he has rendered to the advancement of chemistry by
+  his electrol…\n\nHappened: 1859-02-19 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Svante August Arrhenius — https://api.nobelprize.org/2.1/laureate/
+ 162
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/162
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Robert Huber is born
+DTSTART;VALUE=DATE:20270220
+DTEND;VALUE=DATE:20270221
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B153@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1988 in Germany: for the determinatio
+ n of the three-dimensional structure of a photosynthetic reaction centre\n
+ \nHappened: 1937-02-20 (gregorian calendar\, day precision)\nChecked again
+ st 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Robert Huber
+  — https://api.nobelprize.org/2.1/laureate/271
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/271
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Giulio Natta is born
+DTSTART;VALUE=DATE:20270226
+DTEND;VALUE=DATE:20270227
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B061@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1963 in Italy: for their discoveries 
+ in the field of the chemistry and technology of high polymers\n\nHappened:
+  1903-02-26 (gregorian calendar\, day precision)\nChecked against 1 source
+ s\, 1 of 1 supporting the day.\n· Nobel Prize — Giulio Natta — https:
+ //api.nobelprize.org/2.1/laureate/229
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/229
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Linus Carl Pauling is born
+DTSTART;VALUE=DATE:20270228
+DTEND;VALUE=DATE:20270301
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B107@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1954 in USA: for his research into th
+ e nature of the chemical bond and its application to the elucidation of th
+ e structure o…\n\nHappened: 1901-02-28 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Linus Carl Pauling — https://api.nobelprize.org/2.1/laureate/217
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/217
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Otto Hahn is born
+DTSTART;VALUE=DATE:20270308
+DTEND;VALUE=DATE:20270309
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B127@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1944 in Germany: for his discovery of
+  the fission of heavy nuclei\n\nHappened: 1879-03-08 (gregorian calendar\,
+  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Nobel Prize — Otto Hahn — https://api.nobelprize.org/2.1/laureate/2
+ 02
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/202
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Walter Norman Haworth is born
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B122@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1937 in United Kingdom: for his inves
+ tigations on carbohydrates and vitamin C\n\nHappened: 1883-03-19 (gregoria
+ n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
+  the day.\n· Nobel Prize — Walter Norman Haworth — https://api.nobelp
+ rize.org/2.1/laureate/196
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/196
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Frédéric Joliot is born
+DTSTART;VALUE=DATE:20270319
+DTEND;VALUE=DATE:20270320
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B047@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1935 in France: in recognition of the
+ ir synthesis of new radioactive elements\n\nHappened: 1900-03-19 (gregoria
+ n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
+  the day.\n· Nobel Prize — Frédéric Joliot — https://api.nobelprize
+ .org/2.1/laureate/193
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/193
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermann Staudinger is born
+DTSTART;VALUE=DATE:20270323
+DTEND;VALUE=DATE:20270324
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B073@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1953 in Germany: for his discoveries 
+ in the field of macromolecular chemistry\n\nHappened: 1881-03-23 (gregoria
+ n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
+  the day.\n· Nobel Prize — Hermann Staudinger — https://api.nobelpriz
+ e.org/2.1/laureate/216
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/216
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Petrus (Peter) Josephus Wilhelmus Debye is born
+DTSTART;VALUE=DATE:20270324
+DTEND;VALUE=DATE:20270325
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B137@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1936 in the Netherlands: for his cont
+ ributions to our knowledge of molecular structure through his investigatio
+ ns on dipole…\n\nHappened: 1884-03-24 (gregorian calendar\, day precisio
+ n)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize
+  — Petrus (Peter) Josephus Wilhelmus Debye — https://api.nobelprize.or
+ g/2.1/laureate/195
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/195
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Otto Wallach is born
+DTSTART;VALUE=DATE:20270327
+DTEND;VALUE=DATE:20270328
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B128@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1910 in Germany: in recognition of hi
+ s services to organic chemistry and the chemical industry by his pioneer w
+ ork in the fi…\n\nHappened: 1847-03-27 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Otto Wallach — https://api.nobelprize.org/2.1/laureate/169
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/169
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Richard Adolf Zsigmondy is born
+DTSTART;VALUE=DATE:20270401
+DTEND;VALUE=DATE:20270402
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B148@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1925 in Austrian Empire: for his demo
+ nstration of the heterogenous nature of colloid solutions and for the meth
+ ods he used\,…\n\nHappened: 1865-04-01 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Richard Adolf Zsigmondy — https://api.nobelprize.org/2.1/laureate/
+ 182
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/182
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Nikolay Nikolaevich Semenov is born
+DTSTART;VALUE=DATE:20270403
+DTEND;VALUE=DATE:20270404
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B121@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1956 in Russia: for their researches 
+ into the mechanism of chemical reactions\n\nHappened: 1896-04-03 (gregoria
+ n calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting
+  the day.\n· Nobel Prize — Nikolay Nikolaevich Semenov — https://api.
+ nobelprize.org/2.1/laureate/220
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/220
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Melvin Calvin is born
+DTSTART;VALUE=DATE:20270408
+DTEND;VALUE=DATE:20270409
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B117@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1961 in USA: for his research on the 
+ carbon dioxide assimilation in plants\n\nHappened: 1911-04-08 (gregorian c
+ alendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting th
+ e day.\n· Nobel Prize — Melvin Calvin — https://api.nobelprize.org/2.
+ 1/laureate/225
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/225
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Glenn Theodore Seaborg is born
+DTSTART;VALUE=DATE:20270419
+DTEND;VALUE=DATE:20270420
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B062@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1951 in USA: for their discoveries in
+  the chemistry of the transuranium elements\n\nHappened: 1912-04-19 (grego
+ rian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 support
+ ing the day.\n· Nobel Prize — Glenn Theodore Seaborg — https://api.no
+ belprize.org/2.1/laureate/213
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/213
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul Karrer is born
+DTSTART;VALUE=DATE:20270421
+DTEND;VALUE=DATE:20270422
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B133@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1937 in Russia: for his investigation
+ s on carotenoids\, flavins and vitamins A and B2\n\nHappened: 1889-04-21 (
+ gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 su
+ pporting the day.\n· Nobel Prize — Paul Karrer — https://api.nobelpri
+ ze.org/2.1/laureate/197
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/197
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Harold Clayton Urey is born
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B065@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1934 in USA: for his discovery of hea
+ vy hydrogen\n\nHappened: 1893-04-29 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
+  Harold Clayton Urey — https://api.nobelprize.org/2.1/laureate/192
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/192
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Victor Grignard is born
+DTSTART;VALUE=DATE:20270506
+DTEND;VALUE=DATE:20270507
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B178@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1912 in France: for the discovery of 
+ the so-called Grignard reagent\, which in recent years has greatly advance
+ d the progress…\n\nHappened: 1871-05-06 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Victor Grignard — https://api.nobelprize.org/2.1/laureate/172
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/172
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William Francis Giauque is born
+DTSTART;VALUE=DATE:20270512
+DTEND;VALUE=DATE:20270513
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B188@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1949 in Canada: for his contributions
+  in the field of chemical thermodynamics\, particularly concerning the beh
+ aviour of subs…\n\nHappened: 1895-05-12 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — William Francis Giauque — https://api.nobelprize.org/2.1/laureate
+ /209
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/209
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Odd Hassel is born
+DTSTART;VALUE=DATE:20270517
+DTEND;VALUE=DATE:20270518
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B123@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1969 in Norway: for their contributio
+ ns to the development of the concept of conformation and its application i
+ n chemistry\n\nHappened: 1897-05-17 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
+  Odd Hassel — https://api.nobelprize.org/2.1/laureate/238
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/238
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vincent du Vigneaud is born
+DTSTART;VALUE=DATE:20270518
+DTEND;VALUE=DATE:20270519
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B179@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1955 in USA: for his work on biochemi
+ cally important sulphur compounds\, especially for the first synthesis of 
+ a polypeptide…\n\nHappened: 1901-05-18 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Vincent du Vigneaud — https://api.nobelprize.org/2.1/laureate/218
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/218
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir Cyril Norman Hinshelwood is born
+DTSTART;VALUE=DATE:20270519
+DTEND;VALUE=DATE:20270520
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B163@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1956 in United Kingdom: for their res
+ earches into the mechanism of chemical reactions\n\nHappened: 1897-05-19 (
+ gregorian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 su
+ pporting the day.\n· Nobel Prize — Sir Cyril Norman Hinshelwood — htt
+ ps://api.nobelprize.org/2.1/laureate/219
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/219
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Eduard Buchner is born
+DTSTART;VALUE=DATE:20270520
+DTEND;VALUE=DATE:20270521
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B035@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1907 in Bavaria: for his biochemical 
+ researches and his discovery of cell-free fermentation\n\nHappened: 1860-0
+ 5-20 (gregorian calendar\, day precision)\nChecked against 1 sources\, 1 o
+ f 1 supporting the day.\n· Nobel Prize — Eduard Buchner — https://api
+ .nobelprize.org/2.1/laureate/166
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/166
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Heinrich Otto Wieland is born
+DTSTART;VALUE=DATE:20270604
+DTEND;VALUE=DATE:20270605
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B067@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1927 in Germany: for his investigatio
+ ns of the constitution of the bile acids and related substances\n\nHappene
+ d: 1877-06-04 (gregorian calendar\, day precision)\nChecked against 1 sour
+ ces\, 1 of 1 supporting the day.\n· Nobel Prize — Heinrich Otto Wieland
+  — https://api.nobelprize.org/2.1/laureate/184
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/184
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Robert S. Mulliken is born
+DTSTART;VALUE=DATE:20270607
+DTEND;VALUE=DATE:20270608
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B155@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1966 in USA: for his fundamental work
+  concerning chemical bonds and the electronic structure of molecules by th
+ e molecular o…\n\nHappened: 1896-06-07 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Robert S. Mulliken — https://api.nobelprize.org/2.1/laureate/232
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/232
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Georg Wittig is born
+DTSTART;VALUE=DATE:20270616
+DTEND;VALUE=DATE:20270617
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B054@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1979 in Germany: for their developmen
+ t of the use of boron- and phosphorus-containing compounds\, respectively\
+ , into importan…\n\nHappened: 1897-06-16 (gregorian calendar\, day preci
+ sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pr
+ ize — Georg Wittig — https://api.nobelprize.org/2.1/laureate/253
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/253
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul J. Flory is born
+DTSTART;VALUE=DATE:20270619
+DTEND;VALUE=DATE:20270620
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B132@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1974 in USA: for his fundamental achi
+ evements\, both theoretical and experimental\, in the physical chemistry o
+ f the macromole…\n\nHappened: 1910-06-19 (gregorian calendar\, day preci
+ sion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pr
+ ize — Paul J. Flory — https://api.nobelprize.org/2.1/laureate/246
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/246
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Walther Hermann Nernst is born
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B183@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1920 in Prussia: in recognition of hi
+ s work in thermochemistry\n\nHappened: 1864-06-25 (gregorian calendar\, da
+ y precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· N
+ obel Prize — Walther Hermann Nernst — https://api.nobelprize.org/2.1/l
+ aureate/178
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/178
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:William H. Stein is born
+DTSTART;VALUE=DATE:20270625
+DTEND;VALUE=DATE:20270626
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B189@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1972 in USA: for their contribution t
+ o the understanding of the connection between chemical structure and catal
+ ytic activity…\n\nHappened: 1911-06-25 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — William H. Stein — https://api.nobelprize.org/2.1/laureate/243
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/243
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:John Howard Northrop is born
+DTSTART;VALUE=DATE:20270705
+DTEND;VALUE=DATE:20270706
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B096@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1946 in USA: for their preparation of
+  enzymes and virus proteins in a pure form\n\nHappened: 1891-07-05 (gregor
+ ian calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporti
+ ng the day.\n· Nobel Prize — John Howard Northrop — https://api.nobel
+ prize.org/2.1/laureate/205
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/205
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Kurt Alder is born
+DTSTART;VALUE=DATE:20270710
+DTEND;VALUE=DATE:20270711
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B103@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1950 in Prussia: for their discovery 
+ and development of the diene synthesis\n\nHappened: 1902-07-10 (gregorian 
+ calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supporting t
+ he day.\n· Nobel Prize — Kurt Alder — https://api.nobelprize.org/2.1/
+ laureate/211
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/211
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Geoffrey Wilkinson is born
+DTSTART;VALUE=DATE:20270714
+DTEND;VALUE=DATE:20270715
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B053@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1973 in United Kingdom: for their pio
+ neering work\, performed independently\, on the chemistry of the organomet
+ allic\, so calle…\n\nHappened: 1921-07-14 (gregorian calendar\, day prec
+ ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel P
+ rize — Geoffrey Wilkinson — https://api.nobelprize.org/2.1/laureate/24
+ 5
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/245
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Vladimir Prelog is born
+DTSTART;VALUE=DATE:20270723
+DTEND;VALUE=DATE:20270724
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B180@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1975 in Austria-Hungary: for his rese
+ arch into the stereochemistry of organic molecules and reactions\n\nHappen
+ ed: 1906-07-23 (gregorian calendar\, day precision)\nChecked against 1 sou
+ rces\, 1 of 1 supporting the day.\n· Nobel Prize — Vladimir Prelog — 
+ https://api.nobelprize.org/2.1/laureate/248
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/248
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hans Fischer is born
+DTSTART;VALUE=DATE:20270727
+DTEND;VALUE=DATE:20270728
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B063@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1930 in Germany: for his researches i
+ nto the constitution of haemin and chlorophyll and especially for his synt
+ hesis of haem…\n\nHappened: 1881-07-27 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Hans Fischer — https://api.nobelprize.org/2.1/laureate/188
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/188
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul D. Boyer is born
+DTSTART;VALUE=DATE:20270731
+DTEND;VALUE=DATE:20270801
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B130@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1997 in USA: for their elucidation of
+  the enzymatic mechanism underlying the synthesis of adenosine triphosphat
+ e (ATP)\n\nHappened: 1918-07-31 (gregorian calendar\, day precision)\nChec
+ ked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Pau
+ l D. Boyer — https://api.nobelprize.org/2.1/laureate/287
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/287
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:George de Hevesy is born
+DTSTART;VALUE=DATE:20270801
+DTEND;VALUE=DATE:20270802
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B056@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1943 in Austria-Hungary: for his work
+  on the use of isotopes as tracers in the study of chemical processes\n\nH
+ appened: 1885-08-01 (gregorian calendar\, day precision)\nChecked against 
+ 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — George de Heves
+ y — https://api.nobelprize.org/2.1/laureate/201
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/201
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Richard Martin Willstätter is born
+DTSTART;VALUE=DATE:20270813
+DTEND;VALUE=DATE:20270814
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B147@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1915 in Germany: for his researches o
+ n plant pigments\, especially chlorophyll\n\nHappened: 1872-08-13 (gregori
+ an calendar\, day precision)\nChecked against 1 sources\, 1 of 1 supportin
+ g the day.\n· Nobel Prize — Richard Martin Willstätter — https://api
+ .nobelprize.org/2.1/laureate/176
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/176
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Carl Bosch is born
+DTSTART;VALUE=DATE:20270827
+DTEND;VALUE=DATE:20270828
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B024@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1931 in Germany: in recognition of th
+ eir contributions to the invention and development of chemical high pressu
+ re methods\n\nHappened: 1874-08-27 (gregorian calendar\, day precision)\nC
+ hecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — 
+ Carl Bosch — https://api.nobelprize.org/2.1/laureate/189
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/189
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jacobus Henricus van 't Hoff is born
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B079@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1901 in the Netherlands: in recogniti
+ on of the extraordinary services he has rendered by the discovery of the l
+ aws of chemic…\n\nHappened: 1852-08-30 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Jacobus Henricus van 't Hoff — https://api.nobelprize.org/2.1/laur
+ eate/160
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/160
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ernest Rutherford is born
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B042@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1908 in New Zealand: for his investig
+ ations into the disintegration of the elements\, and the chemistry of radi
+ oactive substa…\n\nHappened: 1871-08-30 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Ernest Rutherford — https://api.nobelprize.org/2.1/laureate/167
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/167
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:The (Theodor) Svedberg is born
+DTSTART;VALUE=DATE:20270830
+DTEND;VALUE=DATE:20270831
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B173@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1926 in Sweden: for his work on dispe
+ rse systems\n\nHappened: 1884-08-30 (gregorian calendar\, day precision)\n
+ Checked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize —
+  The (Theodor) Svedberg — https://api.nobelprize.org/2.1/laureate/183
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/183
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Francis William Aston is born
+DTSTART;VALUE=DATE:20270901
+DTEND;VALUE=DATE:20270902
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B046@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1922 in United Kingdom: for his disco
+ very\, by means of his mass spectrograph\, of isotopes\, in a large number
+  of non-radioact…\n\nHappened: 1877-09-01 (gregorian calendar\, day prec
+ ision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel P
+ rize — Francis William Aston — https://api.nobelprize.org/2.1/laureate
+ /180
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/180
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Wilhelm Ostwald is born
+DTSTART;VALUE=DATE:20270902
+DTEND;VALUE=DATE:20270903
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B185@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1909 in Russian Empire: in recognitio
+ n of his work on catalysis and for his investigations into the fundamental
+  principles g…\n\nHappened: 1853-09-02 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Wilhelm Ostwald — https://api.nobelprize.org/2.1/laureate/168
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/168
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Frederick Soddy is born
+DTSTART;VALUE=DATE:20270902
+DTEND;VALUE=DATE:20270903
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B049@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1921 in United Kingdom: for his contr
+ ibutions to our knowledge of the chemistry of radioactive substances\, and
+  his investiga…\n\nHappened: 1877-09-02 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Frederick Soddy — https://api.nobelprize.org/2.1/laureate/179
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/179
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fritz Pregl is born
+DTSTART;VALUE=DATE:20270903
+DTEND;VALUE=DATE:20270904
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B052@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1923 in Austria-Hungary: for his inve
+ ntion of the method of micro-analysis of organic substances\n\nHappened: 1
+ 869-09-03 (gregorian calendar\, day precision)\nChecked against 1 sources\
+ , 1 of 1 supporting the day.\n· Nobel Prize — Fritz Pregl — https://a
+ pi.nobelprize.org/2.1/laureate/181
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/181
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir Robert Robinson is born
+DTSTART;VALUE=DATE:20270913
+DTEND;VALUE=DATE:20270914
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B167@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1947 in United Kingdom: for his inves
+ tigations on plant products of biological importance\, especially the alka
+ loids\n\nHappened: 1886-09-13 (gregorian calendar\, day precision)\nChecke
+ d against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Sir R
+ obert Robinson — https://api.nobelprize.org/2.1/laureate/207
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/207
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Henri Moissan is born
+DTSTART;VALUE=DATE:20270928
+DTEND;VALUE=DATE:20270929
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B069@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1906 in France: in recognition of the
+  great services rendered by him in his investigation and isolation of the 
+ element fluor…\n\nHappened: 1852-09-28 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Henri Moissan — https://api.nobelprize.org/2.1/laureate/165
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/165
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Sir William Ramsay is born
+DTSTART;VALUE=DATE:20271002
+DTEND;VALUE=DATE:20271003
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B168@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1904 in Scotland: in recognition of h
+ is services in the discovery of the inert gaseous elements in air\, and hi
+ s determinatio…\n\nHappened: 1852-10-02 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Sir William Ramsay — https://api.nobelprize.org/2.1/laureate/163
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/163
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Charles J. Pedersen is born
+DTSTART;VALUE=DATE:20271003
+DTEND;VALUE=DATE:20271004
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B026@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1987 in Korea: for their development 
+ and use of molecules with structure-specific interactions of high selectiv
+ ity\n\nHappened: 1904-10-03 (gregorian calendar\, day precision)\nChecked 
+ against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — Charles
+  J. Pedersen — https://api.nobelprize.org/2.1/laureate/269
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/269
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Hermann Emil Fischer is born
+DTSTART;VALUE=DATE:20271009
+DTEND;VALUE=DATE:20271010
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B039@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1902 in Prussia: in recognition of th
+ e extraordinary services he has rendered by his work on sugar and purine s
+ yntheses\n\nHappened: 1852-10-09 (gregorian calendar\, day precision)\nChe
+ cked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — He
+ rmann Emil Fischer — https://api.nobelprize.org/2.1/laureate/161
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/161
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Friedrich Bergius is born
+DTSTART;VALUE=DATE:20271011
+DTEND;VALUE=DATE:20271012
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B050@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1931 in Germany: in recognition of th
+ eir contributions to the invention and development of chemical high pressu
+ re methods\n\nHappened: 1884-10-11 (gregorian calendar\, day precision)\nC
+ hecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize — 
+ Friedrich Bergius — https://api.nobelprize.org/2.1/laureate/190
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/190
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Arthur Harden is born
+DTSTART;VALUE=DATE:20271012
+DTEND;VALUE=DATE:20271013
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B016@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1929 in United Kingdom: for their inv
+ estigations on the fermentation of sugar and fermentative enzymes\n\nHappe
+ ned: 1865-10-12 (gregorian calendar\, day precision)\nChecked against 1 so
+ urces\, 1 of 1 supporting the day.\n· Nobel Prize — Arthur Harden — h
+ ttps://api.nobelprize.org/2.1/laureate/186
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/186
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Johann Friedrich Wilhelm Adolf von Baeyer is born
+DTSTART;VALUE=DATE:20271031
+DTEND;VALUE=DATE:20271101
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B005@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1905 in Prussia: in recognition of hi
+ s services in the advancement of organic chemistry and the chemical indust
+ ry\, through h…\n\nHappened: 1835-10-31 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Johann Friedrich Wilhelm Adolf von Baeyer — https://api.nobelpriz
+ e.org/2.1/laureate/164
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/164
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Paul Sabatier is born
+DTSTART;VALUE=DATE:20271105
+DTEND;VALUE=DATE:20271106
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B135@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1912 in France: for his method of hyd
+ rogenating organic compounds in the presence of finely disintegrated metal
+ s whereby the…\n\nHappened: 1854-11-05 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Paul Sabatier — https://api.nobelprize.org/2.1/laureate/173
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/173
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Marie Curie\, née Skłodowska is born
+DTSTART;VALUE=DATE:20271107
+DTEND;VALUE=DATE:20271108
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B112@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1903 in Russian Empire: in recognitio
+ n of the extraordinary services they have rendered by their joint research
+ es on the rad…\n\nHappened: 1867-11-07 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Marie Curie\, née Skłodowska — https://api.nobelprize.org/2.1/la
+ ureate/6
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/6
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Ronald George Wreyford Norrish is born
+DTSTART;VALUE=DATE:20271109
+DTEND;VALUE=DATE:20271110
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B159@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1967 in United Kingdom: for their stu
+ dies of extremely fast chemical reactions\, effected by disturbing the equ
+ ilibrium by me…\n\nHappened: 1897-11-09 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Ronald George Wreyford Norrish — https://api.nobelprize.org/2.1/l
+ aureate/234
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/234
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:James Batcheller Sumner is born
+DTSTART;VALUE=DATE:20271119
+DTEND;VALUE=DATE:20271120
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B081@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1946 in USA: for his discovery that e
+ nzymes can be crystallized\n\nHappened: 1887-11-19 (gregorian calendar\, d
+ ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
+ Nobel Prize — James Batcheller Sumner — https://api.nobelprize.org/2.1
+ /laureate/204
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/204
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Karl Ziegler is born
+DTSTART;VALUE=DATE:20271126
+DTEND;VALUE=DATE:20271127
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B099@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1963 in Germany: for their discoverie
+ s in the field of the chemistry and technology of high polymers\n\nHappene
+ d: 1898-11-26 (gregorian calendar\, day precision)\nChecked against 1 sour
+ ces\, 1 of 1 supporting the day.\n· Nobel Prize — Karl Ziegler — http
+ s://api.nobelprize.org/2.1/laureate/228
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/228
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Lars Onsager is born
+DTSTART;VALUE=DATE:20271127
+DTEND;VALUE=DATE:20271128
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B105@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1968 in Norway: for the discovery of 
+ the reciprocal relations bearing his name\, which are fundamental for the 
+ thermodynamics…\n\nHappened: 1903-11-27 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Lars Onsager — https://api.nobelprize.org/2.1/laureate/236
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/236
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Richard Kuhn is born
+DTSTART;VALUE=DATE:20271203
+DTEND;VALUE=DATE:20271204
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B142@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1938 in Austria-Hungary: for his work
+  on carotenoids and vitamins\n\nHappened: 1900-12-03 (gregorian calendar\,
+  day precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n
+ · Nobel Prize — Richard Kuhn — https://api.nobelprize.org/2.1/laureat
+ e/198
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/198
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Fritz Haber is born
+DTSTART;VALUE=DATE:20271209
+DTEND;VALUE=DATE:20271210
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B051@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1918 in Prussia: for the synthesis of
+  ammonia from its elements\n\nHappened: 1868-12-09 (gregorian calendar\, d
+ ay precision)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· 
+ Nobel Prize — Fritz Haber — https://api.nobelprize.org/2.1/laureate/17
+ 7
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/177
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Alfred Werner is born
+DTSTART;VALUE=DATE:20271212
+DTEND;VALUE=DATE:20271213
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B012@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1913 in France: in recognition of his
+  work on the linkage of atoms in molecules by which he has thrown new ligh
+ t on earlier…\n\nHappened: 1866-12-12 (gregorian calendar\, day precisio
+ n)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Prize
+  — Alfred Werner — https://api.nobelprize.org/2.1/laureate/174
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/174
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Jaroslav Heyrovsky is born
+DTSTART;VALUE=DATE:20271220
+DTEND;VALUE=DATE:20271221
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B082@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1959 in Austria-Hungary: for his disc
+ overy and development of the polarographic methods of analysis\n\nHappened
+ : 1890-12-20 (gregorian calendar\, day precision)\nChecked against 1 sourc
+ es\, 1 of 1 supporting the day.\n· Nobel Prize — Jaroslav Heyrovsky —
+  https://api.nobelprize.org/2.1/laureate/223
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/223
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Adolf Otto Reinhold Windaus is born
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B006@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1928 in Germany: for the services ren
+ dered through his research into the constitution of the sterols and their 
+ connection wi…\n\nHappened: 1876-12-25 (gregorian calendar\, day precisi
+ on)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Priz
+ e — Adolf Otto Reinhold Windaus — https://api.nobelprize.org/2.1/laure
+ ate/185
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/185
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:Gerhard Herzberg is born
+DTSTART;VALUE=DATE:20271225
+DTEND;VALUE=DATE:20271226
+DTSTAMP:20261116T034111Z
+UID:D-CHE-B060@redletter.local
+RRULE:FREQ=YEARLY
+CATEGORIES:Redletter,birth
+DESCRIPTION:Nobel Prize in Chemistry 1971 in Germany: for his contribution
+ s to the knowledge of electronic structure and geometry of molecules\, par
+ ticularly free…\n\nHappened: 1904-12-25 (gregorian calendar\, day precis
+ ion)\nChecked against 1 sources\, 1 of 1 supporting the day.\n· Nobel Pri
+ ze — Gerhard Herzberg — https://api.nobelprize.org/2.1/laureate/240
+TRANSP:TRANSPARENT
+URL:https://api.nobelprize.org/2.1/laureate/240
+END:VEVENT
+END:VCALENDAR

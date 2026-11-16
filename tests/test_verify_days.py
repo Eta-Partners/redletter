@@ -186,3 +186,66 @@ def test_approval_hash_ignores_sources_and_status():
     a = day_with(["https://a.org/x"])
     b = dict(a, sources=[], status="contested")
     assert vd.approval_hash(a) == vd.approval_hash(b)
+
+
+# ---------------------------------------------------------------- authorities
+
+
+ALLOWLIST = {"acs.org": "American Chemical Society", "rsc.org": "Royal Society of Chemistry"}
+
+
+def test_one_allowlisted_source_is_enough(monkeypatch):
+    day = day_with(["https://pubs.acs.org/doi/10.1021/xyz"])
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://pubs.acs.org/doi/10.1021/xyz":
+                                              page("April 12, 1961")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "active"
+    assert out["basis"] == "authority: American Chemical Society"
+    assert out["authorities"] == ["American Chemical Society"]
+
+
+def test_one_source_outside_the_allowlist_is_not_enough(monkeypatch):
+    day = day_with(["https://en.wikipedia.org/wiki/Thing"])
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://en.wikipedia.org/wiki/Thing":
+                                              page("April 12, 1961")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "provisional"
+    assert out["basis"] == ""
+
+
+def test_an_authority_that_does_not_support_the_date_changes_nothing(monkeypatch):
+    day = day_with(["https://pubs.acs.org/doi/10.1021/xyz"])
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://pubs.acs.org/doi/10.1021/xyz":
+                                              page("a page about something else")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "contested"
+
+
+def test_an_unreadable_authority_is_still_quarantined(monkeypatch):
+    day = day_with(["https://pubs.acs.org/doi/10.1021/xyz"])
+    monkeypatch.setattr(vd, "fetch", FakeWeb({"https://pubs.acs.org/doi/10.1021/xyz":
+                                              OSError("gone")}))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "quarantined"
+
+
+def test_two_publishers_still_win_over_the_allowlist(monkeypatch):
+    day = day_with(["https://a.org/x", "https://b.org/y"])
+    monkeypatch.setattr(vd, "fetch", FakeWeb({
+        "https://a.org/x": page("April 12, 1961"),
+        "https://b.org/y": page("12 April 1961"),
+    }))
+    out = vd.verify_day(day, timeout=1, allowlist=ALLOWLIST)
+    assert out["status"] == "active"
+    assert out["basis"] == "two publishers"
+
+
+@pytest.mark.parametrize("host,vouched", [
+    ("pubs.acs.org", True),
+    ("www.acs.org", True),
+    ("acs.org", True),
+    ("notacs.org", False),
+    ("acs.org.example.com", False),
+])
+def test_authority_matching_is_on_the_host_boundary(host, vouched):
+    assert bool(vd.authority_for(f"https://{host}/x", ALLOWLIST)) is vouched

@@ -83,6 +83,27 @@ def publisher(url: str) -> str:
     return ".".join(host.split(".")[-2:])
 
 
+def load_allowlist(path) -> dict[str, str]:
+    """Domains whose word alone carries a date, mapped to the publisher's name."""
+    if not path:
+        return {}
+    data = yaml.safe_load(pathlib.Path(path).read_text())
+    out = {}
+    for entry in data.get("publishers", []):
+        for domain in entry["domains"]:
+            out[domain] = entry["name"]
+    return out
+
+
+def authority_for(url: str, allowlist: dict[str, str]):
+    """The allowlisted publisher that vouches for this URL, or None."""
+    host = (urllib.parse.urlsplit(url).hostname or "").lower()
+    for domain, name in allowlist.items():
+        if host == domain or host.endswith("." + domain):
+            return name
+    return None
+
+
 def approval_hash(day: dict) -> str:
     """Hash the printable content: what a person is approving when they approve a day.
 
@@ -99,12 +120,16 @@ def approval_hash(day: dict) -> str:
     return hashlib.sha256(json.dumps(payload, sort_keys=True).encode("utf-8")).hexdigest()
 
 
-def verify_day(day: dict, timeout: int) -> dict:
+def verify_day(day: dict, timeout: int, allowlist: dict[str, str] | None = None) -> dict:
     iso = day["date"]["gregorian"]
     checked = dt.date.today().isoformat()
+    allowlist = allowlist or {}
     results = []
     for src in day.get("sources", []):
         entry = {"citation": src.get("citation"), "url": src.get("url"), "type": src.get("type")}
+        authority = authority_for(src["url"], allowlist)
+        if authority:
+            entry["authority"] = authority
         try:
             status, page = fetch(src["url"], timeout)
             entry["http"] = status
@@ -125,11 +150,16 @@ def verify_day(day: dict, timeout: int) -> dict:
     agreeing = [r for r in read if r["supports"]]
     n_agree, n_read = len(agreeing), len(read)
     agreeing_publishers = sorted({publisher(r["url"]) for r in agreeing})
+    authorities = sorted({r["authority"] for r in agreeing if r.get("authority")})
 
+    basis = ""
     if n_read == 0:
         status = "quarantined"
     elif n_agree >= 2 and len(agreeing_publishers) >= 2:
-        status = "active"
+        status, basis = "active", "two publishers"
+    elif authorities:
+        # One source is enough when it is a body of record. See data/sources-allowlist.yaml.
+        status, basis = "active", f"authority: {authorities[0]}"
     elif n_agree >= 2:
         status = "provisional"       # they agree, but they are the same publisher
     elif n_agree == 1:
@@ -146,12 +176,14 @@ def verify_day(day: dict, timeout: int) -> dict:
         "year": day["year"],
         "date": day["date"],
         "status": status,
+        "basis": basis,
         # Agreeing of *all* cited sources, not of the readable ones: "1 of 1" would
         # read as agreement when the other source never loaded. How many loaded is
         # a separate number, so a page that has rotted is visible in the output.
         "agreement": f"{n_agree} of {len(results)}",
         "readable": n_read,
         "publishers": agreeing_publishers,
+        "authorities": authorities,
         "checked_on": checked,
         "sources": results,
         "approved_hash": approval_hash(day),
@@ -164,17 +196,24 @@ def main() -> int:
     ap.add_argument("--write", action="store_true", help="also write out/days.json")
     ap.add_argument("--timeout", type=int, default=20)
     ap.add_argument("--out", default=None, help="directory to write into; defaults to <repo>/out")
+    ap.add_argument("--allowlist", default="data/sources-allowlist.yaml",
+                    help="publishers whose word alone carries a date; '' to disable")
     args = ap.parse_args()
 
     root = pathlib.Path(__file__).resolve().parent.parent
     data = yaml.safe_load(pathlib.Path(args.dataset).read_text())
+    allowlist_path = pathlib.Path(args.allowlist) if args.allowlist else None
+    if allowlist_path and not allowlist_path.exists() and not allowlist_path.is_absolute():
+        allowlist_path = root / args.allowlist
+    allowlist = load_allowlist(allowlist_path) if allowlist_path and allowlist_path.exists() else {}
     out_dir = pathlib.Path(args.out) if args.out else root / "out"
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    verified = [verify_day(d, args.timeout) for d in data["days"]]
+    verified = [verify_day(d, args.timeout, allowlist) for d in data["days"]]
     report = {
         "topic": data["topic"],
         "generated_on": dt.date.today().isoformat(),
+        "allowlist": sorted(set(allowlist.values())),
         "days": verified,
         "summary": {
             s: sum(1 for d in verified if d["status"] == s)
@@ -189,7 +228,8 @@ def main() -> int:
 
     for d in verified:
         mark = {"active": "OK  ", "provisional": "PROV", "contested": "CONT", "quarantined": "QUAR"}[d["status"]]
-        print(f"{mark} {d['id']} {d['month_day']} {d['agreement']:>7}  {d['title']}")
+        why = f" [{d['basis']}]" if d.get("basis") else ""
+        print(f"{mark} {d['id']} {d['month_day']} {d['agreement']:>7}  {d['title']}{why}")
         for s in d["sources"]:
             state = "supports" if s["supports"] else ("no match" if s["read"] else f"unread ({s.get('error','')[:60]})")
             print(f"        - {state}: {s['url']}")

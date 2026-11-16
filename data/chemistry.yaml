@@ -1,0 +1,1245 @@
+# Redletter — chemistry
+#
+# Built from the Nobel Prize's own API: each record is a laureate of the Nobel Prize
+# in Chemistry on the day they were born, and the source is nobelprize.org, which is
+# on the sources allowlist and so does not need a second publisher.
+#
+# This is the verified backbone, not the finished calendar. Landmark discoveries and
+# the days the field marks for other reasons belong here too; they need sources from
+# ACS, the RSC or IUPAC before they can be added.
+#
+# Nothing here has a hand-written status: scripts/verify_days.py derives it.
+
+topic:
+  id: chemistry
+  title: "Chemistry"
+  scope: >-
+    The days chemistry marks: the people who won its highest prize, and the
+    discoveries that changed what the field could do.
+  print_year: 2027
+  kinds: [birth, discovery, milestone, first, loss]
+
+days:
+  - id: D-CHE-B017
+    month_day: "01-15"
+    year: 1895
+    kind: birth
+    title: "Artturi Ilmari Virtanen is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1945 in Russian Empire: for his research and inventions in agricultural and nutrition chemistry, especially for his fodder p…
+    date:
+      as_recorded: 1895-01-15
+      calendar: gregorian
+      gregorian: 1895-01-15
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Artturi Ilmari Virtanen"
+        url: https://api.nobelprize.org/2.1/laureate/203
+
+  - id: D-CHE-B126
+    month_day: "01-23"
+    year: 1876
+    kind: birth
+    title: "Otto Paul Hermann Diels is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1950 in Germany: for their discovery and development of the diene synthesis
+    date:
+      as_recorded: 1876-01-23
+      calendar: gregorian
+      gregorian: 1876-01-23
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Otto Paul Hermann Diels"
+        url: https://api.nobelprize.org/2.1/laureate/210
+
+  - id: D-CHE-B093
+    month_day: "01-23"
+    year: 1929
+    kind: birth
+    title: "John C. Polanyi is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1986 in Germany: for their contributions concerning the dynamics of chemical elementary processes
+    date:
+      as_recorded: 1929-01-23
+      calendar: gregorian
+      gregorian: 1929-01-23
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — John C. Polanyi"
+        url: https://api.nobelprize.org/2.1/laureate/266
+
+  - id: D-CHE-B075
+    month_day: "01-25"
+    year: 1917
+    kind: birth
+    title: "Ilya Romanovich Prigogine is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1977 in Russia: for his contributions to non-equilibrium thermodynamics, particularly the theory of dissipative structures
+    date:
+      as_recorded: 1917-01-25
+      calendar: gregorian
+      gregorian: 1917-01-25
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Ilya Romanovich Prigogine"
+        url: https://api.nobelprize.org/2.1/laureate/250
+
+  - id: D-CHE-B174
+    month_day: "01-31"
+    year: 1868
+    kind: birth
+    title: "Theodore William Richards is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1914 in USA: in recognition of his accurate determinations of the atomic weight of a large number of chemical elements
+    date:
+      as_recorded: 1868-01-31
+      calendar: gregorian
+      gregorian: 1868-01-31
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Theodore William Richards"
+        url: https://api.nobelprize.org/2.1/laureate/175
+
+  - id: D-CHE-B077
+    month_day: "01-31"
+    year: 1881
+    kind: birth
+    title: "Irving Langmuir is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1932 in USA: for his discoveries and investigations in surface chemistry
+    date:
+      as_recorded: 1881-01-31
+      calendar: gregorian
+      gregorian: 1881-01-31
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Irving Langmuir"
+        url: https://api.nobelprize.org/2.1/laureate/191
+
+  - id: D-CHE-B071
+    month_day: "02-14"
+    year: 1917
+    kind: birth
+    title: "Herbert A. Hauptman is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1985 in USA: for their outstanding achievements in the development of direct methods for the determination of crystal struct…
+    date:
+      as_recorded: 1917-02-14
+      calendar: gregorian
+      gregorian: 1917-02-14
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Herbert A. Hauptman"
+        url: https://api.nobelprize.org/2.1/laureate/262
+
+  - id: D-CHE-B064
+    month_day: "02-15"
+    year: 1873
+    kind: birth
+    title: "Hans Karl August Simon von Euler-Chelpin is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1929 in Germany: for their investigations on the fermentation of sugar and fermentative enzymes
+    date:
+      as_recorded: 1873-02-15
+      calendar: gregorian
+      gregorian: 1873-02-15
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Hans Karl August Simon von Euler-Chelpin"
+        url: https://api.nobelprize.org/2.1/laureate/187
+
+  - id: D-CHE-B172
+    month_day: "02-19"
+    year: 1859
+    kind: birth
+    title: "Svante August Arrhenius is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1903 in Sweden: in recognition of the extraordinary services he has rendered to the advancement of chemistry by his electrol…
+    date:
+      as_recorded: 1859-02-19
+      calendar: gregorian
+      gregorian: 1859-02-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Svante August Arrhenius"
+        url: https://api.nobelprize.org/2.1/laureate/162
+
+  - id: D-CHE-B153
+    month_day: "02-20"
+    year: 1937
+    kind: birth
+    title: "Robert Huber is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1988 in Germany: for the determination of the three-dimensional structure of a photosynthetic reaction centre
+    date:
+      as_recorded: 1937-02-20
+      calendar: gregorian
+      gregorian: 1937-02-20
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Robert Huber"
+        url: https://api.nobelprize.org/2.1/laureate/271
+
+  - id: D-CHE-B061
+    month_day: "02-26"
+    year: 1903
+    kind: birth
+    title: "Giulio Natta is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1963 in Italy: for their discoveries in the field of the chemistry and technology of high polymers
+    date:
+      as_recorded: 1903-02-26
+      calendar: gregorian
+      gregorian: 1903-02-26
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Giulio Natta"
+        url: https://api.nobelprize.org/2.1/laureate/229
+
+  - id: D-CHE-B107
+    month_day: "02-28"
+    year: 1901
+    kind: birth
+    title: "Linus Carl Pauling is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1954 in USA: for his research into the nature of the chemical bond and its application to the elucidation of the structure o…
+    date:
+      as_recorded: 1901-02-28
+      calendar: gregorian
+      gregorian: 1901-02-28
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Linus Carl Pauling"
+        url: https://api.nobelprize.org/2.1/laureate/217
+
+  - id: D-CHE-B127
+    month_day: "03-08"
+    year: 1879
+    kind: birth
+    title: "Otto Hahn is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1944 in Germany: for his discovery of the fission of heavy nuclei
+    date:
+      as_recorded: 1879-03-08
+      calendar: gregorian
+      gregorian: 1879-03-08
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Otto Hahn"
+        url: https://api.nobelprize.org/2.1/laureate/202
+
+  - id: D-CHE-B122
+    month_day: "03-19"
+    year: 1883
+    kind: birth
+    title: "Walter Norman Haworth is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1937 in United Kingdom: for his investigations on carbohydrates and vitamin C
+    date:
+      as_recorded: 1883-03-19
+      calendar: gregorian
+      gregorian: 1883-03-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Walter Norman Haworth"
+        url: https://api.nobelprize.org/2.1/laureate/196
+
+  - id: D-CHE-B047
+    month_day: "03-19"
+    year: 1900
+    kind: birth
+    title: "Frédéric Joliot is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1935 in France: in recognition of their synthesis of new radioactive elements
+    date:
+      as_recorded: 1900-03-19
+      calendar: gregorian
+      gregorian: 1900-03-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Frédéric Joliot"
+        url: https://api.nobelprize.org/2.1/laureate/193
+
+  - id: D-CHE-B073
+    month_day: "03-23"
+    year: 1881
+    kind: birth
+    title: "Hermann Staudinger is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1953 in Germany: for his discoveries in the field of macromolecular chemistry
+    date:
+      as_recorded: 1881-03-23
+      calendar: gregorian
+      gregorian: 1881-03-23
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Hermann Staudinger"
+        url: https://api.nobelprize.org/2.1/laureate/216
+
+  - id: D-CHE-B137
+    month_day: "03-24"
+    year: 1884
+    kind: birth
+    title: "Petrus (Peter) Josephus Wilhelmus Debye is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1936 in the Netherlands: for his contributions to our knowledge of molecular structure through his investigations on dipole…
+    date:
+      as_recorded: 1884-03-24
+      calendar: gregorian
+      gregorian: 1884-03-24
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Petrus (Peter) Josephus Wilhelmus Debye"
+        url: https://api.nobelprize.org/2.1/laureate/195
+
+  - id: D-CHE-B128
+    month_day: "03-27"
+    year: 1847
+    kind: birth
+    title: "Otto Wallach is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1910 in Germany: in recognition of his services to organic chemistry and the chemical industry by his pioneer work in the fi…
+    date:
+      as_recorded: 1847-03-27
+      calendar: gregorian
+      gregorian: 1847-03-27
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Otto Wallach"
+        url: https://api.nobelprize.org/2.1/laureate/169
+
+  - id: D-CHE-B148
+    month_day: "04-01"
+    year: 1865
+    kind: birth
+    title: "Richard Adolf Zsigmondy is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1925 in Austrian Empire: for his demonstration of the heterogenous nature of colloid solutions and for the methods he used,…
+    date:
+      as_recorded: 1865-04-01
+      calendar: gregorian
+      gregorian: 1865-04-01
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Richard Adolf Zsigmondy"
+        url: https://api.nobelprize.org/2.1/laureate/182
+
+  - id: D-CHE-B121
+    month_day: "04-03"
+    year: 1896
+    kind: birth
+    title: "Nikolay Nikolaevich Semenov is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1956 in Russia: for their researches into the mechanism of chemical reactions
+    date:
+      as_recorded: 1896-04-03
+      calendar: gregorian
+      gregorian: 1896-04-03
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Nikolay Nikolaevich Semenov"
+        url: https://api.nobelprize.org/2.1/laureate/220
+
+  - id: D-CHE-B117
+    month_day: "04-08"
+    year: 1911
+    kind: birth
+    title: "Melvin Calvin is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1961 in USA: for his research on the carbon dioxide assimilation in plants
+    date:
+      as_recorded: 1911-04-08
+      calendar: gregorian
+      gregorian: 1911-04-08
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Melvin Calvin"
+        url: https://api.nobelprize.org/2.1/laureate/225
+
+  - id: D-CHE-B062
+    month_day: "04-19"
+    year: 1912
+    kind: birth
+    title: "Glenn Theodore Seaborg is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1951 in USA: for their discoveries in the chemistry of the transuranium elements
+    date:
+      as_recorded: 1912-04-19
+      calendar: gregorian
+      gregorian: 1912-04-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Glenn Theodore Seaborg"
+        url: https://api.nobelprize.org/2.1/laureate/213
+
+  - id: D-CHE-B133
+    month_day: "04-21"
+    year: 1889
+    kind: birth
+    title: "Paul Karrer is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1937 in Russia: for his investigations on carotenoids, flavins and vitamins A and B2
+    date:
+      as_recorded: 1889-04-21
+      calendar: gregorian
+      gregorian: 1889-04-21
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Paul Karrer"
+        url: https://api.nobelprize.org/2.1/laureate/197
+
+  - id: D-CHE-B065
+    month_day: "04-29"
+    year: 1893
+    kind: birth
+    title: "Harold Clayton Urey is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1934 in USA: for his discovery of heavy hydrogen
+    date:
+      as_recorded: 1893-04-29
+      calendar: gregorian
+      gregorian: 1893-04-29
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Harold Clayton Urey"
+        url: https://api.nobelprize.org/2.1/laureate/192
+
+  - id: D-CHE-B178
+    month_day: "05-06"
+    year: 1871
+    kind: birth
+    title: "Victor Grignard is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1912 in France: for the discovery of the so-called Grignard reagent, which in recent years has greatly advanced the progress…
+    date:
+      as_recorded: 1871-05-06
+      calendar: gregorian
+      gregorian: 1871-05-06
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Victor Grignard"
+        url: https://api.nobelprize.org/2.1/laureate/172
+
+  - id: D-CHE-B188
+    month_day: "05-12"
+    year: 1895
+    kind: birth
+    title: "William Francis Giauque is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1949 in Canada: for his contributions in the field of chemical thermodynamics, particularly concerning the behaviour of subs…
+    date:
+      as_recorded: 1895-05-12
+      calendar: gregorian
+      gregorian: 1895-05-12
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — William Francis Giauque"
+        url: https://api.nobelprize.org/2.1/laureate/209
+
+  - id: D-CHE-B123
+    month_day: "05-17"
+    year: 1897
+    kind: birth
+    title: "Odd Hassel is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1969 in Norway: for their contributions to the development of the concept of conformation and its application in chemistry
+    date:
+      as_recorded: 1897-05-17
+      calendar: gregorian
+      gregorian: 1897-05-17
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Odd Hassel"
+        url: https://api.nobelprize.org/2.1/laureate/238
+
+  - id: D-CHE-B179
+    month_day: "05-18"
+    year: 1901
+    kind: birth
+    title: "Vincent du Vigneaud is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1955 in USA: for his work on biochemically important sulphur compounds, especially for the first synthesis of a polypeptide…
+    date:
+      as_recorded: 1901-05-18
+      calendar: gregorian
+      gregorian: 1901-05-18
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Vincent du Vigneaud"
+        url: https://api.nobelprize.org/2.1/laureate/218
+
+  - id: D-CHE-B163
+    month_day: "05-19"
+    year: 1897
+    kind: birth
+    title: "Sir Cyril Norman Hinshelwood is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1956 in United Kingdom: for their researches into the mechanism of chemical reactions
+    date:
+      as_recorded: 1897-05-19
+      calendar: gregorian
+      gregorian: 1897-05-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Sir Cyril Norman Hinshelwood"
+        url: https://api.nobelprize.org/2.1/laureate/219
+
+  - id: D-CHE-B035
+    month_day: "05-20"
+    year: 1860
+    kind: birth
+    title: "Eduard Buchner is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1907 in Bavaria: for his biochemical researches and his discovery of cell-free fermentation
+    date:
+      as_recorded: 1860-05-20
+      calendar: gregorian
+      gregorian: 1860-05-20
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Eduard Buchner"
+        url: https://api.nobelprize.org/2.1/laureate/166
+
+  - id: D-CHE-B067
+    month_day: "06-04"
+    year: 1877
+    kind: birth
+    title: "Heinrich Otto Wieland is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1927 in Germany: for his investigations of the constitution of the bile acids and related substances
+    date:
+      as_recorded: 1877-06-04
+      calendar: gregorian
+      gregorian: 1877-06-04
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Heinrich Otto Wieland"
+        url: https://api.nobelprize.org/2.1/laureate/184
+
+  - id: D-CHE-B155
+    month_day: "06-07"
+    year: 1896
+    kind: birth
+    title: "Robert S. Mulliken is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1966 in USA: for his fundamental work concerning chemical bonds and the electronic structure of molecules by the molecular o…
+    date:
+      as_recorded: 1896-06-07
+      calendar: gregorian
+      gregorian: 1896-06-07
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Robert S. Mulliken"
+        url: https://api.nobelprize.org/2.1/laureate/232
+
+  - id: D-CHE-B054
+    month_day: "06-16"
+    year: 1897
+    kind: birth
+    title: "Georg Wittig is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1979 in Germany: for their development of the use of boron- and phosphorus-containing compounds, respectively, into importan…
+    date:
+      as_recorded: 1897-06-16
+      calendar: gregorian
+      gregorian: 1897-06-16
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Georg Wittig"
+        url: https://api.nobelprize.org/2.1/laureate/253
+
+  - id: D-CHE-B132
+    month_day: "06-19"
+    year: 1910
+    kind: birth
+    title: "Paul J. Flory is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1974 in USA: for his fundamental achievements, both theoretical and experimental, in the physical chemistry of the macromole…
+    date:
+      as_recorded: 1910-06-19
+      calendar: gregorian
+      gregorian: 1910-06-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Paul J. Flory"
+        url: https://api.nobelprize.org/2.1/laureate/246
+
+  - id: D-CHE-B183
+    month_day: "06-25"
+    year: 1864
+    kind: birth
+    title: "Walther Hermann Nernst is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1920 in Prussia: in recognition of his work in thermochemistry
+    date:
+      as_recorded: 1864-06-25
+      calendar: gregorian
+      gregorian: 1864-06-25
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Walther Hermann Nernst"
+        url: https://api.nobelprize.org/2.1/laureate/178
+
+  - id: D-CHE-B189
+    month_day: "06-25"
+    year: 1911
+    kind: birth
+    title: "William H. Stein is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1972 in USA: for their contribution to the understanding of the connection between chemical structure and catalytic activity…
+    date:
+      as_recorded: 1911-06-25
+      calendar: gregorian
+      gregorian: 1911-06-25
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — William H. Stein"
+        url: https://api.nobelprize.org/2.1/laureate/243
+
+  - id: D-CHE-B096
+    month_day: "07-05"
+    year: 1891
+    kind: birth
+    title: "John Howard Northrop is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1946 in USA: for their preparation of enzymes and virus proteins in a pure form
+    date:
+      as_recorded: 1891-07-05
+      calendar: gregorian
+      gregorian: 1891-07-05
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — John Howard Northrop"
+        url: https://api.nobelprize.org/2.1/laureate/205
+
+  - id: D-CHE-B103
+    month_day: "07-10"
+    year: 1902
+    kind: birth
+    title: "Kurt Alder is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1950 in Prussia: for their discovery and development of the diene synthesis
+    date:
+      as_recorded: 1902-07-10
+      calendar: gregorian
+      gregorian: 1902-07-10
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Kurt Alder"
+        url: https://api.nobelprize.org/2.1/laureate/211
+
+  - id: D-CHE-B053
+    month_day: "07-14"
+    year: 1921
+    kind: birth
+    title: "Geoffrey Wilkinson is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1973 in United Kingdom: for their pioneering work, performed independently, on the chemistry of the organometallic, so calle…
+    date:
+      as_recorded: 1921-07-14
+      calendar: gregorian
+      gregorian: 1921-07-14
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Geoffrey Wilkinson"
+        url: https://api.nobelprize.org/2.1/laureate/245
+
+  - id: D-CHE-B180
+    month_day: "07-23"
+    year: 1906
+    kind: birth
+    title: "Vladimir Prelog is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1975 in Austria-Hungary: for his research into the stereochemistry of organic molecules and reactions
+    date:
+      as_recorded: 1906-07-23
+      calendar: gregorian
+      gregorian: 1906-07-23
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Vladimir Prelog"
+        url: https://api.nobelprize.org/2.1/laureate/248
+
+  - id: D-CHE-B063
+    month_day: "07-27"
+    year: 1881
+    kind: birth
+    title: "Hans Fischer is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1930 in Germany: for his researches into the constitution of haemin and chlorophyll and especially for his synthesis of haem…
+    date:
+      as_recorded: 1881-07-27
+      calendar: gregorian
+      gregorian: 1881-07-27
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Hans Fischer"
+        url: https://api.nobelprize.org/2.1/laureate/188
+
+  - id: D-CHE-B130
+    month_day: "07-31"
+    year: 1918
+    kind: birth
+    title: "Paul D. Boyer is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1997 in USA: for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP)
+    date:
+      as_recorded: 1918-07-31
+      calendar: gregorian
+      gregorian: 1918-07-31
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Paul D. Boyer"
+        url: https://api.nobelprize.org/2.1/laureate/287
+
+  - id: D-CHE-B056
+    month_day: "08-01"
+    year: 1885
+    kind: birth
+    title: "George de Hevesy is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1943 in Austria-Hungary: for his work on the use of isotopes as tracers in the study of chemical processes
+    date:
+      as_recorded: 1885-08-01
+      calendar: gregorian
+      gregorian: 1885-08-01
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — George de Hevesy"
+        url: https://api.nobelprize.org/2.1/laureate/201
+
+  - id: D-CHE-B147
+    month_day: "08-13"
+    year: 1872
+    kind: birth
+    title: "Richard Martin Willstätter is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1915 in Germany: for his researches on plant pigments, especially chlorophyll
+    date:
+      as_recorded: 1872-08-13
+      calendar: gregorian
+      gregorian: 1872-08-13
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Richard Martin Willstätter"
+        url: https://api.nobelprize.org/2.1/laureate/176
+
+  - id: D-CHE-B024
+    month_day: "08-27"
+    year: 1874
+    kind: birth
+    title: "Carl Bosch is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1931 in Germany: in recognition of their contributions to the invention and development of chemical high pressure methods
+    date:
+      as_recorded: 1874-08-27
+      calendar: gregorian
+      gregorian: 1874-08-27
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Carl Bosch"
+        url: https://api.nobelprize.org/2.1/laureate/189
+
+  - id: D-CHE-B079
+    month_day: "08-30"
+    year: 1852
+    kind: birth
+    title: "Jacobus Henricus van 't Hoff is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1901 in the Netherlands: in recognition of the extraordinary services he has rendered by the discovery of the laws of chemic…
+    date:
+      as_recorded: 1852-08-30
+      calendar: gregorian
+      gregorian: 1852-08-30
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Jacobus Henricus van 't Hoff"
+        url: https://api.nobelprize.org/2.1/laureate/160
+
+  - id: D-CHE-B042
+    month_day: "08-30"
+    year: 1871
+    kind: birth
+    title: "Ernest Rutherford is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1908 in New Zealand: for his investigations into the disintegration of the elements, and the chemistry of radioactive substa…
+    date:
+      as_recorded: 1871-08-30
+      calendar: gregorian
+      gregorian: 1871-08-30
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Ernest Rutherford"
+        url: https://api.nobelprize.org/2.1/laureate/167
+
+  - id: D-CHE-B173
+    month_day: "08-30"
+    year: 1884
+    kind: birth
+    title: "The (Theodor) Svedberg is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1926 in Sweden: for his work on disperse systems
+    date:
+      as_recorded: 1884-08-30
+      calendar: gregorian
+      gregorian: 1884-08-30
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — The (Theodor) Svedberg"
+        url: https://api.nobelprize.org/2.1/laureate/183
+
+  - id: D-CHE-B046
+    month_day: "09-01"
+    year: 1877
+    kind: birth
+    title: "Francis William Aston is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1922 in United Kingdom: for his discovery, by means of his mass spectrograph, of isotopes, in a large number of non-radioact…
+    date:
+      as_recorded: 1877-09-01
+      calendar: gregorian
+      gregorian: 1877-09-01
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Francis William Aston"
+        url: https://api.nobelprize.org/2.1/laureate/180
+
+  - id: D-CHE-B185
+    month_day: "09-02"
+    year: 1853
+    kind: birth
+    title: "Wilhelm Ostwald is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1909 in Russian Empire: in recognition of his work on catalysis and for his investigations into the fundamental principles g…
+    date:
+      as_recorded: 1853-09-02
+      calendar: gregorian
+      gregorian: 1853-09-02
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Wilhelm Ostwald"
+        url: https://api.nobelprize.org/2.1/laureate/168
+
+  - id: D-CHE-B049
+    month_day: "09-02"
+    year: 1877
+    kind: birth
+    title: "Frederick Soddy is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1921 in United Kingdom: for his contributions to our knowledge of the chemistry of radioactive substances, and his investiga…
+    date:
+      as_recorded: 1877-09-02
+      calendar: gregorian
+      gregorian: 1877-09-02
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Frederick Soddy"
+        url: https://api.nobelprize.org/2.1/laureate/179
+
+  - id: D-CHE-B052
+    month_day: "09-03"
+    year: 1869
+    kind: birth
+    title: "Fritz Pregl is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1923 in Austria-Hungary: for his invention of the method of micro-analysis of organic substances
+    date:
+      as_recorded: 1869-09-03
+      calendar: gregorian
+      gregorian: 1869-09-03
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Fritz Pregl"
+        url: https://api.nobelprize.org/2.1/laureate/181
+
+  - id: D-CHE-B167
+    month_day: "09-13"
+    year: 1886
+    kind: birth
+    title: "Sir Robert Robinson is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1947 in United Kingdom: for his investigations on plant products of biological importance, especially the alkaloids
+    date:
+      as_recorded: 1886-09-13
+      calendar: gregorian
+      gregorian: 1886-09-13
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Sir Robert Robinson"
+        url: https://api.nobelprize.org/2.1/laureate/207
+
+  - id: D-CHE-B069
+    month_day: "09-28"
+    year: 1852
+    kind: birth
+    title: "Henri Moissan is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1906 in France: in recognition of the great services rendered by him in his investigation and isolation of the element fluor…
+    date:
+      as_recorded: 1852-09-28
+      calendar: gregorian
+      gregorian: 1852-09-28
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Henri Moissan"
+        url: https://api.nobelprize.org/2.1/laureate/165
+
+  - id: D-CHE-B168
+    month_day: "10-02"
+    year: 1852
+    kind: birth
+    title: "Sir William Ramsay is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1904 in Scotland: in recognition of his services in the discovery of the inert gaseous elements in air, and his determinatio…
+    date:
+      as_recorded: 1852-10-02
+      calendar: gregorian
+      gregorian: 1852-10-02
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Sir William Ramsay"
+        url: https://api.nobelprize.org/2.1/laureate/163
+
+  - id: D-CHE-B026
+    month_day: "10-03"
+    year: 1904
+    kind: birth
+    title: "Charles J. Pedersen is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1987 in Korea: for their development and use of molecules with structure-specific interactions of high selectivity
+    date:
+      as_recorded: 1904-10-03
+      calendar: gregorian
+      gregorian: 1904-10-03
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Charles J. Pedersen"
+        url: https://api.nobelprize.org/2.1/laureate/269
+
+  - id: D-CHE-B039
+    month_day: "10-09"
+    year: 1852
+    kind: birth
+    title: "Hermann Emil Fischer is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1902 in Prussia: in recognition of the extraordinary services he has rendered by his work on sugar and purine syntheses
+    date:
+      as_recorded: 1852-10-09
+      calendar: gregorian
+      gregorian: 1852-10-09
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Hermann Emil Fischer"
+        url: https://api.nobelprize.org/2.1/laureate/161
+
+  - id: D-CHE-B050
+    month_day: "10-11"
+    year: 1884
+    kind: birth
+    title: "Friedrich Bergius is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1931 in Germany: in recognition of their contributions to the invention and development of chemical high pressure methods
+    date:
+      as_recorded: 1884-10-11
+      calendar: gregorian
+      gregorian: 1884-10-11
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Friedrich Bergius"
+        url: https://api.nobelprize.org/2.1/laureate/190
+
+  - id: D-CHE-B016
+    month_day: "10-12"
+    year: 1865
+    kind: birth
+    title: "Arthur Harden is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1929 in United Kingdom: for their investigations on the fermentation of sugar and fermentative enzymes
+    date:
+      as_recorded: 1865-10-12
+      calendar: gregorian
+      gregorian: 1865-10-12
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Arthur Harden"
+        url: https://api.nobelprize.org/2.1/laureate/186
+
+  - id: D-CHE-B005
+    month_day: "10-31"
+    year: 1835
+    kind: birth
+    title: "Johann Friedrich Wilhelm Adolf von Baeyer is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1905 in Prussia: in recognition of his services in the advancement of organic chemistry and the chemical industry, through h…
+    date:
+      as_recorded: 1835-10-31
+      calendar: gregorian
+      gregorian: 1835-10-31
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Johann Friedrich Wilhelm Adolf von Baeyer"
+        url: https://api.nobelprize.org/2.1/laureate/164
+
+  - id: D-CHE-B135
+    month_day: "11-05"
+    year: 1854
+    kind: birth
+    title: "Paul Sabatier is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1912 in France: for his method of hydrogenating organic compounds in the presence of finely disintegrated metals whereby the…
+    date:
+      as_recorded: 1854-11-05
+      calendar: gregorian
+      gregorian: 1854-11-05
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Paul Sabatier"
+        url: https://api.nobelprize.org/2.1/laureate/173
+
+  - id: D-CHE-B112
+    month_day: "11-07"
+    year: 1867
+    kind: birth
+    title: "Marie Curie, née Skłodowska is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1903 in Russian Empire: in recognition of the extraordinary services they have rendered by their joint researches on the rad…
+    date:
+      as_recorded: 1867-11-07
+      calendar: gregorian
+      gregorian: 1867-11-07
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Marie Curie, née Skłodowska"
+        url: https://api.nobelprize.org/2.1/laureate/6
+
+  - id: D-CHE-B159
+    month_day: "11-09"
+    year: 1897
+    kind: birth
+    title: "Ronald George Wreyford Norrish is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1967 in United Kingdom: for their studies of extremely fast chemical reactions, effected by disturbing the equilibrium by me…
+    date:
+      as_recorded: 1897-11-09
+      calendar: gregorian
+      gregorian: 1897-11-09
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Ronald George Wreyford Norrish"
+        url: https://api.nobelprize.org/2.1/laureate/234
+
+  - id: D-CHE-B081
+    month_day: "11-19"
+    year: 1887
+    kind: birth
+    title: "James Batcheller Sumner is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1946 in USA: for his discovery that enzymes can be crystallized
+    date:
+      as_recorded: 1887-11-19
+      calendar: gregorian
+      gregorian: 1887-11-19
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — James Batcheller Sumner"
+        url: https://api.nobelprize.org/2.1/laureate/204
+
+  - id: D-CHE-B099
+    month_day: "11-26"
+    year: 1898
+    kind: birth
+    title: "Karl Ziegler is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1963 in Germany: for their discoveries in the field of the chemistry and technology of high polymers
+    date:
+      as_recorded: 1898-11-26
+      calendar: gregorian
+      gregorian: 1898-11-26
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Karl Ziegler"
+        url: https://api.nobelprize.org/2.1/laureate/228
+
+  - id: D-CHE-B105
+    month_day: "11-27"
+    year: 1903
+    kind: birth
+    title: "Lars Onsager is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1968 in Norway: for the discovery of the reciprocal relations bearing his name, which are fundamental for the thermodynamics…
+    date:
+      as_recorded: 1903-11-27
+      calendar: gregorian
+      gregorian: 1903-11-27
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Lars Onsager"
+        url: https://api.nobelprize.org/2.1/laureate/236
+
+  - id: D-CHE-B142
+    month_day: "12-03"
+    year: 1900
+    kind: birth
+    title: "Richard Kuhn is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1938 in Austria-Hungary: for his work on carotenoids and vitamins
+    date:
+      as_recorded: 1900-12-03
+      calendar: gregorian
+      gregorian: 1900-12-03
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Richard Kuhn"
+        url: https://api.nobelprize.org/2.1/laureate/198
+
+  - id: D-CHE-B051
+    month_day: "12-09"
+    year: 1868
+    kind: birth
+    title: "Fritz Haber is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1918 in Prussia: for the synthesis of ammonia from its elements
+    date:
+      as_recorded: 1868-12-09
+      calendar: gregorian
+      gregorian: 1868-12-09
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Fritz Haber"
+        url: https://api.nobelprize.org/2.1/laureate/177
+
+  - id: D-CHE-B012
+    month_day: "12-12"
+    year: 1866
+    kind: birth
+    title: "Alfred Werner is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1913 in France: in recognition of his work on the linkage of atoms in molecules by which he has thrown new light on earlier…
+    date:
+      as_recorded: 1866-12-12
+      calendar: gregorian
+      gregorian: 1866-12-12
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Alfred Werner"
+        url: https://api.nobelprize.org/2.1/laureate/174
+
+  - id: D-CHE-B082
+    month_day: "12-20"
+    year: 1890
+    kind: birth
+    title: "Jaroslav Heyrovsky is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1959 in Austria-Hungary: for his discovery and development of the polarographic methods of analysis
+    date:
+      as_recorded: 1890-12-20
+      calendar: gregorian
+      gregorian: 1890-12-20
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Jaroslav Heyrovsky"
+        url: https://api.nobelprize.org/2.1/laureate/223
+
+  - id: D-CHE-B006
+    month_day: "12-25"
+    year: 1876
+    kind: birth
+    title: "Adolf Otto Reinhold Windaus is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1928 in Germany: for the services rendered through his research into the constitution of the sterols and their connection wi…
+    date:
+      as_recorded: 1876-12-25
+      calendar: gregorian
+      gregorian: 1876-12-25
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Adolf Otto Reinhold Windaus"
+        url: https://api.nobelprize.org/2.1/laureate/185
+
+  - id: D-CHE-B060
+    month_day: "12-25"
+    year: 1904
+    kind: birth
+    title: "Gerhard Herzberg is born"
+    blurb: >-
+      Nobel Prize in Chemistry 1971 in Germany: for his contributions to the knowledge of electronic structure and geometry of molecules, particularly free…
+    date:
+      as_recorded: 1904-12-25
+      calendar: gregorian
+      gregorian: 1904-12-25
+      precision: day
+    sources:
+      - type: archive
+        citation: "Nobel Prize — Gerhard Herzberg"
+        url: https://api.nobelprize.org/2.1/laureate/240

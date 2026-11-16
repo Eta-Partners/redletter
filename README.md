@@ -43,7 +43,13 @@ newspaper. So the thing this repository actually builds is the **gate**:
 
 ## Status
 
-The vertical slice runs, on one topic, end to end. What is true today:
+The vertical slice runs, on two topics, end to end. What is true today:
+
+- **`data/chemistry.yaml`** — a full chemistry year: **72 days, six in every month**,
+  built from the Nobel Prize's own API through `scripts/from_nobel.py` and verified
+  against the Nobel Foundation's records. Landmark discoveries are still to come;
+  they need sources the allowlist recognises.
+- **`data/spaceflight.yaml`** — ten hand-curated crewed-spaceflight days.
 
 - **`scripts/verify_days.py`** fetches every source for the ten seed days and
   derives each day's status. The seed topic currently reads **10 active, 0
@@ -53,7 +59,7 @@ The vertical slice runs, on one topic, end to end. What is true today:
 - **`scripts/build_ics.py`** writes ten all-day, yearly-repeating events and parses
   the file back before it lands: DATE values, a YEARLY rule and a UID on every
   event, CRLF, no line over 75 octets.
-- **`tests/`** — 55 tests: unit tests that pin the status rules with the network
+- **`tests/`** — 79 tests: unit tests that pin the status rules with the network
   faked, and integration tests that run all three scripts against a local web
   server. The one network test is opt-in. CI runs the offline suite on 3.9 and 3.12.
 - **Not built yet:** the skills that research and verify a *new* topic. The ten
@@ -65,7 +71,7 @@ The vertical slice runs, on one topic, end to end. What is true today:
 
 ```sh
 pip install -r requirements.txt -r requirements-dev.txt
-pytest -q                     # 55 tests, offline, about two seconds
+pytest -q                     # 79 tests, offline, about four seconds
 pytest --run-network -k network   # the shipped dataset against the real sources
 ```
 
@@ -91,6 +97,10 @@ python scripts/verify_days.py data/spaceflight.yaml --write   # fetch, judge, wr
 python scripts/render_grid.py out/days.json --year 2027        # out/…-2027.png and .svg
 python scripts/render_grid.py out/days.json --month 7          # one month, bigger
 python scripts/build_ics.py out/days.json                      # out/…-2027.ics, validated
+python scripts/coverage.py out/days.json --target 6            # how dense the year is
+
+# propose records from the Nobel Prize API, then put them through the same gate
+python scripts/from_nobel.py --category che --out data/_candidates.yaml
 
 # rebuild the icon set from the artwork as it arrived
 python tools/icon.py spec/icon-source/icon-source.png
@@ -133,10 +143,15 @@ verifier writes them into `out/`. A fact with two homes has one home that is wro
 
 | Status | Meaning | Reaches the sheet |
 | --- | --- | --- |
-| `active` | two or more agreeing sources, from two or more publishers | yes |
+| `active` | two or more agreeing sources from two or more publishers, **or** one agreeing source from a publisher on the allowlist | yes |
 | `provisional` | they agree, but it is one publisher, or only one agreeing source | no |
 | `contested` | sources were read and disagreed about the day | no |
 | `quarantined` | nothing could be read | no |
+
+`data/sources-allowlist.yaml` is the visible exception to the two-publisher rule: a
+body of record — the Nobel Foundation, the ACS, the RSC, IUPAC — is enough on its
+own, because a second website repeating it adds nothing. It is a short list, it is
+in the repository, and every day it vouches for says so in its `basis` field.
 
 `contested` days are off the sheet by the owner's decision: a red mark means the
 day held up, and a mark that needs an explanation in the margin is not that.
@@ -154,9 +169,11 @@ imported it.
 ## Repository layout
 
 ```
-data/                the days, one YAML per topic
+data/                the days, one YAML per topic, and the source allowlist
 scripts/
   verify_days.py     the gate: fetch, judge, derive status, write out/days.json
+  from_nobel.py      proposes day records from the Nobel Prize API
+  coverage.py        active days per month against a target
   render_grid.py     the sheet: a year of month grids, PNG and SVG from one geometry
   build_ics.py       the feed: all-day yearly events, parsed back before it is written
 tools/icon.py        turns the supplied artwork into the icon size set

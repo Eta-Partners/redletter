@@ -165,8 +165,71 @@ def month_block(x, y, w, h, year, month, marks, title_size, day_size, header_siz
     return prims
 
 
+def key_lines(marks):
+    """One line per printed entry, in date order, with the date on the first line.
+
+    A date with two people on it is two lines: the second indents under the first.
+    Counting *lines* rather than dates is what lets a crowded calendar lay its key
+    out without running off the page.
+    """
+    lines = []
+    for (month, day), vals in sorted(((m, d), v) for m in marks for d, v in marks[m].items()):
+        label = f"{calendar.month_abbr[month].upper()} {day:02d}"
+        for i, (hist_year, title) in enumerate(vals):
+            lines.append((label if i == 0 else "", f"{hist_year}  {title}"))
+    return lines
+
+
+def key_columns(n_lines):
+    """How many columns the key needs to fit a sheet, and how tall each line is."""
+    if n_lines <= 16:
+        return 2, 56
+    if n_lines <= 40:
+        return 3, 38
+    return 4, 28
+
+
+KEY_BAND = 640          # the height the key gets, whatever it holds
+KEY_INDENT = 92         # where an entry's text starts, right of its date label
+
+
+def key_columns(lines, W, M):
+    """Pick the column count, type size and row height that fit the key band.
+
+    Measured, not guessed: a key that overlaps itself is worse than no key, and a
+    calendar with eighty days needs a different key from one with ten.
+    """
+    best = None
+    for size in (17, 16, 15, 14, 13, 12):
+        for cols in (2, 3, 4, 5):
+            col_w = (W - 2 * M) / cols
+            rows = max(1, -(-len(lines) // cols))
+            line_h = (KEY_BAND - 46) / rows
+            widest = max(
+                text_width(label, size, "bold") + KEY_INDENT + text_width(entry, size)
+                for label, entry in lines
+            ) if lines else 0
+            if line_h >= size * 1.3 and widest <= col_w - 16:
+                best = (cols, size, min(40, line_h), rows)
+                break
+        if best:
+            break
+    if best:
+        return best
+
+    # Nothing fits: four columns, the smallest type that reads, and the text is
+    # trimmed where it lands rather than allowed to run over its neighbour.
+    cols = 4
+    rows = max(1, -(-len(lines) // cols))
+    return cols, 12, max(14, (KEY_BAND - 46) / rows), rows
+
+
 def build_year(topic, marks, year, rubric, verified=""):
     W, H, M = 1800, 2400, 120
+    lines = key_lines(marks)
+    cols, body, line_h, rows = key_columns(lines, W, M)
+    col_w = (W - 2 * M) / cols
+    room = col_w - KEY_INDENT - 12
     prims = [rect(0, 0, W, H, PAPER)]
 
     prims.append(text(M, M + 34, "REDLETTER", 22, RUBRIC, weight="bold", spacing=4))
@@ -177,36 +240,34 @@ def build_year(topic, marks, year, rubric, verified=""):
     prims.append(text(W - M, M + 140, f"verified {verified}", 17, FAINT, anchor="end"))
     prims.append(line(M, M + 200, W - M, M + 200, INK, 2))
 
-    gap, rows, cols = 44, 4, 3
+    gap, rows_of_months, cols_of_months = 44, 4, 3
     top = M + 240
-    bw = (W - 2 * M - gap * (cols - 1)) / cols
-    bh = (H - M - 560 - top - gap * (rows - 1)) / rows
+    bw = (W - 2 * M - gap * (cols_of_months - 1)) / cols_of_months
+    bottom = H - M - KEY_BAND
+    bh = (bottom - top - gap * (rows_of_months - 1)) / rows_of_months
     for i in range(12):
-        r, c = divmod(i, cols)
+        r, c = divmod(i, cols_of_months)
         bx, by = M + c * (bw + gap), top + r * (bh + gap)
         prims += month_block(bx, by, bw, bh, year, i + 1, marks.get(i + 1, {}),
                              26, 19, 15, rubric)
 
     # The key: every marked day, spelled out. A red square with no name is a decoration.
-    ly = H - 540
-    prims.append(line(M, ly - 40, W - M, ly - 40, INK, 1))
+    ly = bottom + 40
+    prims.append(line(M, ly - 34, W - M, ly - 34, INK, 1))
     prims.append(text(M, ly, "THE DAYS", 18, RUBRIC, weight="bold", spacing=3))
-    entries = sorted((((m, day), vals) for m in marks for day, vals in marks[m].items()),
-                     key=lambda e: e[0])
-    col_w = (W - 2 * M) / 2
-    for i, (md, vals) in enumerate(entries):
-        c, r = divmod(i, (len(entries) + 1) // 2)
+    for i, (label, entry) in enumerate(lines):
+        c, r = divmod(i, rows)
         ex = M + c * col_w
-        ey = ly + 46 + r * 62
-        month, day = md
-        label = f"{calendar.month_abbr[month].upper()} {day:02d}"
-        prims.append(text(ex, ey, label, 17, RUBRIC, weight="bold"))
-        for j, (hist_year, title) in enumerate(vals):
-            prims.append(text(ex + 92, ey + j * 24, f"{hist_year}  {title}", 17, INK))
+        ey = ly + 40 + r * line_h
+        while room > 0 and text_width(entry, body) > room:
+            entry = entry[:-2].rstrip() + "…"
+        if label:
+            prims.append(text(ex, ey, label, body, RUBRIC, weight="bold"))
+        prims.append(text(ex + KEY_INDENT, ey, entry, body, INK))
 
-    prims.append(text(M, H - 74,
-                      "Marked days are those whose sources were read, agreed on the day, "
-                      "and came from more than one publisher.",
+    prims.append(text(M, H - 60,
+                      "Marked days are those whose sources were read and supported the day: "
+                      "either two publishers agreed, or a body of record says so.",
                       14, FAINT))
     return prims, (W, H)
 

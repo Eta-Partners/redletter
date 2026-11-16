@@ -1,0 +1,2771 @@
+{
+  "topic": {
+    "id": "chemistry",
+    "title": "Chemistry",
+    "scope": "The days chemistry marks: the people who won its highest prize, and the discoveries that changed what the field could do.",
+    "print_year": 2027,
+    "kinds": [
+      "birth",
+      "discovery",
+      "milestone",
+      "first",
+      "loss"
+    ]
+  },
+  "generated_on": "2026-11-15",
+  "allowlist": [
+    "AAAS / Science",
+    "American Chemical Society",
+    "Angewandte Chemie",
+    "International Union of Pure and Applied Chemistry",
+    "National Institute of Standards and Technology",
+    "Nature Portfolio",
+    "Royal Society of Chemistry",
+    "The Nobel Prize (Nobel Foundation)",
+    "The Royal Society"
+  ],
+  "days": [
+    {
+      "id": "D-CHE-B017",
+      "month_day": "01-15",
+      "title": "Artturi Ilmari Virtanen is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1945 in Russian Empire: for his research and inventions in agricultural and nutrition chemistry, especially for his fodder p\u2026",
+      "year": 1895,
+      "date": {
+        "as_recorded": "1895-01-15",
+        "calendar": "gregorian",
+        "gregorian": "1895-01-15",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Artturi Ilmari Virtanen",
+          "url": "https://api.nobelprize.org/2.1/laureate/203",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4603
+        }
+      ],
+      "approved_hash": "40876a8d681aeb2097149911807e7b8e829f5be412a906e4ce536146cc0ed673"
+    },
+    {
+      "id": "D-CHE-B126",
+      "month_day": "01-23",
+      "title": "Otto Paul Hermann Diels is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1950 in Germany: for their discovery and development of the diene synthesis",
+      "year": 1876,
+      "date": {
+        "as_recorded": "1876-01-23",
+        "calendar": "gregorian",
+        "gregorian": "1876-01-23",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Otto Paul Hermann Diels",
+          "url": "https://api.nobelprize.org/2.1/laureate/210",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4157
+        }
+      ],
+      "approved_hash": "75e15a7b0c07731ca3b8bd91749fbef9c21430d10e5b911b1c4d85ba7048dca4"
+    },
+    {
+      "id": "D-CHE-B093",
+      "month_day": "01-23",
+      "title": "John C. Polanyi is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1986 in Germany: for their contributions concerning the dynamics of chemical elementary processes",
+      "year": 1929,
+      "date": {
+        "as_recorded": "1929-01-23",
+        "calendar": "gregorian",
+        "gregorian": "1929-01-23",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 John C. Polanyi",
+          "url": "https://api.nobelprize.org/2.1/laureate/266",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 3568
+        }
+      ],
+      "approved_hash": "e379f10ffe963469300df4709a0d0f3f7e8374ce4928c6296970437a6b25397e"
+    },
+    {
+      "id": "D-CHE-B075",
+      "month_day": "01-25",
+      "title": "Ilya Romanovich Prigogine is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1977 in Russia: for his contributions to non-equilibrium thermodynamics, particularly the theory of dissipative structures",
+      "year": 1917,
+      "date": {
+        "as_recorded": "1917-01-25",
+        "calendar": "gregorian",
+        "gregorian": "1917-01-25",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Ilya Romanovich Prigogine",
+          "url": "https://api.nobelprize.org/2.1/laureate/250",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5094
+        }
+      ],
+      "approved_hash": "9cb416e48a9944305ca74b7e753ee0843b4a92fc22d317666597cd6e74807028"
+    },
+    {
+      "id": "D-CHE-B174",
+      "month_day": "01-31",
+      "title": "Theodore William Richards is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1914 in USA: in recognition of his accurate determinations of the atomic weight of a large number of chemical elements",
+      "year": 1868,
+      "date": {
+        "as_recorded": "1868-01-31",
+        "calendar": "gregorian",
+        "gregorian": "1868-01-31",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Theodore William Richards",
+          "url": "https://api.nobelprize.org/2.1/laureate/175",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4568
+        }
+      ],
+      "approved_hash": "79b671d2ab4bd5be0298b05bf9fbfd95f42a7dc02779470e405f7f20eda23120"
+    },
+    {
+      "id": "D-CHE-B077",
+      "month_day": "01-31",
+      "title": "Irving Langmuir is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1932 in USA: for his discoveries and investigations in surface chemistry",
+      "year": 1881,
+      "date": {
+        "as_recorded": "1881-01-31",
+        "calendar": "gregorian",
+        "gregorian": "1881-01-31",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Irving Langmuir",
+          "url": "https://api.nobelprize.org/2.1/laureate/191",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4388
+        }
+      ],
+      "approved_hash": "f8c8715d0d9de9141b05d124b07e518967a5c3e1a176434960064184f979fffa"
+    },
+    {
+      "id": "D-CHE-B071",
+      "month_day": "02-14",
+      "title": "Herbert A. Hauptman is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1985 in USA: for their outstanding achievements in the development of direct methods for the determination of crystal struct\u2026",
+      "year": 1917,
+      "date": {
+        "as_recorded": "1917-02-14",
+        "calendar": "gregorian",
+        "gregorian": "1917-02-14",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Herbert A. Hauptman",
+          "url": "https://api.nobelprize.org/2.1/laureate/262",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4512
+        }
+      ],
+      "approved_hash": "0b8e3acf32b05f5df347df4c33cdc034e19b6dccd057e65879650066704f58d6"
+    },
+    {
+      "id": "D-CHE-B064",
+      "month_day": "02-15",
+      "title": "Hans Karl August Simon von Euler-Chelpin is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1929 in Germany: for their investigations on the fermentation of sugar and fermentative enzymes",
+      "year": 1873,
+      "date": {
+        "as_recorded": "1873-02-15",
+        "calendar": "gregorian",
+        "gregorian": "1873-02-15",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Hans Karl August Simon von Euler-Chelpin",
+          "url": "https://api.nobelprize.org/2.1/laureate/187",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4447
+        }
+      ],
+      "approved_hash": "aaa512415ca43ef2e23f0c6efa504b89b344baefe94b62266d28c48021b08be0"
+    },
+    {
+      "id": "D-CHE-B172",
+      "month_day": "02-19",
+      "title": "Svante August Arrhenius is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1903 in Sweden: in recognition of the extraordinary services he has rendered to the advancement of chemistry by his electrol\u2026",
+      "year": 1859,
+      "date": {
+        "as_recorded": "1859-02-19",
+        "calendar": "gregorian",
+        "gregorian": "1859-02-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Svante August Arrhenius",
+          "url": "https://api.nobelprize.org/2.1/laureate/162",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4269
+        }
+      ],
+      "approved_hash": "a3271541136dabca739442ada91586c20d069538164af5e02d07b5368e607bd3"
+    },
+    {
+      "id": "D-CHE-B153",
+      "month_day": "02-20",
+      "title": "Robert Huber is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1988 in Germany: for the determination of the three-dimensional structure of a photosynthetic reaction centre",
+      "year": 1937,
+      "date": {
+        "as_recorded": "1937-02-20",
+        "calendar": "gregorian",
+        "gregorian": "1937-02-20",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Robert Huber",
+          "url": "https://api.nobelprize.org/2.1/laureate/271",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 3677
+        }
+      ],
+      "approved_hash": "3deacec7b3253f6bc0a2334e50df4e8fa91180faedd7bfd147cd629eed789c67"
+    },
+    {
+      "id": "D-CHE-B061",
+      "month_day": "02-26",
+      "title": "Giulio Natta is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1963 in Italy: for their discoveries in the field of the chemistry and technology of high polymers",
+      "year": 1903,
+      "date": {
+        "as_recorded": "1903-02-26",
+        "calendar": "gregorian",
+        "gregorian": "1903-02-26",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Giulio Natta",
+          "url": "https://api.nobelprize.org/2.1/laureate/229",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4194
+        }
+      ],
+      "approved_hash": "03d5b6a7aabf397f4f8712068679c5aeefd5585c27eb6c1cbb4fda315916f94b"
+    },
+    {
+      "id": "D-CHE-B107",
+      "month_day": "02-28",
+      "title": "Linus Carl Pauling is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1954 in USA: for his research into the nature of the chemical bond and its application to the elucidation of the structure o\u2026",
+      "year": 1901,
+      "date": {
+        "as_recorded": "1901-02-28",
+        "calendar": "gregorian",
+        "gregorian": "1901-02-28",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Linus Carl Pauling",
+          "url": "https://api.nobelprize.org/2.1/laureate/217",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 6330
+        }
+      ],
+      "approved_hash": "3c307ef83b46a96cbe19d49899cab04fc418a8bea215e8ba5c1ebd48528df064"
+    },
+    {
+      "id": "D-CHE-B127",
+      "month_day": "03-08",
+      "title": "Otto Hahn is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1944 in Germany: for his discovery of the fission of heavy nuclei",
+      "year": 1879,
+      "date": {
+        "as_recorded": "1879-03-08",
+        "calendar": "gregorian",
+        "gregorian": "1879-03-08",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Otto Hahn",
+          "url": "https://api.nobelprize.org/2.1/laureate/202",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4533
+        }
+      ],
+      "approved_hash": "44e1e8c3890b4e15f3eed0b79982150c5b4ff52fe07f6d877569487d49ec6b24"
+    },
+    {
+      "id": "D-CHE-B122",
+      "month_day": "03-19",
+      "title": "Walter Norman Haworth is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1937 in United Kingdom: for his investigations on carbohydrates and vitamin C",
+      "year": 1883,
+      "date": {
+        "as_recorded": "1883-03-19",
+        "calendar": "gregorian",
+        "gregorian": "1883-03-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Walter Norman Haworth",
+          "url": "https://api.nobelprize.org/2.1/laureate/196",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4480
+        }
+      ],
+      "approved_hash": "a6acc74e312cc8619067899cac90288993e8c56b9b3b9b1f111a5f32111460be"
+    },
+    {
+      "id": "D-CHE-B047",
+      "month_day": "03-19",
+      "title": "Fr\u00e9d\u00e9ric Joliot is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1935 in France: in recognition of their synthesis of new radioactive elements",
+      "year": 1900,
+      "date": {
+        "as_recorded": "1900-03-19",
+        "calendar": "gregorian",
+        "gregorian": "1900-03-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Fr\u00e9d\u00e9ric Joliot",
+          "url": "https://api.nobelprize.org/2.1/laureate/193",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4244
+        }
+      ],
+      "approved_hash": "79131ce071f1453dc86a83c8d23d6f553087685448fbfaa64f6194a8f31fcda2"
+    },
+    {
+      "id": "D-CHE-B073",
+      "month_day": "03-23",
+      "title": "Hermann Staudinger is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1953 in Germany: for his discoveries in the field of macromolecular chemistry",
+      "year": 1881,
+      "date": {
+        "as_recorded": "1881-03-23",
+        "calendar": "gregorian",
+        "gregorian": "1881-03-23",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Hermann Staudinger",
+          "url": "https://api.nobelprize.org/2.1/laureate/216",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5554
+        }
+      ],
+      "approved_hash": "9411b3daa3694f93a3933e8ce4dea2e90a20c121c1bc18ccb85af6f032643755"
+    },
+    {
+      "id": "D-CHE-B137",
+      "month_day": "03-24",
+      "title": "Petrus (Peter) Josephus Wilhelmus Debye is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1936 in the Netherlands: for his contributions to our knowledge of molecular structure through his investigations on dipole\u2026",
+      "year": 1884,
+      "date": {
+        "as_recorded": "1884-03-24",
+        "calendar": "gregorian",
+        "gregorian": "1884-03-24",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Petrus (Peter) Josephus Wilhelmus Debye",
+          "url": "https://api.nobelprize.org/2.1/laureate/195",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5403
+        }
+      ],
+      "approved_hash": "6d1ec44fd21c9ba0d12bbddbddaf17fa7b6d05c967afda83f651ddb68f98f5e0"
+    },
+    {
+      "id": "D-CHE-B128",
+      "month_day": "03-27",
+      "title": "Otto Wallach is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1910 in Germany: in recognition of his services to organic chemistry and the chemical industry by his pioneer work in the fi\u2026",
+      "year": 1847,
+      "date": {
+        "as_recorded": "1847-03-27",
+        "calendar": "gregorian",
+        "gregorian": "1847-03-27",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Otto Wallach",
+          "url": "https://api.nobelprize.org/2.1/laureate/169",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4591
+        }
+      ],
+      "approved_hash": "c299e04e6b042c4f8a8d202603bf76123e123efdf36a585d660740f984d91720"
+    },
+    {
+      "id": "D-CHE-B148",
+      "month_day": "04-01",
+      "title": "Richard Adolf Zsigmondy is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1925 in Austrian Empire: for his demonstration of the heterogenous nature of colloid solutions and for the methods he used,\u2026",
+      "year": 1865,
+      "date": {
+        "as_recorded": "1865-04-01",
+        "calendar": "gregorian",
+        "gregorian": "1865-04-01",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Richard Adolf Zsigmondy",
+          "url": "https://api.nobelprize.org/2.1/laureate/182",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4611
+        }
+      ],
+      "approved_hash": "eca4c9314b8aa802bb744634dcec3f9a38019212ffdb256dde6f21a54753ec71"
+    },
+    {
+      "id": "D-CHE-B121",
+      "month_day": "04-03",
+      "title": "Nikolay Nikolaevich Semenov is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1956 in Russia: for their researches into the mechanism of chemical reactions",
+      "year": 1896,
+      "date": {
+        "as_recorded": "1896-04-03",
+        "calendar": "gregorian",
+        "gregorian": "1896-04-03",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Nikolay Nikolaevich Semenov",
+          "url": "https://api.nobelprize.org/2.1/laureate/220",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5295
+        }
+      ],
+      "approved_hash": "30867b771a0cde8a27283db4f63e46009c2d4179ece84e4e0d9413d1c1f9a8e4"
+    },
+    {
+      "id": "D-CHE-B117",
+      "month_day": "04-08",
+      "title": "Melvin Calvin is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1961 in USA: for his research on the carbon dioxide assimilation in plants",
+      "year": 1911,
+      "date": {
+        "as_recorded": "1911-04-08",
+        "calendar": "gregorian",
+        "gregorian": "1911-04-08",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Melvin Calvin",
+          "url": "https://api.nobelprize.org/2.1/laureate/225",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4348
+        }
+      ],
+      "approved_hash": "c09cfa8dfde66589b9ffe81ebcba71f6fd26046a3f088f0badbb650135dce73a"
+    },
+    {
+      "id": "D-CHE-B062",
+      "month_day": "04-19",
+      "title": "Glenn Theodore Seaborg is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1951 in USA: for their discoveries in the chemistry of the transuranium elements",
+      "year": 1912,
+      "date": {
+        "as_recorded": "1912-04-19",
+        "calendar": "gregorian",
+        "gregorian": "1912-04-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Glenn Theodore Seaborg",
+          "url": "https://api.nobelprize.org/2.1/laureate/213",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4423
+        }
+      ],
+      "approved_hash": "027c6c82e7bea89fff37371416d5b9fd4fba555a46a5c23c6e5d942cb36e7c31"
+    },
+    {
+      "id": "D-CHE-B133",
+      "month_day": "04-21",
+      "title": "Paul Karrer is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1937 in Russia: for his investigations on carotenoids, flavins and vitamins A and B2",
+      "year": 1889,
+      "date": {
+        "as_recorded": "1889-04-21",
+        "calendar": "gregorian",
+        "gregorian": "1889-04-21",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Paul Karrer",
+          "url": "https://api.nobelprize.org/2.1/laureate/197",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4213
+        }
+      ],
+      "approved_hash": "3e3677f4c364d971130282281b7ddc3feb25c94d0a97e5dcb168ccbf83439a64"
+    },
+    {
+      "id": "D-CHE-B065",
+      "month_day": "04-29",
+      "title": "Harold Clayton Urey is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1934 in USA: for his discovery of heavy hydrogen",
+      "year": 1893,
+      "date": {
+        "as_recorded": "1893-04-29",
+        "calendar": "gregorian",
+        "gregorian": "1893-04-29",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Harold Clayton Urey",
+          "url": "https://api.nobelprize.org/2.1/laureate/192",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4277
+        }
+      ],
+      "approved_hash": "abe65c749880dbf7a716be8015918b803f3aeb0e37a42d673e9c51aa725172da"
+    },
+    {
+      "id": "D-CHE-B178",
+      "month_day": "05-06",
+      "title": "Victor Grignard is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1912 in France: for the discovery of the so-called Grignard reagent, which in recent years has greatly advanced the progress\u2026",
+      "year": 1871,
+      "date": {
+        "as_recorded": "1871-05-06",
+        "calendar": "gregorian",
+        "gregorian": "1871-05-06",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Victor Grignard",
+          "url": "https://api.nobelprize.org/2.1/laureate/172",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4390
+        }
+      ],
+      "approved_hash": "9901003b3deea24f7ce84d696724ebfdcae14843844276fa47cb70a1996716fe"
+    },
+    {
+      "id": "D-CHE-B188",
+      "month_day": "05-12",
+      "title": "William Francis Giauque is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1949 in Canada: for his contributions in the field of chemical thermodynamics, particularly concerning the behaviour of subs\u2026",
+      "year": 1895,
+      "date": {
+        "as_recorded": "1895-05-12",
+        "calendar": "gregorian",
+        "gregorian": "1895-05-12",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 William Francis Giauque",
+          "url": "https://api.nobelprize.org/2.1/laureate/209",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4602
+        }
+      ],
+      "approved_hash": "a055a24c10ac3d3c06880fc6daa7a703a03c52ac5d35529cdb70c0a699176d2d"
+    },
+    {
+      "id": "D-CHE-B123",
+      "month_day": "05-17",
+      "title": "Odd Hassel is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1969 in Norway: for their contributions to the development of the concept of conformation and its application in chemistry",
+      "year": 1897,
+      "date": {
+        "as_recorded": "1897-05-17",
+        "calendar": "gregorian",
+        "gregorian": "1897-05-17",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Odd Hassel",
+          "url": "https://api.nobelprize.org/2.1/laureate/238",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4176
+        }
+      ],
+      "approved_hash": "455ab00ea3933b235bc5a2b23d6eca44c044794239ba377c060403e6b5064226"
+    },
+    {
+      "id": "D-CHE-B179",
+      "month_day": "05-18",
+      "title": "Vincent du Vigneaud is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1955 in USA: for his work on biochemically important sulphur compounds, especially for the first synthesis of a polypeptide\u2026",
+      "year": 1901,
+      "date": {
+        "as_recorded": "1901-05-18",
+        "calendar": "gregorian",
+        "gregorian": "1901-05-18",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Vincent du Vigneaud",
+          "url": "https://api.nobelprize.org/2.1/laureate/218",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4507
+        }
+      ],
+      "approved_hash": "2c5be3a17bea54fc8eff8bcbfcb9cf6eb2eb27db53696c66f91b3427a25f7762"
+    },
+    {
+      "id": "D-CHE-B163",
+      "month_day": "05-19",
+      "title": "Sir Cyril Norman Hinshelwood is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1956 in United Kingdom: for their researches into the mechanism of chemical reactions",
+      "year": 1897,
+      "date": {
+        "as_recorded": "1897-05-19",
+        "calendar": "gregorian",
+        "gregorian": "1897-05-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Sir Cyril Norman Hinshelwood",
+          "url": "https://api.nobelprize.org/2.1/laureate/219",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4485
+        }
+      ],
+      "approved_hash": "182980d9162a728d068735eb2662e0f96173a9a1624e287be63a1032acd2c8c1"
+    },
+    {
+      "id": "D-CHE-B035",
+      "month_day": "05-20",
+      "title": "Eduard Buchner is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1907 in Bavaria: for his biochemical researches and his discovery of cell-free fermentation",
+      "year": 1860,
+      "date": {
+        "as_recorded": "1860-05-20",
+        "calendar": "gregorian",
+        "gregorian": "1860-05-20",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Eduard Buchner",
+          "url": "https://api.nobelprize.org/2.1/laureate/166",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4434
+        }
+      ],
+      "approved_hash": "66a6d7f4eaf48bebd045e93733877d21f9cca3937413e92735f0f0da11c8ba11"
+    },
+    {
+      "id": "D-CHE-B067",
+      "month_day": "06-04",
+      "title": "Heinrich Otto Wieland is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1927 in Germany: for his investigations of the constitution of the bile acids and related substances",
+      "year": 1877,
+      "date": {
+        "as_recorded": "1877-06-04",
+        "calendar": "gregorian",
+        "gregorian": "1877-06-04",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Heinrich Otto Wieland",
+          "url": "https://api.nobelprize.org/2.1/laureate/184",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4357
+        }
+      ],
+      "approved_hash": "f60816ffcbc55302406638c83e502e71d392832f82c5be93aa8e4753a5fe44ba"
+    },
+    {
+      "id": "D-CHE-B155",
+      "month_day": "06-07",
+      "title": "Robert S. Mulliken is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1966 in USA: for his fundamental work concerning chemical bonds and the electronic structure of molecules by the molecular o\u2026",
+      "year": 1896,
+      "date": {
+        "as_recorded": "1896-06-07",
+        "calendar": "gregorian",
+        "gregorian": "1896-06-07",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Robert S. Mulliken",
+          "url": "https://api.nobelprize.org/2.1/laureate/232",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4539
+        }
+      ],
+      "approved_hash": "cb3f700bba0e50cf6dfc9739c882717f761cdac9d1cf2b93bb6ae57d5ed0f20b"
+    },
+    {
+      "id": "D-CHE-B054",
+      "month_day": "06-16",
+      "title": "Georg Wittig is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1979 in Germany: for their development of the use of boron- and phosphorus-containing compounds, respectively, into importan\u2026",
+      "year": 1897,
+      "date": {
+        "as_recorded": "1897-06-16",
+        "calendar": "gregorian",
+        "gregorian": "1897-06-16",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Georg Wittig",
+          "url": "https://api.nobelprize.org/2.1/laureate/253",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4435
+        }
+      ],
+      "approved_hash": "4bce13ff3ee471166463b7c4816e4cc325e6cc50962e38acab08aaef79624620"
+    },
+    {
+      "id": "D-CHE-B132",
+      "month_day": "06-19",
+      "title": "Paul J. Flory is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1974 in USA: for his fundamental achievements, both theoretical and experimental, in the physical chemistry of the macromole\u2026",
+      "year": 1910,
+      "date": {
+        "as_recorded": "1910-06-19",
+        "calendar": "gregorian",
+        "gregorian": "1910-06-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Paul J. Flory",
+          "url": "https://api.nobelprize.org/2.1/laureate/246",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4403
+        }
+      ],
+      "approved_hash": "487d3264ddc4bee6137b7e4f28cf6e1e91306ee3943832d0fa03aa3e4ff0b8b5"
+    },
+    {
+      "id": "D-CHE-B183",
+      "month_day": "06-25",
+      "title": "Walther Hermann Nernst is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1920 in Prussia: in recognition of his work in thermochemistry",
+      "year": 1864,
+      "date": {
+        "as_recorded": "1864-06-25",
+        "calendar": "gregorian",
+        "gregorian": "1864-06-25",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Walther Hermann Nernst",
+          "url": "https://api.nobelprize.org/2.1/laureate/178",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4354
+        }
+      ],
+      "approved_hash": "29e946b01b95a390797867a1d332da5a4ee08ef27eefc365456db6a07f8f64df"
+    },
+    {
+      "id": "D-CHE-B189",
+      "month_day": "06-25",
+      "title": "William H. Stein is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1972 in USA: for their contribution to the understanding of the connection between chemical structure and catalytic activity\u2026",
+      "year": 1911,
+      "date": {
+        "as_recorded": "1911-06-25",
+        "calendar": "gregorian",
+        "gregorian": "1911-06-25",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 William H. Stein",
+          "url": "https://api.nobelprize.org/2.1/laureate/243",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4532
+        }
+      ],
+      "approved_hash": "861b4a0e06200bef898e53b8bfeee3a9a5ce63bcdc984e38dd44fb39c13a4f5f"
+    },
+    {
+      "id": "D-CHE-B096",
+      "month_day": "07-05",
+      "title": "John Howard Northrop is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1946 in USA: for their preparation of enzymes and virus proteins in a pure form",
+      "year": 1891,
+      "date": {
+        "as_recorded": "1891-07-05",
+        "calendar": "gregorian",
+        "gregorian": "1891-07-05",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 John Howard Northrop",
+          "url": "https://api.nobelprize.org/2.1/laureate/205",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4514
+        }
+      ],
+      "approved_hash": "2ba62676a20b32ae98e09235d61e0774a0c4c499b1afa324084bd203026a9f35"
+    },
+    {
+      "id": "D-CHE-B103",
+      "month_day": "07-10",
+      "title": "Kurt Alder is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1950 in Prussia: for their discovery and development of the diene synthesis",
+      "year": 1902,
+      "date": {
+        "as_recorded": "1902-07-10",
+        "calendar": "gregorian",
+        "gregorian": "1902-07-10",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Kurt Alder",
+          "url": "https://api.nobelprize.org/2.1/laureate/211",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4249
+        }
+      ],
+      "approved_hash": "c2f79791517a4c9eeb4389937848aaff4f7a1221ad64c4bb146a488b1b2006ff"
+    },
+    {
+      "id": "D-CHE-B053",
+      "month_day": "07-14",
+      "title": "Geoffrey Wilkinson is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1973 in United Kingdom: for their pioneering work, performed independently, on the chemistry of the organometallic, so calle\u2026",
+      "year": 1921,
+      "date": {
+        "as_recorded": "1921-07-14",
+        "calendar": "gregorian",
+        "gregorian": "1921-07-14",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Geoffrey Wilkinson",
+          "url": "https://api.nobelprize.org/2.1/laureate/245",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4551
+        }
+      ],
+      "approved_hash": "c7147dc2e3dc22d50b4426ea8468aa1a4e612ce0a4720da67dd621ddf2b98678"
+    },
+    {
+      "id": "D-CHE-B180",
+      "month_day": "07-23",
+      "title": "Vladimir Prelog is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1975 in Austria-Hungary: for his research into the stereochemistry of organic molecules and reactions",
+      "year": 1906,
+      "date": {
+        "as_recorded": "1906-07-23",
+        "calendar": "gregorian",
+        "gregorian": "1906-07-23",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Vladimir Prelog",
+          "url": "https://api.nobelprize.org/2.1/laureate/248",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4676
+        }
+      ],
+      "approved_hash": "86bafbd022a4df42bf850820246c73349b88c5faa8daf04e33893b1e99122c2d"
+    },
+    {
+      "id": "D-CHE-B063",
+      "month_day": "07-27",
+      "title": "Hans Fischer is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1930 in Germany: for his researches into the constitution of haemin and chlorophyll and especially for his synthesis of haem\u2026",
+      "year": 1881,
+      "date": {
+        "as_recorded": "1881-07-27",
+        "calendar": "gregorian",
+        "gregorian": "1881-07-27",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Hans Fischer",
+          "url": "https://api.nobelprize.org/2.1/laureate/188",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4431
+        }
+      ],
+      "approved_hash": "da2135dc7aa3cd769aa22b826915d7d78be09f624563fe356a5b5a2fca6ee245"
+    },
+    {
+      "id": "D-CHE-B130",
+      "month_day": "07-31",
+      "title": "Paul D. Boyer is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1997 in USA: for their elucidation of the enzymatic mechanism underlying the synthesis of adenosine triphosphate (ATP)",
+      "year": 1918,
+      "date": {
+        "as_recorded": "1918-07-31",
+        "calendar": "gregorian",
+        "gregorian": "1918-07-31",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Paul D. Boyer",
+          "url": "https://api.nobelprize.org/2.1/laureate/287",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4422
+        }
+      ],
+      "approved_hash": "b632a9d312eb78b1b97484d3766849570413fa920ad7514b2601a62d33dae9a9"
+    },
+    {
+      "id": "D-CHE-B056",
+      "month_day": "08-01",
+      "title": "George de Hevesy is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1943 in Austria-Hungary: for his work on the use of isotopes as tracers in the study of chemical processes",
+      "year": 1885,
+      "date": {
+        "as_recorded": "1885-08-01",
+        "calendar": "gregorian",
+        "gregorian": "1885-08-01",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 George de Hevesy",
+          "url": "https://api.nobelprize.org/2.1/laureate/201",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4573
+        }
+      ],
+      "approved_hash": "c98a4d5c21375f31ed7485c41da97732fc76331475aec8b1479651c23096be80"
+    },
+    {
+      "id": "D-CHE-B147",
+      "month_day": "08-13",
+      "title": "Richard Martin Willst\u00e4tter is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1915 in Germany: for his researches on plant pigments, especially chlorophyll",
+      "year": 1872,
+      "date": {
+        "as_recorded": "1872-08-13",
+        "calendar": "gregorian",
+        "gregorian": "1872-08-13",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Richard Martin Willst\u00e4tter",
+          "url": "https://api.nobelprize.org/2.1/laureate/176",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5326
+        }
+      ],
+      "approved_hash": "31884d6b7ae1e92297393151ea0b59228844183deb48ac0676c83b549e683b9f"
+    },
+    {
+      "id": "D-CHE-B024",
+      "month_day": "08-27",
+      "title": "Carl Bosch is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1931 in Germany: in recognition of their contributions to the invention and development of chemical high pressure methods",
+      "year": 1874,
+      "date": {
+        "as_recorded": "1874-08-27",
+        "calendar": "gregorian",
+        "gregorian": "1874-08-27",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Carl Bosch",
+          "url": "https://api.nobelprize.org/2.1/laureate/189",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5082
+        }
+      ],
+      "approved_hash": "52374ade9dd35b2d599da8b88a7ee5eefd772bb67d8ece70dd9778a6a59b8ea0"
+    },
+    {
+      "id": "D-CHE-B079",
+      "month_day": "08-30",
+      "title": "Jacobus Henricus van 't Hoff is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1901 in the Netherlands: in recognition of the extraordinary services he has rendered by the discovery of the laws of chemic\u2026",
+      "year": 1852,
+      "date": {
+        "as_recorded": "1852-08-30",
+        "calendar": "gregorian",
+        "gregorian": "1852-08-30",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Jacobus Henricus van 't Hoff",
+          "url": "https://api.nobelprize.org/2.1/laureate/160",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4570
+        }
+      ],
+      "approved_hash": "87bbfca602df262a459f605a2502cbcb3bb6e0f680ce3af9cd572f523020c648"
+    },
+    {
+      "id": "D-CHE-B042",
+      "month_day": "08-30",
+      "title": "Ernest Rutherford is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1908 in New Zealand: for his investigations into the disintegration of the elements, and the chemistry of radioactive substa\u2026",
+      "year": 1871,
+      "date": {
+        "as_recorded": "1871-08-30",
+        "calendar": "gregorian",
+        "gregorian": "1871-08-30",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Ernest Rutherford",
+          "url": "https://api.nobelprize.org/2.1/laureate/167",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4557
+        }
+      ],
+      "approved_hash": "829f073c021caa2ec8dc1565cb2db05148f99ea53c73e4c73a3d85084fdff735"
+    },
+    {
+      "id": "D-CHE-B173",
+      "month_day": "08-30",
+      "title": "The (Theodor) Svedberg is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1926 in Sweden: for his work on disperse systems",
+      "year": 1884,
+      "date": {
+        "as_recorded": "1884-08-30",
+        "calendar": "gregorian",
+        "gregorian": "1884-08-30",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 The (Theodor) Svedberg",
+          "url": "https://api.nobelprize.org/2.1/laureate/183",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4035
+        }
+      ],
+      "approved_hash": "eb79b613ed5e9d5e4e905563fa4b1eabc33d4fab076e381cde76f3b9ee85f1eb"
+    },
+    {
+      "id": "D-CHE-B046",
+      "month_day": "09-01",
+      "title": "Francis William Aston is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1922 in United Kingdom: for his discovery, by means of his mass spectrograph, of isotopes, in a large number of non-radioact\u2026",
+      "year": 1877,
+      "date": {
+        "as_recorded": "1877-09-01",
+        "calendar": "gregorian",
+        "gregorian": "1877-09-01",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Francis William Aston",
+          "url": "https://api.nobelprize.org/2.1/laureate/180",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4703
+        }
+      ],
+      "approved_hash": "4f979a85e8456932d7169595c41bde8e023f7598a7356d0730aaed6081fee285"
+    },
+    {
+      "id": "D-CHE-B185",
+      "month_day": "09-02",
+      "title": "Wilhelm Ostwald is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1909 in Russian Empire: in recognition of his work on catalysis and for his investigations into the fundamental principles g\u2026",
+      "year": 1853,
+      "date": {
+        "as_recorded": "1853-09-02",
+        "calendar": "gregorian",
+        "gregorian": "1853-09-02",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Wilhelm Ostwald",
+          "url": "https://api.nobelprize.org/2.1/laureate/168",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4505
+        }
+      ],
+      "approved_hash": "68bc3129461f3fc1b76b0258546e28947344aa3f0c7542fa5c438f95cb628202"
+    },
+    {
+      "id": "D-CHE-B049",
+      "month_day": "09-02",
+      "title": "Frederick Soddy is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1921 in United Kingdom: for his contributions to our knowledge of the chemistry of radioactive substances, and his investiga\u2026",
+      "year": 1877,
+      "date": {
+        "as_recorded": "1877-09-02",
+        "calendar": "gregorian",
+        "gregorian": "1877-09-02",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Frederick Soddy",
+          "url": "https://api.nobelprize.org/2.1/laureate/179",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4599
+        }
+      ],
+      "approved_hash": "c62cddfa9ea73514ca81b28046c778488239768a43aa8831c7d6542c7826b3f3"
+    },
+    {
+      "id": "D-CHE-B052",
+      "month_day": "09-03",
+      "title": "Fritz Pregl is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1923 in Austria-Hungary: for his invention of the method of micro-analysis of organic substances",
+      "year": 1869,
+      "date": {
+        "as_recorded": "1869-09-03",
+        "calendar": "gregorian",
+        "gregorian": "1869-09-03",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Fritz Pregl",
+          "url": "https://api.nobelprize.org/2.1/laureate/181",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4284
+        }
+      ],
+      "approved_hash": "f2c4b77eb7a18c5354e194c64e2882fe1ca24eb595db670eb2ff7c307063b944"
+    },
+    {
+      "id": "D-CHE-B167",
+      "month_day": "09-13",
+      "title": "Sir Robert Robinson is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1947 in United Kingdom: for his investigations on plant products of biological importance, especially the alkaloids",
+      "year": 1886,
+      "date": {
+        "as_recorded": "1886-09-13",
+        "calendar": "gregorian",
+        "gregorian": "1886-09-13",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Sir Robert Robinson",
+          "url": "https://api.nobelprize.org/2.1/laureate/207",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4663
+        }
+      ],
+      "approved_hash": "399e607a209988c235e7388000407d47717a2451a4cc5cfb556a12467c829b33"
+    },
+    {
+      "id": "D-CHE-B069",
+      "month_day": "09-28",
+      "title": "Henri Moissan is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1906 in France: in recognition of the great services rendered by him in his investigation and isolation of the element fluor\u2026",
+      "year": 1852,
+      "date": {
+        "as_recorded": "1852-09-28",
+        "calendar": "gregorian",
+        "gregorian": "1852-09-28",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Henri Moissan",
+          "url": "https://api.nobelprize.org/2.1/laureate/165",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4453
+        }
+      ],
+      "approved_hash": "3da8253a5f6fe691d3cc622fefd4a645c399ae2a9990cc746f89e201be7f34fb"
+    },
+    {
+      "id": "D-CHE-B168",
+      "month_day": "10-02",
+      "title": "Sir William Ramsay is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1904 in Scotland: in recognition of his services in the discovery of the inert gaseous elements in air, and his determinatio\u2026",
+      "year": 1852,
+      "date": {
+        "as_recorded": "1852-10-02",
+        "calendar": "gregorian",
+        "gregorian": "1852-10-02",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Sir William Ramsay",
+          "url": "https://api.nobelprize.org/2.1/laureate/163",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4629
+        }
+      ],
+      "approved_hash": "ad988d272bdaeeccdb50d7998392ddf0a6f866a198673610acf12a0e918df79c"
+    },
+    {
+      "id": "D-CHE-B026",
+      "month_day": "10-03",
+      "title": "Charles J. Pedersen is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1987 in Korea: for their development and use of molecules with structure-specific interactions of high selectivity",
+      "year": 1904,
+      "date": {
+        "as_recorded": "1904-10-03",
+        "calendar": "gregorian",
+        "gregorian": "1904-10-03",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Charles J. Pedersen",
+          "url": "https://api.nobelprize.org/2.1/laureate/269",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4403
+        }
+      ],
+      "approved_hash": "e8c4579bbac75f5ce63eac0b84ba517e0ff5086511d31a7370b4f8b3b27b6f59"
+    },
+    {
+      "id": "D-CHE-B039",
+      "month_day": "10-09",
+      "title": "Hermann Emil Fischer is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1902 in Prussia: in recognition of the extraordinary services he has rendered by his work on sugar and purine syntheses",
+      "year": 1852,
+      "date": {
+        "as_recorded": "1852-10-09",
+        "calendar": "gregorian",
+        "gregorian": "1852-10-09",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Hermann Emil Fischer",
+          "url": "https://api.nobelprize.org/2.1/laureate/161",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4410
+        }
+      ],
+      "approved_hash": "9f222e9a1cedecd614d4bfa2faf156bb9ac6ed14848bb916bae3869d6d3eed3c"
+    },
+    {
+      "id": "D-CHE-B050",
+      "month_day": "10-11",
+      "title": "Friedrich Bergius is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1931 in Germany: in recognition of their contributions to the invention and development of chemical high pressure methods",
+      "year": 1884,
+      "date": {
+        "as_recorded": "1884-10-11",
+        "calendar": "gregorian",
+        "gregorian": "1884-10-11",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Friedrich Bergius",
+          "url": "https://api.nobelprize.org/2.1/laureate/190",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5355
+        }
+      ],
+      "approved_hash": "0ddd53d30439fa0d41cb098076bb52572f1f160e4c6a5bf4c756d7744f65cb47"
+    },
+    {
+      "id": "D-CHE-B016",
+      "month_day": "10-12",
+      "title": "Arthur Harden is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1929 in United Kingdom: for their investigations on the fermentation of sugar and fermentative enzymes",
+      "year": 1865,
+      "date": {
+        "as_recorded": "1865-10-12",
+        "calendar": "gregorian",
+        "gregorian": "1865-10-12",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Arthur Harden",
+          "url": "https://api.nobelprize.org/2.1/laureate/186",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4448
+        }
+      ],
+      "approved_hash": "b4b2cdeafa7de9dc71d5e37d6b47c0c47bb6c0ec82935b2252c4a2b3bc52ece4"
+    },
+    {
+      "id": "D-CHE-B005",
+      "month_day": "10-31",
+      "title": "Johann Friedrich Wilhelm Adolf von Baeyer is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1905 in Prussia: in recognition of his services in the advancement of organic chemistry and the chemical industry, through h\u2026",
+      "year": 1835,
+      "date": {
+        "as_recorded": "1835-10-31",
+        "calendar": "gregorian",
+        "gregorian": "1835-10-31",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Johann Friedrich Wilhelm Adolf von Baeyer",
+          "url": "https://api.nobelprize.org/2.1/laureate/164",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4580
+        }
+      ],
+      "approved_hash": "f6917e51bb7d1eab728e54fc712bc9c3400eb5a518a12ebbbe79a57dc293fd74"
+    },
+    {
+      "id": "D-CHE-B135",
+      "month_day": "11-05",
+      "title": "Paul Sabatier is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1912 in France: for his method of hydrogenating organic compounds in the presence of finely disintegrated metals whereby the\u2026",
+      "year": 1854,
+      "date": {
+        "as_recorded": "1854-11-05",
+        "calendar": "gregorian",
+        "gregorian": "1854-11-05",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Paul Sabatier",
+          "url": "https://api.nobelprize.org/2.1/laureate/173",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4561
+        }
+      ],
+      "approved_hash": "90e4079c4eb0574f4b614e2cf6b14920a0a6f8bb20e05aaef2aae4c214ee882c"
+    },
+    {
+      "id": "D-CHE-B112",
+      "month_day": "11-07",
+      "title": "Marie Curie, n\u00e9e Sk\u0142odowska is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1903 in Russian Empire: in recognition of the extraordinary services they have rendered by their joint researches on the rad\u2026",
+      "year": 1867,
+      "date": {
+        "as_recorded": "1867-11-07",
+        "calendar": "gregorian",
+        "gregorian": "1867-11-07",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Marie Curie, n\u00e9e Sk\u0142odowska",
+          "url": "https://api.nobelprize.org/2.1/laureate/6",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5901
+        }
+      ],
+      "approved_hash": "f3cc3ccbf800a49cdd2d865dfb5f09fa7f9df5f6875e3b330eef9b4fcd9f2562"
+    },
+    {
+      "id": "D-CHE-B159",
+      "month_day": "11-09",
+      "title": "Ronald George Wreyford Norrish is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1967 in United Kingdom: for their studies of extremely fast chemical reactions, effected by disturbing the equilibrium by me\u2026",
+      "year": 1897,
+      "date": {
+        "as_recorded": "1897-11-09",
+        "calendar": "gregorian",
+        "gregorian": "1897-11-09",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Ronald George Wreyford Norrish",
+          "url": "https://api.nobelprize.org/2.1/laureate/234",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4748
+        }
+      ],
+      "approved_hash": "7e18b3dc9a56fbac413a29d153e072888139e3be1636d9b1532e64faa93a9523"
+    },
+    {
+      "id": "D-CHE-B081",
+      "month_day": "11-19",
+      "title": "James Batcheller Sumner is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1946 in USA: for his discovery that enzymes can be crystallized",
+      "year": 1887,
+      "date": {
+        "as_recorded": "1887-11-19",
+        "calendar": "gregorian",
+        "gregorian": "1887-11-19",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 James Batcheller Sumner",
+          "url": "https://api.nobelprize.org/2.1/laureate/204",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4293
+        }
+      ],
+      "approved_hash": "76c235cc17a2a59e9acb7152345b8e815f274f3c23f8147f34aab31d743953cd"
+    },
+    {
+      "id": "D-CHE-B099",
+      "month_day": "11-26",
+      "title": "Karl Ziegler is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1963 in Germany: for their discoveries in the field of the chemistry and technology of high polymers",
+      "year": 1898,
+      "date": {
+        "as_recorded": "1898-11-26",
+        "calendar": "gregorian",
+        "gregorian": "1898-11-26",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Karl Ziegler",
+          "url": "https://api.nobelprize.org/2.1/laureate/228",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4447
+        }
+      ],
+      "approved_hash": "3d2c0c0baa1691b00b3fea5f16270606a576510f47fa52599278dc4acbac1be0"
+    },
+    {
+      "id": "D-CHE-B105",
+      "month_day": "11-27",
+      "title": "Lars Onsager is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1968 in Norway: for the discovery of the reciprocal relations bearing his name, which are fundamental for the thermodynamics\u2026",
+      "year": 1903,
+      "date": {
+        "as_recorded": "1903-11-27",
+        "calendar": "gregorian",
+        "gregorian": "1903-11-27",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Lars Onsager",
+          "url": "https://api.nobelprize.org/2.1/laureate/236",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4472
+        }
+      ],
+      "approved_hash": "89f303ee54c52b44ff2967362a01f55c9c9b2904af17e76bc17bec0bef9322ed"
+    },
+    {
+      "id": "D-CHE-B142",
+      "month_day": "12-03",
+      "title": "Richard Kuhn is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1938 in Austria-Hungary: for his work on carotenoids and vitamins",
+      "year": 1900,
+      "date": {
+        "as_recorded": "1900-12-03",
+        "calendar": "gregorian",
+        "gregorian": "1900-12-03",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Richard Kuhn",
+          "url": "https://api.nobelprize.org/2.1/laureate/198",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 5329
+        }
+      ],
+      "approved_hash": "63211492588d564aa75bef366bd93d0fcb6fe9d7ae814876ddca07e22b6fc18c"
+    },
+    {
+      "id": "D-CHE-B051",
+      "month_day": "12-09",
+      "title": "Fritz Haber is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1918 in Prussia: for the synthesis of ammonia from its elements",
+      "year": 1868,
+      "date": {
+        "as_recorded": "1868-12-09",
+        "calendar": "gregorian",
+        "gregorian": "1868-12-09",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Fritz Haber",
+          "url": "https://api.nobelprize.org/2.1/laureate/177",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4571
+        }
+      ],
+      "approved_hash": "d2d58e271e6542aa0cb9ce6a539f83ac2087cdc2983ec4b252b6bedafdea274d"
+    },
+    {
+      "id": "D-CHE-B012",
+      "month_day": "12-12",
+      "title": "Alfred Werner is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1913 in France: in recognition of his work on the linkage of atoms in molecules by which he has thrown new light on earlier\u2026",
+      "year": 1866,
+      "date": {
+        "as_recorded": "1866-12-12",
+        "calendar": "gregorian",
+        "gregorian": "1866-12-12",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Alfred Werner",
+          "url": "https://api.nobelprize.org/2.1/laureate/174",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4485
+        }
+      ],
+      "approved_hash": "d1f6d48a5b8e478756c7ec66061e46f680fcec137e77305fb3fe1d5cfc2de473"
+    },
+    {
+      "id": "D-CHE-B082",
+      "month_day": "12-20",
+      "title": "Jaroslav Heyrovsky is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1959 in Austria-Hungary: for his discovery and development of the polarographic methods of analysis",
+      "year": 1890,
+      "date": {
+        "as_recorded": "1890-12-20",
+        "calendar": "gregorian",
+        "gregorian": "1890-12-20",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Jaroslav Heyrovsky",
+          "url": "https://api.nobelprize.org/2.1/laureate/223",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4687
+        }
+      ],
+      "approved_hash": "69013901312eb6e980f17b01c327cdfd7ffc2ed832c9a280346adaee1652012e"
+    },
+    {
+      "id": "D-CHE-B006",
+      "month_day": "12-25",
+      "title": "Adolf Otto Reinhold Windaus is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1928 in Germany: for the services rendered through his research into the constitution of the sterols and their connection wi\u2026",
+      "year": 1876,
+      "date": {
+        "as_recorded": "1876-12-25",
+        "calendar": "gregorian",
+        "gregorian": "1876-12-25",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Adolf Otto Reinhold Windaus",
+          "url": "https://api.nobelprize.org/2.1/laureate/185",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4473
+        }
+      ],
+      "approved_hash": "62816fb4b5feb56aefdc6980cebbf48598362a9e4206b7eb52343b690aceed4e"
+    },
+    {
+      "id": "D-CHE-B060",
+      "month_day": "12-25",
+      "title": "Gerhard Herzberg is born",
+      "kind": "birth",
+      "blurb": "Nobel Prize in Chemistry 1971 in Germany: for his contributions to the knowledge of electronic structure and geometry of molecules, particularly free\u2026",
+      "year": 1904,
+      "date": {
+        "as_recorded": "1904-12-25",
+        "calendar": "gregorian",
+        "gregorian": "1904-12-25",
+        "precision": "day"
+      },
+      "status": "active",
+      "basis": "authority: The Nobel Prize (Nobel Foundation)",
+      "agreement": "1 of 1",
+      "readable": 1,
+      "publishers": [
+        "nobelprize.org"
+      ],
+      "authorities": [
+        "The Nobel Prize (Nobel Foundation)"
+      ],
+      "checked_on": "2026-11-15",
+      "sources": [
+        {
+          "citation": "Nobel Prize \u2014 Gerhard Herzberg",
+          "url": "https://api.nobelprize.org/2.1/laureate/240",
+          "type": "archive",
+          "authority": "The Nobel Prize (Nobel Foundation)",
+          "http": 200,
+          "read": true,
+          "supports": true,
+          "bytes": 4407
+        }
+      ],
+      "approved_hash": "b78cd91cc63a860d897a029e05dd9fb16327e6c29cc6cea54cc644a89d78499a"
+    }
+  ],
+  "summary": {
+    "active": 72,
+    "provisional": 0,
+    "contested": 0,
+    "quarantined": 0
+  }
+}
