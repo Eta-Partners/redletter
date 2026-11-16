@@ -1263,3 +1263,36 @@ def test_a_cell_that_is_not_cut_keeps_its_last_word():
     kept = rg.truncate_blocks(blocks, 2 * 7 * rg.CELL_LEADING)
     assert kept == blocks
     assert not kept[-1][0].endswith("…")
+
+
+def test_a_cut_line_ends_on_a_whole_token():
+    """The rule the person chose on 2026-11-16 (qitem-20261116193021-9e7b...).
+
+    The marker may take the place of punctuation that closes a token; it may not
+    take the place of a character inside one, so a word with a character of slack
+    carries the marker after its last letter, a word without slack is dropped
+    whole, and a line that would be left with nothing but the marker is drawn as
+    it used to be. Each case is the measure in characters as the third argument.
+    """
+    assert rg.cut_line("pioneering work", 16) == "pioneering work…"
+    assert rg.cut_line("and 1987 to 1988", 17) == "and 1987 to 1988…"
+    assert rg.cut_line("and 1987 to 1988", 16) == "and 1987 to…"
+    assert rg.cut_line("for their research", 18) == "for their…"
+    assert rg.cut_line("of the use of boron-", 23) == "of the use of boron-…"
+    assert rg.cut_line("of the use of boron-", 20) == "of the use of…"
+    assert rg.cut_line("pioneering work,", 16) == "pioneering work…"
+    assert rg.cut_line("crystallography", 13) == "crystallograph…", "the C' clause"
+    assert rg.cut_line("inventions i…", 22) == "inventions i…", "never marks twice"
+    assert rg.cut_line("for their research") == "for their…", "no measure: no slack"
+    assert rg.cut_line("x") == "x"
+
+
+def test_a_capped_fame_line_ends_between_words():
+    """The cap cuts inside the fame line, and now it cuts between its words."""
+    long_fame = "Marie Curie, " + "known for her work on radioactivity and much else besides, " * 4 + "was born."
+    blocks, _ = rg.cell_blocks([(1867, "Marie Curie is born", long_fame)], 22, 9, True)
+    grey = [b for b in blocks if b[2] == rg.GRAY]
+    assert len(grey) == rg.FAME_LINES and grey[-1][0].endswith("…")
+    text = grey[-1][0][:-1].rstrip()
+    i = long_fame.index(text)
+    assert long_fame[i + len(text):i + len(text) + 1] in (" ", ""), grey[-1][0]

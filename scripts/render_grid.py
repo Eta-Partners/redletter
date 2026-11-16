@@ -636,7 +636,7 @@ def _record_blocks_core(year, title, blurb, chars, size, with_blurb):
         fblocks = [(ln, fsize, GRAY, 0)
                    for ln, _ in fit_to_width(wrap_to(fame, chars), chars, 0)]
         cap = FAME_LINES * fsize * CELL_LEADING
-        detail = list(_cut_blocks(fblocks, cap))
+        detail = list(_cut_blocks(fblocks, cap, chars))
     elif with_blurb and blurb:
         bsize = size * BLURB_SCALE
         detail = [(ln, bsize, GRAY, 0)
@@ -679,8 +679,47 @@ def cell_min_height(events, chars, size):
     return total
 
 
-def fit_detail(blocks, height):
-    """As much of `blocks` as fits in `height`, the last kept line carrying ..."""
+CUT_CLOSERS = ",.!?;:)]\"'"
+
+
+def cut_line(s, chars=None):
+    """`s`, cut: end on a whole token, the ellipsis saying the line went on.
+
+    The marker may take the place of punctuation that closes the last token - a
+    comma, a full stop, a bracket, a quote - because that token is already whole.
+    It may not take the place of a character inside one: a letter, a digit, or a
+    hyphen that joins a compound. A line with a character of slack appends the
+    marker to the whole word; a line without slack drops that word and ends on
+    the previous one; where dropping it would leave nothing but the marker, the
+    line keeps its old shape, because a bare ellipsis tells the reader nothing
+    about what was lost.
+
+    `chars` is the cell's measure in characters. A caller that does not have it -
+    a test cutting a block list, the audit's spy on the page's final guard - gets
+    the no-slack reading, which can only ever run short of the measure. Measured
+    at 0c63caf, that guard never cut a line on either book at any of the four
+    shapes (2920 calls, none changed), so the reading is not reached on a drawn
+    page.
+    """
+    if len(s) <= 1:
+        return s
+    body = s.rstrip()
+    if not body:
+        return s
+    if body.endswith("…"):
+        return body                    # already marked; appending would double it
+    if body[-1] in CUT_CLOSERS:
+        return body[:-1].rstrip() + "…"
+    if chars is not None and len(body) + 1 <= chars:
+        return body + "…"
+    prefix = body[:len(body) - len(body.split()[-1])].rstrip()
+    if prefix:
+        return prefix + "…"
+    return body[:-1].rstrip() + "…"    # only the marker would be left: draw it as before
+
+
+def fit_detail(blocks, height, chars=None):
+    """As much of `blocks` as fits in `height`, the last kept line cut by cut_line."""
     kept, used = [], 0.0
     for block in blocks:
         line_h = block[1] * CELL_LEADING
@@ -690,12 +729,11 @@ def fit_detail(blocks, height):
         used += line_h
     if kept and len(kept) < len(blocks):
         s, size, ink, indent = kept[-1]
-        if len(s) > 1:
-            kept[-1] = (s[:-1].rstrip() + "…", size, ink, indent)
+        kept[-1] = (cut_line(s, chars), size, ink, indent)
     return kept
 
 
-def _draw_records(records, size, height):
+def _draw_records(records, size, height, chars=None):
     """Draw records into `height`; return (blocks, used, hidden_record_count).
 
     Titles go down first, every one of them, and detail fills the height left
@@ -712,18 +750,18 @@ def _draw_records(records, size, height):
         if is_person:
             need = len(title_blocks) * line_h
             if used + need > height + LAYOUT_EPS:
-                return _with_detail(records[:i], height, size), used, len(records) - i
+                return _with_detail(records[:i], height, size, chars), used, len(records) - i
             drawn = title_blocks
         else:
-            drawn = fit_detail(title_blocks, height - used)
+            drawn = fit_detail(title_blocks, height - used, chars)
             if not drawn:
-                return _with_detail(records[:i], height, size), used, len(records) - i
+                return _with_detail(records[:i], height, size, chars), used, len(records) - i
         titles.append(drawn)
         used += sum(b[1] * CELL_LEADING for b in drawn)
-    return _with_detail(records[:len(titles)], height, size), used, 0
+    return _with_detail(records[:len(titles)], height, size, chars), used, 0
 
 
-def _with_detail(records, height, size):
+def _with_detail(records, height, size, chars=None):
     """The placed titles with the detail shared between them, one line each in turn.
 
     The detail pool is the height left after *every* title. It is shared round
@@ -768,8 +806,7 @@ def _with_detail(records, height, size):
         out += title_blocks
         if len(lines) < len(detail) and lines:
             s, line_size, ink, indent = lines[-1]
-            if len(s) > 1:
-                lines = lines[:-1] + [(s[:-1].rstrip() + "…", line_size, ink, indent)]
+            lines = lines[:-1] + [(cut_line(s, chars), line_size, ink, indent)]
         out += lines
     return out
 
@@ -800,13 +837,13 @@ def cell_layout(events, chars, size, with_blurb, height):
         # No person in this cell: the cell is prose and nothing changes for it.
         stream = [b for title_blocks, detail, _ in records
                   for b in title_blocks + detail]
-        return _cut_blocks(stream, height)
-    drawn, _, hidden = _draw_records(records, size, height)
+        return _cut_blocks(stream, height, chars)
+    drawn, _, hidden = _draw_records(records, size, height, chars)
     if not hidden:
         return drawn
     # Reserve the count line by laying the same records out one line shorter, so
     # the cell says what it is not showing instead of running over its box.
-    drawn, _, hidden = _draw_records(records, size, height - size * CELL_LEADING)
+    drawn, _, hidden = _draw_records(records, size, height - size * CELL_LEADING, chars)
     drawn.append((f"and {hidden} more", size, GRAY, 0))
     return drawn
 
@@ -829,13 +866,22 @@ def truncate_blocks(blocks, height):
     guard: the layout has already fitted the cell, so the call keeps nothing and
     changes nothing. The operator's audit in `tools/` pairs days to cells by this
     call, so the cell's own internal cuts go through `_cut_blocks` instead and do
-    not look like a second cell.
+    not look like a second cell. The two-argument signature is part of that
+    contract: `tools/redletter-fame-audit.py` replaces this function with a spy
+    that passes the same two arguments on.
+
+    That leaves this call without the cell's measure, so a cut here would fall
+    back to `_cut_blocks`'s no-slack reading. It never gets the chance: measured at
+    0c63caf and again with cut_line in place, this guard cut no line on either book
+    at any of the four shapes - 2920 calls, none changed - because the layout has
+    already fitted the cell by height. A guard that starts cutting is a layout bug
+    to fix in the layout, not a line for this function to draw differently.
     """
     return _cut_blocks(blocks, height)
 
 
-def _cut_blocks(blocks, height):
-    """The cut itself: a prefix by height, the last kept line carrying the ..."""
+def _cut_blocks(blocks, height, chars=None):
+    """The cut itself: a prefix by height, the last kept line cut by cut_line."""
     if not blocks:
         return blocks
     used, kept = 0.0, []
@@ -847,8 +893,7 @@ def _cut_blocks(blocks, height):
     if len(kept) == len(blocks):
         return blocks
     s, size, ink, indent = kept[-1]
-    if len(s) > 1:
-        kept[-1] = (s[:-1].rstrip() + "…", size, ink, indent)
+    kept[-1] = (cut_line(s, chars), size, ink, indent)
     return kept
 
 

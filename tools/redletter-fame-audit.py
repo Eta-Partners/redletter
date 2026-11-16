@@ -164,8 +164,14 @@ def audit(name, path):
     finally:
         R.truncate_blocks = orig
     recs = sum(len(e) for mo in marks.values() for e in mo.values())
+    # The docstring's second guard, made real: a fame line that already ends on a
+    # birth clause would be changed by the suffix drop, so any hit voids the book.
+    # Counted over the records this audit measured: marks_of has already dropped
+    # inactive records and 02-29, so this is not the YAML's entry count.
+    born = sum(1 for mo in marks.values() for e in mo.values()
+               for (_y, _t, _b) in e if BORN.search(R.fame_line(_t, _b) or ""))
     return dict(name=name, recs=recs, cells=cells, persons=persons, bad=bad,
-                labelled=labelled, drawn=drawn, ans=ans, curie=curie)
+                labelled=labelled, drawn=drawn, ans=ans, curie=curie, born=born)
 
 def row(a, which):
     c = a[which]
@@ -182,9 +188,18 @@ for name, p in (("laureates", "data/chemistry-laureates.yaml"),
         print(f"  {name}: FAILED — {e}")
         continue
     pairing = "OK" if a["bad"] == 0 else f'BROKEN in {a["bad"]} months'
+    # The invariant is laureates-only: their source never carries a birth clause, so a
+    # hit means the data is not what the measurement assumes. Chemistry's answer
+    # denominator strips such a clause on purpose, so a hit there is expected, not void.
+    if a["born"] == 0:
+        clauses = "0 (ok)"
+    elif name == "laureates":
+        clauses = f'{a["born"]} — MEASUREMENT VOID'
+    else:
+        clauses = f'{a["born"]} (stripped from the answer denominator; expected here)'
     print(f"{a['name']}: {a['recs']} records, {a['cells']} cells, "
           f"{a['persons']} person cells, {a['labelled']} fame lines still draw an "
-          f"award label; pairing {pairing}")
+          f"award label; pairing {pairing}; birth clauses {clauses}")
     row(a, "drawn"); row(a, "ans")
     for g, want in a["curie"]:
         print(f"    curie: drawn={g[:70]!r}")
