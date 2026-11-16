@@ -14,7 +14,9 @@ Guards, all of which must hold or the measurement is void:
     legitimately changes under the suffix drop and one must not.
 
 Measured quantities:
-  drawn  - qualifying words of the drawn fame line that survive truncation
+  drawn  - qualifying words of the drawn fame line that survive truncation. A token
+           ending in the truncation marker counts when its stem is a whole word in
+           the fame line, and is dropped when it is a fragment; see qual_drawn.
   answer - qualifying words of the *answer* that appear in the drawn text, where
            the answer is the fame line minus its award label (and minus every word
            the label prints, or "chemistry" scores every laureate cell) and minus a
@@ -66,6 +68,38 @@ toks = lambda s: re.findall(r"[A-Za-z][A-Za-z'\-…]*", s)
 def qual(s):
     return [w.lower() for w in toks(s) if len(w) >= 4 and w.lower() not in STOP
             and not w.endswith("…")]
+def qual_drawn(s, src):
+    """`qual` on drawn text, where a marker means whatever the layout put it after.
+
+    The blank rule "drop any token ending in …" was calibrated on the renderer that
+    amputates a complete word's last letter: there `'studies o…'` still shows
+    `studies`, and `'outstandin…'` is a fragment it is right to drop. A re-wrap that
+    ends on a word boundary instead gives `'studies…'` — a whole word carrying the
+    cut signal — and the blank rule throws that word away, scoring the better
+    rendering worse. So credit a marked token whose stem is a whole word in the
+    fame line, and keep dropping one whose stem is not. On the shipped renderer
+    the zero column does not move at A4 landscape, the shape the audit reports
+    (7 of 64); at the portrait shapes it falls by one cell each, 53 -> 52 and
+    44 -> 43, both at 09-01. The laureates' median does move, 16.7% -> 18.3%, and
+    >=50% goes 9 -> 10, because two lines end with a whole word followed by the
+    marker ('pioneering work…', 'plant pigments…') and the blank rule was
+    discounting both. It matters most when comparing two ways of rendering a cut.
+    """
+    out = []
+    for w in toks(s):
+        low = w.lower()
+        if len(w) < 4 or low in STOP:
+            continue
+        if w.endswith("…"):
+            if w[:-1].lower() in src:
+                out.append(w[:-1].lower())
+        else:
+            out.append(low)
+    return out
+
+def source_words(f):
+    return {w.lower() for w in re.findall(r"[A-Za-z][A-Za-z'\-]*", f)}
+
 def drawn_words(f):
     return qual(f)
 def answer_words(f):
@@ -119,7 +153,8 @@ def audit(name, path):
                 f = fames[0]
                 if LABEL.match(f):
                     labelled += 1
-                got = qual(" ".join(x[0] for x in kept if x[2] == R.GRAY))
+                got = qual_drawn(" ".join(x[0] for x in kept if x[2] == R.GRAY),
+                                 source_words(f))
                 dw, aw = drawn_words(f), answer_words(f)
                 drawn.append(sum(w in got for w in dw) / len(dw) if dw else 1.0)
                 ans.append(sum(w in got for w in aw) / len(aw) if aw else 1.0)
