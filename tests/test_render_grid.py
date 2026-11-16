@@ -276,10 +276,140 @@ def test_the_book_is_the_same_document_every_time(days_file):
     assert first == second
 
 
+# ------------------------------------------------------------- the fame line
+#
+# TJ asked for what a person is known for, not only that they were born. The cell
+# prints the rest of the record's own blurb, and every word of it is the record's:
+# this code trims a name the title already prints and invents nothing.
+
+COTTRELL_TITLE = "Frederick Gardner Cottrell is born"
+COTTRELL_BLURB = ("Frederick Gardner Cottrell, inventor of the electrostatic precipitator "
+                  "for removing smoke particles from air, was born.")
+
+
+def test_the_fame_line_is_the_blurb_minus_the_name_the_title_prints():
+    assert rg.fame_line(COTTRELL_TITLE, COTTRELL_BLURB) == (
+        "inventor of the electrostatic precipitator for removing smoke particles from air, was born.")
+
+
+def test_a_blurb_that_does_not_open_with_the_title_subject_prints_whole():
+    """The no-silent-stripping rule: a name trimmed at a guess is an invented word."""
+    blurb = "That inventor of the electrostatic precipitator, Cottrell, was born in Ohio."
+    assert rg.fame_line(COTTRELL_TITLE, blurb) == blurb
+
+
+def test_the_death_form_gets_the_same_line():
+    text = ("Marie Curie, discoverer of polonium and radium and twice a Nobel laureate, "
+            "died of aplastic anaemia almost certainly due to her exposure to radioactive materials.")
+    assert rg.fame_line("Marie Curie dies", text) == (
+        "discoverer of polonium and radium and twice a Nobel laureate, died of aplastic "
+        "anaemia almost certainly due to her exposure to radioactive materials.")
+
+
+@pytest.mark.parametrize("title", [
+    "Marie and Pierre Curie discovered radium",
+    "The first commercial atomic clock opened",
+    "Harold Urey announced the discovery of heavy water",
+])
+def test_an_event_that_is_not_a_persons_day_gets_no_fame_line(title):
+    assert rg.fame_line(title, "Something happened.") is None
+
+
+def test_every_fame_line_in_the_shipped_data_is_the_records_own_words():
+    """Over every birth and death in all three datasets: no invented words.
+
+    `fame in blurb` is the whole property, not a sample: the string the cell draws
+    is a substring of the approved sentence, so a claim the blurb does not make
+    cannot reach the page through this path.
+    """
+    import pathlib
+    import yaml
+
+    root = pathlib.Path(__file__).resolve().parent.parent
+    counts = {}
+    for name in ("chemistry.yaml", "chemistry-laureates.yaml", "spaceflight.yaml"):
+        data = yaml.safe_load((root / "data" / name).read_text())
+        for record in data["days"]:
+            fame = rg.fame_line(record["title"], record["blurb"] or "")
+            if record["title"].endswith((" is born", " dies")):
+                assert fame, (name, record["id"], "a person's day must carry one")
+                assert fame in record["blurb"], (name, record["id"])
+                counts[name] = counts.get(name, 0) + 1
+            else:
+                assert fame is None, (name, record["id"])
+    # 42 chemistry births and Curie's death; 72 laureate births; and none for
+    # spaceflight, whose `loss` is a mission lost rather than a person's day.
+    assert counts == {"chemistry.yaml": 43, "chemistry-laureates.yaml": 72}
+
+
+def test_the_rule_and_the_fame_line_agree_on_which_records_are_people():
+    """The gate and the renderer read the same title form; this is what stops drift.
+
+    Lives here rather than beside the gate because it asserts something about the
+    renderer's notion of a person: `fame_line` returns None for exactly the records
+    `is_person_death` does not consider a person's death.
+    """
+    import pathlib
+    import yaml
+
+    import verify_days as vd
+
+    root = pathlib.Path(rg.__file__).resolve().parent.parent
+    for name in ("chemistry.yaml", "chemistry-laureates.yaml", "spaceflight.yaml"):
+        for record in yaml.safe_load((root / "data" / name).read_text())["days"]:
+            person = rg.fame_line(record["title"], record["blurb"] or "") is not None
+            assert vd.is_person_death(record) == (person and record["kind"] == "loss"), \
+                (name, record["id"], record["title"])
+
+
+def test_the_fame_line_is_capped_at_two_lines_and_says_so():
+    """The cap uses the cell's own ellipsis, so the cut line is not silent."""
+    long_fame = "Marie Curie, " + "known for her work on radioactivity and much else besides, " * 4 + "was born."
+    entry = [(1867, "Marie Curie is born", long_fame)]
+    blocks, _ = rg.cell_blocks(entry, 22, 9, True)
+    grey = [b for b in blocks if b[2] == rg.GRAY]
+    assert len(grey) == rg.FAME_LINES
+    assert grey[-1][0].endswith("…")
+
+
+def test_the_fame_line_is_drawn_whatever_the_blurb_rule_says():
+    """The 1.5 pt rule decides a blurb, not the why: TJ asked for the detail.
+
+    `with_blurb` is False in this call, which is what suppresses the blurb on an
+    A4 landscape page, and the fame line is drawn anyway.
+    """
+    blocks, _ = rg.cell_blocks([(1877, COTTRELL_TITLE, COTTRELL_BLURB)], 22, 7, False)
+    grey = [b[0] for b in blocks if b[2] == rg.GRAY]
+    assert grey and "inventor" in " ".join(grey)
+
+
+def test_a_discovery_cell_does_not_grow_a_fame_line():
+    """The other kinds keep the old rule; the detail TJ asked for is a person's."""
+    entry = [(1898, "Marie and Pierre Curie discovered radium",
+              "Marie and Pierre Curie discovered radium.")]
+    blocks, _ = rg.cell_blocks(entry, 22, 7, False)
+    assert not [b for b in blocks if b[2] == rg.GRAY]
+    assert rg.fame_line(*entry[0][1:]) is None
+
+
+@requires_font
+def test_a_birth_cell_shows_what_the_person_is_known_for_on_the_default_page(tmp_path):
+    """The product claim, on the page: A4 landscape, the default book shape."""
+    day = make_day("D-1", "01-10", year=1877)
+    day.update(kind="birth", title=COTTRELL_TITLE, blurb=COTTRELL_BLURB)
+    path = write_days_file(tmp_path / "days.json", [day])
+    pages, size, _ = book_for(path)
+    drawn = " ".join(text_of(pages[1]))
+    assert "inventor of the" in drawn, "the month page shows why he is on the calendar"
+    assert "Frederick Gardner Cottrell, inventor" not in drawn, "the name is not said twice"
+
+
 def test_truncation_keeps_the_budget_and_marks_what_it_lost():
+    # The budget is a height in points: at 8 pt a line is 8 * 1.32 = 10.56 pt, so
+    # 55 holds five lines and not six.
     blocks, _ = rg.cell_blocks([(1961, "A title " * 30, "")], 18, 8, False)
-    first = rg.truncate_blocks(blocks, 5)
-    second = rg.truncate_blocks(blocks, 5)
+    first = rg.truncate_blocks(blocks, 55)
+    second = rg.truncate_blocks(blocks, 55)
     assert first == second, "same cell, same lines: truncation is deterministic"
     assert len(first) == 5
     assert first[-1][0].endswith("…")

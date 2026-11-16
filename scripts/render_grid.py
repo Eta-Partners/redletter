@@ -474,6 +474,34 @@ def cell_chars(w_pt, size_pt):
 MIN_HANG_CHARS = 8
 
 
+FAME_LINES = 2
+
+
+def fame_line(title, blurb):
+    """What a person is known for: the blurb, minus the name the title already prints.
+
+    A person's cell prints `Marie Curie is born` and then a blurb that opens
+    `Marie Curie, ...`, so the name is said twice before anything is said about
+    it. The fame line is the rest of the blurb. It is derived from the record's
+    own words and never written here: every character it draws is a substring of
+    the blurb, which is what makes it safe to print as fact.
+
+    A title that is not a person's birthday or death day returns None, so a
+    discovery, a milestone or a mission never grows one. When the blurb does not
+    open with the title's subject, it is returned whole rather than trimmed at a
+    guess: a name this code trimmed off would be a word it invented, and the
+    record would print a sentence with its subject missing.
+    """
+    for suffix in (" is born", " dies"):
+        if title.endswith(suffix):
+            subject = title[: -len(suffix)]
+            prefix = subject + ", "
+            if blurb.startswith(prefix):
+                return blurb[len(prefix):]
+            return blurb
+    return None
+
+
 def cell_blocks(events, chars, size, with_blurb):
     """One cell's lines and the height they need, as (text, size, ink, indent).
 
@@ -514,7 +542,20 @@ def cell_blocks(events, chars, size, with_blurb):
         for ln, indent in lines:
             blocks.append((ln, size, INK, indent))
             height += size * CELL_LEADING
-        if with_blurb and blurb:
+        fame = fame_line(title, blurb)
+        if fame:
+            # Always drawn on a person's cell, whatever `with_blurb` says: the
+            # question there is whether a page can afford detail, and a fame line
+            # capped at FAME_LINES is the detail that fits. The cap uses the same
+            # ellipsis as the cell's own truncation, so a cut line says so.
+            fsize = size * BLURB_SCALE
+            fblocks = [(ln, fsize, GRAY, 0)
+                       for ln, _ in fit_to_width(wrap_to(fame, chars), chars, 0)]
+            cap = FAME_LINES * fsize * CELL_LEADING
+            for ln, fsize, ink, indent in truncate_blocks(fblocks, cap):
+                blocks.append((ln, fsize, ink, indent))
+                height += fsize * CELL_LEADING
+        elif with_blurb and blurb:
             bsize = size * BLURB_SCALE
             for ln, _ in fit_to_width(wrap_to(blurb, chars), chars, 0):
                 blocks.append((ln, bsize, GRAY, 0))
@@ -522,21 +563,29 @@ def cell_blocks(events, chars, size, with_blurb):
     return blocks, height
 
 
-def cell_line_budget(inner_h_pt, size_pt):
-    """How many lines a cell can hold at this size before it runs into the next row."""
-    return max(1, int(inner_h_pt // (size_pt * CELL_LEADING)))
-
-
-def truncate_blocks(blocks, budget):
+def truncate_blocks(blocks, height):
     """Keep a cell inside its box, and say so with an ellipsis.
 
-    One 132-character entry — a Nobel citation quoted whole — would otherwise set
-    the type size for every cell on the page. The sheet already truncates its key
-    the same way; a short line that ends in … is honest about being short.
+    `height` is the room the box has, in points. It is a height and not a count of
+    lines because a cell's lines are not all one size: the fame line is set at
+    0.86x the title's, so counting lines at the title's size threw away fame lines
+    the cell had room for — seven on the laureate book at A4 landscape, two on the
+    spaceflight book at A4 portrait, all of them cells the chooser had just found
+    fitted. One 132-character entry — a Nobel citation quoted whole — would
+    otherwise set the type size for every cell on the page. The sheet already
+    truncates its key the same way; a line that ends in … is honest about being
+    cut.
     """
-    if len(blocks) <= budget:
+    if not blocks:
         return blocks
-    kept = blocks[:budget]
+    used, kept = 0.0, []
+    for block in blocks:
+        used += block[1] * CELL_LEADING
+        if used > height and kept:
+            break
+        kept.append(block)
+    if len(kept) == len(blocks):
+        return blocks
     s, size, ink, indent = kept[-1]
     if len(s) > 1:
         kept[-1] = (s[:-1].rstrip() + "…", size, ink, indent)
@@ -649,7 +698,7 @@ def build_month_page(topic, marks, year, month, size, verified=""):
     inner_h = row_h - 16
     cells = [by_month.get(day, []) for week in weeks for day in week]
     cell_pt, with_blurb = choose_cell_type(cells, inner_w, inner_h)
-    budget = cell_line_budget(inner_h, cell_pt)
+    budget = inner_h
 
     for c in range(1, 7):
         gx = M + cell_w * c
