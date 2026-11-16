@@ -323,6 +323,15 @@ def test_the_hang_is_dropped_when_the_cell_cannot_afford_it():
     assert all(indent == 0 for _, _, _, indent in narrow), "7 characters: it keeps the width"
 
 
+def test_a_blurb_that_costs_exactly_one_and_a_half_points_is_not_preferred():
+    """The rule is *less than* 1.5 pt, and type steps by 0.5, so the boundary is real."""
+    assert rg.blurb_is_worth_it(8.5, 9.5) is True, "one point below the title"
+    assert rg.blurb_is_worth_it(8, 9.5) is False, "exactly 1.5 pt is not less than 1.5"
+    assert rg.blurb_is_worth_it(8, 9.0) is True
+    assert rg.blurb_is_worth_it(7.5, 8.5) is True, "BLURB_MIN_PT itself is allowed"
+    assert rg.blurb_is_worth_it(7, 9.5) is False, "below BLURB_MIN_PT, however cheap"
+
+
 @requires_font
 def test_no_month_page_prints_wide_of_its_paper():
     entry = (1784, "Henry Cavendish announced to the Royal Society that water is a "

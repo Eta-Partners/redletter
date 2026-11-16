@@ -510,6 +510,17 @@ def truncate_blocks(blocks, budget):
     return kept
 
 
+def blurb_is_worth_it(blurb_size, title_size):
+    """Detail is preferred over size only while it costs *less than* 1.5 pt.
+
+    Strictly less, because the type steps by 0.5 pt, so `title_size - 1.5` is a
+    reachable size rather than a limit nothing lands on. Measured, it is reached:
+    the ten-day spaceflight dataset at Letter portrait has January and July at a
+    blurb of 8 pt against a title of 9.5, and both now keep the larger title.
+    """
+    return blurb_size >= BLURB_MIN_PT and blurb_size > title_size - 1.5
+
+
 def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
     """The type size that fits the page, allowing a rare cell to truncate.
 
@@ -540,7 +551,7 @@ def choose_cell_type(cells, w_pt, h_pt, sizes=CELL_PT):
         return sizes[-1]
 
     title_size, blurb_size = best_size(False), best_size(True)
-    if blurb_size >= BLURB_MIN_PT and blurb_size >= title_size - 1.5:
+    if blurb_is_worth_it(blurb_size, title_size):
         return blurb_size, True
     return title_size, False
 

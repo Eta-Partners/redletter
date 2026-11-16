@@ -17,9 +17,16 @@ month with each day's year and title inside its date cell — through the same
   reach the other three combinations; portrait is legible (the July page was read
   at 120 dpi) but its cells are narrow, and that is where the wrap guard earns
   its keep.
-- *The blurb is preferred only while it costs less than 1.5 pt of type.* Kept.
-  Measured on the three shipped datasets at A4 landscape, the blurb is never
-  chosen: 115 chemistry days, 64 laureate days and 10 spaceflight days all choose
+- *The blurb is preferred only while it costs less than 1.5 pt of type.* Kept, and
+  made strict: the code tested `blurb_size >= title_size - 1.5`, which accepts a
+  cost of exactly 1.5 pt, and the rule as decided says *less than*. Type steps by
+  0.5 pt, so the boundary is reachable, not theoretical, and it was reached: the
+  ten-day spaceflight dataset at Letter portrait has January and July at a blurb
+  of 8 pt against a title of 9.5, and those two pages now keep the larger title.
+  Built all three datasets at all four paper shapes: 156 pages, and those two are
+  the only ones that differ by raster comparison. Measured on the active days in
+  each dataset's `out*/days.json` at A4 landscape, the blurb is never chosen: 115
+  chemistry days, 72 laureate days and 10 spaceflight days all choose
   year-and-title, because a 130-character blurb in a 20-character cell needs the
   type two or more points smaller. It fires only where a page is sparse enough to
   afford it (in A4 portrait, one month of the ten-day dataset). That is the rule
