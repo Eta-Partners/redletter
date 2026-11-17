@@ -35,7 +35,7 @@ import urllib.request
 
 import yaml
 
-UA = "redletter-verify/0.1 (+https://github.com/tjmustard/redletter)"
+UA = "redletter-verify/0.1 (+https://github.com/Eta-Partners/redletter)"
 MONTHS = [
     "january", "february", "march", "april", "may", "june",
     "july", "august", "september", "october", "november", "december",

@@ -25,7 +25,7 @@ import urllib.parse
 import urllib.request
 
 API = "https://api.nobelprize.org/2.1/laureates"
-UA = "redletter-candidates/0.1 (+https://github.com/tjmustard/redletter)"
+UA = "redletter-candidates/0.1 (+https://github.com/Eta-Partners/redletter)"
 
 CATEGORIES = {"che": "Chemistry", "phy": "Physics", "med": "Physiology or Medicine"}
 
