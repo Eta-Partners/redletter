@@ -121,9 +121,36 @@ class Fonts:
 FONTS = Fonts()
 
 
+_ADVANCE = {}
+
+
+def advance(size, weight="regular"):
+    """One character's width in points, rounded to the whole point.
+
+    The layout's only unit of width, and `draw` places every glyph by it as well,
+    so a line is drawn at the width it was measured at. Rounding once is what
+    makes the page a property of the type size instead of of the wheel: Pillow's
+    macOS wheel returns a whole number of pixels for a face where the manylinux
+    wheel returns the fraction - DejaVu Sans Mono 2.37, M at 9 pt, reads 5.0
+    against 5.421875 - so a layout that measured the raw advance drew a
+    different page on each.
+
+    What this pins is the advance *ratio*, not the font build. Every face named
+    above is 0.600-0.602 em, and at the sizes this deck uses both ends of that
+    range round to the same whole point. A monospace outside the class, or a size
+    where the two ends straddle a half point, is a different layout: "any
+    monospace will do" still means the sheet renders and prints, it does not mean
+    every face yields this exact page.
+    """
+    key = (float(size), weight)
+    if key not in _ADVANCE:
+        raw = FONTS.get(size, weight, ss=1).getlength("M")
+        _ADVANCE[key] = max(1, int(math.floor(raw + 0.5)))
+    return _ADVANCE[key]
+
+
 def text_width(s: str, size: float, weight: str = "regular") -> float:
-    f = FONTS.get(size, weight, ss=1)
-    return f.getlength(s)
+    return advance(size, weight) * len(s)
 
 
 # ------------------------------------------------------------------ layout
@@ -348,15 +375,17 @@ def draw(prims, size, ss=SS):
             d.line([p["x1"] * ss, p["y1"] * ss, p["x2"] * ss, p["y2"] * ss],
                    fill=p["color"], width=max(1, int(p["w"] * ss)))
         elif p["kind"] == "text":
+            if not p["s"]:
+                continue
             f = FONTS.get(p["size"], p["weight"], ss=ss)
-            anchor = {"start": "ls", "middle": "ms", "end": "rs"}[p["anchor"]]
-            if p["spacing"]:
-                x = p["x"]
-                for ch in p["s"]:
-                    d.text((x * ss, p["y"] * ss), ch, font=f, fill=p["fill"], anchor=anchor)
-                    x += f.getlength(ch) / ss + p["spacing"]
-            else:
-                d.text((p["x"] * ss, p["y"] * ss), p["s"], font=f, fill=p["fill"], anchor=anchor)
+            # Glyph by glyph, at the same whole-point advance the layout measured
+            # with: one number for both, so drawing cannot drift from measuring.
+            step = advance(p["size"], p["weight"]) + p["spacing"]
+            width = step * len(p["s"]) - p["spacing"]
+            x = p["x"] - {"start": 0, "middle": width / 2, "end": width}[p["anchor"]]
+            for ch in p["s"]:
+                d.text((x * ss, p["y"] * ss), ch, font=f, fill=p["fill"], anchor="ls")
+                x += step
     return img
 
 

@@ -804,6 +804,25 @@ def test_every_line_measures_inside_the_cells_inner_width():
 
 
 @requires_font
+def test_a_characters_width_is_whole_points_on_every_wheel():
+    """The unit the layout measures in, pinned independently of the Pillow wheel.
+
+    The two wheels disagree about the same font: the macOS one returns advances
+    rounded to whole pixels where the manylinux one returns the fraction (DejaVu
+    Sans Mono 2.37, M at 9 pt: 5.0 against 5.421875), so a test written against
+    the raw advance was a test of the wheel. `advance` rounds once, for measuring
+    and drawing both; these are the whole points for the sizes the layout meters,
+    inside the 0.600-0.602 em class every face the renderer names belongs to. The
+    cover's 74 pt year is the one size the deck sets where that class splits, and
+    no width is metered there, so it is not pinned here (see DECISIONS.md).
+    """
+    assert {s: rg.advance(s) for s in (9.5, 9, 8.5, 8, 7, 6, 5)} == {
+        9.5: 6, 9: 5, 8.5: 5, 8: 5, 7: 4, 6: 4, 5: 3}
+    assert rg.text_width("M" * 14, 9) == 70
+    assert rg.text_width("", 9) == 0
+
+
+@requires_font
 def test_no_line_prints_past_its_cells_right_edge(tmp_path):
     """On the page itself: a day's text stays in its own cell at every paper shape."""
     days = [

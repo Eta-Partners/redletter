@@ -3,6 +3,65 @@
 One entry per choice that a reader could reasonably have made differently. The
 date is when the choice was made; the source says who made it or what forced it.
 
+## 2026-11-17 · Width is one rounded advance per character, measured and drawn alike
+
+TJ, on the red CI run 44028762342 at `0c5998c`: *"quantize advances in the renderer
+(exact pins kept)"* over pinning the CI stack or rewriting the tests to assert
+relationships. Relayed by `operator-agent` on `qitem-20261117061437-63fd3917`.
+
+**What was wrong.** Three tests pin character counts and type sizes that come from
+Pillow's measurement of the font, and Pillow's wheels disagree about the same font
+file. DejaVu Sans Mono 2.37, `M` at 9 pt, reads **5.0** on the macOS wheel and
+**5.421875** on the manylinux wheel, with the same Pillow 11.3.0 and the same
+reported FreeType 2.13.3; RAQM is present on CI and selecting BASIC changes
+nothing. The macOS wheel returns the advance rounded to whole pixels, the
+manylinux one returns the fraction. Through `cell_chars` that turned into 14
+characters in a 70 pt cell here and 12 there, and 9.0 pt of type here against
+8.5 pt there - which is exactly what the three tests pinned, so they were
+asserting the wheel rather than the renderer.
+
+**The choice.** `advance(size, weight)` returns one character's width as a whole
+number of points, `floor(raw + 0.5)`; `text_width` is `advance * len(s)` and
+`draw` places every glyph by the same number. Measuring and drawing therefore
+cannot disagree, and the layout stops being a property of the wheel. Rounding
+half-up rather than Python's `round` is deliberate: at an exact half point
+half-even would round one end of the advance class down and the other up.
+
+**What it pins, and what it does not.** The numbers now depend on the advance
+*ratio*, not on the FreeType build. Every face the renderer names is 0.600-0.602 em
+(JetBrains Mono Nerd Font 0.60000, Menlo 0.60203 at 7400 px; DejaVu Sans Mono is the
+same design), and at every size the layout measures a width at both ends round to the
+same whole point - measured on both stacks, not derived: 9.5 pt 6, 9 pt 5, 8.5 pt 5,
+8 pt 5, 7.5 pt 5, 7 pt 4, 6.5 pt 4, 6 pt 4, 5.5 pt 4, 5 pt 3. (The half-point sizes
+read the even face here because of the cache key below, and their rounded value is
+the same either way.) The deck sets eighteen sizes across its three books, all four
+paper shapes and the cover, and exactly one of them splits the class: the cover's year
+at 74 pt, where 0.600 x 74 = 44.4 rounds to 44 and 0.602 x 74 = 44.55 rounds to 45.
+Nothing measures a width there and the year is start-anchored, so no layout depends
+on it; the drawn "2027" is 176 pt on one face and 180 pt on the other. That boundary
+is the claim's own: found by dev-qa, not by me, after this entry first said "every
+size this deck sets". A monospace outside the class, or any size where the two ends
+straddle a half point, is a different layout. "Any monospace will do" still means the
+renderer runs and the sheet prints; it does not mean every face yields this exact
+page. The SVG is outside this too: it sets its text in whatever font the reader has,
+so its advance is still the reader's.
+
+**Evidence.** On this machine the wheel already returns whole-pixel advances, so
+the change is a no-op in output: all 39 book pages of the three shipped datasets
+render to identical page images and identical SVG bytes before and after
+(`sha256` per page, `git archive` of `e87bbf4` against the working tree). The
+manylinux numbers were reproduced by replacing the face's `getlength` with
+`0.6024305 em` - the ratio CI printed at 9 pt: cell_chars(70, 9) 12 and all three
+tests failing at `e87bbf4`, 14 and all three passing with the change, no pin
+edited. CI itself, on both legs, is the acceptance the row asks for and is the
+proof this entry is waiting on.
+
+**Not done here.** `Fonts.get` keys its cache on `round(size * ss)`, so a
+half-point size measures the even face and draws at the odd one - a real defect,
+kept separate by the row (`qitem-20261117061437-63fd3917`) and to be proved by
+effect. Nothing was changed to make it disappear: the sizes above are listed with
+the face each currently measures.
+
 ## 2026-11-16 · The fame line, births only, and the death that has a cause
 
 TJ, on Slack at 17:10Z: *"Can we include why people are famous? What they are
