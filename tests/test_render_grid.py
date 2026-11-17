@@ -839,7 +839,9 @@ def test_a_half_point_does_not_borrow_its_neighbours_face():
     # the loaded face is the whole pixel grid, which is what the next change to
     # the rounding would break: 8.5 pt is measured on 8 px, not on 8.5 px
     assert quarter.size == 8
-    # and the key is the size as a number: 8 and 8.0 must not split
+    # and the key holds the size as a float, so an int and a float spelling of
+    # one size land on one face: the split the cache must avoid is between
+    # sizes, not between the two ways of writing the same one
     assert rg.FONTS.get(8, ss=1) is rg.FONTS.get(8.0, ss=1)
     assert rg.advance(8.5) == rg.advance(8.0) == 5
     assert rg.FONTS.get(8.5, ss=rg.SS) is not quarter
