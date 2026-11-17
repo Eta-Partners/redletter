@@ -823,6 +823,29 @@ def test_a_characters_width_is_whole_points_on_every_wheel():
 
 
 @requires_font
+def test_a_half_point_does_not_borrow_its_neighbours_face():
+    """The cache names the size asked for, not the pixel count it rounds to.
+
+    At ss=1 both 8 pt and 8.5 pt round to an 8 px face, so a cache keyed on the
+    rounded count hands one size the other's face - and would go on doing it
+    silently after any change to the rounding or the scale. They are the same
+    glyphs today, which is why the collision was invisible, so the rule is stated
+    both ways: the entries are distinct, and they measure the same width because
+    the whole pixel grid is what makes 8.5 pt read 5 pt on both wheels.
+    """
+    quarter, neighbour = rg.FONTS.get(8.5, ss=1), rg.FONTS.get(8.0, ss=1)
+    assert quarter is not neighbour
+    assert quarter.getlength("M") == neighbour.getlength("M")
+    # the loaded face is the whole pixel grid, which is what the next change to
+    # the rounding would break: 8.5 pt is measured on 8 px, not on 8.5 px
+    assert quarter.size == 8
+    # and the key is the size as a number: 8 and 8.0 must not split
+    assert rg.FONTS.get(8, ss=1) is rg.FONTS.get(8.0, ss=1)
+    assert rg.advance(8.5) == rg.advance(8.0) == 5
+    assert rg.FONTS.get(8.5, ss=rg.SS) is not quarter
+
+
+@requires_font
 def test_no_line_prints_past_its_cells_right_edge(tmp_path):
     """On the page itself: a day's text stays in its own cell at every paper shape."""
     days = [

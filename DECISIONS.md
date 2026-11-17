@@ -3,6 +3,47 @@
 One entry per choice that a reader could reasonably have made differently. The
 date is when the choice was made; the source says who made it or what forced it.
 
+## 2026-11-17 · The font cache names the size, and the measuring grid is the whole pixel
+
+Opened by `operator-agent` on `qitem-20261117062850-f0ec5f1489d3ad36` once main carried
+`6489195`; TJ deferred it on `qitem-20261117061437-63fd3917` ("Separately, NOT part of this
+work"), with the condition that it be proved by effect rather than by reading the code.
+
+**What was wrong.** `Fonts.get` keyed its cache on `round(size * ss)`, so at `ss=1` the 8 pt
+and 8.5 pt faces were one entry: a size could be handed a face it never asked for. The key is
+now `(size, ss, weight)` - the size asked for - while the face loaded stays the whole pixel
+grid, `max(1, round(size * ss))`.
+
+**Why the face stays on that grid.** The row asked for the spacing to come from the drawn face.
+Measured, that cannot be had without giving up what `6489195` bought:
+
+- Reading the drawn face's advance at `ss=2` halves the wheel's rounding into a half point: at
+  9 pt the macOS wheel's 18 px face reads 11 px = 5.5 pt (it rounds 10.8 up), manylinux reads
+  5.4 pt, and the advance would be 6 here against 5 there. Pins would move, and the promise
+  would be false again.
+- Reading a fractional pixel size (`truetype(path, 5.5)`) is snapped by the macOS wheel -
+  37.5 px rasterises identically to 38 px, measured - and honoured by manylinux, whose advances
+  are the unrounded fraction. 5.5 pt reads 4.0 here against 3.3 there; `cell_chars(70, 5.5)`
+  would be 17 against 23. And the trap: on this Mac that wrong fix looks perfect - all 39 pages
+  and 36 sheets render byte-identically with fractional loads - because the wheel snaps them.
+- Quantizing the point size itself (so 8.5 pt draws the 8 pt face) changes the 9.5 pt pages,
+  which are shipped.
+
+So the whole-point advance measured on the whole-pixel grid (`advance` reads `ss=1`) stays, and
+it is now a stated rule in the code rather than a by-product of a shared cache entry.
+
+**Evidence.** With the key fix alone: 39 book page images at 300 dpi, 36 month-sheet PNGs and
+36 SVGs are byte-identical to `6489195`; suite 258 passed, 1 skipped; no pin edited. The new
+test - that a half-point does not borrow its neighbour's face - fails on `6489195` and passes
+here.
+
+**What the row assumed.** It assumed the collision was visible; it is not. At `ss=1` the
+aliased sizes round to the same face, so the collision never changed a width, which is why
+every page is identical after the fix. What was worth fixing is that the cache was keyed to
+something the caller never asked for, and that the measuring grid was undocumented - the next
+change to the rounding or the scale would have turned the accident into a real defect with no
+test standing in its way.
+
 ## 2026-11-17 · Width is one rounded advance per character, measured and drawn alike
 
 TJ, on the red CI run 44028762342 at `0c5998c`: *"quantize advances in the renderer
@@ -34,7 +75,9 @@ same design), and at every size the layout measures a width at both ends round t
 same whole point - measured on both stacks, not derived: 9.5 pt 6, 9 pt 5, 8.5 pt 5,
 8 pt 5, 7.5 pt 5, 7 pt 4, 6.5 pt 4, 6 pt 4, 5.5 pt 4, 5 pt 3. (The half-point sizes
 read the even face here because of the cache key below, and their rounded value is
-the same either way.) The deck sets eighteen sizes across its three books, all four
+the same either way; since the entry above they read it as a stated rule - the cache
+no longer aliases one size to a neighbour's face, and the grid is named.) The deck
+sets eighteen sizes across its three books, all four
 paper shapes and the cover, and exactly one of them splits the class: the cover's year
 at 74 pt, where 0.600 x 74 = 44.4 rounds to 44 and 0.602 x 74 = 44.55 rounds to 45.
 Nothing measures a width there and the year is start-anchored, so no layout depends
@@ -60,7 +103,8 @@ proof this entry is waiting on.
 half-point size measures the even face and draws at the odd one - a real defect,
 kept separate by the row (`qitem-20261117061437-63fd3917`) and to be proved by
 effect. Nothing was changed to make it disappear: the sizes above are listed with
-the face each currently measures.
+the face each currently measures. (Done in the entry above: the key names the size
+asked for; the faces each size measures are unchanged, so the list still holds.)
 
 ## 2026-11-16 · The fame line, births only, and the death that has a cause
 

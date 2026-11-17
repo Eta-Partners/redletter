@@ -102,11 +102,20 @@ def font_path(weight: str):
 
 
 class Fonts:
+    """Faces, cached by the size that asked for them.
+
+    The key is the point size and the scale, not the pixel count they round to.
+    Two sizes can round to the same count - 8 pt and 8.5 pt are both 8 px at
+    ss=1 - and a cache that hands one size another size's face is a defect that
+    stays invisible until the rounding or the scale changes underneath it. The
+    face loaded is still the whole pixel grid; `advance` says why that grid.
+    """
+
     def __init__(self):
         self._cache = {}
 
-    def get(self, size: int, weight: str = "regular", ss: int = SS):
-        key = (round(size * ss), weight)
+    def get(self, size: float, weight: str = "regular", ss: int = SS):
+        key = (float(size), int(ss), weight)
         if key not in self._cache:
             path = font_path(weight)
             if path is None:
@@ -114,7 +123,7 @@ class Fonts:
                     "no monospace font found: put a JetBrains Mono file in ~/Library/Fonts, "
                     "or install DejaVu Sans Mono, or render with --svg-only"
                 )
-            self._cache[key] = ImageFont.truetype(path, key[0])
+            self._cache[key] = ImageFont.truetype(path, max(1, int(round(size * ss))))
         return self._cache[key]
 
 
@@ -141,6 +150,17 @@ def advance(size, weight="regular"):
     where the two ends straddle a half point, is a different layout: "any
     monospace will do" still means the sheet renders and prints, it does not mean
     every face yields this exact page.
+
+    The face is read at `ss=1`, so a size is measured on the whole pixel grid:
+    8.5 pt is measured on the 8 px face, and `Fonts.get` keeps that face its own
+    entry. That grid is deliberate - it is the only one the two wheels agree on.
+    A fractional pixel size is snapped by the macOS wheel (37.5 px rasterises
+    identically to 38 px, measured) and honoured by manylinux, so asking for 5.5
+    px would read 4.0 here and 3.3 there, and `cell_chars(70, 5.5)` would be 17
+    against 23: the stack dependence this function exists to remove. (The 23 is
+    this function's own rounding doing the work - 3.313 rounds to 3 - and would be
+    21 for a variant that divided unrounded; the number belongs to the pipeline,
+    not to the face.)
     """
     key = (float(size), weight)
     if key not in _ADVANCE:
